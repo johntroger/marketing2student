@@ -4,7 +4,6 @@ import {
   Search, 
   BookOpen, 
   GraduationCap, 
-  HelpCircle, 
   Menu, 
   X,
   ShieldCheck,
@@ -93,35 +92,37 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-200/90 shadow-xs">
-      {/* Top Signature Pastel Sky-Blue Utility Bar (#D1EFFF) */}
-      <div className="bg-brand-100 border-b border-brand-200/80 text-[11px] font-medium hidden md:block text-ink-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex items-center justify-between">
-          <div className="flex items-center gap-3.5">
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-slate-200/90 shadow-xs">
+      {/* Top Signature Pastel Sky-Blue Utility Bar (#D1EFFF) - Full Width, Single Clean Line */}
+      <div className="w-full bg-brand-100 border-b border-brand-200/80 text-[11px] font-medium hidden lg:block text-ink-900">
+        <div className="w-full px-4 sm:px-6 lg:px-10 py-1.5 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 whitespace-nowrap shrink-0">
             <span className="font-bold text-ink-900">
               ThS. Trần Thanh Tùng • Giảng viên Marketing (NTTU)
             </span>
-            <span className="text-brand-600/40">|</span>
+          </div>
+
+          <div className="flex items-center gap-4 whitespace-nowrap">
             <a
               href="https://www.youtube.com/watch?v=-FFQdJ3918M&list=PLKmW2URrf3HjXe1Xv5nUlyBtuPmyE8lSt"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand-600 transition-colors flex items-center gap-1 font-semibold"
             >
-              <Youtube className="w-3.5 h-3.5 text-rose-600" />
+              <Youtube className="w-3.5 h-3.5 text-rose-600 shrink-0" />
               <span>Khóa học Digital Marketing</span>
             </a>
-            <span className="text-brand-600/40">|</span>
+            <span className="text-brand-600/35">|</span>
             <a
               href="https://vneconomics.com/kiem-tra-kien-thuc-digital-marketing/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand-600 transition-colors flex items-center gap-1"
             >
-              <CheckSquare className="w-3.5 h-3.5 text-brand-600" />
+              <CheckSquare className="w-3.5 h-3.5 text-brand-600 shrink-0" />
               <span>Trắc nghiệm Digital Marketing</span>
             </a>
-            <span className="text-brand-600/40">|</span>
+            <span className="text-brand-600/35">|</span>
             <a
               href="https://vneconomics.com/kiem-tra-kien-thuc-e-marcomme/"
               target="_blank"
@@ -130,52 +131,45 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             >
               <span>Trắc nghiệm E-Marcomme</span>
             </a>
-          </div>
-
-          <div className="flex items-center gap-4">
+            <span className="text-brand-600/35">|</span>
             <a
               href="https://vneconomics.com/kinh-te-ky-thuat-so/digital-marketing/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-brand-600 transition-colors font-semibold"
             >
-              <span>Bài Nghiên Cứu trên VNEconomics</span>
-              <ExternalLink className="w-3 h-3" />
+              <span>Nghiên cứu VNEconomics</span>
+              <ExternalLink className="w-3 h-3 shrink-0" />
             </a>
-            <span className="text-brand-600/40">|</span>
-            <Link to="/gioi-thieu" className="flex items-center gap-1 hover:text-brand-600 transition-colors">
-              <HelpCircle className="w-3.5 h-3.5 text-brand-600" />
-              <span>Về Giảng Viên & Phương Pháp</span>
-            </Link>
           </div>
         </div>
       </div>
 
-      {/* Main Search & Brand Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-2.5">
-        <div className="flex items-center justify-between gap-3 sm:gap-8">
+      {/* Main Search & Brand Bar - Full Width */}
+      <div className="w-full px-4 sm:px-6 lg:px-10 pt-2.5 pb-2">
+        <div className="flex items-center justify-between gap-4 lg:gap-6">
           {/* Brand Logo */}
-          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 group">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border-2 border-brand-200 flex items-center justify-center p-0.5 shadow-2xs group-hover:scale-105 group-hover:border-brand-600 transition-all overflow-hidden">
+          <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
+            <div className="w-10 h-10 rounded-xl bg-white border-2 border-brand-200 flex items-center justify-center p-0.5 shadow-2xs group-hover:scale-105 group-hover:border-brand-600 transition-all overflow-hidden">
               <img src="/logo.jpg" alt="Marketing2Student - ThS. Trần Thanh Tùng" className="w-full h-full object-cover rounded-lg" />
             </div>
             <div className="leading-none">
               <div className="flex items-center gap-1.5">
-                <span className="text-lg sm:text-2xl font-black tracking-tight text-ink-900 group-hover:text-brand-600 transition-colors">
+                <span className="text-lg sm:text-xl font-black tracking-tight text-ink-900 group-hover:text-brand-600 transition-colors whitespace-nowrap">
                   Marketing2Student
                 </span>
-                <span className="bg-brand-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded tracking-wide">
+                <span className="bg-brand-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded tracking-wide shrink-0">
                   ACADEMY
                 </span>
               </div>
-              <p className="text-[10px] text-ink-700 font-medium tracking-wide mt-1 hidden sm:block">
+              <p className="text-[10px] text-ink-600 font-medium tracking-wide mt-1 hidden sm:block whitespace-nowrap">
                 Sàn Công Cụ Marketing & Thư Viện Thực Chiến
               </p>
             </div>
           </Link>
 
-          {/* Desktop Search Box with Instant Autocomplete (Replaces broken [wpdreams_ajaxsearchlite]) */}
-          <div ref={searchContainerRef} className="flex-1 max-w-2xl hidden sm:block relative">
+          {/* Desktop Search Box with Instant Autocomplete */}
+          <div ref={searchContainerRef} className="flex-1 min-w-0 max-w-3xl hidden sm:block relative">
             <form onSubmit={handleSearchSubmit} className="relative">
               <div className="flex items-center bg-white border-2 border-brand-600 rounded-xl overflow-hidden shadow-2xs focus-within:border-brand-700 transition-colors">
                 <input
@@ -353,15 +347,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
               </div>
             )}
 
-            {/* Trending Suggestions Ribbon */}
-            <div className="flex items-center gap-3 mt-1.5 text-[11px] text-ink-500 overflow-hidden whitespace-nowrap">
-              <span className="text-ink-400 font-medium shrink-0">Từ khóa nổi bật:</span>
-              <div className="flex items-center gap-2.5 overflow-x-auto no-scrollbar">
+            {/* Trending Suggestions Ribbon - Clean, no horizontal scrollbar */}
+            <div className="hidden lg:flex items-center gap-2.5 mt-1.5 text-[11px] text-ink-500 overflow-hidden">
+              <span className="text-ink-400 font-medium shrink-0">Nổi bật:</span>
+              <div className="flex items-center gap-2.5 flex-wrap max-h-4 overflow-hidden">
                 {trendingTags.map((t) => (
                   <Link
                     key={t.q}
                     to={`/blog?q=${encodeURIComponent(t.q)}`}
-                    className="hover:text-brand-600 transition-colors"
+                    className="hover:text-brand-600 transition-colors whitespace-nowrap"
                   >
                     {t.label}
                   </Link>
@@ -370,8 +364,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             </div>
           </div>
 
-          {/* Right Actions: VNEconomics + Student Lab + Auth */}
-          <div className="flex items-center gap-2 sm:gap-2.5">
+          {/* Right Actions: VNEconomics + Auth + Tools Pill + Mobile Toggle */}
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
             <a
               href="https://store.vneconomics.com/"
               target="_blank"
@@ -492,10 +486,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
         </div>
       </div>
 
-      {/* Category & Lab Navigation Ribbon */}
-      <div className="bg-slate-50/80 border-t border-slate-200/80 text-xs hidden md:block">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between overflow-x-auto whitespace-nowrap text-ink-700">
-          <div className="flex items-center gap-5">
+      {/* Category & Lab Navigation Ribbon - Full Width */}
+      <div className="w-full bg-slate-50/80 border-t border-slate-200/80 text-xs hidden md:block">
+        <div className="w-full px-4 sm:px-6 lg:px-10 py-2 flex items-center justify-between gap-4 overflow-x-auto whitespace-nowrap text-ink-700">
+          <div className="flex items-center gap-5 lg:gap-7">
             <Link to="/" className="font-bold text-ink-900 hover:text-brand-600 transition-colors">TRANG CHỦ</Link>
             <Link to="/cong-cu" className="font-extrabold text-brand-600 hover:underline flex items-center gap-1">
               <Wrench className="w-3.5 h-3.5" />
@@ -504,6 +498,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             <Link to="/blog" className="font-bold text-ink-800 hover:text-brand-600 transition-colors">BÀI VIẾT ({articles.length})</Link>
             <Link to="/category/ai-marketing" className="hover:text-brand-600 transition-colors font-medium">AI Marketing</Link>
             <Link to="/category/do-luong-marketing" className="hover:text-brand-600 transition-colors font-medium">Đo lường & GA4</Link>
+            <Link to="/category/seo-content-marketing" className="hover:text-brand-600 transition-colors font-medium hidden xl:inline">SEO & Content</Link>
             <Link to="/du-an-sinh-vien" className="hover:text-brand-600 transition-colors flex items-center gap-1 text-ink-900 font-bold">
               <GraduationCap className="w-3.5 h-3.5 text-brand-600" />
               <span>Phòng Lab Sinh Viên ({studentProjects.length})</span>
@@ -513,7 +508,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
               <span>Giới thiệu Giảng viên</span>
             </Link>
           </div>
-          <div className="text-[11px] text-ink-500">
+          <div className="text-[11px] text-ink-500 hidden lg:block shrink-0">
             <span>Chuẩn học thuật & thực chiến 2026</span>
           </div>
         </div>
