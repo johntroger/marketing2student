@@ -900,5 +900,35 @@ export const seoResearchTools: MarketingTool[] = [
     limitations: 'Tốc độ tải bản lưu trữ cũ đôi khi chậm và một số ảnh cũ có thể không còn hiển thị.',
     studentTip: 'Nếu làm bài thuyết trình về lịch sử phát triển thương hiệu số của một doanh nghiệp, hãy chụp ảnh trang chủ của họ 5–10 năm trước từ Wayback Machine để so sánh với hiện tại — rất ấn tượng!',
     verifiedAt: '2026-11-24'
+  },
+  {
+    id: 43,
+    slug: 'hemingway-editor',
+    name: 'Hemingway Editor',
+    tagline: 'Kiểm tra độ dễ đọc (Readability) & cắt gọt câu văn rườm rà tiếng Anh',
+    excerpt: 'Tô màu cảnh báo những câu quá dài, bị động hoặc thừa trạng từ để bài viết Copywriting tiếng Anh sắc bén và dễ đọc nhất.',
+    category: 'SEO & Nghiên cứu Từ khóa',
+    categorySlug: 'seo-keyword-research',
+    pricing: 'Freemium',
+    pricingDetail: 'Phiên bản Web chỉnh sửa và chấm điểm Readability miễn phí 100% trọn đời; bản Plus AI tính phí theo tháng.',
+    level: 'Cơ bản',
+    officialUrl: 'https://hemingwayapp.com/',
+    tags: ['Readability', 'Copywriting', 'Editing', 'Clear Writing'],
+    whatIsIt: 'Hemingway Editor là công cụ biên tập văn bản giúp đo lường chỉ số dễ đọc (Grade Level) của bài viết tiếng Anh và tô màu trực quan các câu quá dài, thể bị động hoặc từ ngữ phức tạp.',
+    bestFor: 'Copywriter viết Landing Page, Email Marketing và blog tiếng Anh muốn giữ văn phong súc tích, mạnh mẽ.',
+    platforms: 'Web Browser (hemingwayapp.com), Desktop App (macOS/Windows)',
+    vietnameseSupport: 'Chỉ hỗ trợ phân tích cấu trúc câu tiếng Anh.',
+    studentPerk: 'Bản web phân tích và chấm điểm dễ đọc miễn phí 100%, không cần đăng nhập.',
+    useCases: [
+      'Rút gọn bài viết tiếng Anh từ mức đọc khó (Grade 12+) xuống mức dễ đọc đại chúng (Grade 6–8).',
+      'Loại bỏ các câu bị động làm giảm lực kêu gọi hành động (CTA) trên Landing Page.'
+    ],
+    pros: [
+      'Giao diện tối giản không gây xao nhãng, nhìn màu là biết ngay câu nào cần cắt ngắn.',
+      'Miễn phí hoàn toàn cho tính năng phân tích cốt lõi.'
+    ],
+    limitations: 'Không hỗ trợ tiếng Việt.',
+    studentTip: 'Giữ điểm Readability của bài viết Landing Page tiếng Anh ở mức Grade 6–8 để đạt tỷ lệ chuyển đổi tốt nhất.',
+    verifiedAt: '2026-11-24'
   }
 ];

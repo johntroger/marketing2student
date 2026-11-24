@@ -5,6 +5,7 @@ import { ToolCard } from '../components/ToolCard';
 import { articles } from '../data/articles';
 import { categories } from '../data/categories';
 import { marketingTools, toolCategories } from '../data/tools';
+import { aiTools, aiToolCategories } from '../data/aiTools';
 import { useSEO } from '../utils/useSEO';
 import { 
   ShieldCheck, 
@@ -32,12 +33,18 @@ import {
   Target,
   Flag,
   Users,
-  Briefcase
+  Briefcase,
+  GraduationCap,
+  FileText,
+  Mic,
+  Presentation,
+  Cpu
 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
   // Featured subsets
   const featuredTools = marketingTools.filter((t) => t.featured).slice(0, 8);
+  const featuredAiTools = aiTools.filter((t) => t.featured).slice(0, 8);
   const aiMarketingArticles = articles.filter((a) => a.categorySlug === 'ai-marketing').slice(0, 6);
   const practicalLabArticles = articles.filter((a) => a.hasPracticalExercise).slice(0, 6);
   const [discoverLimit, setDiscoverLimit] = useState(18);
@@ -84,9 +91,9 @@ export const HomePage: React.FC = () => {
   });
 
   const quickShortcuts = [
-    { label: 'Sàn Công Cụ AI', icon: <Wrench className="w-5 h-5 text-brand-600" />, link: '/cong-cu', external: false },
-    { label: 'Tools Miễn Phí', icon: <Sparkles className="w-5 h-5 text-emerald-600" />, link: '/cong-cu?pricing=Mi%E1%BB%85n+ph%C3%AD+100%25', external: false },
-    { label: 'AI Marketing 2026', icon: <Bot className="w-5 h-5 text-blue-600" />, link: '/category/ai-marketing', external: false },
+    { label: 'Sàn Công Cụ', icon: <Wrench className="w-5 h-5 text-brand-600" />, link: '/cong-cu', external: false },
+    { label: 'Sàn AI Tools', icon: <Bot className="w-5 h-5 text-indigo-600" />, link: '/ai-tools', external: false },
+    { label: 'Tools Miễn Phí', icon: <Sparkles className="w-5 h-5 text-emerald-600" />, link: '/ai-tools?pricing=Mi%E1%BB%85n+ph%C3%AD+100%25', external: false },
     { label: 'Đo Lường & GA4', icon: <BarChart3 className="w-5 h-5 text-teal-700" />, link: '/category/do-luong-marketing', external: false },
     { label: 'SEO & Content', icon: <FileSearch className="w-5 h-5 text-indigo-600" />, link: '/category/seo-content-marketing', external: false },
     { label: 'Khóa Học YouTube', icon: <Youtube className="w-5 h-5 text-rose-600" />, link: 'https://www.youtube.com/watch?v=-FFQdJ3918M&list=PLKmW2URrf3HjXe1Xv5nUlyBtuPmyE8lSt', external: true },
@@ -111,6 +118,11 @@ export const HomePage: React.FC = () => {
     Flag: <Flag className="w-4 h-4" />,
     Users: <Users className="w-4 h-4" />,
     Briefcase: <Briefcase className="w-4 h-4" />,
+    GraduationCap: <GraduationCap className="w-4 h-4" />,
+    FileText: <FileText className="w-4 h-4" />,
+    Mic: <Mic className="w-4 h-4" />,
+    Presentation: <Presentation className="w-4 h-4" />,
+    Cpu: <Cpu className="w-4 h-4" />,
   };
 
   return (
@@ -131,24 +143,31 @@ export const HomePage: React.FC = () => {
                   <span className="text-brand-100">Làm Chủ AI & Marketing Thực Chiến.</span>
                 </h1>
                 <p className="text-xs sm:text-sm text-slate-200 max-w-xl leading-relaxed">
-                  Tổng hợp & thẩm định {marketingTools.length}+ công cụ Digital Marketing, AI cho Marketing (nói rõ bản miễn phí & giới hạn) cùng {articles.length} bài phân tích chuẩn EEAT.
+                  Hệ sinh thái {marketingTools.length}+ công cụ Martech & {aiTools.length}+ công cụ AI (ghi rõ bản miễn phí, ưu đãi .edu.vn & giới hạn) cùng {articles.length} bài phân tích chuẩn EEAT.
                 </p>
               </div>
 
-              <div className="pt-6 flex flex-wrap items-center gap-3">
+              <div className="pt-6 flex flex-wrap items-center gap-2.5">
                 <Link
                   to="/cong-cu"
-                  className="px-5 py-2.5 rounded-lg bg-white text-ink-900 text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-brand-50 transition-colors flex items-center gap-1.5"
+                  className="px-4 py-2.5 rounded-lg bg-white text-ink-900 text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-brand-50 transition-colors flex items-center gap-1.5"
                 >
                   <Wrench className="w-4 h-4 text-brand-600" />
-                  <span>Khám Phá Sàn Công Cụ ({marketingTools.length}+)</span>
+                  <span>Sàn Công Cụ ({marketingTools.length}+)</span>
+                </Link>
+                <Link
+                  to="/ai-tools"
+                  className="px-4 py-2.5 rounded-lg bg-amber-300 hover:bg-amber-200 text-ink-900 text-xs font-extrabold uppercase tracking-wider shadow-sm transition-colors flex items-center gap-1.5"
+                >
+                  <Bot className="w-4 h-4 text-ink-900" />
+                  <span>Sàn AI Tools ({aiTools.length}+)</span>
                 </Link>
                 <Link
                   to="/blog"
                   className="px-4 py-2.5 rounded-lg bg-brand-900/60 text-white text-xs font-semibold border border-white/25 hover:bg-brand-900/80 transition-colors flex items-center gap-1.5"
                 >
                   <BookOpen className="w-4 h-4 text-brand-100" />
-                  <span>Thư Viện {articles.length} Bài Viết</span>
+                  <span>{articles.length} Bài Viết</span>
                 </Link>
               </div>
             </div>
@@ -293,7 +312,7 @@ export const HomePage: React.FC = () => {
             </Link>
           </div>
 
-          {/* Tool Categories Quick Pills */}
+          {/* Tool Categories Quick Pills (11 Martech + 1 AI Hub Portal = 12) */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 mb-5">
             {toolCategories.map((tc) => (
               <Link
@@ -309,10 +328,76 @@ export const HomePage: React.FC = () => {
                 </span>
               </Link>
             ))}
+            <Link
+              to="/ai-tools"
+              className="p-2.5 rounded-lg border border-brand-600 bg-gradient-to-r from-[#1c244b] to-[#046bd2] text-white transition-all flex items-center justify-between gap-2 group shadow-2xs hover:opacity-95"
+            >
+              <div className="flex items-center gap-2 min-w-0">
+                <div className="w-7 h-7 rounded-md bg-white/15 border border-white/20 flex items-center justify-center text-amber-300 shrink-0">
+                  <Bot className="w-3.5 h-3.5" />
+                </div>
+                <span className="text-[11px] font-extrabold text-white truncate">
+                  Sàn AI Tools ({aiTools.length}+)
+                </span>
+              </div>
+              <ChevronRight className="w-3.5 h-3.5 text-amber-300 shrink-0" />
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5">
             {featuredTools.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} />
+            ))}
+          </div>
+        </section>
+
+        {/* 2B. "SÀN AI TOOLS CHO SINH VIÊN & NGHIÊN CỨU" Section */}
+        <section className="bg-white rounded-xl shadow-soft border border-slate-200 p-5 sm:p-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 mb-5 gap-3">
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-black uppercase tracking-wider text-white bg-ink-900 px-2.5 py-0.5 rounded flex items-center gap-1">
+                  <Bot className="w-3 h-3 text-amber-300" />
+                  <span>SÀN AI TOOLS</span>
+                </span>
+                <span className="text-xs text-ink-500 font-medium">
+                  • Hệ sinh thái AI cho Học tập, NCKH, Thiết kế, Video & Vibe Coding
+                </span>
+              </div>
+              <h2 className="text-base sm:text-lg font-extrabold text-ink-900 mt-1">
+                Công Cụ Trí Tuệ Nhân Tạo Tuyển Chọn ({aiTools.length}+ AI Tools)
+              </h2>
+            </div>
+
+            <Link
+              to="/ai-tools"
+              className="text-xs text-brand-600 font-bold hover:underline flex items-center self-start sm:self-auto"
+            >
+              <span>Mở Toàn Bộ Sàn AI Tools</span>
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          {/* 8 AI Categories Grid (2x4) */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-5">
+            {aiToolCategories.map((ac) => (
+              <Link
+                key={ac.id}
+                to={`/ai-tools?cat=${ac.slug}`}
+                className="p-2.5 rounded-lg border border-slate-200/80 hover:border-brand-600 bg-brand-50/30 hover:bg-brand-50/80 transition-all flex items-center gap-2 group"
+              >
+                <div className="w-7 h-7 rounded-md bg-white border border-brand-200/80 flex items-center justify-center text-brand-600 shrink-0">
+                  {categoryIconMap[ac.iconName] || <Bot className="w-3.5 h-3.5" />}
+                </div>
+                <span className="text-[11px] font-bold text-ink-800 group-hover:text-brand-600 line-clamp-1">
+                  {ac.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5">
+            {featuredAiTools.map((tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))}
           </div>

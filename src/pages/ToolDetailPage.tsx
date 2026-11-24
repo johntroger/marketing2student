@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation, Navigate } from 'react-router-dom';
 import {
   ExternalLink,
   ShieldCheck,
@@ -8,6 +8,7 @@ import {
   Sparkles,
   ArrowLeft,
   Wrench,
+  Bot,
   Tag,
   GraduationCap,
   HelpCircle,
@@ -22,6 +23,7 @@ import {
   Gift,
 } from 'lucide-react';
 import { marketingTools } from '../data/tools';
+import { aiTools, allPlatformTools } from '../data/aiTools';
 import { articles } from '../data/articles';
 import { ToolCard } from '../components/ToolCard';
 import { ArticleCard } from '../components/ArticleCard';
@@ -32,15 +34,23 @@ import { normalizeVietnamese } from '../utils/search';
 
 export const ToolDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  const isAiRoute = location.pathname.startsWith('/ai-tools');
   const [copiedPrompt, setCopiedPrompt] = useState(false);
 
-  const tool = useMemo(() => {
-    return marketingTools.find((t) => t.slug === slug);
-  }, [slug]);
+  const matchedMartech = useMemo(() => marketingTools.find((t) => t.slug === slug), [slug]);
+  const matchedAi = useMemo(() => aiTools.find((t) => t.slug === slug), [slug]);
+
+  const tool = isAiRoute ? (matchedAi || matchedMartech) : (matchedMartech || matchedAi);
+
+  const isAiHub = Boolean(tool?.isAiTool);
+  const hubBasePath = isAiHub ? '/ai-tools' : '/cong-cu';
+  const hubName = isAiHub ? 'Sàn AI Tools' : 'Sàn Công Cụ Marketing';
 
   const relatedTools = useMemo(() => {
     if (!tool) return [];
-    return marketingTools
+    const pool = tool.isAiTool ? aiTools : marketingTools;
+    return pool
       .filter((t) => t.categorySlug === tool.categorySlug && t.id !== tool.id)
       .slice(0, 4);
   }, [tool]);
@@ -54,8 +64,8 @@ export const ToolDetailPage: React.FC = () => {
     }
 
     const toolCatToArticleCat: Record<string, string> = {
+      // Martech categories
       'vietnam-martech': 'quang-cao-b2b-tang-truong',
-      'ai-content-copywriting': 'ai-marketing',
       'seo-keyword-research': 'seo-content-marketing',
       'analytics-tracking': 'do-luong-marketing',
       'design-video-ai': 'social-video-marketing',
@@ -66,6 +76,15 @@ export const ToolDetailPage: React.FC = () => {
       'performance-ads-affiliate': 'quang-cao-b2b-tang-truong',
       'pr-event-influencer': 'social-video-marketing',
       'b2b-cdp-retention': 'quang-cao-b2b-tang-truong',
+      // AI Tools categories
+      'llm-chatbots': 'ai-marketing',
+      'ai-research-academic': 'do-luong-marketing',
+      'ai-writing-content': 'seo-content-marketing',
+      'ai-image-design': 'social-video-marketing',
+      'ai-video-avatar': 'social-video-marketing',
+      'ai-audio-music': 'social-video-marketing',
+      'ai-slides-productivity': 'ai-marketing',
+      'ai-coding-agents': 'ai-marketing',
     };
 
     const targetArticleCat = toolCatToArticleCat[tool.categorySlug] || 'ai-marketing';
@@ -86,7 +105,7 @@ export const ToolDetailPage: React.FC = () => {
     return scored.slice(0, 4).map((s) => s.art);
   }, [tool]);
 
-  // Auto-fallback cho dữ liệu AEO/GEO khi nhập hàng loạt công cụ mới
+  // Auto-fallback cho dữ liệu AEO/GEO
   const aeoDirectAnswer = useMemo(() => {
     if (!tool) return '';
     return (
@@ -102,7 +121,7 @@ export const ToolDetailPage: React.FC = () => {
       `Truy cập trang chủ chính thức của ${tool.name} tại ${tool.officialUrl} và khởi tạo tài khoản (${tool.pricing}).`,
       `Thiết lập dự án đầu tiên theo mục tiêu nhóm: ${tool.useCases[0] || tool.tagline}.`,
       `Áp dụng lời khuyên thực chiến: ${tool.studentTip}`,
-      `Trích xuất báo cáo hoặc kết quả đầu ra để đối chiếu KPI và trình bày trong đồ án Marketing.`,
+      `Trích xuất báo cáo hoặc kết quả đầu ra để đối chiếu KPI và trình bày trong đồ án / bài nghiên cứu.`,
     ];
   }, [tool]);
 
@@ -111,7 +130,7 @@ export const ToolDetailPage: React.FC = () => {
     const baseFaqs = tool.faqs ? [...tool.faqs] : [];
     const defaultFaqs = [
       {
-        q: `${tool.name} là gì và sinh viên Marketing dùng vào việc gì?`,
+        q: `${tool.name} là gì và sinh viên dùng vào việc gì?`,
         a: `${aeoDirectAnswer} Trong học tập và dự án thực tế, sinh viên thường dùng ${tool.name} để: ${tool.useCases.join(' ')}`,
       },
       {
@@ -121,9 +140,9 @@ export const ToolDetailPage: React.FC = () => {
         } Tuy nhiên cần lưu ý giới hạn: ${tool.limitations}`,
       },
       {
-        q: `Mẹo sử dụng ${tool.name} hiệu quả nhất khi làm đồ án môn học là gì?`,
+        q: `Mẹo sử dụng ${tool.name} hiệu quả nhất khi làm đồ án / nghiên cứu là gì?`,
         a: `${tool.studentTip} Mức độ tiếp cận của công cụ được đánh giá ở ngưỡng "${tool.level}", rất phù hợp cho ${
-          tool.bestFor || 'sinh viên chuyên ngành Marketing và Digital Marketer thực chiến'
+          tool.bestFor || 'sinh viên đại học, nhà nghiên cứu và Marketer thực chiến'
         }.`,
       },
     ];
@@ -146,14 +165,18 @@ export const ToolDetailPage: React.FC = () => {
       })
     : '';
 
+  const canonicalUrl = tool
+    ? `https://marketing2student.com${hubBasePath}/${tool.slug}`
+    : `https://marketing2student.com${isAiRoute ? '/ai-tools' : '/cong-cu'}`;
+
   useSEO({
     title: tool
       ? `${tool.name} Là Gì? Đánh Giá, Chi Phí & Hướng Dẫn Thực Hành Cho Sinh Viên | Marketing2Student`
-      : 'Chi tiết công cụ Marketing',
+      : 'Chi tiết công cụ | Marketing2Student',
     description: tool
-      ? `${tool.name}: ${tool.excerpt} Xem chi tiết bảng giá (${tool.pricing}), ưu nhược điểm, quy trình 4 bước thực hành và mẹo áp dụng vào đồ án.`
-      : 'Thông số, chi phí và ứng dụng thực tế của công cụ Marketing.',
-    canonicalUrl: tool ? `https://marketing2student.com/cong-cu/${tool.slug}` : 'https://marketing2student.com/cong-cu',
+      ? `${tool.name}: ${tool.excerpt} Xem chi tiết bảng giá (${tool.pricing}), ưu nhược điểm, quy trình 4 bước thực hành và mẹo áp dụng.`
+      : 'Thông số, chi phí và ứng dụng thực tế của công cụ.',
+    canonicalUrl,
     ogImage: coverUrl,
     ogType: 'article',
     publishedTime: tool?.verifiedAt,
@@ -166,24 +189,23 @@ export const ToolDetailPage: React.FC = () => {
           `cách dùng ${tool.name} miễn phí`,
           tool.category,
           ...tool.tags,
-          'công cụ marketing cho sinh viên',
+          isAiHub ? 'công cụ AI cho sinh viên' : 'công cụ marketing cho sinh viên',
           'marketing2student',
         ]
       : [],
     jsonLdSchemas: tool
       ? [
-          // 1. SoftwareApplication + Author Review (SEO & GEO Entity)
           {
             '@context': 'https://schema.org',
             '@type': 'SoftwareApplication',
             name: tool.name,
             alternateName: tool.tags[0] || tool.name,
             description: aeoDirectAnswer,
-            applicationCategory: 'BusinessApplication',
+            applicationCategory: isAiHub ? 'DeveloperApplication' : 'BusinessApplication',
             applicationSubCategory: tool.category,
             operatingSystem: tool.platforms || 'Web Browser, Cloud SaaS',
             inLanguage: 'vi-VN',
-            url: `https://marketing2student.com/cong-cu/${tool.slug}`,
+            url: canonicalUrl,
             sameAs: [tool.officialUrl],
             image: coverUrl,
             featureList: tool.useCases,
@@ -212,7 +234,6 @@ export const ToolDetailPage: React.FC = () => {
               },
             },
           },
-          // 2. BreadcrumbList Schema
           {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
@@ -226,29 +247,28 @@ export const ToolDetailPage: React.FC = () => {
               {
                 '@type': 'ListItem',
                 position: 2,
-                name: 'Sàn Công Cụ Marketing',
-                item: 'https://marketing2student.com/cong-cu',
+                name: hubName,
+                item: `https://marketing2student.com${hubBasePath}`,
               },
               {
                 '@type': 'ListItem',
                 position: 3,
                 name: tool.category,
-                item: `https://marketing2student.com/cong-cu?cat=${tool.categorySlug}`,
+                item: `https://marketing2student.com${hubBasePath}?cat=${tool.categorySlug}`,
               },
               {
                 '@type': 'ListItem',
                 position: 4,
                 name: tool.name,
-                item: `https://marketing2student.com/cong-cu/${tool.slug}`,
+                item: canonicalUrl,
               },
             ],
           },
-          // 3. HowTo Schema (AEO Step-by-Step Featured Snippet)
           {
             '@context': 'https://schema.org',
             '@type': 'HowTo',
-            name: `Cách sử dụng ${tool.name} hiệu quả cho đồ án & chiến dịch Marketing`,
-            description: `Quy trình ${howToSteps.length} bước thiết lập và ứng dụng ${tool.name} thực chiến dành cho sinh viên Marketing.`,
+            name: `Cách sử dụng ${tool.name} hiệu quả cho học tập, nghiên cứu & chiến dịch`,
+            description: `Quy trình ${howToSteps.length} bước thiết lập và ứng dụng ${tool.name} thực chiến dành cho sinh viên.`,
             step: howToSteps.map((st, idx) => ({
               '@type': 'HowToStep',
               position: idx + 1,
@@ -256,7 +276,6 @@ export const ToolDetailPage: React.FC = () => {
               text: st,
             })),
           },
-          // 4. FAQPage Schema (AEO / GEO People Also Ask & AI Overviews)
           {
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
@@ -273,10 +292,25 @@ export const ToolDetailPage: React.FC = () => {
       : [],
   });
 
+  // Điều hướng an toàn chuẩn SEO (0% Duplicate URL & 0% 404 cho các link cũ)
+  if (slug && !isAiRoute && !matchedMartech && matchedAi) {
+    return <Navigate to={`/ai-tools/${slug}`} replace />;
+  }
+  if (slug && isAiRoute && !matchedAi && matchedMartech) {
+    return <Navigate to={`/cong-cu/${slug}`} replace />;
+  }
+
   const handleCopyPrompt = (text: string) => {
     navigator.clipboard.writeText(text);
     setCopiedPrompt(true);
     setTimeout(() => setCopiedPrompt(false), 2000);
+  };
+
+  const resolveAlternativeLink = (altSlug?: string) => {
+    if (!altSlug) return null;
+    const found = allPlatformTools.find((item) => item.slug === altSlug);
+    if (!found) return null;
+    return found.isAiTool ? `/ai-tools/${found.slug}` : `/cong-cu/${found.slug}`;
   };
 
   if (!tool) {
@@ -284,15 +318,28 @@ export const ToolDetailPage: React.FC = () => {
       <div className="bg-surface-100 min-h-[70vh] py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="bg-white p-12 rounded-2xl shadow-soft border border-slate-200">
-            <Wrench className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            {isAiRoute ? (
+              <Bot className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            ) : (
+              <Wrench className="w-12 h-12 text-slate-300 mx-auto mb-3" />
+            )}
             <h2 className="text-xl font-bold text-ink-900">Không tìm thấy công cụ</h2>
-            <Link
-              to="/cong-cu"
-              className="mt-6 inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-brand-600 text-white text-xs font-bold uppercase"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Về Sàn Công Cụ Marketing</span>
-            </Link>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+              <Link
+                to="/ai-tools"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-600 text-white text-xs font-bold uppercase"
+              >
+                <Bot className="w-4 h-4" />
+                <span>Về Sàn AI Tools</span>
+              </Link>
+              <Link
+                to="/cong-cu"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-300 bg-white text-ink-900 text-xs font-bold uppercase"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                <span>Về Sàn Công Cụ Marketing</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -304,11 +351,15 @@ export const ToolDetailPage: React.FC = () => {
       <div className="w-full px-4 sm:px-6 lg:px-10 space-y-6">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-ink-500 flex-wrap">
-          <Link to="/" className="text-brand-600 hover:underline">Trang chủ</Link>
+          <Link to="/" className="text-brand-600 hover:underline">
+            Trang chủ
+          </Link>
           <span>›</span>
-          <Link to="/cong-cu" className="text-brand-600 hover:underline">Sàn Công Cụ Marketing</Link>
+          <Link to={hubBasePath} className="text-brand-600 hover:underline font-semibold">
+            {hubName}
+          </Link>
           <span>›</span>
-          <Link to={`/cong-cu?cat=${tool.categorySlug}`} className="text-brand-600 hover:underline">
+          <Link to={`${hubBasePath}?cat=${tool.categorySlug}`} className="text-brand-600 hover:underline">
             {tool.category}
           </Link>
           <span>›</span>
@@ -346,8 +397,9 @@ export const ToolDetailPage: React.FC = () => {
             {/* Right Specs & GEO Entity Table */}
             <div className="lg:col-span-7 space-y-4">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="bg-brand-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded">
-                  {tool.category}
+                <span className="bg-brand-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded flex items-center gap-1">
+                  {isAiHub ? <Bot className="w-3.5 h-3.5" /> : <Wrench className="w-3.5 h-3.5" />}
+                  <span>{tool.category}</span>
                 </span>
                 <span className="bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold px-2.5 py-0.5 rounded flex items-center gap-1">
                   <ShieldCheck className="w-3.5 h-3.5" />
@@ -360,14 +412,12 @@ export const ToolDetailPage: React.FC = () => {
               </h1>
               <p className="text-sm font-semibold text-brand-700">{tool.tagline}</p>
 
-              {/* AEO Direct Answer Box (Tối ưu cho AI Overviews, Perplexity & ChatGPT Search) */}
+              {/* AEO Direct Answer Box */}
               <div className="bg-slate-50 border-l-4 border-brand-600 rounded-r-xl p-4 space-y-1">
                 <div className="text-[11px] font-extrabold uppercase tracking-wider text-brand-700">
                   Tóm tắt định nghĩa cốt lõi ({tool.name} là gì?)
                 </div>
-                <p className="text-xs sm:text-sm text-ink-800 leading-relaxed font-medium">
-                  {aeoDirectAnswer}
-                </p>
+                <p className="text-xs sm:text-sm text-ink-800 leading-relaxed font-medium">{aeoDirectAnswer}</p>
               </div>
 
               {/* GEO Entity Specs Matrix */}
@@ -396,7 +446,7 @@ export const ToolDetailPage: React.FC = () => {
                     <span>Phù hợp nhất cho:</span>
                   </span>
                   <span className="col-span-8 text-ink-800">
-                    {tool.bestFor || 'Sinh viên Marketing làm đồ án thực chiến, Content & Performance Marketer.'}
+                    {tool.bestFor || 'Sinh viên đại học, nhà nghiên cứu và chuyên viên Marketing thực chiến.'}
                   </span>
                 </div>
 
@@ -424,7 +474,7 @@ export const ToolDetailPage: React.FC = () => {
                 {tool.tags.map((tag) => (
                   <Link
                     key={tag}
-                    to={`/cong-cu?q=${encodeURIComponent(tag)}`}
+                    to={`${hubBasePath}?q=${encodeURIComponent(tag)}`}
                     className="inline-flex items-center gap-1 text-[11px] font-semibold px-2.5 py-1 rounded-full bg-slate-100 hover:bg-brand-50 text-ink-700"
                   >
                     <Tag className="w-3 h-3 text-brand-600" />
@@ -445,7 +495,7 @@ export const ToolDetailPage: React.FC = () => {
                   <ExternalLink className="w-4 h-4" />
                 </a>
                 <Link
-                  to={`/cong-cu?cat=${tool.categorySlug}`}
+                  to={`${hubBasePath}?cat=${tool.categorySlug}`}
                   className="px-5 py-3 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-ink-800 font-semibold text-xs transition-colors"
                 >
                   So sánh công cụ cùng nhóm
@@ -455,12 +505,12 @@ export const ToolDetailPage: React.FC = () => {
           </div>
         </div>
 
-        {/* 2. Use Cases, Pros & Limitations (3-Column Grid) */}
+        {/* 2. Use Cases, Pros & Limitations */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-3">
             <h2 className="text-sm font-extrabold uppercase tracking-wider text-ink-900 flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-brand-600" />
-              <span>Ứng dụng thực tế vào Đồ án</span>
+              <span>Ứng dụng thực tế vào Học tập & Đồ án</span>
             </h2>
             <ul className="space-y-2.5 text-xs text-ink-700 leading-relaxed">
               {tool.useCases.map((u, idx) => (
@@ -498,8 +548,7 @@ export const ToolDetailPage: React.FC = () => {
 
         {/* 3. HowTo Step-by-Step Guide & Practical Exercise / Prompt Box */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Left: HowTo Steps (7 cols) */}
-          <div className="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-4">
+          <div className={`${tool.samplePromptOrTask || (tool.alternatives && tool.alternatives.length > 0) ? 'lg:col-span-7' : 'lg:col-span-12'} bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-4`}>
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <h2 className="text-sm sm:text-base font-extrabold uppercase tracking-wider text-ink-900 flex items-center gap-2">
                 <ListChecks className="w-5 h-5 text-brand-600" />
@@ -525,59 +574,60 @@ export const ToolDetailPage: React.FC = () => {
             </ol>
           </div>
 
-          {/* Right: Practical Task / Prompt & Alternatives Comparison (5 cols) */}
-          <div className="lg:col-span-5 space-y-5">
-            {tool.samplePromptOrTask && (
-              <div className="bg-gradient-to-br from-[#1c244b] to-[#046bd2] text-white rounded-2xl p-6 shadow-soft space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-                    <span>BÀI TẬP / MẪU CÂU LỆNH THỰC HÀNH</span>
-                  </span>
-                  <button
-                    onClick={() => handleCopyPrompt(tool.samplePromptOrTask!)}
-                    className="inline-flex items-center gap-1 text-[11px] font-bold bg-white/15 hover:bg-white/25 px-2.5 py-1 rounded-lg transition-colors"
-                  >
-                    {copiedPrompt ? <Check className="w-3.5 h-3.5 text-emerald-300" /> : <Copy className="w-3.5 h-3.5" />}
-                    <span>{copiedPrompt ? 'Đã chép' : 'Sao chép'}</span>
-                  </button>
+          {(tool.samplePromptOrTask || (tool.alternatives && tool.alternatives.length > 0)) && (
+            <div className="lg:col-span-5 space-y-5">
+              {tool.samplePromptOrTask && (
+                <div className="bg-gradient-to-br from-[#1c244b] to-[#046bd2] text-white rounded-2xl p-6 shadow-soft space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                      <span>BÀI TẬP / MẪU CÂU LỆNH THỰC HÀNH</span>
+                    </span>
+                    <button
+                      onClick={() => handleCopyPrompt(tool.samplePromptOrTask!)}
+                      className="inline-flex items-center gap-1 text-[11px] font-bold bg-white/15 hover:bg-white/25 px-2.5 py-1 rounded-lg transition-colors"
+                    >
+                      {copiedPrompt ? <Check className="w-3.5 h-3.5 text-emerald-300" /> : <Copy className="w-3.5 h-3.5" />}
+                      <span>{copiedPrompt ? 'Đã chép' : 'Sao chép'}</span>
+                    </button>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-100 leading-relaxed bg-black/20 p-4 rounded-xl border border-white/15 font-mono">
+                    {tool.samplePromptOrTask}
+                  </p>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-100 leading-relaxed bg-black/20 p-4 rounded-xl border border-white/15 font-mono">
-                  {tool.samplePromptOrTask}
-                </p>
-              </div>
-            )}
+              )}
 
-            {tool.alternatives && tool.alternatives.length > 0 && (
-              <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-3">
-                <h2 className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-ink-900 flex items-center gap-2">
-                  <GitCompare className="w-4 h-4 text-brand-600" />
-                  <span>Đặt Lên Bàn Cân So Sánh (Alternatives)</span>
-                </h2>
-                <div className="space-y-2.5">
-                  {tool.alternatives.map((alt, idx) => (
-                    <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-1">
-                      <div className="font-bold text-ink-900 flex items-center justify-between">
-                        <span>So với {alt.name}</span>
-                        {alt.slug && (
-                          <Link
-                            to={`/cong-cu/${alt.slug}`}
-                            className="text-[11px] text-brand-600 hover:underline font-semibold"
-                          >
-                            Xem công cụ ›
-                          </Link>
-                        )}
-                      </div>
-                      <p className="text-ink-600 leading-relaxed">{alt.comparison}</p>
-                    </div>
-                  ))}
+              {tool.alternatives && tool.alternatives.length > 0 && (
+                <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-soft space-y-3">
+                  <h2 className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-ink-900 flex items-center gap-2">
+                    <GitCompare className="w-4 h-4 text-brand-600" />
+                    <span>Đặt Lên Bàn Cân So Sánh (Alternatives)</span>
+                  </h2>
+                  <div className="space-y-2.5">
+                    {tool.alternatives.map((alt, idx) => {
+                      const altUrl = resolveAlternativeLink(alt.slug);
+                      return (
+                        <div key={idx} className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs space-y-1">
+                          <div className="font-bold text-ink-900 flex items-center justify-between">
+                            <span>So với {alt.name}</span>
+                            {altUrl && (
+                              <Link to={altUrl} className="text-[11px] text-brand-600 hover:underline font-semibold">
+                                Xem công cụ ›
+                              </Link>
+                            )}
+                          </div>
+                          <p className="text-ink-600 leading-relaxed">{alt.comparison}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
+          )}
         </div>
 
-        {/* 4. Optional Long-Form SEO Content Body (Dành cho bài viết review chuyên sâu 1.500+ từ) */}
+        {/* 4. Optional Long-Form SEO Content Body */}
         {tool.contentHtml && (
           <article className="bg-white rounded-2xl shadow-soft border border-slate-200 p-6 sm:p-8 lg:p-10">
             <div
@@ -610,7 +660,7 @@ export const ToolDetailPage: React.FC = () => {
           </div>
         </div>
 
-        {/* 6. Related Academic & Practical Articles (SEO Internal Linking Cluster) */}
+        {/* 6. Related Academic & Practical Articles */}
         {relatedAcademicArticles.length > 0 && (
           <div className="bg-white rounded-2xl shadow-soft border border-slate-200 p-6 space-y-4">
             <div className="flex items-center justify-between">
@@ -630,7 +680,7 @@ export const ToolDetailPage: React.FC = () => {
           </div>
         )}
 
-        {/* 7. Lecturer / Editorial Bio Bar (EEAT Author Authority) */}
+        {/* 7. Lecturer / Editorial Bio Bar */}
         <div className="bg-white rounded-2xl shadow-soft border border-slate-200 p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <img
@@ -666,7 +716,7 @@ export const ToolDetailPage: React.FC = () => {
               <h3 className="text-sm font-extrabold uppercase tracking-wider text-ink-900">
                 CÔNG CỤ CÙNG NHÓM ({tool.category})
               </h3>
-              <Link to={`/cong-cu?cat=${tool.categorySlug}`} className="text-xs text-brand-600 font-bold hover:underline">
+              <Link to={`${hubBasePath}?cat=${tool.categorySlug}`} className="text-xs text-brand-600 font-bold hover:underline">
                 Xem tất cả ›
               </Link>
             </div>

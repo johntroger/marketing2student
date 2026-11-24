@@ -819,5 +819,35 @@ export const crmAutomationTools: MarketingTool[] = [
     limitations: 'Tài khoản Gmail cá nhân miễn phí giới hạn gửi tối đa 100 email/ngày qua Apps Script.',
     studentTip: 'Bạn không cần biết lập trình! Hãy mở Google Sheets -> Tiện ích mở rộng -> Apps Script, rồi nhờ Claude hoặc ChatGPT viết đoạn script theo đúng tên cột trong bảng của bạn.',
     verifiedAt: '2026-11-24'
+  },
+  {
+    id: 35,
+    slug: 'notion-ai',
+    name: 'Notion & Notion AI',
+    tagline: 'Không gian quản lý dự án Marketing, Content Calendar & Trợ lý AI tích hợp',
+    excerpt: 'Công cụ quốc dân để quản lý kho tài liệu nhóm, lịch nội dung (Content Hub) và gọi AI tóm tắt biên bản họp ngay trong trang ghi chú.',
+    category: 'Email Marketing, CRM & Tự động hóa',
+    categorySlug: 'crm-email-automation',
+    pricing: 'Freemium',
+    pricingDetail: 'Notion miễn phí cho cá nhân; gói Plus miễn phí 100% cho sinh viên có email .edu.vn; Notion AI là tiện ích bổ sung có dùng thử miễn phí.',
+    level: 'Cơ bản',
+    officialUrl: 'https://www.notion.so/',
+    tags: ['Workspace', 'Content Hub', 'Knowledge Base', 'Productivity'],
+    whatIsIt: 'Notion là không gian làm việc tất cả-trong-một (All-in-one Workspace) kết hợp ghi chú, cơ sở dữ liệu (Database) và trợ lý Notion AI giúp sinh viên quản lý lịch đăng bài, lưu trữ nghiên cứu thị trường và viết nháp nội dung cộng tác.',
+    bestFor: 'Tất cả nhóm sinh viên làm đồ án Marketing, Content Team và Project Manager.',
+    platforms: 'Web Browser, Windows/macOS, iOS & Android',
+    vietnameseSupport: 'Hỗ trợ gõ tiếng Việt, Markdown và Notion AI tiếng Việt mượt mà.',
+    studentPerk: 'Sinh viên đăng ký bằng email trường (`.edu.vn`) được nâng cấp miễn phí lên gói **Notion Plus** (tải file không giới hạn dung lượng, lịch sử phiên bản 30 ngày).',
+    useCases: [
+      'Xây dựng bảng Content Calendar dạng Kanban / Calendar View quản lý trạng thái bài viết (Idea -> Drafting -> Design -> Published).',
+      'Tổng hợp toàn bộ tài liệu nghiên cứu, chân dung khách hàng và biên bản họp nhóm vào một Wiki chung.'
+    ],
+    pros: [
+      'Linh hoạt tuyệt đối, có hàng nghìn template Marketing miễn phí từ cộng đồng.',
+      'Gói Education Plus miễn phí cực kỳ hào phóng cho sinh viên.'
+    ],
+    limitations: 'Notion AI riêng biệt chỉ cho dùng thử miễn phí một số lượt trước khi tính phí hàng tháng.',
+    studentTip: 'Đăng ký Notion bằng email `.edu.vn` để mở khóa gói Plus miễn phí và dùng làm Portfolio cá nhân (Publish to Web) cực đẹp khi đi xin việc.',
+    verifiedAt: '2026-11-24'
   }
 ];

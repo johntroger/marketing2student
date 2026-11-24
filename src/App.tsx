@@ -9,6 +9,7 @@ import { CategoryPage } from './pages/CategoryPage';
 import { ArticleDetailPage } from './pages/ArticleDetailPage';
 import { AboutPage } from './pages/AboutPage';
 import { ToolsCatalogPage } from './pages/ToolsCatalogPage';
+import { AiToolsCatalogPage } from './pages/AiToolsCatalogPage';
 import { ToolDetailPage } from './pages/ToolDetailPage';
 import { Search, X, Clock } from 'lucide-react';
 import { articles } from './data/articles';
@@ -142,6 +143,8 @@ export function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/cong-cu" element={<ToolsCatalogPage />} />
               <Route path="/cong-cu/:slug" element={<ToolDetailPage />} />
+              <Route path="/ai-tools" element={<AiToolsCatalogPage />} />
+              <Route path="/ai-tools/:slug" element={<ToolDetailPage />} />
               <Route path="/blog" element={<BlogCatalogPage />} />
               <Route path="/tai-nguyen" element={<ToolsCatalogPage />} />
 

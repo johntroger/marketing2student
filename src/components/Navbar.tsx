@@ -14,11 +14,13 @@ import {
   ExternalLink,
   Youtube,
   CheckSquare,
-  Wrench
+  Wrench,
+  Bot
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { articles } from '../data/articles';
 import { marketingTools } from '../data/tools';
+import { aiTools, allPlatformTools } from '../data/aiTools';
 import { searchArticles, searchTools } from '../utils/search';
 
 interface NavbarProps {
@@ -77,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
   };
 
   const searchResults = searchQuery.trim() ? searchArticles(articles, searchQuery, 4) : [];
-  const toolResults = searchQuery.trim() ? searchTools(marketingTools, searchQuery, 3) : [];
+  const toolResults = searchQuery.trim() ? searchTools(allPlatformTools, searchQuery, 4) : [];
 
   const trendingTags = [
     { label: 'Google Analytics 4', q: 'GA4' },
@@ -218,7 +220,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
                       {toolResults.length > 0 && (
                         <div>
                           <div className="px-3.5 pb-1.5 pt-0.5 text-[11px] font-bold uppercase tracking-wider text-brand-600 border-b border-slate-100 flex items-center justify-between">
-                            <span>Công cụ Marketing ({toolResults.length})</span>
+                            <span>Công cụ Martech & AI ({toolResults.length})</span>
                             <span className="text-[10px] lowercase font-normal text-slate-400">bấm xem chi tiết</span>
                           </div>
                           <div className="divide-y divide-slate-100">
@@ -227,13 +229,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
                                 key={tool.id}
                                 onClick={() => {
                                   setIsSearchFocused(false);
-                                  navigate(`/cong-cu/${tool.slug}`);
+                                  navigate(tool.isAiTool ? `/ai-tools/${tool.slug}` : `/cong-cu/${tool.slug}`);
                                 }}
                                 className="px-3.5 py-2 hover:bg-brand-50/50 cursor-pointer flex items-center justify-between gap-3 transition-colors group"
                               >
                                 <div className="min-w-0 flex-1">
                                   <div className="flex items-center gap-2">
-                                    <Wrench className="w-3.5 h-3.5 text-brand-600 shrink-0" />
+                                    {tool.isAiTool ? (
+                                      <Bot className="w-3.5 h-3.5 text-brand-600 shrink-0" />
+                                    ) : (
+                                      <Wrench className="w-3.5 h-3.5 text-brand-600 shrink-0" />
+                                    )}
                                     <span className="font-bold text-ink-900 group-hover:text-brand-600 truncate">{tool.name}</span>
                                     <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 shrink-0">
                                       {tool.pricing}
@@ -285,25 +291,36 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
                         </div>
                       )}
 
-                      <div className="pt-2 px-3 border-t border-slate-100 mt-1 flex gap-2">
+                      <div className="pt-2 px-3 border-t border-slate-100 mt-1 flex flex-wrap gap-2">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setIsSearchFocused(false);
+                            navigate(`/ai-tools?q=${encodeURIComponent(searchQuery.trim())}`);
+                          }}
+                          className="flex-1 py-2 px-2.5 bg-ink-900 hover:bg-ink-800 text-white font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                        >
+                          <Bot className="w-3.5 h-3.5 text-amber-300" />
+                          <span>Sàn AI Tools</span>
+                        </button>
                         <button
                           type="button"
                           onClick={() => {
                             setIsSearchFocused(false);
                             navigate(`/cong-cu?q=${encodeURIComponent(searchQuery.trim())}`);
                           }}
-                          className="flex-1 py-2 px-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                          className="flex-1 py-2 px-2.5 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 transition-colors"
                         >
                           <Wrench className="w-3.5 h-3.5" />
-                          <span>Tìm trong Sàn Công Cụ</span>
+                          <span>Sàn Công Cụ</span>
                         </button>
                         <button
                           type="button"
                           onClick={(e) => handleSearchSubmit(e)}
-                          className="flex-1 py-2 px-3 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 transition-colors"
+                          className="flex-1 py-2 px-2.5 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 transition-colors"
                         >
                           <BookOpen className="w-3.5 h-3.5" />
-                          <span>Tìm trong {articles.length} Bài viết</span>
+                          <span>Bài viết ({articles.length})</span>
                         </button>
                       </div>
                     </div>
@@ -427,14 +444,26 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
               </button>
             )}
 
+            {/* AI Tools Counter Button */}
+            <Link
+              to="/ai-tools"
+              className="relative p-2.5 hover:bg-brand-50 rounded-xl transition-colors border border-slate-200/80 bg-white hidden sm:inline-flex"
+              title={`Sàn ${aiTools.length}+ Công cụ AI`}
+            >
+              <Bot className="w-5 h-5 text-brand-600" />
+              <span className="absolute -top-1.5 -right-1.5 bg-ink-900 text-white text-[9px] font-black px-1 min-w-[20px] h-5 rounded-full flex items-center justify-center border-2 border-white shadow-2xs">
+                {aiTools.length}
+              </span>
+            </Link>
+
             {/* Tools Directory Counter Button */}
             <Link 
               to="/cong-cu" 
               className="relative p-2.5 hover:bg-brand-50 rounded-xl transition-colors border border-slate-200/80 bg-white"
-              title={`Sàn ${marketingTools.length}+ Công cụ Marketing & AI`}
+              title={`Sàn ${marketingTools.length}+ Công cụ Marketing & Martech`}
             >
               <Wrench className="w-5 h-5 text-ink-900" />
-              <span className="absolute -top-1.5 -right-1.5 bg-brand-600 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow-2xs">
+              <span className="absolute -top-1.5 -right-1.5 bg-brand-600 text-white text-[9px] font-black px-1 min-w-[20px] h-5 rounded-full flex items-center justify-center border-2 border-white shadow-2xs">
                 {marketingTools.length}
               </span>
             </Link>
@@ -487,11 +516,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
       {/* Category & Lab Navigation Ribbon - Full Width */}
       <div className="w-full bg-slate-50/80 border-t border-slate-200/80 text-xs hidden md:block">
         <div className="w-full px-4 sm:px-6 lg:px-10 py-2 flex items-center justify-between gap-4 overflow-x-auto whitespace-nowrap text-ink-700">
-          <div className="flex items-center gap-5 lg:gap-7">
+          <div className="flex items-center gap-5 lg:gap-6">
             <Link to="/" className="font-bold text-ink-900 hover:text-brand-600 transition-colors">TRANG CHỦ</Link>
             <Link to="/cong-cu" className="font-extrabold text-brand-600 hover:underline flex items-center gap-1">
               <Wrench className="w-3.5 h-3.5" />
               <span>SÀN CÔNG CỤ ({marketingTools.length}+)</span>
+            </Link>
+            <Link to="/ai-tools" className="font-extrabold text-ink-900 bg-brand-100/80 hover:bg-brand-200/80 px-2.5 py-0.5 rounded-md border border-brand-200 flex items-center gap-1 transition-colors">
+              <Bot className="w-3.5 h-3.5 text-brand-700" />
+              <span>SÀN AI TOOLS ({aiTools.length}+)</span>
             </Link>
             <Link to="/blog" className="font-bold text-ink-800 hover:text-brand-600 transition-colors">BÀI VIẾT ({articles.length})</Link>
             <Link to="/category/ai-marketing" className="hover:text-brand-600 transition-colors font-medium">AI Marketing</Link>
@@ -547,7 +580,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             Trang chủ
           </Link>
           <Link to="/cong-cu" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-brand-600 font-extrabold">
-            Sàn Công Cụ Marketing & AI ({marketingTools.length}+)
+            Sàn Công Cụ Marketing ({marketingTools.length}+)
+          </Link>
+          <Link to="/ai-tools" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-1.5 py-1.5 text-ink-900 font-extrabold">
+            <Bot className="w-4 h-4 text-brand-600" />
+            <span>Sàn AI Tools ({aiTools.length}+)</span>
           </Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-900 font-bold">
             Thư viện Bài viết ({articles.length})

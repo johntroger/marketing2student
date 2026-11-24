@@ -83,6 +83,8 @@ export interface MarketingTool {
   studentTip: string;
   featured?: boolean;
   verifiedAt: string;
+  /** Đánh dấu công cụ thuộc Sàn AI Tools (/ai-tools/:slug) thay vì Sàn Công Cụ Martech (/cong-cu/:slug) */
+  isAiTool?: boolean;
 
   // --- Mở rộng chuẩn SEO / AEO / GEO & Đăng bài hàng loạt (Optional with auto-fallback) ---
   /** [AEO Direct Answer] Câu định nghĩa cốt lõi 40–60 từ trả lời trực tiếp "Công cụ X là gì & giải quyết bài toán nào?" cho AI Overviews */

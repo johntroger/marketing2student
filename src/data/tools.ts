@@ -1,7 +1,6 @@
 import { MarketingTool, ToolCategoryInfo } from '../types';
 import { vietnamMartechTools } from './tools/vietnamMartech';
 import { analyticsTrackingTools } from './tools/analyticsTracking';
-import { aiContentTools } from './tools/aiContent';
 import { seoResearchTools } from './tools/seoResearch';
 import { designVideoAiTools } from './tools/designVideoAi';
 import { socialAdsResearchTools } from './tools/socialAdsResearch';
@@ -21,13 +20,6 @@ export const toolCategories: ToolCategoryInfo[] = [
     iconName: 'Flag'
   },
   {
-    id: 'ai-content-copywriting',
-    slug: 'ai-content-copywriting',
-    name: 'AI Content & Copywriting',
-    description: 'Trợ lý AI viết bài, lên ý tưởng chiến dịch, tạo kịch bản video và tối ưu thông điệp bán hàng.',
-    iconName: 'Bot'
-  },
-  {
     id: 'seo-keyword-research',
     slug: 'seo-keyword-research',
     name: 'SEO & Nghiên cứu Từ khóa',
@@ -44,8 +36,8 @@ export const toolCategories: ToolCategoryInfo[] = [
   {
     id: 'design-video-ai',
     slug: 'design-video-ai',
-    name: 'Thiết kế, Bao bì 3D & Video AI',
-    description: 'Thiết kế ấn phẩm, bao bì 3D (Pacdora), booth POSM (SketchUp), chỉnh sửa video ngắn và tạo hình ảnh AI.',
+    name: 'Thiết kế, Bao bì 3D, Ảnh & Video',
+    description: 'Thiết kế ấn phẩm (Canva, Figma), bao bì 3D (Pacdora), booth POSM (SketchUp) và biên tập video ngắn.',
     iconName: 'Palette'
   },
   {
@@ -66,14 +58,14 @@ export const toolCategories: ToolCategoryInfo[] = [
     id: 'ecommerce-landing-page',
     slug: 'ecommerce-landing-page',
     name: 'Thương mại điện tử & Landing Page',
-    description: 'Vận hành Shopee, TikTok Shop, Shopify, WooCommerce, Webflow và dựng web No-Code/AI.',
+    description: 'Vận hành Shopee, TikTok Shop, Shopify, WooCommerce, Webflow và dựng trang đích chuyển đổi.',
     iconName: 'ShoppingBag'
   },
   {
     id: 'market-research-academic',
     slug: 'market-research-academic',
     name: 'Nghiên cứu Thị trường & NCKH',
-    description: 'Dữ liệu Statista, Euromonitor, Think with Google, SmartPLS, Zotero, Google Scholar và GEO.',
+    description: 'Dữ liệu Statista, Euromonitor, Think with Google, SmartPLS, Zotero và Google Scholar.',
     iconName: 'Compass'
   },
   {
@@ -102,7 +94,6 @@ export const toolCategories: ToolCategoryInfo[] = [
 export const marketingTools: MarketingTool[] = [
   ...vietnamMartechTools,
   ...analyticsTrackingTools,
-  ...aiContentTools,
   ...seoResearchTools,
   ...designVideoAiTools,
   ...socialAdsResearchTools,
@@ -112,4 +103,4 @@ export const marketingTools: MarketingTool[] = [
   ...performanceAdsAffiliateTools,
   ...prEventInfluencerTools,
   ...b2bCdpRetentionTools,
-].sort((a, b) => a.id - b.id);
+].map((t) => ({ ...t, isAiTool: false })).sort((a, b) => a.id - b.id);

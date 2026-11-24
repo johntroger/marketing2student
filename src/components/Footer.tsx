@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Heart, ExternalLink, Youtube, Linkedin, Facebook, Wrench } from 'lucide-react';
+import { ShieldCheck, Heart, ExternalLink, Youtube, Linkedin, Facebook, Wrench, Bot } from 'lucide-react';
+import { marketingTools } from '../data/tools';
+import { aiTools } from '../data/aiTools';
 
 export const Footer: React.FC = () => {
   return (
@@ -115,9 +117,15 @@ export const Footer: React.FC = () => {
                 <Link to="/category/social-video-marketing" className="text-ink-600 hover:text-brand-600 transition-colors">Social Media & Video</Link>
               </li>
               <li>
-                <Link to="/cong-cu" className="text-brand-600 font-semibold hover:underline flex items-center gap-1">
-                  <Wrench className="w-4 h-4" />
-                  <span>Sàn Công Cụ Marketing & AI</span>
+                <Link to="/cong-cu" className="text-brand-600 font-semibold hover:underline flex items-center gap-1.5">
+                  <Wrench className="w-4 h-4 shrink-0" />
+                  <span>Sàn Công Cụ Marketing ({marketingTools.length}+)</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/ai-tools" className="text-brand-700 font-bold hover:underline flex items-center gap-1.5">
+                  <Bot className="w-4 h-4 shrink-0" />
+                  <span>Sàn AI Tools ({aiTools.length}+)</span>
                 </Link>
               </li>
             </ul>

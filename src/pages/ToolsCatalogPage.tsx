@@ -11,9 +11,11 @@ import {
   Check,
   Sparkles,
   Wrench,
+  Bot,
 } from 'lucide-react';
 import { ToolCard } from '../components/ToolCard';
 import { marketingTools, toolCategories } from '../data/tools';
+import { aiTools } from '../data/aiTools';
 import { useSEO } from '../utils/useSEO';
 import { matchTool } from '../utils/search';
 
@@ -231,6 +233,25 @@ export const ToolsCatalogPage: React.FC = () => {
           </button>
         </div>
       )}
+
+      {/* Cross-link to AI Tools Directory */}
+      <div className="pt-4 border-t border-slate-200">
+        <Link
+          to="/ai-tools"
+          className="block p-3 rounded-xl bg-gradient-to-br from-[#1c244b] to-[#046bd2] text-white shadow-xs hover:opacity-95 transition-opacity space-y-1"
+        >
+          <div className="flex items-center justify-between text-xs font-extrabold">
+            <span className="flex items-center gap-1.5">
+              <Bot className="w-3.5 h-3.5 text-amber-300" />
+              <span>Sàn AI Tools ({aiTools.length}+)</span>
+            </span>
+            <ChevronRight className="w-3.5 h-3.5 text-white" />
+          </div>
+          <p className="text-[11px] text-slate-200 leading-snug">
+            Tìm ChatGPT, NotebookLM, Tạo ảnh/Video AI, Làm Slide & Vibe Coding tại Sàn AI riêng biệt.
+          </p>
+        </Link>
+      </div>
     </div>
   );
 
@@ -252,10 +273,10 @@ export const ToolsCatalogPage: React.FC = () => {
                 <span>MARKETING TOOLS DIRECTORY FOR STUDENTS</span>
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-ink-900 tracking-tight">
-                Sàn Công Cụ Digital Marketing & AI Tuyển Chọn
+                Sàn Công Cụ Digital Marketing & Martech Tuyển Chọn
               </h1>
               <p className="text-xs sm:text-sm text-ink-600 mt-1 max-w-2xl leading-relaxed">
-                Tổng hợp, phân loại và thẩm định các công cụ Marketing thiết yếu — nói rõ chi phí, giới hạn bản miễn phí và mẹo áp dụng ngay vào đồ án sinh viên.
+                Tổng hợp, phân loại và thẩm định {marketingTools.length}+ nền tảng SEO, Đo lường GA4, Thiết kế, TMĐT, Quảng cáo, PR & CRM — nói rõ chi phí, giới hạn bản miễn phí và mẹo áp dụng vào đồ án.
               </p>
             </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Sparkles, ArrowUpRight, Wrench, Tag } from 'lucide-react';
+import { ShieldCheck, Sparkles, ArrowUpRight, Wrench, Tag, Bot } from 'lucide-react';
 import { MarketingTool } from '../types';
 import { getArticleCover } from '../utils/imageGenerator';
 
@@ -16,6 +16,8 @@ const pricingBadgeColors: Record<MarketingTool['pricing'], string> = {
 };
 
 export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
+  const detailPath = tool.isAiTool ? `/ai-tools/${tool.slug}` : `/cong-cu/${tool.slug}`;
+
   const coverUrl = getArticleCover({
     title: tool.name,
     category: tool.category,
@@ -27,7 +29,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
     <article className="group relative bg-white border border-slate-200/90 hover:border-brand-600 rounded-xl shadow-soft hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-150 flex flex-col justify-between overflow-hidden">
       {/* Cover */}
       <div className="relative aspect-video w-full overflow-hidden bg-slate-100">
-        <Link to={`/cong-cu/${tool.slug}`} className="block w-full h-full">
+        <Link to={detailPath} className="block w-full h-full">
           <img
             src={coverUrl}
             alt={tool.name}
@@ -36,9 +38,13 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           />
         </Link>
 
-        <div className="absolute top-2 left-2 z-10">
+        <div className="absolute top-2 left-2 z-10 flex items-center gap-1">
           <span className="bg-ink-900/90 text-white text-[10px] font-semibold px-2 py-0.5 rounded shadow-xs flex items-center gap-1 backdrop-blur-xs">
-            <Wrench className="w-2.5 h-2.5 text-brand-100" />
+            {tool.isAiTool ? (
+              <Bot className="w-2.5 h-2.5 text-indigo-200" />
+            ) : (
+              <Wrench className="w-2.5 h-2.5 text-brand-100" />
+            )}
             <span>{tool.level}</span>
           </span>
         </div>
@@ -67,7 +73,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           </div>
 
           <Link
-            to={`/cong-cu/${tool.slug}`}
+            to={detailPath}
             className="block text-xs sm:text-sm font-extrabold text-ink-900 group-hover:text-brand-600 transition-colors line-clamp-1"
             title={tool.name}
           >
@@ -95,10 +101,13 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
       </div>
 
       {/* Hover Action Bar */}
-      <div className="bg-ink-900 text-white text-center text-xs font-semibold py-1.5 hidden group-hover:flex items-center justify-center gap-1 transition-all">
+      <Link
+        to={detailPath}
+        className="bg-ink-900 text-white text-center text-xs font-semibold py-1.5 hidden group-hover:flex items-center justify-center gap-1 transition-all"
+      >
         <span>Xem đánh giá & hướng dẫn dùng</span>
         <ArrowUpRight className="w-3.5 h-3.5" />
-      </div>
+      </Link>
     </article>
   );
 };
