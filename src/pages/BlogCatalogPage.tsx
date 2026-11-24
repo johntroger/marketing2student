@@ -211,7 +211,7 @@ export const BlogCatalogPage: React.FC = () => {
 
   return (
     <div className="bg-surface-100 min-h-screen py-5 text-ink-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-10">
         {/* Breadcrumbs */}
         <div className="text-xs text-ink-500 mb-4 flex items-center gap-1.5">
           <Link to="/" className="text-brand-600 hover:underline">Trang chủ</Link>
@@ -412,7 +412,7 @@ export const BlogCatalogPage: React.FC = () => {
 
             {/* Articles Grid */}
             {paginatedArticles.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-3.5">
                 {paginatedArticles.map((item) => (
                   <ArticleCard key={item.id} article={item} />
                 ))}

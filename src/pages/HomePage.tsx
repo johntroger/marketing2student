@@ -108,7 +108,7 @@ export const HomePage: React.FC = () => {
     <div className="bg-surface-100 min-h-screen pb-16 text-ink-900">
       {/* 1. Hero & Lecturer Bio Section */}
       <section className="bg-white pb-6 shadow-xs border-b border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <div className="w-full px-4 sm:px-6 lg:px-10 pt-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Big Main Banner (2 cols) - Deep Navy (#1C244B) to Royal Blue (#046BD2) */}
             <div className="lg:col-span-2 relative rounded-xl overflow-hidden bg-gradient-to-br from-[#1c244b] via-[#172859] to-[#046bd2] text-white p-7 sm:p-10 flex flex-col justify-between min-h-[265px] border border-brand-900 shadow-soft">
@@ -257,7 +257,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 pt-6">
+      <div className="w-full px-4 sm:px-6 lg:px-10 space-y-6 pt-6">
         {/* 2. "SÀN CÔNG CỤ MARKETING & AI CHO SINH VIÊN" Section */}
         <section className="bg-white rounded-xl shadow-soft border border-slate-200 p-5 sm:p-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 mb-5 gap-3">

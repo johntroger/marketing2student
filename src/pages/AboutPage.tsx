@@ -23,7 +23,7 @@ export const AboutPage: React.FC = () => {
   });
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+    <div className="w-full px-4 sm:px-6 lg:px-10 py-10 space-y-8">
       {/* Lecturer Profile Hero Card */}
       <section className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-soft">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">

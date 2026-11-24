@@ -184,7 +184,7 @@ export const ToolsCatalogPage: React.FC = () => {
     <div className="bg-surface-100 min-h-screen pb-16 text-ink-900">
       {/* Header Banner */}
       <div className="bg-white border-b border-slate-200/90 py-7 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-10">
           <div className="flex items-center gap-2 text-xs text-ink-500 mb-3">
             <Link to="/" className="text-brand-600 hover:underline">Trang chủ</Link>
             <span>›</span>
@@ -221,7 +221,7 @@ export const ToolsCatalogPage: React.FC = () => {
       </div>
 
       {/* Main 2-Column Marketplace Layout */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <div className="w-full px-4 sm:px-6 lg:px-10 pt-6">
         <div className="flex flex-col lg:flex-row items-start gap-5">
           {/* Desktop Sidebar */}
           <aside className="hidden lg:block w-60 shrink-0 bg-white border border-slate-200/90 p-4 rounded-xl shadow-soft">
@@ -321,7 +321,7 @@ export const ToolsCatalogPage: React.FC = () => {
 
             {/* Tools Grid */}
             {filteredTools.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3.5">
                 {filteredTools.map((tool) => (
                   <ToolCard key={tool.id} tool={tool} />
                 ))}

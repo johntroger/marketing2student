@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
     <footer className="bg-white border-t border-slate-200 mt-16">
       {/* Signature Pastel Sky-Blue Top Banner (#D1EFFF) matching Marketing2Student brand */}
       <div className="bg-brand-100 border-b border-brand-200/80 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="w-full px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <span className="text-[10px] font-black uppercase tracking-wider bg-ink-900 text-white px-2.5 py-0.5 rounded">
               HỆ SINH THÁI HỌC THUẬT & THỰC CHIẾN
@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-14">
+      <div className="w-full px-4 sm:px-6 lg:px-10 py-12 lg:py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand info */}
           <div className="md:col-span-2 space-y-4">

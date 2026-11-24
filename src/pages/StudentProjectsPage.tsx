@@ -17,7 +17,7 @@ export const StudentProjectsPage: React.FC = () => {
     <div className="bg-surface-100 min-h-screen pb-16 text-ink-900">
       {/* Top Hero Banner */}
       <div className="bg-white border-b border-slate-200/90 py-8 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-10">
           <div className="flex items-center gap-2 text-xs text-ink-500 mb-3">
             <Link to="/" className="text-brand-600 hover:underline">Trang chủ</Link>
             <span>›</span>
@@ -54,7 +54,7 @@ export const StudentProjectsPage: React.FC = () => {
       </div>
 
       {/* Main Grid of Student Projects */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">
+      <div className="w-full px-4 sm:px-6 lg:px-10 pt-8 space-y-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {studentProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />

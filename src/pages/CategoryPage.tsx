@@ -148,7 +148,7 @@ export const CategoryPage: React.FC = () => {
     <div className="bg-surface-100 min-h-screen pb-16 text-ink-900">
       {/* Category Header Banner */}
       <div className="bg-white border-b border-slate-200/90 py-7 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-10">
           <div className="flex items-center gap-2 text-xs text-ink-500 mb-3">
             <Link to="/" className="text-brand-600 hover:underline">Trang chủ</Link>
             <span>›</span>
@@ -192,7 +192,7 @@ export const CategoryPage: React.FC = () => {
       </div>
 
       {/* Main 2-Column Body */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <div className="w-full px-4 sm:px-6 lg:px-10 pt-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
           {/* LEFT SIDEBAR */}
           <aside className="lg:col-span-1 hidden lg:block bg-white p-4 rounded-xl shadow-soft border border-slate-200 h-fit space-y-5">
