@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArticleCard } from '../components/ArticleCard';
-import { ProjectCard } from '../components/ProjectCard';
 import { ToolCard } from '../components/ToolCard';
 import { articles } from '../data/articles';
 import { categories } from '../data/categories';
-import { studentProjects } from '../data/studentProjects';
 import { marketingTools, toolCategories } from '../data/tools';
 import { useSEO } from '../utils/useSEO';
 import { 
@@ -20,7 +18,6 @@ import {
   Layers,
   CheckCircle2,
   BookOpen,
-  GraduationCap,
   Youtube,
   ExternalLink,
   Award,
@@ -42,11 +39,11 @@ export const HomePage: React.FC = () => {
 
   // SEO & Schema for HomePage
   useSEO({
-    title: 'Marketing2Student — Thư Viện Kiến Thức Marketing Thực Chiến & Phòng Lab Sinh Viên',
-    description: 'Thư viện hơn 119 bài phân tích Digital Marketing, AI Marketing, Đo lường GA4/A-B Testing chuẩn học thuật EEAT và Phòng Lab Đồ án Sinh viên do ThS. Trần Thanh Tùng biên tập.',
+    title: 'Marketing2Student — Sàn Công Cụ Marketing & Thư Viện Thực Chiến',
+    description: `Tổng hợp ${marketingTools.length}+ công cụ Digital Marketing, AI cho Marketing và ${articles.length} bài phân tích chuyên sâu chuẩn học thuật EEAT do ThS. Trần Thanh Tùng biên tập.`,
     canonicalUrl: 'https://marketing2student.com/',
     ogImage: 'https://marketing2student.com/og-cover.png',
-    keywords: ['marketing2student', 'ThS Trần Thanh Tùng', 'digital marketing', 'AI marketing', 'đo lường marketing', 'dự án sinh viên NTTU', 'vneconomics'],
+    keywords: ['marketing2student', 'công cụ marketing', 'AI marketing', 'ThS Trần Thanh Tùng', 'digital marketing', 'đo lường marketing', 'vneconomics'],
     jsonLdSchemas: [
       {
         '@context': 'https://schema.org',
@@ -85,7 +82,7 @@ export const HomePage: React.FC = () => {
     { label: 'Tools Miễn Phí', icon: <Sparkles className="w-5 h-5 text-emerald-600" />, link: '/cong-cu?pricing=Mi%E1%BB%85n+ph%C3%AD+100%25', external: false },
     { label: 'AI Marketing 2026', icon: <Bot className="w-5 h-5 text-blue-600" />, link: '/category/ai-marketing', external: false },
     { label: 'Đo Lường & GA4', icon: <BarChart3 className="w-5 h-5 text-teal-700" />, link: '/category/do-luong-marketing', external: false },
-    { label: 'Phòng Lab Sinh Viên', icon: <GraduationCap className="w-5 h-5 text-indigo-600" />, link: '/du-an-sinh-vien', external: false },
+    { label: 'SEO & Content', icon: <FileSearch className="w-5 h-5 text-indigo-600" />, link: '/category/seo-content-marketing', external: false },
     { label: 'Khóa Học YouTube', icon: <Youtube className="w-5 h-5 text-rose-600" />, link: 'https://www.youtube.com/watch?v=-FFQdJ3918M&list=PLKmW2URrf3HjXe1Xv5nUlyBtuPmyE8lSt', external: true },
     { label: 'Thi Thử Marketing', icon: <CheckSquare className="w-5 h-5 text-emerald-600" />, link: 'https://vneconomics.com/kiem-tra-kien-thuc-digital-marketing/', external: true },
     { label: 'Về Giảng Viên', icon: <Award className="w-5 h-5 text-amber-500" />, link: '/gioi-thieu', external: false },
@@ -122,7 +119,7 @@ export const HomePage: React.FC = () => {
                   <span className="text-brand-100">Làm Chủ AI & Marketing Thực Chiến.</span>
                 </h1>
                 <p className="text-xs sm:text-sm text-slate-200 max-w-xl leading-relaxed">
-                  Tổng hợp & thẩm định {marketingTools.length}+ công cụ Digital Marketing, AI cho Marketing (nói rõ bản miễn phí & giới hạn) cùng {articles.length} bài phân tích chuẩn EEAT và {studentProjects.length} dự án sinh viên.
+                  Tổng hợp & thẩm định {marketingTools.length}+ công cụ Digital Marketing, AI cho Marketing (nói rõ bản miễn phí & giới hạn) cùng {articles.length} bài phân tích chuẩn EEAT.
                 </p>
               </div>
 
@@ -353,46 +350,6 @@ export const HomePage: React.FC = () => {
                 </Link>
               );
             })}
-          </div>
-        </section>
-
-        {/* 3. "PHÒNG LAB DỰ ÁN CỦA SINH VIÊN" Section (All 7 Student Projects) */}
-        <section className="bg-white rounded-xl shadow-soft border border-slate-200 p-5 sm:p-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 mb-5 gap-3">
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-black uppercase tracking-wider text-white bg-brand-600 px-2.5 py-0.5 rounded">
-                  STUDENT MARKETING LAB
-                </span>
-                <span className="text-xs text-ink-500 font-medium">
-                  • Đồ án thực hành của sinh viên Đại học Nguyễn Tất Thành
-                </span>
-              </div>
-              <h2 className="text-base sm:text-lg font-extrabold text-ink-900 mt-1">
-                Dự Án Thương Hiệu & Landing Page Thực Chiến Của Sinh Viên ({studentProjects.length} Dự Án)
-              </h2>
-            </div>
-
-            <Link
-              to="/du-an-sinh-vien"
-              className="text-xs text-brand-600 font-bold hover:underline flex items-center self-start sm:self-auto"
-            >
-              <span>Xem Tất Cả {studentProjects.length} Dự Án Sinh Viên</span>
-              <ChevronRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {studentProjects.slice(0, 4).map((proj) => (
-              <ProjectCard key={proj.id} project={proj} />
-            ))}
-          </div>
-
-          {/* Secondary row for remaining 3 projects */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-            {studentProjects.slice(4, 7).map((proj) => (
-              <ProjectCard key={proj.id} project={proj} />
-            ))}
           </div>
         </section>
 

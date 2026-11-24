@@ -3,7 +3,6 @@ import { Link, useNavigate, useSearchParams, useLocation } from 'react-router-do
 import { 
   Search, 
   BookOpen, 
-  GraduationCap, 
   Menu, 
   X,
   ShieldCheck,
@@ -19,7 +18,6 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { articles } from '../data/articles';
-import { studentProjects } from '../data/studentProjects';
 import { marketingTools } from '../data/tools';
 import { searchArticles, searchTools } from '../utils/search';
 
@@ -498,11 +496,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             <Link to="/blog" className="font-bold text-ink-800 hover:text-brand-600 transition-colors">BÀI VIẾT ({articles.length})</Link>
             <Link to="/category/ai-marketing" className="hover:text-brand-600 transition-colors font-medium">AI Marketing</Link>
             <Link to="/category/do-luong-marketing" className="hover:text-brand-600 transition-colors font-medium">Đo lường & GA4</Link>
-            <Link to="/category/seo-content-marketing" className="hover:text-brand-600 transition-colors font-medium hidden xl:inline">SEO & Content</Link>
-            <Link to="/du-an-sinh-vien" className="hover:text-brand-600 transition-colors flex items-center gap-1 text-ink-900 font-bold">
-              <GraduationCap className="w-3.5 h-3.5 text-brand-600" />
-              <span>Phòng Lab Sinh Viên ({studentProjects.length})</span>
-            </Link>
+            <Link to="/category/seo-content-marketing" className="hover:text-brand-600 transition-colors font-medium">SEO & Content</Link>
+            <Link to="/category/social-video-marketing" className="hover:text-brand-600 transition-colors font-medium hidden xl:inline">Social & Video</Link>
             <Link to="/gioi-thieu" className="hover:text-brand-600 transition-colors flex items-center gap-1 text-ink-700 font-medium">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               <span>Giới thiệu Giảng viên</span>
@@ -556,9 +551,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
           </Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-900 font-bold">
             Thư viện Bài viết ({articles.length})
-          </Link>
-          <Link to="/du-an-sinh-vien" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-900 font-bold">
-            Phòng Lab Dự án Sinh viên ({studentProjects.length})
           </Link>
           <Link to="/category/ai-marketing" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-700">
             • AI Marketing & Tự động hóa

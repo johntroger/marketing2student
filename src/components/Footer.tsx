@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Heart, ExternalLink, Youtube, Linkedin, Facebook, GraduationCap } from 'lucide-react';
+import { ShieldCheck, Heart, ExternalLink, Youtube, Linkedin, Facebook, Wrench } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
               </div>
             </Link>
             <p className="text-sm text-ink-600 max-w-md leading-relaxed">
-              Chuyên trang chia sẻ kiến thức Digital Marketing, AI Marketing, Đo lường phân tích dữ liệu (GA4/A-B Testing) kết hợp trích dẫn nghiên cứu học thuật quốc tế và Phòng Lab trưng bày đồ án thực chiến của sinh viên.
+              Sàn giới thiệu công cụ Digital Marketing, AI Marketing và thư viện kiến thức thực chiến chuẩn EEAT (GA4, A/B Testing, SEO) dành cho sinh viên Việt Nam.
             </p>
             <div className="flex items-center gap-3 pt-1">
               <a
@@ -115,9 +115,9 @@ export const Footer: React.FC = () => {
                 <Link to="/category/social-video-marketing" className="text-ink-600 hover:text-brand-600 transition-colors">Social Media & Video</Link>
               </li>
               <li>
-                <Link to="/du-an-sinh-vien" className="text-brand-600 font-semibold hover:underline flex items-center gap-1">
-                  <GraduationCap className="w-4 h-4" />
-                  <span>Phòng Lab Đồ án Sinh viên</span>
+                <Link to="/cong-cu" className="text-brand-600 font-semibold hover:underline flex items-center gap-1">
+                  <Wrench className="w-4 h-4" />
+                  <span>Sàn Công Cụ Marketing & AI</span>
                 </Link>
               </li>
             </ul>

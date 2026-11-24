@@ -12,243 +12,20 @@ import {
   Heart,
   BookOpen,
   Sparkles,
-  GraduationCap,
+  Wrench,
   Tag,
-  ExternalLink,
-  Layers,
-  Users,
-  Eye,
-  FileText
+  ExternalLink
 } from 'lucide-react';
 import { articles } from '../data/articles';
-import { studentProjects } from '../data/studentProjects';
 import { categories } from '../data/categories';
 import { getArticleCover } from '../utils/imageGenerator';
 import { ArticleCard } from '../components/ArticleCard';
-import { ProjectCard } from '../components/ProjectCard';
 import { useSEO } from '../utils/useSEO';
 import { ReviewSection } from '../components/ReviewSection';
-import { StudentProject } from '../types';
-
-export const ProjectDetailView: React.FC<{ project: StudentProject }> = ({ project }) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'live'>('overview');
-
-  const coverUrl = getArticleCover({
-    title: project.brandName,
-    category: 'AI Marketing & Tự động hóa',
-    topic: project.industry,
-    readTime: project.semester,
-    featuredImage: project.coverImage,
-  });
-
-  const otherProjects = useMemo(() => {
-    return studentProjects.filter((p) => p.id !== project.id).slice(0, 3);
-  }, [project.id]);
-
-  useSEO({
-    title: `${project.brandName} — Dự Án Digital Marketing Sinh Viên | Marketing2Student`,
-    description: project.excerpt,
-    canonicalUrl: `https://marketing2student.com/du-an-sinh-vien/${project.slug}`,
-    ogImage: coverUrl,
-    ogType: 'article',
-    publishedTime: project.publishedAt,
-    keywords: [project.brandName, project.industry, ...project.marketingAngles, 'dự án sinh viên NTTU', 'marketing2student'],
-    jsonLdSchemas: [
-      {
-        '@context': 'https://schema.org',
-        '@type': 'CreativeWork',
-        'name': `${project.brandName} — Đồ án Digital Marketing`,
-        'description': project.excerpt,
-        'url': `https://marketing2student.com/du-an-sinh-vien/${project.slug}`,
-        'image': coverUrl,
-        'datePublished': project.publishedAt,
-        'author': {
-          '@type': 'Organization',
-          'name': project.studentGroup
-        }
-      }
-    ]
-  });
-
-  return (
-    <div className="bg-surface-100 min-h-screen py-6 text-ink-900">
-      <div className="w-full px-4 sm:px-6 lg:px-10 space-y-6">
-        {/* Breadcrumbs */}
-        <nav className="flex items-center gap-2 text-xs text-ink-500 flex-wrap">
-          <Link to="/" className="text-brand-600 hover:underline">Trang chủ</Link>
-          <span>›</span>
-          <Link to="/du-an-sinh-vien" className="text-brand-600 hover:underline">Phòng Lab Dự Án Sinh Viên</Link>
-          <span>›</span>
-          <span className="text-ink-900 font-bold truncate max-w-md">{project.brandName}</span>
-        </nav>
-
-        {/* Project Summary Card */}
-        <div className="bg-white rounded-2xl shadow-soft border border-slate-200 p-6 sm:p-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            {/* Left Gallery (5 cols) */}
-            <div className="lg:col-span-5 space-y-4">
-              <div className="relative aspect-video w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
-                <img
-                  src={coverUrl}
-                  alt={project.brandName}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5">
-                  <span className="bg-ink-900/90 text-white text-[10px] font-bold px-2.5 py-1 rounded shadow-xs flex items-center gap-1">
-                    <GraduationCap className="w-3.5 h-3.5 text-brand-100" />
-                    <span>STUDENT LAB</span>
-                  </span>
-                </div>
-              </div>
-
-              {project.gallery.length > 1 && (
-                <div className="grid grid-cols-4 gap-2">
-                  {project.gallery.slice(0, 4).map((imgUrl, idx) => (
-                    <div key={idx} className="aspect-video rounded-lg overflow-hidden border border-slate-200 bg-slate-50">
-                      <img src={imgUrl} alt={`${project.brandName} ${idx + 1}`} className="w-full h-full object-cover" />
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              <div className="p-3.5 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-900">
-                <strong>Lưu ý học thuật:</strong> Đây là sản phẩm thực hành học phần Digital Marketing của sinh viên Trường Đại học Nguyễn Tất Thành. Mọi thông tin sản phẩm, giá bán và biểu mẫu chỉ phục vụ mục đích học tập.
-              </div>
-            </div>
-
-            {/* Right Metadata & Strategy Highlights (7 cols) */}
-            <div className="lg:col-span-7 space-y-4">
-              <div>
-                <div className="flex flex-wrap items-center gap-2 mb-2">
-                  <span className="bg-brand-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded">
-                    {project.semester}
-                  </span>
-                  <span className="text-xs font-semibold text-brand-700 bg-brand-50 border border-brand-200 px-2.5 py-0.5 rounded">
-                    {project.industry}
-                  </span>
-                </div>
-                <h1 className="text-2xl sm:text-3xl font-extrabold text-ink-900 leading-tight">
-                  {project.brandName}
-                </h1>
-                <p className="text-xs text-ink-500 mt-1 flex items-center gap-2">
-                  <Users className="w-3.5 h-3.5 text-brand-600" />
-                  <span>Thực hiện bởi: <strong>{project.studentGroup}</strong> • Giảng viên hướng dẫn: <strong>ThS. Trần Thanh Tùng</strong></span>
-                </p>
-              </div>
-
-              <p className="text-xs sm:text-sm text-ink-700 leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-200/80">
-                {project.excerpt}
-              </p>
-
-              {/* Strategic Highlights */}
-              <div className="space-y-2">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-ink-900">
-                  Điểm sáng Chiến lược & Kỹ thuật Marketing:
-                </h3>
-                <ul className="space-y-2 text-xs text-ink-700">
-                  {project.highlights.map((h, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                      <span>{h}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Angles */}
-              <div className="flex flex-wrap items-center gap-1.5 pt-2">
-                {project.marketingAngles.map((ang, i) => (
-                  <span
-                    key={i}
-                    className="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-brand-50 text-brand-700 border border-brand-200"
-                  >
-                    #{ang}
-                  </span>
-                ))}
-              </div>
-
-              {/* View Mode Switcher Buttons */}
-              <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-100">
-                <button
-                  onClick={() => setActiveTab('overview')}
-                  className={`px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-colors ${
-                    activeTab === 'overview'
-                      ? 'bg-brand-600 text-white shadow-xs'
-                      : 'bg-slate-100 text-ink-700 hover:bg-slate-200'
-                  }`}
-                >
-                  <FileText className="w-4 h-4" />
-                  <span>Phân Tích & Nội Dung Đồ Án</span>
-                </button>
-                <button
-                  onClick={() => setActiveTab('live')}
-                  className={`px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-colors ${
-                    activeTab === 'live'
-                      ? 'bg-ink-900 text-white shadow-xs'
-                      : 'bg-slate-100 text-ink-700 hover:bg-slate-200'
-                  }`}
-                >
-                  <Eye className="w-4 h-4" />
-                  <span>Xem Toàn Bộ Landing Page Gốc Của Sinh Viên</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Project Content Display */}
-        <div className="bg-white rounded-2xl shadow-soft border border-slate-200 p-6 sm:p-8">
-          <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
-            <h2 className="text-sm sm:text-base font-extrabold uppercase tracking-wider text-ink-900 flex items-center gap-2">
-              <Layers className="w-4 h-4 text-brand-600" />
-              <span>
-                {activeTab === 'overview'
-                  ? `Nội dung Landing Page & Copywriting của dự án ${project.brandName}`
-                  : `Bản dựng Landing Page thực hành: ${project.brandName}`}
-              </span>
-            </h2>
-            <span className="text-xs text-ink-400">Mã trang WP: #{project.wpId}</span>
-          </div>
-
-          <div
-            className="article-prose text-xs sm:text-sm text-ink-800 leading-relaxed overflow-x-auto"
-            dangerouslySetInnerHTML={{ __html: project.contentHtml }}
-          />
-        </div>
-
-        {/* Review & Feedback Section for Student Project */}
-        <ReviewSection articleSlug={project.slug} articleTitle={`Dự án Sinh viên: ${project.brandName}`} />
-
-        {/* Other Student Projects */}
-        <div className="space-y-4 pt-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-sm font-extrabold uppercase tracking-wider text-ink-900">
-              CÁC DỰ ÁN SINH VIÊN KHÁC TRONG PHÒNG LAB
-            </h3>
-            <Link to="/du-an-sinh-vien" className="text-xs text-brand-600 font-bold hover:underline">
-              Xem tất cả {studentProjects.length} dự án ›
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {otherProjects.map((p) => (
-              <ProjectCard key={p.id} project={p} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export const ArticleDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const [isBookmarked, setIsBookmarked] = useState(false);
-
-  // Check if slug matches a Student Project first (preserves original root URLs like /choko-2/, /aquaremindofficial/, /elora-seochill/, etc.)
-  const matchedProject = useMemo(() => {
-    if (!slug) return undefined;
-    return studentProjects.find((p) => p.slug === slug);
-  }, [slug]);
 
   const article = useMemo(() => {
     if (!slug) return undefined;
@@ -318,20 +95,12 @@ export const ArticleDetailPage: React.FC = () => {
   }, [article]);
 
   useSEO({
-    title: article
-      ? `${article.title} | Marketing2Student`
-      : matchedProject
-      ? `${matchedProject.brandName} — Dự Án Sinh Viên | Marketing2Student`
-      : 'Bài viết Marketing2Student',
-    description: article?.excerpt || matchedProject?.excerpt || 'Thư viện kiến thức Marketing thực chiến chuẩn EEAT.',
-    canonicalUrl: article
-      ? `https://marketing2student.com/${article.slug}`
-      : matchedProject
-      ? `https://marketing2student.com/${matchedProject.slug}`
-      : 'https://marketing2student.com/blog',
+    title: article ? `${article.title} | Marketing2Student` : 'Bài viết Marketing2Student',
+    description: article?.excerpt || 'Thư viện kiến thức Marketing thực chiến chuẩn EEAT.',
+    canonicalUrl: article ? `https://marketing2student.com/${article.slug}` : 'https://marketing2student.com/blog',
     ogImage: coverUrl || 'https://marketing2student.com/og-cover.png',
     ogType: 'article',
-    publishedTime: article?.publishedAt || matchedProject?.publishedAt,
+    publishedTime: article?.publishedAt,
     modifiedTime: article?.modifiedAt,
     keywords: article ? [article.title, article.category, article.topic, ...article.tags, 'marketing2student'] : [],
     jsonLdSchemas: article
@@ -402,10 +171,6 @@ export const ArticleDetailPage: React.FC = () => {
         ]
       : [],
   });
-
-  if (matchedProject) {
-    return <ProjectDetailView project={matchedProject} />;
-  }
 
   if (!article) {
     return (
@@ -756,23 +521,23 @@ export const ArticleDetailPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Widget 3: Student Lab Promo */}
+            {/* Widget 3: Tools Directory Promo */}
             <div className="bg-gradient-to-br from-[#1c244b] to-[#046bd2] text-white rounded-2xl p-5 shadow-soft space-y-3">
               <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider bg-white/15 px-2.5 py-0.5 rounded">
-                <GraduationCap className="w-3.5 h-3.5 text-brand-100" />
-                <span>PHÒNG LAB SINH VIÊN</span>
+                <Wrench className="w-3.5 h-3.5 text-brand-100" />
+                <span>SÀN CÔNG CỤ MARKETING</span>
               </div>
               <h3 className="text-sm sm:text-base font-extrabold leading-snug">
-                Khám phá 7 Dự án Thương hiệu & Landing Page của Sinh viên NTTU
+                Khám phá 24+ Công cụ Digital Marketing & AI Tuyển Chọn
               </h3>
               <p className="text-xs text-slate-200 leading-relaxed">
-                Xem cách sinh viên áp dụng lý thuyết Marketing vào thiết kế trang đích CHOKO, AQUA REMIND, Bát Mộc Trà, Nước hoa Elora và Golden.
+                Tra cứu nhanh GA4, GTM, Microsoft Clarity, ChatGPT, Claude, Meta Ad Library, Semrush kèm ưu đãi và mẹo dùng cho sinh viên.
               </p>
               <Link
-                to="/du-an-sinh-vien"
+                to="/cong-cu"
                 className="block w-full text-center py-2.5 px-4 rounded-xl bg-white text-ink-900 font-bold text-xs uppercase tracking-wider hover:bg-brand-50 transition-colors"
               >
-                Vào Phòng Lab Sinh Viên
+                Mở Sàn Công Cụ Marketing
               </Link>
             </div>
           </aside>

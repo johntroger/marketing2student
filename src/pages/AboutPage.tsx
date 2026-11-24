@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { useSEO } from '../utils/useSEO';
 import { articles } from '../data/articles';
-import { studentProjects } from '../data/studentProjects';
+import { marketingTools } from '../data/tools';
 
 export const AboutPage: React.FC = () => {
   useSEO({
@@ -85,12 +85,12 @@ export const AboutPage: React.FC = () => {
 
             <div className="grid grid-cols-3 gap-4 pt-3 border-t border-slate-100">
               <div>
-                <div className="text-xl font-black text-brand-600">{articles.length}+</div>
-                <div className="text-xs text-ink-500">Chuyên đề & Bài phân tích</div>
+                <div className="text-xl font-black text-brand-600">{marketingTools.length}+</div>
+                <div className="text-xs text-ink-500">Công cụ Marketing & AI</div>
               </div>
               <div>
-                <div className="text-xl font-black text-ink-900">{studentProjects.length}</div>
-                <div className="text-xs text-ink-500">Phòng Lab Dự án Sinh viên</div>
+                <div className="text-xl font-black text-ink-900">{articles.length}+</div>
+                <div className="text-xs text-ink-500">Chuyên đề & Bài phân tích</div>
               </div>
               <div>
                 <div className="text-xl font-black text-emerald-600">EEAT</div>
@@ -135,10 +135,10 @@ export const AboutPage: React.FC = () => {
           </div>
           <span className="text-xs font-mono font-bold text-emerald-600">Trụ cột 3</span>
           <h2 className="text-base sm:text-lg font-bold text-ink-900">
-            Phòng Lab Đồ án Thực chiến (Student Lab)
+            Sàn Công Cụ Marketing & AI Tuyển Chọn
           </h2>
           <p className="text-xs sm:text-sm text-ink-600 leading-relaxed">
-            Sinh viên trực tiếp lập nhóm, sáng tạo thương hiệu mới, thiết kế Landing Page, gắn mã đo lường chuyển đổi và vận hành chiến dịch thử nghiệm ngay trong quá trình học tập tại trường.
+            Thẩm định và phân loại chi tiết các phần mềm Digital Marketing, AI tạo sinh, SEO và Analytics phổ biến nhất — nói rõ bản miễn phí, giới hạn và mẹo ứng dụng ngay vào bài tập thực hành.
           </p>
         </section>
       </div>

@@ -7,7 +7,6 @@ import { HomePage } from './pages/HomePage';
 import { BlogCatalogPage } from './pages/BlogCatalogPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { ArticleDetailPage } from './pages/ArticleDetailPage';
-import { StudentProjectsPage } from './pages/StudentProjectsPage';
 import { AboutPage } from './pages/AboutPage';
 import { ToolsCatalogPage } from './pages/ToolsCatalogPage';
 import { ToolDetailPage } from './pages/ToolDetailPage';
@@ -150,15 +149,11 @@ export function App() {
               <Route path="/category/:slug" element={<CategoryPage />} />
               <Route path="/danh-muc/:slug" element={<CategoryPage />} />
 
-              {/* Student Marketing Lab routes */}
-              <Route path="/du-an-sinh-vien" element={<StudentProjectsPage />} />
-              <Route path="/du-an-sinh-vien/:slug" element={<ArticleDetailPage />} />
-
               {/* Lecturer Profile & EEAT Editorial Methodology */}
               <Route path="/gioi-thieu" element={<AboutPage />} />
               <Route path="/tieu-chi" element={<AboutPage />} />
 
-              {/* Article & Student Project Detail routes (both /bai-viet/:slug and original WordPress root /:slug) */}
+              {/* Article Detail routes (both /bai-viet/:slug and original WordPress root /:slug) */}
               <Route path="/bai-viet/:slug" element={<ArticleDetailPage />} />
               <Route path="/:slug" element={<ArticleDetailPage />} />
 
