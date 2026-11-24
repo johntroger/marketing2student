@@ -521,36 +521,6 @@ export const socialAdsResearchTools: MarketingTool[] = [
     verifiedAt: '2026-11-24'
   },
   {
-    id: 126,
-    slug: 'metric-vn-ecommerce',
-    name: 'Metric.vn (Nền tảng Số liệu E-commerce VN)',
-    tagline: 'Phân tích doanh thu, sản lượng bán & thị phần sàn TMĐT Shopee, Lazada, TikTok Shop',
-    excerpt: 'Công cụ dữ liệu thị trường thương mại điện tử hàng đầu Việt Nam: xem ngành hàng nào đang tăng trưởng, mức giá bán chạy nhất và doanh thu ước tính của các shop.',
-    category: 'Social Media & Thư viện Quảng cáo',
-    categorySlug: 'social-ads-research',
-    pricing: 'Freemium',
-    pricingDetail: 'Cung cấp miễn phí nhiều báo cáo tổng quan ngành hàng quý/năm và tra cứu xem trước cơ bản; gói phân tích chi tiết trả phí theo tháng.',
-    level: 'Cơ bản',
-    officialUrl: 'https://metric.vn/',
-    tags: ['E-commerce Data', 'Shopee', 'TikTok Shop', 'Vietnam Market'],
-    whatIsIt: 'Metric.vn là nền tảng phân tích dữ liệu thị trường thương mại điện tử (E-commerce Intelligence) tại Việt Nam, tổng hợp dữ liệu lớn từ Shopee, Lazada, Tiki, Sendo và TikTok Shop về doanh số, sản lượng, phân khúc giá và thị phần thương hiệu.',
-    bestFor: 'E-commerce Marketer, Trade Marketer và sinh viên làm đồ án nghiên cứu thị trường bán lẻ/TMĐT tại Việt Nam.',
-    platforms: 'Web Browser (metric.vn)',
-    vietnameseSupport: 'Sản phẩm Make-in-Vietnam, giao diện và dữ liệu 100% cho thị trường Việt Nam.',
-    studentPerk: 'Thư viện **Báo cáo Thị trường Sàn TMĐT** theo quý/năm của Metric.vn cho phép tải miễn phí rất nhiều số liệu chuẩn để trích dẫn vào khóa luận và đồ án.',
-    useCases: [
-      'Trích dẫn số liệu tăng trưởng doanh thu ngành hàng (Mỹ phẩm, Thời trang, F&B, Gia dụng) trên Shopee và TikTok Shop tại Việt Nam.',
-      'Xác định phân khúc giá nào (ví dụ: 100k–200k vs 200k–500k) đang chiếm tỷ trọng doanh thu cao nhất trong ngành.'
-    ],
-    pros: [
-      'Số liệu thực tế sát sườn nhất với thị trường bán lẻ trực tuyến Việt Nam.',
-      'Báo cáo tổng quan định kỳ trình bày rất chuyên nghiệp, dễ trích dẫn.'
-    ],
-    limitations: 'Tra cứu chi tiết từng SKU và lịch sử doanh thu từng shop yêu cầu tài khoản trả phí.',
-    studentTip: 'Vào mục "Báo cáo thị trường" trên Metric.vn tải các bản báo cáo miễn phí mới nhất để làm nguồn dẫn chứng cực kỳ thuyết phục cho chương Tổng quan thị trường.',
-    verifiedAt: '2026-11-24'
-  },
-  {
     id: 127,
     slug: 'kalodata',
     name: 'Kalodata',

@@ -29,7 +29,8 @@ import {
   Mail,
   ShoppingBag,
   Compass,
-  Target
+  Target,
+  Flag
 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
@@ -105,6 +106,7 @@ export const HomePage: React.FC = () => {
     ShoppingBag: <ShoppingBag className="w-4 h-4" />,
     Compass: <Compass className="w-4 h-4" />,
     Target: <Target className="w-4 h-4" />,
+    Flag: <Flag className="w-4 h-4" />,
   };
 
   return (
@@ -288,7 +290,7 @@ export const HomePage: React.FC = () => {
           </div>
 
           {/* Tool Categories Quick Pills */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-2.5 mb-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 mb-5">
             {toolCategories.map((tc) => (
               <Link
                 key={tc.id}

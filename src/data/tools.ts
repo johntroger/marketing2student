@@ -1,4 +1,5 @@
 import { MarketingTool, ToolCategoryInfo } from '../types';
+import { vietnamMartechTools } from './tools/vietnamMartech';
 import { analyticsTrackingTools } from './tools/analyticsTracking';
 import { aiContentTools } from './tools/aiContent';
 import { seoResearchTools } from './tools/seoResearch';
@@ -10,6 +11,13 @@ import { marketResearchAcademicTools } from './tools/marketResearchAcademic';
 import { performanceAdsAffiliateTools } from './tools/performanceAdsAffiliate';
 
 export const toolCategories: ToolCategoryInfo[] = [
+  {
+    id: 'vietnam-martech',
+    slug: 'vietnam-martech',
+    name: 'Công cụ Việt Nam (Make-in-VN)',
+    description: 'Hệ sinh thái Martech, Landing Page, Omnichannel, Social Listening, Ads & Affiliate hàng đầu tại Việt Nam.',
+    iconName: 'Flag'
+  },
   {
     id: 'ai-content-copywriting',
     slug: 'ai-content-copywriting',
@@ -56,26 +64,27 @@ export const toolCategories: ToolCategoryInfo[] = [
     id: 'ecommerce-landing-page',
     slug: 'ecommerce-landing-page',
     name: 'Thương mại điện tử & Landing Page',
-    description: 'Vận hành Shopee, TikTok Shop, Haravan, Sapo, LadiPage, Shopify và dựng web No-Code/AI.',
+    description: 'Vận hành Shopee, TikTok Shop, Shopify, WooCommerce, Webflow và dựng web No-Code/AI.',
     iconName: 'ShoppingBag'
   },
   {
     id: 'market-research-academic',
     slug: 'market-research-academic',
     name: 'Nghiên cứu Thị trường & NCKH',
-    description: 'Báo cáo thị trường (Decision Lab, Q&Me), Social Listening (YouNet, Buzzmetrics), SmartPLS, Zotero và GEO.',
+    description: 'Dữ liệu Statista, Euromonitor, Think with Google, SmartPLS, Zotero, Google Scholar và GEO.',
     iconName: 'Compass'
   },
   {
     id: 'performance-ads-affiliate',
     slug: 'performance-ads-affiliate',
     name: 'Quảng cáo, Local SEO & Affiliate',
-    description: 'Meta/Google/TikTok/Zalo Ads, Google Business Profile (Maps), Accesstrade, Shopee Affiliate và MMP.',
+    description: 'Meta/Google/TikTok Ads, Google Business Profile (Maps), Shopee/TikTok Affiliate và MMP.',
     iconName: 'Target'
   }
 ];
 
 export const marketingTools: MarketingTool[] = [
+  ...vietnamMartechTools,
   ...analyticsTrackingTools,
   ...aiContentTools,
   ...seoResearchTools,

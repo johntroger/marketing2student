@@ -54,6 +54,7 @@ export const ToolDetailPage: React.FC = () => {
     }
 
     const toolCatToArticleCat: Record<string, string> = {
+      'vietnam-martech': 'quang-cao-b2b-tang-truong',
       'ai-content-copywriting': 'ai-marketing',
       'seo-keyword-research': 'seo-content-marketing',
       'analytics-tracking': 'do-luong-marketing',
