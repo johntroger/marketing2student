@@ -1,0 +1,9 @@
+# Robots.txt for Marketing2Student (marketing2student.com)
+User-agent: *
+Allow: /
+
+# Host
+Host: https://marketing2student.com
+
+# Sitemap
+Sitemap: https://marketing2student.com/sitemap.xml

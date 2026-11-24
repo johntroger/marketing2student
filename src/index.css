@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #1c244b;
+    font-family: "Plus Jakarta Sans", Inter, Roboto, system-ui, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Typography styles for WordPress & Academic HTML content */
+.article-prose {
+  line-height: 1.8;
+  color: #324a6d;
+}
+
+.article-prose h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1c244b;
+  margin-top: 2rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.article-prose h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1c244b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.article-prose h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c244b;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-prose p {
+  margin-bottom: 1.1rem;
+}
+
+.article-prose ol,
+.article-prose ul {
+  margin-bottom: 1.1rem;
+  padding-left: 1.5rem;
+}
+
+.article-prose ol {
+  list-style-type: decimal;
+}
+
+.article-prose ul {
+  list-style-type: disc;
+}
+
+.article-prose li {
+  margin-bottom: 0.45rem;
+}
+
+.article-prose a {
+  color: #046bd2;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article-prose a:hover {
+  color: #045cb4;
+}
+
+.article-prose strong {
+  color: #1c244b;
+  font-weight: 700;
+}
+
+.article-prose figure,
+.article-prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-prose figcaption,
+.article-prose .wp-caption-text {
+  font-size: 0.78rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+.article-prose blockquote {
+  border-left: 4px solid #046bd2;
+  background-color: #f0f8ff;
+  padding: 0.85rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 1.25rem 0;
+  color: #1c244b;
+  font-style: italic;
+}
+
+.article-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.85rem;
+}
+
+.article-prose th,
+.article-prose td {
+  border: 1px solid #e2e8f0;
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+}
+
+.article-prose th {
+  background-color: #f0f8ff;
+  color: #1c244b;
+  font-weight: 700;
+}
