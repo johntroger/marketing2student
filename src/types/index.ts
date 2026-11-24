@@ -53,6 +53,17 @@ export interface TopicInfo {
   description: string;
 }
 
+export interface ToolFAQItem {
+  q: string;
+  a: string;
+}
+
+export interface ToolAlternativeItem {
+  name: string;
+  slug?: string;
+  comparison: string;
+}
+
 export interface MarketingTool {
   id: number;
   slug: string;
@@ -72,6 +83,30 @@ export interface MarketingTool {
   studentTip: string;
   featured?: boolean;
   verifiedAt: string;
+
+  // --- Mở rộng chuẩn SEO / AEO / GEO & Đăng bài hàng loạt (Optional with auto-fallback) ---
+  /** [AEO Direct Answer] Câu định nghĩa cốt lõi 40–60 từ trả lời trực tiếp "Công cụ X là gì & giải quyết bài toán nào?" cho AI Overviews */
+  whatIsIt?: string;
+  /** [GEO Target Persona] Chân dung đối tượng phù hợp nhất & trường hợp chưa cần dùng */
+  bestFor?: string;
+  /** [GEO Technical Entity] Nền tảng hỗ trợ (vd: "Web Browser, Chrome Extension, iOS/Android, API") */
+  platforms?: string;
+  /** [GEO Localization] Mức độ hỗ trợ tiếng Việt & dữ liệu thị trường Việt Nam */
+  vietnameseSupport?: string;
+  /** [GEO Edu Perk] Ưu đãi cho email sinh viên (.edu.vn) hoặc hạn mức gói miễn phí chính xác */
+  studentPerk?: string;
+  /** [HowTo Schema & Practical Guide] Các bước thiết lập & ứng dụng thực hành nhanh cho đồ án */
+  quickSteps?: string[];
+  /** [GEO Prompt / Practice] Mẫu câu lệnh (Prompt) hoặc bài tập thực hành nhanh với công cụ */
+  samplePromptOrTask?: string;
+  /** [GEO Entity Comparison] Đặt lên bàn cân so sánh với các công cụ thay thế cùng nhóm */
+  alternatives?: ToolAlternativeItem[];
+  /** [AEO FAQPage Schema] Bộ câu hỏi thường gặp chuyên sâu theo từng công cụ */
+  faqs?: ToolFAQItem[];
+  /** [SEO Internal Linking] Danh sách slug bài viết học thuật/thực chiến liên quan trên Marketing2Student */
+  relatedArticleSlugs?: string[];
+  /** [Long-form SEO Body] Nội dung bài viết HTML chuyên sâu (nếu muốn xuất bản bài review dài 1.000–2.000 từ) */
+  contentHtml?: string;
 }
 
 export interface ToolCategoryInfo {

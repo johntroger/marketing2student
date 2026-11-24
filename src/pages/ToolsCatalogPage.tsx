@@ -41,6 +41,44 @@ export const ToolsCatalogPage: React.FC = () => {
     description: `Khám phá ${marketingTools.length}+ công cụ Digital Marketing, AI Content, SEO, Đo lường GA4 và Tự động hóa được ThS. Trần Thanh Tùng tuyển chọn và thẩm định cho sinh viên.`,
     canonicalUrl: 'https://marketing2student.com/cong-cu',
     keywords: ['công cụ marketing', 'AI tools marketing', 'công cụ SEO miễn phí', 'GA4', 'Meta Ad Library', 'marketing2student'],
+    jsonLdSchemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Sàn Công Cụ Digital Marketing & AI Cho Sinh Viên — Marketing2Student',
+        description: `Danh mục ${marketingTools.length}+ công cụ Digital Marketing và AI đã qua thẩm định EEAT dành cho sinh viên và Marketer thực chiến.`,
+        url: 'https://marketing2student.com/cong-cu',
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: marketingTools.length,
+          itemListElement: marketingTools.map((t, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            name: t.name,
+            description: t.tagline,
+            url: `https://marketing2student.com/cong-cu/${t.slug}`,
+          })),
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Trang chủ',
+            item: 'https://marketing2student.com/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Sàn Công Cụ Marketing & AI',
+            item: 'https://marketing2student.com/cong-cu',
+          },
+        ],
+      },
+    ],
   });
 
   const filteredTools = useMemo(() => {
