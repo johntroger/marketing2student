@@ -4,6 +4,7 @@ import {
   Search,
   Filter,
   ChevronRight,
+  ChevronLeft,
   RotateCcw,
   SlidersHorizontal,
   X,
@@ -29,12 +30,19 @@ export const ToolsCatalogPage: React.FC = () => {
   const [selectedPricing, setSelectedPricing] = useState(initialPricing);
   const [selectedLevel, setSelectedLevel] = useState('');
   const [sortBy, setSortBy] = useState<'featured' | 'free_first' | 'name'>('featured');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 24;
 
   useEffect(() => {
     setSearchTerm(searchParams.get('q') || '');
     setSelectedCat(searchParams.get('cat') || '');
     setSelectedPricing(searchParams.get('pricing') || '');
+    setCurrentPage(1);
   }, [searchParams]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCat, selectedPricing, selectedLevel, sortBy]);
 
   useSEO({
     title: 'Sàn Công Cụ Digital Marketing & AI Cho Sinh Viên — Marketing2Student',
@@ -106,11 +114,18 @@ export const ToolsCatalogPage: React.FC = () => {
       });
   }, [searchTerm, selectedCat, selectedPricing, selectedLevel, sortBy]);
 
+  const totalPages = Math.ceil(filteredTools.length / itemsPerPage) || 1;
+  const paginatedTools = useMemo(() => {
+    const start = (currentPage - 1) * itemsPerPage;
+    return filteredTools.slice(start, start + itemsPerPage);
+  }, [filteredTools, currentPage]);
+
   const handleClearFilters = () => {
     setSearchTerm('');
     setSelectedCat('');
     setSelectedPricing('');
     setSelectedLevel('');
+    setCurrentPage(1);
     setSearchParams({});
   };
 
@@ -138,15 +153,16 @@ export const ToolsCatalogPage: React.FC = () => {
           </button>
           {toolCategories.map((c) => {
             const isActive = selectedCat === c.slug || selectedCat === c.name;
+            const catCount = marketingTools.filter((t) => t.categorySlug === c.slug).length;
             return (
               <button
                 key={c.id}
-                onClick={() => setSelectedCat(c.slug)}
+                onClick={() => { setSelectedCat(c.slug); setCurrentPage(1); }}
                 className={`w-full flex items-center justify-between py-1.5 px-2 rounded text-left transition-colors ${
                   isActive ? 'text-brand-600 font-bold bg-brand-50' : 'text-ink-600 hover:text-brand-600 hover:bg-slate-50'
                 }`}
               >
-                <span className="truncate pr-1">• {c.name}</span>
+                <span className="truncate pr-1">• {c.name} ({catCount})</span>
                 {isActive && <ChevronRight className="w-3.5 h-3.5 text-brand-600 shrink-0" />}
               </button>
             );
@@ -358,12 +374,51 @@ export const ToolsCatalogPage: React.FC = () => {
             </div>
 
             {/* Tools Grid */}
-            {filteredTools.length > 0 ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3.5">
-                {filteredTools.map((tool) => (
-                  <ToolCard key={tool.id} tool={tool} />
-                ))}
-              </div>
+            {paginatedTools.length > 0 ? (
+              <>
+                <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3.5">
+                  {paginatedTools.map((tool) => (
+                    <ToolCard key={tool.id} tool={tool} />
+                  ))}
+                </div>
+
+                {totalPages > 1 && (
+                  <div className="py-6 flex items-center justify-center gap-2 flex-wrap">
+                    <button
+                      disabled={currentPage <= 1}
+                      onClick={() => { setCurrentPage((p) => Math.max(1, p - 1)); window.scrollTo(0, 0); }}
+                      className="p-2 border border-slate-300 bg-white text-ink-600 rounded hover:bg-slate-50 disabled:opacity-40"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+
+                    {Array.from({ length: totalPages }).map((_, i) => {
+                      const pNum = i + 1;
+                      return (
+                        <button
+                          key={pNum}
+                          onClick={() => { setCurrentPage(pNum); window.scrollTo(0, 0); }}
+                          className={`w-9 h-9 text-xs font-bold rounded transition-all ${
+                            currentPage === pNum
+                              ? 'bg-brand-600 text-white shadow-xs'
+                              : 'bg-white border border-slate-300 text-ink-700 hover:bg-slate-50'
+                          }`}
+                        >
+                          {pNum}
+                        </button>
+                      );
+                    })}
+
+                    <button
+                      disabled={currentPage >= totalPages}
+                      onClick={() => { setCurrentPage((p) => Math.min(totalPages, p + 1)); window.scrollTo(0, 0); }}
+                      className="p-2 border border-slate-300 bg-white text-ink-600 rounded hover:bg-slate-50 disabled:opacity-40"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="bg-white p-12 text-center rounded-xl border border-slate-200 shadow-soft">
                 <Wrench className="w-12 h-12 text-slate-300 mx-auto mb-3" />

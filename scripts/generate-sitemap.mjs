@@ -28,7 +28,18 @@ Sitemap: ${BASE_URL}/sitemap.xml
 
   const articlesContent = fs.readFileSync(path.resolve('src/data/articles.ts'), 'utf8');
   const categoriesContent = fs.readFileSync(path.resolve('src/data/categories.ts'), 'utf8');
-  const toolsContent = fs.readFileSync(path.resolve('src/data/tools.ts'), 'utf8');
+
+  let toolsContent = '';
+  const toolsDir = path.resolve('src/data/tools');
+  if (fs.existsSync(toolsDir)) {
+    for (const file of fs.readdirSync(toolsDir)) {
+      if (file.endsWith('.ts')) {
+        toolsContent += '\n' + fs.readFileSync(path.join(toolsDir, file), 'utf8');
+      }
+    }
+  } else {
+    toolsContent = fs.readFileSync(path.resolve('src/data/tools.ts'), 'utf8');
+  }
 
   const articleSlugs = [];
   for (const match of articlesContent.matchAll(/"slug"\s*:\s*"([^"]+)"/g)) {
