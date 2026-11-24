@@ -424,5 +424,275 @@ export const vietnamMartechTools: MarketingTool[] = [
     limitations: 'Chủ yếu hướng tới đối tượng đã có kênh mạng xã hội hoạt động.',
     studentTip: 'Nếu bạn đang tập xây kênh TikTok review sinh viên, hãy kết nối thêm Ecomobi để tiếp cận các chiến dịch gửi mẫu miễn phí từ nhãn hàng.',
     verifiedAt: '2026-11-24'
+  },
+  {
+    id: 207,
+    slug: 'coc-coc-ads',
+    name: 'Cốc Cốc Ads',
+    tagline: 'Quảng cáo trên trình duyệt & công cụ tìm kiếm Việt Nam (~30 triệu người dùng)',
+    excerpt: 'Kênh quảng cáo nội địa tối ưu cho nhóm khách hàng văn phòng, máy tính bàn (Desktop) tại Việt Nam với định dạng Newtab Banner và Search Ads giá cạnh tranh.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Miễn phí 100%',
+    pricingDetail: 'Tạo tài khoản và sử dụng công cụ thiết lập chiến dịch miễn phí; trả phí theo ngân sách chạy thực tế (CPC/CPM).',
+    level: 'Cơ bản',
+    officialUrl: 'https://ads.coccoc.com/',
+    tags: ['Cốc Cốc Ads', 'Search Ads', 'Newtab Banner', 'Vietnam'],
+    whatIsIt: 'Cốc Cốc Ads là nền tảng quảng cáo tự phục vụ trên trình duyệt và công cụ tìm kiếm Cốc Cốc tại Việt Nam, nổi bật với định dạng Banner Newtab toàn màn hình và quảng cáo Tìm kiếm tiếng Việt.',
+    bestFor: 'Performance Marketer tại Việt Nam muốn mở rộng tệp tiếp cận Desktop (người làm văn phòng, sinh viên) với CPC mềm hơn Google Ads.',
+    platforms: 'Web Browser (ads.coccoc.com)',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Có tài liệu hướng dẫn chi tiết bằng tiếng Việt và hỗ trợ nạp ngân sách nhỏ qua ví điện tử nội địa.',
+    useCases: [
+      'Chạy quảng cáo Search Ads và Newtab Icon/Banner cho các ngành Tuyển sinh, Game, Phần mềm, Tài chính, BĐS.',
+      'Đa dạng hóa nguồn traffic ngoài Google và Facebook.'
+    ],
+    pros: [
+      'Giá thầu CPC nhiều từ khóa cạnh tranh thấp hơn Google Search.',
+      'Độ phủ máy tính bàn (PC/Laptop) tại Việt Nam rất cao.'
+    ],
+    limitations: 'Lượng người dùng trên điện thoại di động thấp hơn so với Chrome/Safari.',
+    studentTip: 'Nếu sản phẩm của bạn nhắm vào dân văn phòng hoặc sinh viên hay dùng Laptop tại Việt Nam, hãy cân nhắc đưa Cốc Cốc Ads vào Media Plan.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 208,
+    slug: 'revu-vietnam',
+    name: 'REVU Việt Nam (Clever Group)',
+    tagline: 'Nền tảng Booking Reviewer, Micro-KOC & Seeding nội dung thật tại Việt Nam',
+    excerpt: 'Kết nối tự động hàng chục nghìn Micro-Influencer và Reviewer tại Việt Nam để sản xuất bài viết, video review chân thực cho chiến dịch ra mắt sản phẩm.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Reviewer đăng ký nhận sản phẩm/tiền thù lao miễn phí 100%; doanh nghiệp trả phí theo số lượng bài review/chiến dịch.',
+    level: 'Cơ bản',
+    officialUrl: 'https://vn.revu.net/',
+    tags: ['Micro-KOC', 'Seeding', 'Influencer Booking', 'Vietnam'],
+    whatIsIt: 'REVU Việt Nam là nền tảng Micro-Influencer Marketing hàng đầu tại Việt Nam (thuộc Clever Group), giúp nhãn hàng tuyển chọn hàng loạt Reviewer để viết bài cảm nhận, quay TikTok hoặc đánh giá Google Maps.',
+    bestFor: 'Brand/Social Marketer cần chạy chiến dịch phủ sóng Review/UGC số lượng lớn và sinh viên muốn đăng ký làm Reviewer nhận sản phẩm trải nghiệm miễn phí.',
+    platforms: 'Web Browser (vn.revu.net), Mobile App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Sinh viên có tài khoản Facebook/Instagram/TikTok/Blog cá nhân có thể đăng ký làm Reviewer miễn phí để trải nghiệm sản phẩm thật từ các nhãn hàng lớn.',
+    useCases: [
+      'Triển khai chiến dịch 50–100 bài review UGC đồng loạt khi tung sản phẩm F&B hoặc Mỹ phẩm mới.',
+      'Thu thập hình ảnh và đánh giá thực tế từ khách hàng mục tiêu.'
+    ],
+    pros: [
+      'Quy trình chọn lọc Reviewer, duyệt bài và nghiệm thu tập trung trên một nền tảng.',
+      'Chi phí trên mỗi bài review Micro-KOC rất tối ưu.'
+    ],
+    limitations: 'Phù hợp cho chiến dịch số lượng lớn (Mass Seeding/UGC) hơn là tìm 1–2 Mega-KOL hạng A.',
+    studentTip: 'Hãy thử đăng ký tài khoản Reviewer trên REVU để hiểu quy trình một nhãn hàng gửi Brief và kiểm duyệt nội dung KOC từ góc nhìn người trong cuộc.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 209,
+    slug: 'ticketbox-vn',
+    name: 'Ticketbox',
+    tagline: 'Nền tảng bán vé Sự kiện, Workshop, Liveshow & Check-in QR số 1 Việt Nam',
+    excerpt: 'Công cụ phổ biến nhất tại Việt Nam để tạo trang bán vé/đăng ký sự kiện, phát hành vé điện tử QR Code và quản lý người tham dự.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Miễn phí tạo trang sự kiện; thu phí dịch vụ % trên mỗi vé bán ra (hoặc gói riêng cho sự kiện miễn phí quy mô lớn).',
+    level: 'Cơ bản',
+    officialUrl: 'https://ticketbox.vn/',
+    tags: ['Event Marketing', 'Ticketing', 'QR Check-in', 'Vietnam'],
+    whatIsIt: 'Ticketbox là nền tảng phân phối vé và quản lý sự kiện hàng đầu tại Việt Nam, hỗ trợ đặt vé trực tuyến qua ví MoMo/VNPay/Thẻ, chọn sơ đồ ghế ngồi và ứng dụng quét mã QR Check-in tại cửa.',
+    bestFor: 'Sinh viên ngành PR & Tổ chức Sự kiện (Event Management), Ban tổ chức Talkshow/Workshop/Đêm nhạc sinh viên.',
+    platforms: 'Web Browser (ticketbox.vn), iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Tích hợp sẵn cổng thanh toán Việt Nam (MoMo, ZaloPay, VietQR) và lượng người dùng săn tìm sự kiện cuối tuần cực lớn có sẵn trên sàn.',
+    useCases: [
+      'Phát hành vé và quản lý Check-in QR Code cho sự kiện Talkshow/Workshop của khoa hoặc CLB.',
+      'Theo dõi báo cáo doanh thu vé và nhân khẩu học người mua vé theo thời gian thực.'
+    ],
+    pros: [
+      'Có sẵn tệp người dùng thường xuyên vào Ticketbox tìm kiếm sự kiện để đi (tăng Organic Discovery).',
+      'Hệ thống Check-in bằng app điện thoại chuyên nghiệp, tránh ùn tắc cổng vào.'
+    ],
+    limitations: 'Có chiết khấu phí dịch vụ khi bán vé trả phí.',
+    studentTip: 'Khi lập kế hoạch tổ chức Workshop hoặc Concert cho đồ án môn Tổ chức Sự kiện, đưa Ticketbox vào làm kênh phân phối vé & Check-in là phương án chuẩn thực tế nhất tại Việt Nam.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 210,
+    slug: 'zalo-mini-app-zns',
+    name: 'Zalo Mini App & Zalo ZNS',
+    tagline: 'Xây dựng ứng dụng tích điểm Loyalty & Gửi thông báo chăm sóc khách ngay trong Zalo',
+    excerpt: 'Xu hướng Private Traffic số 1 tại Việt Nam: khách hàng quét QR mở Mini App đặt hàng/tích điểm ngay trong Zalo không cần tải App mới, nhận thông báo ZNS qua SĐT.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Khởi tạo Zalo Mini App miễn phí trên cổng Zalo Mini App; tin nhắn ZNS tính phí theo từng tin gửi thành công (~200–300đ/tin).',
+    level: 'Nâng cao',
+    officialUrl: 'https://mini.zalo.me/',
+    tags: ['Zalo Mini App', 'ZNS', 'Loyalty', 'Private Traffic'],
+    whatIsIt: 'Zalo Mini App là nền tảng ứng dụng nhỏ chạy trực tiếp bên trong siêu ứng dụng Zalo (không cần cài đặt từ App Store/Google Play), kết hợp cùng Zalo Notification Service (ZNS) để gửi tin nhắn xác nhận đơn hàng, mã OTP và chăm sóc khách hàng qua số điện thoại.',
+    bestFor: 'CRM & Retention Marketer, chuỗi F&B/Bán lẻ và sinh viên làm đề tài tối ưu tỷ lệ quay lại (Retention) tại Việt Nam.',
+    platforms: 'Zalo App (iOS/Android), Zalo Mini App Studio',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Có tài liệu hướng dẫn và Zalo Mini App Studio miễn phí giúp sinh viên tìm hiểu kiến trúc Private Traffic đặc thù của Việt Nam.',
+    useCases: [
+      'Thay thế việc ép khách tải App riêng tốn kém bằng Zalo Mini App để đặt trà sữa, tích điểm thành viên và nhận Voucher.',
+      'Gửi tin nhắn ZNS tự động chúc mừng sinh nhật kèm mã giảm giá cho khách hàng đã từng mua hàng.'
+    ],
+    pros: [
+      'Tỷ lệ mở thông báo ZNS và sử dụng Mini App cao vượt trội so với Email tại Việt Nam.',
+      'Không tốn chi phí thuyết phục khách tải App mới.'
+    ],
+    limitations: 'Cần doanh nghiệp có Giấy phép kinh doanh để xác thực Zalo Official Account (OA) chính thức và mở tính năng ZNS.',
+    studentTip: 'Trong các bài thi Giải pháp Marketing 2026, đề xuất giải pháp **Private Traffic bằng Zalo Mini App + ZNS** cho doanh nghiệp bán lẻ/F&B Việt Nam là điểm sáng chiến lược rất hiện đại.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 211,
+    slug: 'bizfly-martech',
+    name: 'Bizfly (VCCorp)',
+    tagline: 'Hệ sinh thái Martech Việt Nam: BizChatAI, BizMail, BizCRM & CDP',
+    excerpt: 'Bộ giải pháp chuyển đổi số Marketing & Bán hàng do VCCorp phát triển: tích hợp Chatbot đa kênh, Email Marketing, CRM và nền tảng dữ liệu khách hàng CDP.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Có gói Free cho BizChat/BizMail giới hạn cơ bản để trải nghiệm; các gói trả phí theo quy mô doanh nghiệp.',
+    level: 'Trung bình',
+    officialUrl: 'https://bizfly.vn/',
+    tags: ['Vietnam Martech', 'CDP', 'Chatbot', 'CRM'],
+    whatIsIt: 'Bizfly (thuộc VCCorp) là hệ sinh thái giải pháp Martech toàn diện hàng đầu tại Việt Nam, gồm BizChatAI (Chatbot Facebook/Zalo/Web), BizMail (Email Automation), BizCRM và Bizfly CDP.',
+    bestFor: 'Sinh viên tìm hiểu hệ sinh thái Martech nội địa quy mô lớn và doanh nghiệp SME/Enterprise tại Việt Nam.',
+    platforms: 'Web Browser (Cloud)',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Có gói miễn phí cơ bản cho BizChat và BizMail để sinh viên thực hành kịch bản Chatbot/Email bằng giao diện tiếng Việt.',
+    useCases: [
+      'Thiết lập kịch bản Chatbot chăm sóc khách hàng trên Fanpage và website.',
+      'Tìm hiểu cách một nền tảng Việt Nam kết nối dữ liệu khách hàng từ nhiều điểm chạm về CDP.'
+    ],
+    pros: [
+      'Hỗ trợ đội ngũ kỹ thuật bằng tiếng Việt nhanh chóng.',
+      'Tích hợp đồng bộ nhiều công cụ trong hệ sinh thái VCCorp.'
+    ],
+    limitations: 'Các tính năng CDP và Automation nâng cao nằm ở gói doanh nghiệp.',
+    studentTip: 'Khi so sánh giải pháp Martech cho doanh nghiệp Việt Nam có yêu cầu hỗ trợ tiếng Việt 100%, Bizfly là đại diện tiêu biểu bên cạnh HubSpot.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 212,
+    slug: 'getfly-crm',
+    name: 'Getfly CRM',
+    tagline: 'Phần mềm CRM quản lý bán hàng, KPI & Chăm sóc khách hàng tự động cho SME Việt',
+    excerpt: 'Công cụ CRM phổ biến tại các doanh nghiệp B2B/B2C vừa và nhỏ ở Việt Nam, tích hợp tổng đài Call Center, Email/SMS Automation và đo KPI nhân viên.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Dùng thử miễn phí 30 ngày đầy đủ tính năng; các gói trả phí tối ưu cho doanh nghiệp SME Việt Nam.',
+    level: 'Cơ bản',
+    officialUrl: 'https://getfly.vn/',
+    tags: ['CRM Vietnam', 'Sales KPI', 'Automation', 'SME'],
+    whatIsIt: 'Getfly CRM là phần mềm quản trị quan hệ khách hàng và tự động hóa quy trình tiếp thị - bán hàng được thiết kế riêng cho văn hóa vận hành của doanh nghiệp SME Việt Nam.',
+    bestFor: 'Sinh viên học môn CRM hoặc chuẩn bị thực tập tại doanh nghiệp SME Việt Nam.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Dùng thử miễn phí 30 ngày giúp thực hành thiết lập phễu cơ hội bán hàng và kịch bản Marketing Automation bằng tiếng Việt.',
+    useCases: [
+      'Quản lý dữ liệu khách hàng tập trung tránh thất thoát khi nhân viên Sales nghỉ việc.',
+      'Thiết lập kịch bản tự động gửi SMS/Email nhắc lịch hẹn hoặc chăm sóc sau bán.'
+    ],
+    pros: [
+      'Giao diện tiếng Việt rất dễ hiểu cho đội ngũ Sales nội địa.',
+      'Tích hợp sẵn tổng đài IP (Call Center), Zalo OA và đơn vị vận chuyển.'
+    ],
+    limitations: 'Không có gói miễn phí vĩnh viễn.',
+    studentTip: 'Rất hữu ích để tham khảo khi làm đồ án tư vấn triển khai CRM cho các công ty B2B/Dịch vụ vừa và nhỏ tại Việt Nam.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 213,
+    slug: 'misa-amis-crm',
+    name: 'MISA AMIS CRM',
+    tagline: 'Phần mềm CRM kết nối Kế toán & Hóa đơn điện tử của MISA dành cho doanh nghiệp VN',
+    excerpt: 'Giải pháp CRM thuộc hệ sinh thái MISA AMIS giúp liên thông dữ liệu từ Marketing - Sales đến Kế toán (công nợ, xuất hóa đơn, doanh thu thật).',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Có bản dùng thử miễn phí 15 ngày; nhiều trường Đại học có chương trình hợp tác đào tạo phần mềm MISA.',
+    level: 'Trung bình',
+    officialUrl: 'https://amis.misa.vn/amis-ban-hang/',
+    tags: ['CRM Vietnam', 'B2B Sales', 'ERP Integration', 'MISA'],
+    whatIsIt: 'MISA AMIS CRM là phần mềm quản trị khách hàng nằm trong nền tảng quản trị doanh nghiệp hợp nhất MISA AMIS, nổi bật nhờ khả năng kết nối trực tiếp với phần mềm kế toán MISA và quản lý đội ngũ kinh doanh đi thị trường (DMS).',
+    bestFor: 'Sinh viên khối ngành Kinh tế/Quản trị Kinh doanh tìm hiểu quy trình liên thông Sales - Marketing - Kế toán.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'MISA thường xuyên tài trợ tài khoản thực hành miễn phí cho sinh viên các trường Đại học khối kinh tế tại Việt Nam.',
+    useCases: [
+      'Theo dõi từ lúc tạo báo giá, chốt đơn hàng trên CRM đến khi kế toán xuất hóa đơn điện tử.',
+      'Quản lý nhân viên thị trường check-in tại điểm bán (DMS).'
+    ],
+    pros: [
+      'Liên thông chặt chẽ với hệ thống kế toán phổ biến nhất Việt Nam (MISA).',
+      'Đáp ứng tốt nhu cầu doanh nghiệp phân phối và B2B.'
+    ],
+    limitations: 'Thiên về quản trị bán hàng & vận hành hơn là các công cụ sáng tạo nội dung Marketing.',
+    studentTip: 'Nếu trường bạn có tài khoản thực hành MISA AMIS, hãy tận dụng để làm quen với giao diện ERP/CRM doanh nghiệp chuẩn Việt Nam.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 214,
+    slug: 'nhanh-vn',
+    name: 'Nhanh.vn',
+    tagline: 'Phần mềm quản lý bán hàng đa kênh, Kết nối vận chuyển & Vpage Facebook tại VN',
+    excerpt: 'Nền tảng hỗ trợ shop bán hàng đa kênh tại Việt Nam: quản lý tin nhắn Vpage, so sánh giá cước hàng loạt hãng vận chuyển và đồng bộ sàn TMĐT.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Dùng thử miễn phí 10 ngày; các gói trả phí linh hoạt theo mô hình cửa hàng/online.',
+    level: 'Cơ bản',
+    officialUrl: 'https://nhanh.vn/',
+    tags: ['Omnichannel', 'Vpage', 'Shipping Aggregator', 'Vietnam'],
+    whatIsIt: 'Nhanh.vn là phần mềm quản lý bán hàng đa kênh lâu đời tại Việt Nam, cung cấp bộ công cụ quản lý kho POS, thiết kế website, phần mềm chat Vpage và cổng kết nối nhiều hãng vận chuyển (GHTK, GHN, Viettel Post, J&T).',
+    bestFor: 'Chủ shop thời trang/mỹ phẩm/mẹ & bé và sinh viên thực tập vận hành E-commerce.',
+    platforms: 'Web Browser, Windows, iOS & Android',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Có bản dùng thử miễn phí 10 ngày để trải nghiệm quy trình xử lý đơn hàng đa kênh.',
+    useCases: [
+      'So sánh phí ship và tỷ lệ giao thành công giữa các đơn vị vận chuyển Việt Nam trên cùng 1 đơn hàng.',
+      'Quản lý bình luận, tin nhắn và lọc khách hàng bom hàng.'
+    ],
+    pros: [
+      'Cổng kết nối vận chuyển và tính năng cảnh báo khách hay hoàn đơn rất hữu ích cho shop COD.',
+      'Tích hợp đồng bộ nhiều sàn TMĐT.'
+    ],
+    limitations: 'Giao diện nhiều bảng thông số vận hành cần thời gian làm quen.',
+    studentTip: 'Hiểu quy trình xử lý đơn COD, tỷ lệ hoàn hàng (Return Rate) và đối soát vận chuyển là kiến thức thực chiến rất quý giá khi làm E-commerce tại Việt Nam.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 215,
+    slug: 'so-ban-hang',
+    name: 'Sổ Bán Hàng',
+    tagline: 'Ứng dụng tạo Website bán hàng, Quản lý đơn & Thu chi miễn phí trên điện thoại VN',
+    excerpt: 'Giải pháp siêu đơn giản giúp tiểu thương, sinh viên khởi nghiệp nhỏ tạo cửa hàng online có QR thanh toán và quản lý đơn hàng ngay trên Smartphone.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Có gói Free miễn phí quản lý bán hàng, thu chi, tạo website bán hàng mini và in hóa đơn trên điện thoại; gói Pro mở rộng tính năng nâng cao.',
+    level: 'Cơ bản',
+    officialUrl: 'https://sobanhang.com/',
+    tags: ['Micro-Business', 'Mobile POS', 'VietQR', 'Vietnam'],
+    whatIsIt: 'Sổ Bán Hàng (Finan) là ứng dụng quản lý bán hàng và tạo cửa hàng trực tuyến miễn phí hàng đầu trên điện thoại dành cho hộ kinh doanh siêu nhỏ và người bán hàng cá nhân tại Việt Nam.',
+    bestFor: 'Sinh viên tập tành kinh doanh nhỏ (bán đồ ăn vặt, phụ kiện, handmade) hoặc làm dự án khởi nghiệp vi mô.',
+    platforms: 'iOS, Android, Web Browser',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Miễn phí tạo ngay một đường link Website bán hàng kèm mã VietQR thanh toán trong 2 phút ngay trên điện thoại.',
+    useCases: [
+      'Tạo nhanh cửa hàng online có giỏ hàng để bán sản phẩm gây quỹ CLB hoặc bài tập thực hành kinh doanh.',
+      'Theo dõi lãi lỗ, công nợ và hóa đơn đơn giản trên điện thoại.'
+    ],
+    pros: [
+      'Cực kỳ dễ dùng trên điện thoại, ai cũng thao tác được trong 2 phút.',
+      'Tích hợp sẵn VietQR động cho từng đơn hàng.'
+    ],
+    limitations: 'Không dành cho hệ thống doanh nghiệp lớn cần tùy biến Marketing Automation phức tạp.',
+    studentTip: 'Nếu môn học có bài tập thực hành "Tự kinh doanh 1 sản phẩm thật trong 2 tuần", hãy dùng Sổ Bán Hàng để tạo web đặt hàng nhanh gọn không tốn phí.',
+    verifiedAt: '2026-11-24'
   }
 ];

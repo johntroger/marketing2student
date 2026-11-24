@@ -862,5 +862,187 @@ export const designVideoAiTools: MarketingTool[] = [
     limitations: 'Giới hạn dung lượng mỗi ảnh gốc tối đa 5MB ở bản miễn phí.',
     studentTip: 'Tạo thói quen: Ảnh tải từ Canva về -> Kéo qua TinyPNG -> Đổi tên file không dấu chứa từ khóa -> Mới tải lên website.',
     verifiedAt: '2026-11-24'
+  },
+  {
+    id: 216,
+    slug: 'pacdora',
+    name: 'Pacdora',
+    tagline: 'Thiết kế Bao bì 3D (3D Packaging Mockup) & Khuôn bế Dieline trực tuyến',
+    excerpt: 'Chọn hàng nghìn mẫu hộp giấy, chai lọ, túi zip có sẵn, dán thiết kế nhãn mác từ Canva lên và xoay 360° hoặc xuất video render 3D cực đẹp.',
+    category: 'Thiết kế, Hình ảnh & Video AI',
+    categorySlug: 'design-video-ai',
+    pricing: 'Freemium',
+    pricingDetail: 'Miễn phí xem trước 3D, chỉnh sửa kích thước khuôn bế và tải ảnh xem thử có watermark; gói Pro từ ~$19/tháng để xuất ảnh 4K/video.',
+    level: 'Cơ bản',
+    officialUrl: 'https://www.pacdora.com/',
+    tags: ['3D Packaging', 'Mockup', 'Product Design', 'Dieline'],
+    whatIsIt: 'Pacdora là nền tảng thiết kế bao bì trực tuyến tích hợp khuôn bế (Dieline) chuẩn công nghiệp và trình dựng ảnh/video 3D Mockup ngay trên trình duyệt mà không cần biết phần mềm 3D chuyên sâu như Blender.',
+    bestFor: 'Sinh viên làm đồ án **Phát triển Sản phẩm mới (NPD)**, Brand Identity hoặc Trade Marketing cần hình ảnh bao bì 3D chân thực.',
+    platforms: 'Web Browser (Cloud)',
+    vietnameseSupport: 'Hỗ trợ tải file thiết kế PNG/JPG chứa tiếng Việt từ Canva lên dán trực tiếp lên vỏ hộp 3D.',
+    studentPerk: 'Có thể xoay mô hình 3D trực tiếp trên trình duyệt để trình chiếu sống động hoặc chụp màn hình các góc sản phẩm miễn phí.',
+    useCases: [
+      'Dán thiết kế tem nhãn của nhóm lên mô hình hộp mỹ phẩm, lon nước hoặc túi cà phê 3D xoay 360°.',
+      'Tạo ảnh sản phẩm đặt trên bàn/bối cảnh studio bằng tính năng AI Studio của Pacdora.'
+    ],
+    pros: [
+      'Không cần biết dùng Photoshop hay Blender vẫn tạo được bao bì 3D chuẩn như chụp thật.',
+      'Cho phép tùy biến kích thước dài × rộng × cao của hộp.'
+    ],
+    limitations: 'Xuất file render độ phân giải cao không watermark và file khuôn bế vector cần gói trả phí.',
+    studentTip: 'Khi làm đồ án ra mắt sản phẩm mới, hãy dùng **Canva/Kittl** thiết kế mặt phẳng nhãn, sau đó đưa lên **Pacdora** để dựng thành hộp 3D xoay 360° trình chiếu khi thuyết trình!',
+    featured: true,
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 217,
+    slug: 'placeit',
+    name: 'Placeit by Envato',
+    tagline: 'Kho Mockup sản phẩm thực tế (Áo thun, Ly, Màn hình Laptop/Phone) & Video intro',
+    excerpt: 'Đưa ảnh màn hình Website/App hoặc Logo thương hiệu của bạn vào ảnh người thật đang cầm điện thoại, mặc áo hoặc ngồi quán cà phê chỉ trong 10 giây.',
+    category: 'Thiết kế, Hình ảnh & Video AI',
+    categorySlug: 'design-video-ai',
+    pricing: 'Freemium',
+    pricingDetail: 'Có hàng trăm mẫu Mockup miễn phí (Free Templates); gói Unlimited từ ~$7.47/tháng.',
+    level: 'Cơ bản',
+    officialUrl: 'https://placeit.net/',
+    tags: ['Mockup', 'Merchandise', 'App Showcase', 'Branding'],
+    whatIsIt: 'Placeit (thuộc Envato) là thư viện tạo Mockup trực tuyến lớn nhất thế giới với hàng chục nghìn ảnh và video người thật sử dụng sản phẩm (áo thun, túi tote, cốc cà phê, iPhone, MacBook) chỉ cần tải ảnh lên để tự động lồng ghép.',
+    bestFor: 'Brand Designer trình bày bộ nhận diện (Merchandise) và Product Marketer giới thiệu giao diện App/Web trên màn hình điện thoại.',
+    platforms: 'Web Browser',
+    vietnameseSupport: 'Chỉ cần tải ảnh PNG/JPG thiết kế sẵn lên.',
+    studentPerk: 'Vào mục **Freebies** trên Placeit để sử dụng hàng trăm mẫu Mockup hoàn toàn miễn phí.',
+    useCases: [
+      'Lồng ảnh chụp Landing Page của nhóm vào ảnh người dùng đang cầm iPhone/MacBook để đưa vào Slide thuyết trình.',
+      'Tạo Mockup đồng phục, túi tote, ly giữ nhiệt mang logo thương hiệu.'
+    ],
+    pros: [
+      'Ảnh Mockup có bối cảnh người thật rất tự nhiên, tăng độ tin cậy cho đồ án.',
+      'Thao tác 100% trên trình duyệt, không cần mở file PSD nặng.'
+    ],
+    limitations: 'Phần lớn kho mẫu đẹp nhất yêu cầu gói thuê bao.',
+    studentTip: 'Lọc tag "Free" trên Placeit hoặc kết hợp Freepik + Photopea để làm bộ ảnh Mockup sản phẩm truyền thông cực kỳ chuyên nghiệp.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 218,
+    slug: 'spline-3d',
+    name: 'Spline 3D',
+    tagline: 'Thiết kế đồ họa 3D tương tác & Chèn thẳng vào Website/Landing Page (Figma/Webflow)',
+    excerpt: 'Công cụ thiết kế 3D chạy mượt trên trình duyệt có giao diện thân thiện như Figma, giúp tạo vật thể 3D xoay theo con trỏ chuột trên Landing Page.',
+    category: 'Thiết kế, Hình ảnh & Video AI',
+    categorySlug: 'design-video-ai',
+    pricing: 'Freemium',
+    pricingDetail: 'Gói Basic miễn phí tạo không giới hạn file 3D cá nhân và nhúng iframe vào website; gói Pro mở khóa xóa logo Spline & AI 3D.',
+    level: 'Nâng cao',
+    officialUrl: 'https://spline.design/',
+    tags: ['3D Design', 'Interactive Web', 'UI Motion', 'Landing Page'],
+    whatIsIt: 'Spline là công cụ thiết kế 3D hợp tác thời gian thực trên nền tảng web, cho phép tạo vật thể 3D tương tác và xuất thẳng thành đoạn mã nhúng nhẹ nhàng vào React, Framer hoặc Webflow.',
+    bestFor: 'UI/UX Designer, Creative Technologist và sinh viên muốn tạo Landing Page công nghệ có hiệu ứng 3D tương tác ấn tượng.',
+    platforms: 'Web Browser, macOS, Windows, Linux',
+    vietnameseSupport: 'Hỗ trợ tạo chữ 3D và giao diện trực quan.',
+    studentPerk: 'Miễn phí sử dụng thư viện **Spline Community** với hàng nghìn mô hình 3D dựng sẵn để chỉnh sửa và nhúng vào đồ án.',
+    useCases: [
+      'Nhân bản một mô hình 3D từ Spline Community, đổi màu thương hiệu và nhúng vào Hero Section của Landing Page Framer/Webflow.',
+      'Xuất ảnh 3D độ nét cao làm Key Visual cho chiến dịch công nghệ.'
+    ],
+    pros: [
+      'Nhẹ và dễ học hơn rất nhiều so với Blender hay Cinema 4D.',
+      'Tương tác trực tiếp trên web (xoay, di chuột theo).'
+    ],
+    limitations: 'Tạo nhân vật 3D phức tạp cần thời gian luyện tập.',
+    studentTip: 'Vào mục Community của Spline tìm các mô hình 3D có sẵn (chai nước, điện thoại, khối trừu tượng) rồi đổi màu theo Brand Kit của bạn để tiết kiệm 90% thời gian.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 219,
+    slug: 'sketchup-web',
+    name: 'SketchUp for Web',
+    tagline: 'Dựng phối cảnh 3D Booth Sự kiện, Quầy kệ POSM & Không gian Cửa hàng miễn phí',
+    excerpt: 'Công cụ dựng hình 3D kiến trúc/không gian chạy ngay trên trình duyệt Chrome: rất phù hợp để sinh viên Trade Marketing & Event dựng phối cảnh Booth Activation.',
+    category: 'Thiết kế, Hình ảnh & Video AI',
+    categorySlug: 'design-video-ai',
+    pricing: 'Freemium',
+    pricingDetail: 'Phiên bản **SketchUp Free** chạy trên trình duyệt web miễn phí 100% cho mục đích cá nhân và học tập (kèm 10GB lưu trữ Trimble Connect).',
+    level: 'Trung bình',
+    officialUrl: 'https://www.sketchup.com/plans-and-pricing/sketchup-free',
+    tags: ['Trade Marketing', 'Event Booth', 'POSM', '3D Space'],
+    whatIsIt: 'SketchUp for Web là phiên bản trực tuyến miễn phí của phần mềm thiết kế 3D không gian SketchUp nổi tiếng, tích hợp kho mô hình **3D Warehouse** hàng triệu vật thể dựng sẵn (kệ siêu thị, bàn ghế, standee, gian hàng hội chợ).',
+    bestFor: 'Sinh viên làm đồ án **Trade Marketing** (dựng kệ trưng bày/hòn đảo POSM trong siêu thị) và **Event Marketing** (dựng sơ đồ 3D Booth Activation, sân khấu).',
+    platforms: 'Web Browser (app.sketchup.com)',
+    vietnameseSupport: 'Dễ dàng nhập kích thước chuẩn mét (m) / milimét (mm).',
+    studentPerk: 'Miễn phí 100% bản Web kèm quyền truy cập kho mô hình dựng sẵn **3D Warehouse** cực kỳ đồ sộ.',
+    useCases: [
+      'Dựng mô hình 3D gian hàng triển lãm (Booth Activation 3×3m) gồm Backdrop, quầy tư vấn, Standee và khu vực Check-in.',
+      'Thiết kế khu vực trưng bày sản phẩm (Display Island / End-cap) tại điểm bán cho môn Trade Marketing.'
+    ],
+    pros: [
+      'Chạy trực tiếp trên trình duyệt, không cần cài AutoCAD hay 3ds Max nặng máy.',
+      'Kho 3D Warehouse có sẵn hàng nghìn mẫu kệ, ghế, cây xanh, màn hình LED chỉ việc kéo vào.'
+    ],
+    limitations: 'Bản Web miễn phí không hỗ trợ cài Plugin render ánh sáng V-Ray (xuất ảnh phối cảnh góc nhìn trực tiếp từ SketchUp vẫn rất rõ ràng cho đồ án Marketing).',
+    studentTip: 'Trong môn Tổ chức Sự kiện hoặc Trade Marketing, thay vì chỉ vẽ sơ đồ 2D phẳng lì trên Word, hãy dùng SketchUp Free kéo vài khối cơ bản và đồ vật từ 3D Warehouse để xuất ảnh phối cảnh 3D — điểm sáng tạo sẽ tăng vọt!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 220,
+    slug: 'miro',
+    name: 'Miro',
+    tagline: 'Bảng trắng vô tận (Infinite Whiteboard) vẽ Customer Journey Map & BMC nhóm',
+    excerpt: 'Không gian làm việc nhóm trực quan số 1 thế giới để dán giấy nhớ Brainstorm, vẽ Bản đồ hành trình khách hàng, Empathy Map và Mô hình kinh doanh BMC.',
+    category: 'Thiết kế, Hình ảnh & Video AI',
+    categorySlug: 'design-video-ai',
+    pricing: 'Freemium',
+    pricingDetail: 'Gói Free miễn phí không giới hạn thành viên với 3 bảng làm việc chỉnh sửa được; **Sinh viên & Giảng viên có email `.edu.vn` được nâng cấp miễn phí gói Education Plan** (không giới hạn bảng)!',
+    level: 'Cơ bản',
+    officialUrl: 'https://miro.com/',
+    tags: ['Customer Journey', 'Brainstorming', 'Business Model Canvas', 'Teamwork'],
+    whatIsIt: 'Miro là nền tảng bảng trắng cộng tác trực tuyến (Visual Collaboration Platform) sở hữu hàng trăm mẫu khung tư duy Marketing chuẩn (Customer Journey Map, Empathy Map, SWOT, Business Model Canvas, Value Proposition Canvas).',
+    bestFor: 'Tất cả nhóm sinh viên Marketing khi họp nhóm Brainstorm, vẽ Customer Journey Map nhiều điểm chạm và lập kế hoạch chiến dịch.',
+    platforms: 'Web Browser, Windows/macOS, iPad/Tablet, iOS & Android',
+    vietnameseSupport: 'Hỗ trợ gõ tiếng Việt đầy đủ.',
+    studentPerk: 'Chương trình **Miro for Education** tặng miễn phí gói Education (không giới hạn bảng, xuất PDF/ảnh độ nét cao) cho sinh viên xác minh email `.edu.vn`.',
+    useCases: [
+      'Cả nhóm 5 người cùng vào 1 bảng Miro dán Sticky Notes phân tích Insight khách hàng theo mô hình Empathy Map.',
+      'Sử dụng mẫu **Customer Journey Map** có sẵn của Miro để trình bày hành trình 5 giai đoạn từ Nhận biết đến Trung thành.'
+    ],
+    pros: [
+      'Thư viện Template Marketing & Design Thinking phong phú nhất thế giới.',
+      'Hỗ trợ Miro AI tự động gom nhóm các mẩu giấy nhớ theo chủ đề.'
+    ],
+    limitations: 'Gói Free thông thường chỉ tạo được 3 bảng có thể chỉnh sửa (nên hãy đăng ký gói Education bằng email trường).',
+    studentTip: 'Đăng ký gói Miro Education miễn phí bằng email sinh viên `.edu.vn`, sau đó tìm mẫu "Customer Journey Map" để hoàn thiện phần phân tích hành trình khách hàng đẹp chuẩn quốc tế.',
+    featured: true,
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 221,
+    slug: 'behance',
+    name: 'Behance (Adobe)',
+    tagline: 'Kho cảm hứng Case Study Branding, Key Visual & Thiết kế Chiến dịch toàn cầu',
+    excerpt: 'Nơi các Creative Agency và Designer hàng đầu thế giới trưng bày trọn vẹn hồ sơ thiết kế thương hiệu (Brand Guidelines), bao bì và chiến dịch truyền thông.',
+    category: 'Thiết kế, Hình ảnh & Video AI',
+    categorySlug: 'design-video-ai',
+    pricing: 'Miễn phí 100%',
+    pricingDetail: 'Miễn phí 100% xem, lưu Moodboard và đăng tải Portfolio cá nhân.',
+    level: 'Cơ bản',
+    officialUrl: 'https://www.behance.net/',
+    tags: ['Moodboard', 'Brand Guidelines', 'Case Study', 'Creative Inspiration'],
+    whatIsIt: 'Behance (thuộc Adobe) là mạng xã hội trưng bày sản phẩm sáng tạo lớn nhất thế giới, nơi quy tụ hàng triệu dự án Brand Identity, Packaging, UI/UX và Advertising Campaign được trình bày chi tiết từ ý tưởng đến thành phẩm.',
+    bestFor: 'Brand Marketer, Creative Planner tìm cảm hứng Moodboard và sinh viên học cách trình bày một bộ Brand Guideline chuyên nghiệp.',
+    platforms: 'Web Browser, iOS & Android',
+    vietnameseSupport: 'Hỗ trợ tìm kiếm các dự án xuất sắc của Designer/Agency Việt Nam (gõ từ khóa `"Vietnam Branding"`).',
+    studentPerk: 'Miễn phí 100% để nghiên cứu cách các Agency hàng đầu kể chuyện (Storytelling) cho một bộ nhận diện thương hiệu.',
+    useCases: [
+      'Tìm kiếm từ khóa `"Brand Identity [Ngành hàng]"` trên Behance để xây dựng bảng Moodboard định hướng hình ảnh cho đồ án.',
+      'Học cách bố cục trình bày Logo, bảng màu, Typography và ứng dụng thực tế (Mockup) trong một bộ hồ sơ thương hiệu.'
+    ],
+    pros: [
+      'Chất lượng thẩm mỹ cực cao, khác hẳn việc tìm ảnh lộn xộn trên Google Images.',
+      'Lưu được thành các bộ sưu tập Moodboard riêng.'
+    ],
+    limitations: 'Là nền tảng tham khảo ý tưởng và đăng Portfolio (không phải phần mềm tự chỉnh sửa thiết kế).',
+    studentTip: 'Trước khi bắt tay vào thiết kế Logo hay Slide trên Canva, hãy dành 20 phút lướt Behance tìm 3 dự án cùng ngành hàng để định hình gu thẩm mỹ và bảng màu chuẩn mực.',
+    verifiedAt: '2026-11-24'
   }
 ];

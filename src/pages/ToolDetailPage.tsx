@@ -64,6 +64,8 @@ export const ToolDetailPage: React.FC = () => {
       'ecommerce-landing-page': 'quang-cao-b2b-tang-truong',
       'market-research-academic': 'thuong-hieu-hanh-vi-khach-hang',
       'performance-ads-affiliate': 'quang-cao-b2b-tang-truong',
+      'pr-event-influencer': 'social-video-marketing',
+      'b2b-cdp-retention': 'quang-cao-b2b-tang-truong',
     };
 
     const targetArticleCat = toolCatToArticleCat[tool.categorySlug] || 'ai-marketing';

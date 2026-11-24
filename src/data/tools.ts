@@ -9,6 +9,8 @@ import { crmAutomationTools } from './tools/crmAutomation';
 import { ecommerceLandingPageTools } from './tools/ecommerceLandingPage';
 import { marketResearchAcademicTools } from './tools/marketResearchAcademic';
 import { performanceAdsAffiliateTools } from './tools/performanceAdsAffiliate';
+import { prEventInfluencerTools } from './tools/prEventInfluencer';
+import { b2bCdpRetentionTools } from './tools/b2bCdpRetention';
 
 export const toolCategories: ToolCategoryInfo[] = [
   {
@@ -42,8 +44,8 @@ export const toolCategories: ToolCategoryInfo[] = [
   {
     id: 'design-video-ai',
     slug: 'design-video-ai',
-    name: 'Thiết kế, Hình ảnh & Video AI',
-    description: 'Thiết kế ấn phẩm truyền thông, chỉnh sửa video ngắn TikTok/Reels và tạo hình ảnh thương hiệu.',
+    name: 'Thiết kế, Bao bì 3D & Video AI',
+    description: 'Thiết kế ấn phẩm, bao bì 3D (Pacdora), booth POSM (SketchUp), chỉnh sửa video ngắn và tạo hình ảnh AI.',
     iconName: 'Palette'
   },
   {
@@ -80,6 +82,20 @@ export const toolCategories: ToolCategoryInfo[] = [
     name: 'Quảng cáo, Local SEO & Affiliate',
     description: 'Meta/Google/TikTok Ads, Google Business Profile (Maps), Shopee/TikTok Affiliate và MMP.',
     iconName: 'Target'
+  },
+  {
+    id: 'pr-event-influencer',
+    slug: 'pr-event-influencer',
+    name: 'PR, Sự kiện & Influencer Marketing',
+    description: 'Tổ chức sự kiện (Luma, Slido, Mentimeter), thẩm định KOL ảo (HypeAuditor, Modash) và Digital PR.',
+    iconName: 'Users'
+  },
+  {
+    id: 'b2b-cdp-retention',
+    slug: 'b2b-cdp-retention',
+    name: 'B2B Outbound, CDP & Retention',
+    description: 'Tìm Lead B2B (Apollo, Clay), hợp nhất dữ liệu CDP (Segment), Push Notification và Loyalty/Referral.',
+    iconName: 'Briefcase'
   }
 ];
 
@@ -94,4 +110,6 @@ export const marketingTools: MarketingTool[] = [
   ...ecommerceLandingPageTools,
   ...marketResearchAcademicTools,
   ...performanceAdsAffiliateTools,
+  ...prEventInfluencerTools,
+  ...b2bCdpRetentionTools,
 ].sort((a, b) => a.id - b.id);
