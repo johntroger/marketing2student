@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Sparkles, ArrowUpRight, Wrench, Tag, Bot } from 'lucide-react';
+import { ShieldCheck, Sparkles, ArrowUpRight, Wrench, Tag, Bot, Flag } from 'lucide-react';
 import { MarketingTool } from '../types';
 import { getArticleCover } from '../utils/imageGenerator';
 
@@ -48,6 +48,15 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
             <span>{tool.level}</span>
           </span>
         </div>
+
+        {(tool.categorySlug === 'vietnam-martech' || tool.categorySlug === 'vietnam-ai-tools') && (
+          <div className="absolute top-2 right-2 z-10">
+            <span className="bg-rose-600/95 text-white text-[9px] font-extrabold px-2 py-0.5 rounded shadow-xs uppercase tracking-wider flex items-center gap-1 backdrop-blur-xs">
+              <Flag className="w-2.5 h-2.5 text-amber-300" />
+              <span>Make-in-VN</span>
+            </span>
+          </div>
+        )}
 
         <div className="absolute bottom-2 left-2 flex items-center gap-1.5">
           {tool.featured && (

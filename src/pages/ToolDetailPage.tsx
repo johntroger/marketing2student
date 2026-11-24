@@ -77,6 +77,7 @@ export const ToolDetailPage: React.FC = () => {
       'pr-event-influencer': 'social-video-marketing',
       'b2b-cdp-retention': 'quang-cao-b2b-tang-truong',
       // AI Tools categories
+      'vietnam-ai-tools': 'ai-marketing',
       'llm-chatbots': 'ai-marketing',
       'ai-research-academic': 'do-luong-marketing',
       'ai-writing-content': 'seo-content-marketing',

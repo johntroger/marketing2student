@@ -694,5 +694,645 @@ export const vietnamMartechTools: MarketingTool[] = [
     limitations: 'Không dành cho hệ thống doanh nghiệp lớn cần tùy biến Marketing Automation phức tạp.',
     studentTip: 'Nếu môn học có bài tập thực hành "Tự kinh doanh 1 sản phẩm thật trong 2 tuần", hãy dùng Sổ Bán Hàng để tạo web đặt hàng nhanh gọn không tốn phí.',
     verifiedAt: '2026-11-24'
+  },
+  {
+    id: 401,
+    slug: 'pangocdp',
+    name: 'PangoCDP',
+    tagline: 'Nền tảng Dữ liệu Khách hàng (CDP) & The Master Channel trên Zalo hàng đầu Việt Nam',
+    excerpt: 'Giải pháp Customer Data Platform thuần Việt giúp nhãn hàng FMCG & Bán lẻ hợp nhất dữ liệu Online-to-Offline (O2O) và kích hoạt tương tác qua Zalo Mini App.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Giải pháp Enterprise dành cho chuỗi bán lẻ & nhãn hàng lớn; kho tài liệu, Ebook và hội thảo The Master Channel mở miễn phí 100% cho sinh viên nghiên cứu.',
+    level: 'Nâng cao',
+    officialUrl: 'https://pangocdp.com/',
+    featured: true,
+    tags: ['CDP Vietnam', 'O2O Marketing', 'Zalo Mini App', 'FMCG & Retail'],
+    whatIsIt: 'PangoCDP là nền tảng Dữ liệu Khách hàng (Customer Data Platform) tiên phong tại Việt Nam do đội ngũ sáng lập giàu kinh nghiệm dữ liệu phát triển (TS. Đinh Mộng Kha & cộng sự), nổi tiếng với khái niệm "The Master Channel" — kết nối dữ liệu điểm bán vật lý (POS/PG) với Zalo OA, Zalo Mini App và ZNS để cá nhân hóa hành trình khách hàng.',
+    bestFor: 'Sinh viên làm đồ án tốt nghiệp hoặc cuộc thi giải Case Study lớn (Unilever Future Leaders, L’Oréal Brandstorm, NielsenIQ) mảng FMCG & Bán lẻ hiện đại.',
+    platforms: 'Web Cloud, Tích hợp Zalo Mini App / POS / CRM / ERP',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Thư viện Case Study thực chiến của các ông lớn FMCG/Retail tại Việt Nam và chuỗi Ebook "The Master Channel" trên website PangoCDP là nguồn tài liệu học thuật – thực tiễn cực quý và hoàn toàn miễn phí.',
+    useCases: [
+      'Thiết kế kịch bản O2O: Khách quét QR trên bao bì sản phẩm tại siêu thị → mở Zalo Mini App quay thưởng → lưu dữ liệu First-party Data vào CDP.',
+      'Phân tập khách hàng tự động (RFM Segmentation) để gửi voucher tái mua hàng qua tin nhắn ZNS đúng thời điểm sản phẩm sắp dùng hết.',
+      'Đo lường chính xác doanh thu chuyển đổi từ chiến dịch phát mẫu thử (Sampling) ngoài đời thực.'
+    ],
+    pros: [
+      'Giải quyết đúng "nỗi đau" đứt gãy dữ liệu giữa kênh GT/MT truyền thống và Digital của thị trường Việt Nam.',
+      'Tích hợp sâu nhất với hệ sinh thái Zalo (Zalo Mini App, ZNS, Zalo Ads).',
+      'Nhiều Case Study thực tế tại Việt Nam rất sát để trích dẫn vào bài thi Marketing.'
+    ],
+    limitations: 'Không có gói tự đăng ký miễn phí (Self-serve) vì là hạ tầng dữ liệu cấp doanh nghiệp.',
+    studentTip: 'Trong các cuộc thi Case Study cho ngành hàng tiêu dùng nhanh (FMCG), thay vì chỉ đề xuất "chạy Facebook Ads", việc vẽ luồng thu thập First-party Data qua QR Code + Zalo Mini App + PangoCDP sẽ giúp đội bạn ghi điểm tuyệt đối với Ban giám khảo!',
+    quickSteps: [
+      'Truy cập mục Tài nguyên / Blog trên pangocdp.com để đọc khung lý thuyết "The Master Channel".',
+      'Vẽ sơ đồ thu thập dữ liệu (Data Touchpoints): Offline Booth / Bao bì QR → Zalo Mini App → Hồ sơ khách hàng hợp nhất 360°.',
+      'Thiết lập kịch bản kích hoạt tự động (Trigger) theo hành vi mua sắm và vòng đời sản phẩm.'
+    ],
+    faqs: [
+      {
+        q: 'PangoCDP khác gì với phần mềm CRM thông thường?',
+        a: 'CRM chủ yếu phục vụ đội ngũ Sales quản lý lịch sử chăm sóc khách hàng đơn lẻ, trong khi PangoCDP thu thập và hợp nhất dữ liệu hành vi thời gian thực từ hàng triệu điểm chạm (Web, App, POS, Zalo, Wi-Fi) để tự động kích hoạt chiến dịch Marketing cá nhân hóa.'
+      }
+    ],
+    alternatives: [
+      { name: 'Bizfly CDP', slug: 'bizfly-martech', comparison: 'Nền tảng Martech & CDP thuộc VCCorp dễ tiếp cận cho SME/Enterprise nội địa' },
+      { name: 'Zalo Mini App & ZNS', slug: 'zalo-mini-app-zns', comparison: 'Hạ tầng gốc trên Zalo để triển khai kênh tương tác khách hàng' }
+    ],
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 402,
+    slug: 'cnv-loyalty',
+    name: 'CNV Loyalty',
+    tagline: 'Nền tảng kiến tạo Loyalty App, Zalo Mini App & Gamification giữ chân khách hàng tại VN',
+    excerpt: 'Giải pháp hàng đầu tại Việt Nam giúp thương hiệu F&B, Mỹ phẩm, Bán lẻ xây dựng chương trình tích điểm thành viên, Booking và Affiliate ngay trên Zalo Mini App.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Báo giá theo gói triển khai doanh nghiệp; hỗ trợ demo kịch bản Loyalty thực tế theo từng ngành hàng (F&B, Spa, Thời trang, Mẹ & Bé).',
+    level: 'Trung bình',
+    officialUrl: 'https://cnvloyalty.com/',
+    tags: ['Loyalty Marketing', 'Zalo Mini App', 'Retention', 'Gamification'],
+    whatIsIt: 'CNV Loyalty (CNV Holdings) là nền tảng công nghệ Marketing tiên phong tại Việt Nam chuyên cung cấp giải pháp chăm sóc khách hàng trung thành (Customer Loyalty), thiết kế Zalo Mini App thương mại điện tử, đặt lịch (Booking) và tiếp thị liên kết (Affiliate KOC) khép kín cho hơn 2.000 doanh nghiệp.',
+    bestFor: 'Sinh viên thiết kế chiến lược Retention Marketing (giữ chân khách hàng cũ) và chương trình Membership hạng thẻ (Silver, Gold, Diamond) cho đồ án F&B, Spa, Thời trang.',
+    platforms: 'Zalo Mini App, iOS & Android Branded App, Web Cloud',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Các bản Demo Zalo Mini App mẫu theo ngành hàng của CNV giúp sinh viên trải nghiệm trực tiếp UX đặt hàng, tích xu và vòng quay may mắn trên điện thoại.',
+    useCases: [
+      'Xây dựng chương trình tích điểm đổi quà, thăng hạng thành viên tự động đồng bộ với phần mềm POS tại quầy (KiotViet, Sapo, MISA CukCuk).',
+      'Triển khai chiến dịch Gamification (vòng quay may mắn, lắc xu, mở hộp quà) thu hút khách hàng ghé cửa hàng.',
+      'Biến khách hàng cũ thành cộng tác viên giới thiệu bạn bè (Referral / Mini Affiliate) ngay trên Zalo.'
+    ],
+    pros: [
+      'Khách hàng Việt Nam không cần tải thêm ứng dụng nặng máy mà mở trực tiếp trên Zalo chỉ trong 2 giây.',
+      'Có sẵn kho mẫu Mini App chuyên biệt cho từng ngành: F&B, bán lẻ, phòng khám, bất động sản, ô tô.'
+    ],
+    limitations: 'Chi phí khởi tạo hướng đến chuỗi cửa hàng đang vận hành, không có bản miễn phí cho cá nhân.',
+    studentTip: 'Khi tính chỉ số CLV (Customer Lifetime Value) trong kế hoạch Marketing cho chuỗi cà phê hay trà sữa nội địa, hãy đưa mô hình Loyalty Mini App tích điểm & Referral vào phần giải pháp tăng tần suất mua lặp lại!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 403,
+    slug: 'subiz-vn',
+    name: 'Subiz',
+    tagline: 'Nền tảng Live Chat Website, Chatbot & CRM hội thoại đa kênh lâu đời tại Việt Nam',
+    excerpt: 'Công cụ gắn cửa sổ chat trực tuyến lên Website kết hợp gom tin nhắn Fanpage, Zalo OA, Instagram, Email và Tổng đài về một màn hình quản lý duy nhất.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Dùng thử miễn phí đầy đủ tính năng 15–30 ngày không cần thẻ tín dụng; gói trả phí tính linh hoạt theo số lượng tư vấn viên (Agent).',
+    level: 'Cơ bản',
+    officialUrl: 'https://subiz.com.vn/',
+    tags: ['Live Chat', 'Omnichannel Support', 'Lead Generation', 'Vietnam'],
+    whatIsIt: 'Subiz là một trong những nền tảng tương tác khách hàng đa kênh (Customer Engagement Platform) đầu tiên và uy tín nhất tại Việt Nam, nổi bật với nút Live Chat thông minh trên Website có khả năng nhận diện hành vi khách đang xem trang nào để tự động bật lời chào cá nhân hóa.',
+    bestFor: 'Sinh viên thực hành tối ưu tỷ lệ chuyển đổi trên Website/Landing Page (CRO) cho các ngành giáo dục, du lịch, thẩm mỹ, phần mềm B2B.',
+    platforms: 'Web Browser, iOS, Android, Mã nhúng JavaScript / WordPress Plugin',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Đăng ký dùng thử miễn phí ngay lập tức để nhúng Live Chat và Pop-up thu Lead thật vào đồ án Website WordPress hoặc LadiPage của nhóm.',
+    useCases: [
+      'Cài đặt Rule tự động: Khi khách xem trang "Bảng giá khóa học" quá 20 giây, cửa sổ Subiz tự bật tin nhắn hỏi thăm và tặng tài liệu thử.',
+      'Hợp nhất tin nhắn từ Website, Facebook Messenger và Zalo OA về một hộp thư chung kèm gắn thẻ phân loại Lead nóng/ấm.',
+      'Theo dõi thời gian phản hồi trung bình (First Response Time) của đội ngũ tư vấn tuyển sinh/bán hàng.'
+    ],
+    pros: [
+      'Cài đặt cực nhanh chỉ với 1 đoạn mã nhúng ngắn hoặc Plugin WordPress chính chủ.',
+      'Giao diện trực quan, tốc độ tải nhẹ không làm chậm điểm PageSpeed của Website.'
+    ],
+    limitations: 'Hết thời gian dùng thử cần nâng cấp gói trả phí để duy trì nhiều tư vấn viên trực cùng lúc.',
+    studentTip: 'Trong môn Thực hành Thương mại điện tử hoặc Thiết kế Web, chỉ mất 3 phút gắn mã Subiz lên trang web demo sẽ giúp bài thuyết trình của nhóm trông chuyên nghiệp như một doanh nghiệp thật!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 404,
+    slug: 'ahachat',
+    name: 'AhaChat',
+    tagline: 'Công cụ tạo Chatbot Viral Marketing, Minigame & Tự động chốt đơn không cần code của VN',
+    excerpt: 'Nền tảng kéo-thả kịch bản Chatbot trên Facebook Messenger, Instagram và Zalo OA nổi tiếng tại Việt Nam với kho mẫu Viral tặng quà, vòng quay may mắn.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Gói Miễn phí 100% trọn đời hỗ trợ đầy đủ tính năng cốt lõi cho tối đa 1.000 khách hàng đăng ký (Subscribers) — cực kỳ thoải mái cho dự án sinh viên.',
+    level: 'Cơ bản',
+    officialUrl: 'https://ahachat.com/',
+    tags: ['Chatbot Marketing', 'Viral Minigame', 'Messenger Automation', 'No-Code'],
+    whatIsIt: 'AhaChat là nền tảng xây dựng Chatbot Marketing tự động hóa hội thoại do kỹ sư Việt Nam phát triển, sử dụng sơ đồ kéo-thả trực quan (Flow Builder) giúp Marketer dễ dàng tạo phễu tự động trả lời bình luận, quay thưởng trúng voucher và lan truyền chiến dịch mời bạn bè (Viral Referral).',
+    bestFor: 'Sinh viên chạy truyền thông sự kiện CLB, cuộc thi học thuật trường Đại học hoặc bán hàng online muốn tự động trả lời comment/inbox 24/7.',
+    platforms: 'Web Cloud (Tích hợp Facebook Messenger, Instagram, Zalo OA, Website)',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Gói Free trọn đời cho phép kết nối Fanpage thật với tối đa 1.000 người dùng tương tác cùng hàng chục mẫu kịch bản (Template) dựng sẵn miễn phí.',
+    useCases: [
+      'Tự động bình luận đáp lễ và nhắn tin gửi link tài liệu/vé sự kiện ngay khi sinh viên comment từ khóa (VD: "ĐĂNG KÝ") trên bài đăng Fanpage CLB.',
+      'Tạo Minigame Vòng quay may mắn hoặc Mở hộp quà Tết/Trung thu ngay trong Messenger để thu thập Email/SĐT khách hàng.',
+      'Tạo luồng Viral: "Chia sẻ cho 3 người bạn để nhận bộ đề cương/voucher giảm 50%".'
+    ],
+    pros: [
+      'Sơ đồ Mindmap kéo-thả bằng tiếng Việt cực dễ hiểu, người không biết lập trình làm chủ được trong 30 phút.',
+      'Kho mẫu kịch bản ngành F&B, Giáo dục, Mỹ phẩm, Sự kiện thiết kế sẵn cho thị trường Việt Nam.'
+    ],
+    limitations: 'Cần tuân thủ nghiêm chính sách nhắn tin 24h của Meta để tránh Fanpage bị hạn chế gửi tin hàng loạt.',
+    studentTip: 'Khi tổ chức Workshop hay cuộc thi cho CLB sinh viên, hãy kết hợp bài đăng "Comment nhận tài liệu" + AhaChat tự động inbox gửi tài liệu kèm nhắc lịch sự kiện — tỷ lệ tương tác tự nhiên (Organic Reach) của Fanpage sẽ tăng vọt!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 405,
+    slug: 'fchat-vn',
+    name: 'Fchat',
+    tagline: 'Phần mềm Chatbot bán hàng & Tự động hóa kịch bản chăm sóc khách đa kênh cho SME Việt',
+    excerpt: 'Giải pháp Chatbot thuộc hệ sinh thái Salekit/iNET giúp tự động trả lời comment, ẩn bình luận chứa SĐT và nuôi dưỡng khách hàng qua Messenger, Zalo, Shopee, Lazada.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Có gói Miễn phí trọn đời giới hạn số lượng Fanpage và khách hàng lưu trữ; các gói Pro chi phí hợp lý cho shop kinh doanh nhỏ.',
+    level: 'Cơ bản',
+    officialUrl: 'https://fchat.vn/',
+    tags: ['Sales Chatbot', 'Omnichannel Chat', 'Hide Phone Comment', 'SME Vietnam'],
+    whatIsIt: 'Fchat là phần mềm Chatbot quản lý bán hàng và tự động hóa Marketing đa kênh phổ biến tại Việt Nam (được phát triển bởi đội ngũ iNET / Salekit), tích hợp mượt mà từ Fanpage Facebook, Zalo OA, TikTok, Instagram đến gian hàng Shopee, Lazada và Livechat Website.',
+    bestFor: 'Sinh viên thực hành bán hàng trên mạng xã hội, quản trị Fanpage shop thời trang/phụ kiện hoặc làm thực tập sinh Digital tại SME.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Cung cấp gói Free vĩnh viễn kèm chuỗi video khóa học hướng dẫn làm Chatbot A–Z bằng tiếng Việt hoàn toàn miễn phí.',
+    useCases: [
+      'Tự động ẩn bình luận có chứa số điện thoại của khách trên bài chạy Ads để chống đối thủ cướp khách.',
+      'Thiết lập chuỗi tin nhắn chăm sóc tự động (Sequence) nhắc khách hoàn tất đơn hàng hoặc hướng dẫn sử dụng sau mua.',
+      'Chốt đơn tự động trên Livestream Facebook thông qua cú pháp bình luận mã sản phẩm.'
+    ],
+    pros: [
+      'Kết nối sẵn với hệ sinh thái tên miền/hosting iNET, cổng thanh toán VietQR và các đơn vị vận chuyển lớn tại Việt Nam.',
+      'Có tính năng tạo Form đặt hàng nhanh và quản lý đơn gọn nhẹ ngay trong khung chat.'
+    ],
+    limitations: 'Giao diện gói nhiều tính năng bán hàng nên cần 1–2 buổi thực hành để phân biệt rõ luồng Keyword và luồng Sequence.',
+    studentTip: 'Khi đi phỏng vấn vị trí Fanpage Admin hoặc Content chạy Ads cho doanh nghiệp vừa và nhỏ tại Việt Nam, biết cách cài đặt ẩn comment SĐT và gắn thẻ phân loại khách trên Fchat/Pancake là một điểm cộng thực chiến rất lớn.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 406,
+    slug: 'spineditor',
+    name: 'Spineditor',
+    tagline: 'Bộ công cụ SEO "huyền thoại" siêu tiết kiệm của cộng đồng SEOer Việt Nam',
+    excerpt: 'Công cụ web thuần Việt nổi tiếng với chi phí chỉ vài nghìn đồng/ngày để kiểm tra thứ hạng từ khóa hàng loạt trên Google.com.vn, gợi ý từ khóa và kiểm tra trùng lặp.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Chi phí siêu "hạt dẻ" chuẩn sinh viên: chỉ khoảng 1.000đ/ngày (~30.000đ/tháng), tính phí linh hoạt theo ngày thực dùng.',
+    level: 'Cơ bản',
+    officialUrl: 'https://spineditor.com/',
+    tags: ['Vietnam SEO Tool', 'Rank Tracker', 'Keyword Research', 'Budget Friendly'],
+    whatIsIt: 'Spineditor là bộ công cụ hỗ trợ SEO trực tuyến lâu đời và quen thuộc bậc nhất với giới SEOer Việt Nam. Dù giao diện tối giản kiểu cổ điển, công cụ vẫn được hàng nghìn đội nhóm Content SEO nội địa tin dùng nhờ khả năng kiểm tra thứ hạng hàng trăm từ khóa tiếng Việt nhanh, chuẩn xác theo vị trí địa lý Việt Nam với mức phí rẻ không tưởng.',
+    bestFor: 'Sinh viên thực tập SEO Content, nhóm làm dự án xây dựng Website môn SEO cần theo dõi thứ hạng bộ 100–500 từ khóa hàng tuần với ngân sách cực thấp.',
+    platforms: 'Web Browser',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Mức phí chỉ ngang một cốc trà đá (~30.000đ/tháng) cho cả nhóm dùng chung để theo dõi tiến độ lên Top từ khóa của đồ án SEO.',
+    useCases: [
+      'Kiểm tra thứ hạng hàng loạt (Bulk Keyword Rank Checker) của Website dự án trên Google Việt Nam mỗi tuần để xuất báo cáo đồ án.',
+      'Quét gợi ý từ khóa mở rộng (Google Suggest tiếng Việt) và kiểm tra mật độ từ khóa trong bài viết.',
+      'Kiểm tra nhanh tình trạng Index bài viết mới trên Google.'
+    ],
+    pros: [
+      'Rẻ nhất thị trường nhưng tốc độ kiểm tra thứ hạng từ khóa tại thị trường Việt Nam rất nhanh và sát thực tế.',
+      'Không bắt mua gói năm đắt đỏ như các công cụ quốc tế; nạp 20.000đ–30.000đ cũng dùng được ngay.'
+    ],
+    limitations: 'Giao diện cũ; tuyệt đối KHÔNG nên lạm dụng tính năng "Spin trộn từ tự động" kiểu cũ vì thuật toán Google hiện đại (Helpful Content) ưu tiên bài viết chất lượng cao cho người đọc.',
+    studentTip: 'Hãy dùng Spineditor cho 2 tính năng mạnh nhất của nó là "Kiểm tra thứ hạng từ khóa" và "Nghiên cứu từ khóa gợi ý", còn phần viết bài hãy đầu tư nội dung chuyên sâu chuẩn EEAT thay vì spin chữ cơ học nhé!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 407,
+    slug: 'admicro-vccorp',
+    name: 'Admicro',
+    tagline: 'Mạng lưới Quảng cáo Hiển thị (Display Ads), Booking PR Báo chí & Programmatic số 1 VN',
+    excerpt: 'Hệ sinh thái AdTech lớn nhất Việt Nam (thuộc VCCorp) kết nối quảng cáo và bài PR trên Kenh14, CafeF, CafeBiz, Dân Trí, Tuổi Trẻ, Thanh Niên, GenK.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Tính theo gói Booking PR / CPM / CPC doanh nghiệp; kho Báo cáo thị trường, Media Kit & Bảng giá quảng cáo báo điện tử được công bố công khai để sinh viên tra cứu.',
+    level: 'Trung bình',
+    officialUrl: 'https://www.admicro.vn/',
+    featured: true,
+    tags: ['Ad Network Vietnam', 'PR Booking', 'Display & Native Ads', 'Media Planning'],
+    whatIsIt: 'Admicro (trực thuộc VCCorp) là mạng lưới quảng cáo trực tuyến và truyền thông tích hợp lớn nhất Việt Nam, tiếp cận hơn 90% người dùng Internet nội địa thông qua hàng trăm đầu báo điện tử hàng đầu (Kenh14, CafeF, Dân Trí, Soha, GenK, Afamily...) cùng các nền tảng Programmatic Ads, AdX và KOC/KOL.',
+    bestFor: 'Sinh viên lập Media Plan & dự toán ngân sách PR báo chí (Media Buying / Integrated Marketing Communications - IMC) cho đồ án môn học và cuộc thi Marketing.',
+    platforms: 'Web Platform (Admicro AdX, PR Booking Portal)',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Website Admicro công khai Media Kit (lưu lượng độc giả, nhân khẩu học từng trang báo) và Rate Card chuẩn của hàng chục tờ báo lớn tại Việt Nam — nguồn số liệu vàng cho bảng ngân sách IMC của sinh viên!',
+    useCases: [
+      'Tra cứu chân dung độc giả (Audience Profile) và lưu lượng truy cập của Kenh14 (Gen Z), CafeF (Doanh nhân/Tài chính), Afamily (Phụ nữ/Gia đình) để chọn kênh truyền thông đúng tệp.',
+      'Tham khảo bảng giá chuẩn (Rate Card) bài PR loại 1, bài Special-Longform/Emagazine và Banner Masthead để lập bảng dự trù ngân sách thực tế.',
+      'Tìm hiểu các định dạng quảng cáo hiển thị sáng tạo (Rich Media, In-read Video, Native Ads, PC/Mobile Banner).'
+    ],
+    pros: [
+      'Độ phủ truyền thông chính thống uy tín bậc nhất Việt Nam, tăng mạnh độ tin cậy thương hiệu (Brand Trust).',
+      'Bộ tài liệu Media Kit và Case Study ngành hàng được trình bày bài bản, giàu số liệu thị trường nội địa.'
+    ],
+    limitations: 'Ngân sách triển khai thực tế dành cho nhãn hàng/Agency, sinh viên chủ yếu khai thác dữ liệu Media Kit & Rate Card để lập kế hoạch.',
+    studentTip: 'Khi giảng viên hoặc giám khảo hỏi "Tại sao nhóm em lại ước tính chi phí đăng 3 bài PR trên Kenh14 và CafeF là X triệu đồng?", việc trích dẫn trực tiếp Rate Card công khai của Admicro sẽ chứng minh nhóm bạn làm Media Plan có căn cứ thực chiến 100%!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 408,
+    slug: 'eclick-fpt',
+    name: 'eClick (FPT Online)',
+    tagline: 'Mạng lưới Quảng cáo Tự nhiên (Native Ads) & Video trên hệ sinh thái VnExpress',
+    excerpt: 'Nền tảng quảng cáo trực tuyến của FPT Online giúp phân phối Native Ads, Banner và Video Ads trên VnExpress, Ngôi Sao và mạng lưới báo chí uy tín Việt Nam.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Tính phí linh hoạt theo lượt nhấp (CPC) hoặc lượt hiển thị (CPM) trên hệ thống đấu giá tự động.',
+    level: 'Trung bình',
+    officialUrl: 'https://eclick.vn/',
+    tags: ['Native Ads', 'VnExpress Ecosystem', 'Display Advertising', 'Brand Safety'],
+    whatIsIt: 'eClick là nền tảng công nghệ quảng cáo (AdTech) do FPT Online phát triển, cho phép doanh nghiệp hiển thị quảng cáo tự nhiên (Native Advertising), Banner tiêu chuẩn và TVC Video ngay trong luồng đọc tin tức của báo điện tử tiếng Việt nhiều người đọc nhất — VnExpress, Ngôi Sao cùng hàng chục đối tác xuất bản uy tín.',
+    bestFor: 'Sinh viên tìm hiểu kênh quảng cáo ngoài mạng xã hội (Beyond Facebook/TikTok) để tiếp cận tệp khách hàng trưởng thành, thu nhập khá giỏi (Bất động sản, Ngân hàng, Ô tô, Giáo dục sau đại học, Sức khỏe).',
+    platforms: 'Web Self-serve Ad Manager',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Có thể đăng ký tài khoản xem giao diện tạo chiến dịch và nghiên cứu các định dạng quảng cáo Native Ads an toàn thương hiệu (Brand Safety).',
+    useCases: [
+      'Thiết kế chiến dịch Native Ads hiển thị tự nhiên như một tin bài gợi ý dưới chân bài báo Kinh doanh/Bất động sản trên VnExpress.',
+      'Nhắm mục tiêu theo ngữ cảnh nội dung bài đọc (Contextual Targeting), khu vực địa lý và hành vi quan tâm của độc giả.',
+      'Đa dạng hóa kênh Paid Media trong kế hoạch truyền thông tích hợp (IMC) cho các sản phẩm giá trị cao (High-involvement Products).'
+    ],
+    pros: [
+      'Môi trường hiển thị báo chí chính thống đảm bảo an toàn thương hiệu (Brand Safety) tuyệt đối.',
+      'Tiếp cận chính xác nhóm khách hàng quản lý, nhân viên văn phòng và gia đình có sức mua cao.'
+    ],
+    limitations: 'Không phù hợp với các mặt hàng trào lưu giá siêu rẻ hướng tới học sinh nhỏ tuổi.',
+    studentTip: 'Nếu đề bài Marketing của bạn là sản phẩm Bất động sản, Bảo hiểm, Khóa học MBA hay Thực phẩm sức khỏe tặng bố mẹ, đừng chỉ dồn 100% ngân sách vào TikTok — hãy phân bổ một phần sang Native Ads trên VnExpress (qua eClick) để thuyết phục hội đồng chấm bài!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 409,
+    slug: 'slimcrm',
+    name: 'SlimCRM',
+    tagline: 'Phần mềm CRM tinh gọn "Make in Vietnam" chuẩn hóa phễu Marketing - Sales cho SME',
+    excerpt: 'Hệ thống CRM hiện đại, dễ dùng theo triết lý tinh gọn giúp doanh nghiệp vừa và nhỏ Việt Nam quản lý Lead từ Webform, chăm sóc cơ hội bán hàng và dòng tiền.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Hỗ trợ đăng ký dùng thử miễn phí; kho Ebook & biểu mẫu quản trị Marketing - Sales của SlimCRM/SlimSoft chia sẻ miễn phí rất chất lượng.',
+    level: 'Cơ bản',
+    officialUrl: 'https://slimcrm.vn/',
+    tags: ['Lean CRM', 'Lead Pipeline', 'B2B SME', 'Vietnam SaaS'],
+    whatIsIt: 'SlimCRM (phát triển bởi Vinno / SlimSoft) là phần mềm quản trị quan hệ khách hàng được thiết kế theo triết lý "Tinh gọn - Dễ dùng - Đúng tính năng cốt lõi nhất" dành riêng cho các doanh nghiệp vừa và nhỏ (SME) và Agency tại Việt Nam, bao quát từ thu thập Lead, phễu Sales Pipeline (Kanban) đến quản lý dự án và hóa đơn.',
+    bestFor: 'Sinh viên thực hành quản lý phễu khách hàng tiềm năng (Sales Funnel), tính tỷ lệ chuyển đổi từng bước (Lead → SQL → Won) và tham khảo tài liệu quản trị Marketing nội địa.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Có bản dùng thử miễn phí và đặc biệt là chuyên mục Blog/Thư viện Ebook của SlimCRM dịch thuật, biên soạn hàng chục tài liệu Growth Marketing & CRM cực hay bằng tiếng Việt.',
+    useCases: [
+      'Tạo Webform thu thập thông tin đăng ký tư vấn tự động đổ về bảng kéo-thả Sales Pipeline.',
+      'Theo dõi tỷ lệ rớt khách ở từng giai đoạn tư vấn để phối hợp tối ưu chất lượng Lead giữa đội Marketing và Sales.',
+      'Quản lý công việc dự án phục vụ khách hàng sau khi ký hợp đồng Agency.'
+    ],
+    pros: [
+      'Giao diện sáng sủa, tinh gọn, ít trường thông tin rườm rà nên sinh viên làm quen chỉ mất 15 phút.',
+      'Tích hợp sẵn chữ ký số, tổng đài IP, Email và Zalo ZNS nội địa.'
+    ],
+    limitations: 'Không có gói Free trọn đời không giới hạn thời gian.',
+    studentTip: 'Ghé thăm mục Thư viện Ebook miễn phí của SlimCRM để tải các khung mẫu lập kế hoạch Marketing và kịch bản chăm sóc khách hàng B2B bằng tiếng Việt rất sát thực tế!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 410,
+    slug: 'base-vn',
+    name: 'Base.vn',
+    tagline: 'Nền tảng Quản trị & Vận hành Doanh nghiệp SaaS phổ biến số 1 Việt Nam (FPT)',
+    excerpt: 'Hệ sinh thái hơn 50 ứng dụng quản trị công việc, dự án Marketing (Base Wework) và quy trình phê duyệt (Base Workflow, Base Request) tại hơn 9.000 doanh nghiệp Việt.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Giải pháp SaaS doanh nghiệp; thư viện kiến thức Quản trị, OKRs & vận hành phòng Marketing trên Base Resources hoàn toàn miễn phí cho sinh viên.',
+    level: 'Trung bình',
+    officialUrl: 'https://base.vn/',
+    featured: true,
+    tags: ['Project Management', 'Base Wework', 'Marketing Operations', 'FPT Ecosystem'],
+    whatIsIt: 'Base.vn (thành viên Tập đoàn FPT) là nền tảng SaaS quản trị doanh nghiệp hàng đầu Việt Nam, được hơn 9.000 công ty và tập đoàn nội địa sử dụng hàng ngày. Đối với dân Marketing, hai phân hệ quen thuộc nhất là **Base Wework** (quản lý dự án, lịch Content, chiến dịch) và **Base Request/Workflow** (duyệt ngân sách Ads, nghiệm thu thiết kế, thanh toán KOL).',
+    bestFor: 'Sinh viên năm 3–4 chuẩn bị đi thực tập Marketing In-house hoặc Agency tại Việt Nam muốn làm quen trước quy trình giao việc, duyệt ngân sách và OKRs.',
+    platforms: 'Web Browser, Desktop App, iOS & Android',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Kho tài liệu Base Resources cung cấp miễn phí hàng trăm mẫu biểu Excel/Template quản lý chiến dịch Marketing, KPI/OKR và quy trình phối hợp phòng ban chuẩn doanh nghiệp Việt.',
+    useCases: [
+      'Quản lý tiến độ chiến dịch ra mắt sản phẩm trên Base Wework theo dạng bảng Kanban hoặc biểu đồ Gantt.',
+      'Vận hành quy trình chuẩn (Workflow) từ khâu Content lên bài → Designer thiết kế → Leader duyệt → Booking chạy Ads.',
+      'Tạo đề xuất duyệt chi ngân sách quảng cáo/sự kiện minh bạch trên Base Request.'
+    ],
+    pros: [
+      'Là phần mềm làm việc thực tế tại hàng nghìn công ty lớn nhỏ ở Việt Nam — biết tư duy quy trình trên Base giúp bạn hòa nhập kỳ thực tập cực nhanh.',
+      'Tách bạch rõ ràng giữa quản lý dự án sáng tạo (Wework) và luồng quy trình lặp lại (Workflow).'
+    ],
+    limitations: 'Không bán lẻ gói cá nhân hay nhóm sinh viên tự do như Notion/Trello.',
+    studentTip: 'Khi đi thực tập tại các doanh nghiệp Việt Nam, đừng bỡ ngỡ khi công ty không dùng Notion mà dùng Base.vn — hãy đọc trước cách phân rã công việc trên Base Wework và tải các biểu mẫu Marketing miễn phí trên blog của Base!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 411,
+    slug: '1office-vn',
+    name: '1Office',
+    tagline: 'Nền tảng Quản trị Tổng thể Doanh nghiệp All-in-One (Work, CRM, Marketing, HRM) của Việt Nam',
+    excerpt: 'Giải pháp phần mềm hợp nhất tất cả nghiệp vụ Quản lý dự án, Chiến dịch Marketing, Chăm sóc khách hàng CRM và Nhân sự trên một nền tảng duy nhất.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Có gói đăng ký dùng thử miễn phí 14 ngày; được vinh danh Giải thưởng Make in Viet Nam của Bộ TT&TT.',
+    level: 'Trung bình',
+    officialUrl: 'https://1office.vn/',
+    tags: ['All-in-One Workplace', 'CRM & Marketing', 'Make in Viet Nam', 'Enterprise SaaS'],
+    whatIsIt: '1Office là nền tảng quản trị doanh nghiệp hợp nhất (All-in-One) tiêu biểu của Việt Nam phục vụ hơn 6.000 doanh nghiệp, cho phép kết nối xuyên suốt từ chiến dịch thu Lead của phòng Marketing, chăm sóc báo giá hợp đồng của phòng Sales (1Office CRM) sang quản lý công việc (Workplace) và tính KPI tự động.',
+    bestFor: 'Sinh viên ngành Quản trị Kinh doanh, Thương mại điện tử và Marketing tìm hiểu mô hình chuyển đổi số toàn diện tại doanh nghiệp Việt.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Cung cấp bản dùng thử 14 ngày và chuỗi hội thảo/tài liệu hướng dẫn xây dựng quy trình CRM - Marketing - KPI thực tế.',
+    useCases: [
+      'Theo dõi hiệu quả chi phí trên từng chiến dịch Marketing gắn liền với doanh số hợp đồng thực thu trên cùng hệ thống.',
+      'Quản lý lịch biên tập nội dung, phân công thiết kế và tự động nhắc hạn hoàn thành cho các thành viên.',
+      'Tích hợp mạng xã hội nội bộ giúp truyền thông văn hóa doanh nghiệp (Internal Communications).'
+    ],
+    pros: [
+      'Tất cả phân hệ nằm chung một giao diện, không phải mua rời rạc hay đấu nối API phức tạp giữa nhiều phần mềm.',
+      'Trợ lý AI tích hợp hỗ trợ tra cứu dữ liệu và tóm tắt công việc bằng tiếng Việt.'
+    ],
+    limitations: 'Vì là nền tảng All-in-One rộng lớn nên người mới cần đi từng phân hệ (Work → CRM) để không bị ngợp.',
+    studentTip: 'Rất đáng đưa vào phần "Đề xuất giải pháp chuyển đổi số & quản trị khách hàng" trong các bài khóa luận tốt nghiệp thực tập tại doanh nghiệp vừa và nhỏ Việt Nam.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 412,
+    slug: 'esms-vn',
+    name: 'eSMS.vn',
+    tagline: 'Hệ thống gửi SMS Brandname, Tin nhắn Zalo ZNS & Auto Call hàng đầu tại Việt Nam',
+    excerpt: 'Nền tảng Mobile Marketing thuần Việt (thuộc ViHAT) giúp doanh nghiệp gửi tin nhắn thương hiệu định danh qua SMS, Zalo ZNS, Viber và gọi tự động CSKH.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Đăng ký tài khoản miễn phí và tặng tiền test thử hệ thống; chi phí tính theo từng tin nhắn gửi thành công (từ vài trăm đồng/tin ZNS).',
+    level: 'Cơ bản',
+    officialUrl: 'https://esms.vn/',
+    tags: ['SMS Brandname', 'Zalo ZNS', 'Mobile Marketing', 'Customer Notification'],
+    whatIsIt: 'eSMS.vn (phát triển bởi ViHAT Group — đơn vị đứng sau OmiCall) là một trong những cổng dịch vụ Mobile Marketing và thông báo khách hàng đa kênh lớn nhất Việt Nam, kết nối trực tiếp với các nhà mạng nội địa (Viettel, VinaPhone, MobiFone) và Zalo để gửi tin nhắn mang tên thương hiệu (Brandname) hợp chuẩn pháp lý.',
+    bestFor: 'Sinh viên thiết kế kịch bản thông báo đơn hàng, gửi mã OTP, nhắc lịch hẹn sự kiện/khám bệnh và ước tính chi phí Direct Marketing tại Việt Nam.',
+    platforms: 'Web Portal, RESTful API tích hợp Web / CRM / Haravan / Sapo',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Bảng giá SMS Brandname theo từng nhóm ngành (Giáo dục, Y tế, TMĐT, Tài chính) và bảng giá Zalo ZNS công khai rõ ràng giúp sinh viên dự toán chi phí chiến dịch chính xác từng đồng.',
+    useCases: [
+      'Thiết kế luồng thông báo đa tầng tiết kiệm chi phí: Ưu tiên gửi qua Zalo ZNS (rẻ, đẹp, có nút bấm) → nếu SĐT khách không dùng Zalo mới tự động chuyển sang gửi SMS Brandname (Failover).',
+      'Gửi tin nhắn nhắc lịch hội thảo, xác nhận vé sự kiện kèm mã QR check-in chuyên nghiệp.',
+      'Chăm sóc sinh nhật khách hàng tự động kèm mã giảm giá cá nhân hóa.'
+    ],
+    pros: [
+      'Cơ chế Failover thông minh giữa Zalo ZNS và SMS Brandname giúp doanh nghiệp tiết kiệm 40–60% ngân sách nhắn tin.',
+      'Đảm bảo tuân thủ tuyệt đối Nghị định chống tin nhắn rác tại Việt Nam.'
+    ],
+    limitations: 'Để gửi tên thương hiệu thật (Brandname) ra ngoài cần giấy phép đăng ký kinh doanh/tên định danh theo quy định nhà mạng.',
+    studentTip: 'Đưa giải pháp "ZNS Failover sang SMS Brandname" vào kế hoạch chăm sóc khách hàng trong đồ án E-commerce/Ngân hàng/Phòng khám sẽ cho thấy bạn nắm rất chắc bài toán tối ưu chi phí vận hành thực tế tại Việt Nam!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 413,
+    slug: 'stringee-x',
+    name: 'StringeeX',
+    tagline: 'Nền tảng Tổng đài Contact Center đa kênh & Giao tiếp Video/Voice API công nghệ Việt',
+    excerpt: 'Giải pháp Omnichannel Contact Center từng đạt Giải Nhất Nhân tài Đất Việt giúp hợp nhất Tổng đài thoại, Video Call, Live Chat, Facebook và Zalo.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Hỗ trợ dùng thử miễn phí 10–15 ngày cho Contact Center; có gói miễn phí phút gọi/API hàng tháng cho lập trình viên & sinh viên tích hợp thử nghiệm.',
+    level: 'Trung bình',
+    officialUrl: 'https://stringee.com/',
+    tags: ['Omnichannel Contact Center', 'Voice & Video SDK', 'Telesales CRM', 'Make in Viet Nam'],
+    whatIsIt: 'Stringee là công ty công nghệ giao tiếp đám mây (CPaaS) và trung tâm chăm sóc khách hàng đa kênh (StringeeX) tiêu biểu của Việt Nam (Giải Nhất Nhân tài Đất Việt & Giải thưởng Make in Viet Nam), cung cấp hạ tầng gọi thoại/video nhúng thẳng vào App/Web của nhiều ngân hàng, bảo hiểm và sàn TMĐT lớn.',
+    bestFor: 'Sinh viên tìm hiểu vận hành Telesales, Telemarketing, dịch vụ khách hàng (Customer Service) và hành trình trải nghiệm khách hàng đa điểm chạm (CX).',
+    platforms: 'Web Browser, iOS, Android, WebRTC SDK / API',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Tài khoản Developer tặng hạn mức gọi nội bộ miễn phí để sinh viên CNTT/TMĐT thử nhúng nút "Gọi tư vấn miễn phí ngay trên trình duyệt" vào đồ án Website.',
+    useCases: [
+      'Cho phép khách truy cập Website bấm gọi trực tiếp cho tư vấn viên qua Internet (Web-to-App Call) hoàn toàn không tốn cước viễn thông.',
+      'Quản lý phiếu ghi (Ticket) chăm sóc khách hàng xuyên suốt từ cuộc gọi tổng đài đến tin nhắn Zalo/Fanpage.',
+      'Phân bổ cuộc gọi thông minh (ACD/IVR) gặp đúng nhân viên đang phụ trách khách hàng đó.'
+    ],
+    pros: [
+      'Công nghệ lõi WebRTC tự chủ tại Việt Nam với độ trễ cực thấp và âm thanh ổn định.',
+      'Kết nối dễ dàng với hầu hết các CRM phổ biến như HubSpot, Salesforce, Getfly, SlimCRM.'
+    ],
+    limitations: 'Đấu nối đầu số hotline doanh nghiệp thực tế cần thủ tục định danh thuê bao tổ chức.',
+    studentTip: 'Đối với các ngành Tư vấn du học, Anh ngữ, Tài chính hay Bất động sản, trải nghiệm nút "Click-to-Call miễn phí ngay trên Web" của Stringee giúp tăng mạnh tỷ lệ khách chịu liên hệ tư vấn.',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 414,
+    slug: 'misa-cukcuk',
+    name: 'MISA CukCuk',
+    tagline: 'Phần mềm Quản lý Nhà hàng, Quán Cafe & Marketing F&B phổ biến hàng đầu Việt Nam',
+    excerpt: 'Giải pháp quản trị vận hành POS, Menu điện tử QR tại bàn, kết nối GrabFood/ShopeeFood và quản lý khuyến mãi/thành viên chuyên biệt cho ngành F&B Việt Nam.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Miễn phí dùng thử đầy đủ tính năng 15 ngày; kho báo cáo thị trường kinh doanh F&B và Cẩm nang mở quán trên blog CukCuk hoàn toàn miễn phí.',
+    level: 'Cơ bản',
+    officialUrl: 'https://www.cukcuk.vn/',
+    tags: ['F&B Marketing', 'Restaurant POS', 'QR Menu Ordering', 'Food Delivery Sync'],
+    whatIsIt: 'MISA CukCuk là nền tảng phần mềm chuyên sâu cho ngành kinh doanh Ẩm thực (Nhà hàng, Quán cà phê, Trà sữa, Bakery) thuộc Tập đoàn MISA, phục vụ hơn 50.000 thương hiệu F&B tại Việt Nam và quốc tế, kết hợp chặt chẽ giữa bán hàng tại quầy, gọi món qua QR tại bàn, đồng bộ App giao đồ ăn và chăm sóc hội viên.',
+    bestFor: 'Sinh viên lập dự án khởi nghiệp mở quán Cafe/Trà sữa/Nhà hàng hoặc làm kế hoạch Marketing ngành F&B rất phổ biến ở các trường Đại học.',
+    platforms: 'Windows, POS Cảm ứng, Tablet, iOS, Android, Web Cloud',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Dùng thử 15 ngày để tạo thực đơn điện tử, mô phỏng combo khuyến mãi Giờ Vàng (Happy Hour) và đọc hàng trăm bài phân tích chi phí Cost nguyên vật liệu (COGS) chuẩn F&B Việt.',
+    useCases: [
+      'Thiết kế chiến dịch khuyến mãi theo khung giờ thấp điểm (Happy Hour 14h–17h), Mua 2 tặng 1, hoặc Combo bữa trưa văn phòng.',
+      'Triển khai Website đặt món trực tuyến riêng của quán và mã QR đặt món tại bàn giúp thu thập dữ liệu món bán chạy nhất (Menu Engineering: Star, Plowhorse, Puzzle, Dog).',
+      'Đồng bộ thực đơn, giá bán và doanh thu từ GrabFood, ShopeeFood về một báo cáo duy nhất.'
+    ],
+    pros: [
+      'Bám sát 100% nghiệp vụ đặc thù ngành ăn uống tại Việt Nam (topping trà sữa, định lượng nguyên liệu, gộp/tách bàn).',
+      'Báo cáo phân tích thực đơn giúp Marketer biết ngay món nào mang lại biên lợi nhuận cao nhất để đẩy quảng cáo.'
+    ],
+    limitations: 'Chuyên biệt riêng cho lĩnh vực F&B (nhà hàng, ăn uống), không dùng cho shop bán lẻ thời trang/mỹ phẩm.',
+    studentTip: 'Hầu như lớp Marketing nào cũng có ít nhất 2–3 nhóm chọn đề tài F&B (quán cà phê, trà sữa, đồ ăn healthy)! Hãy áp dụng ma trận Menu Engineering kết hợp dữ liệu MISA CukCuk vào bài thuyết trình để ăn đứt các nhóm chỉ nói chung chung về đăng bài Facebook!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 415,
+    slug: '7sat-influencer-vn',
+    name: '7SAT (Influencer.vn)',
+    tagline: 'Nền tảng Influencer Marketing tiên phong tại Việt Nam kết nối hàng chục nghìn KOL & KOC',
+    excerpt: 'Hệ thống dữ liệu và quản lý chiến dịch Influencer Marketing chuyên nghiệp tại Việt Nam giúp tìm kiếm, phân tích chỉ số thật của KOL/KOC từ Nano đến Mega.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Cung cấp dịch vụ & nền tảng cho nhãn hàng/Agency; thường xuyên xuất bản Báo cáo Toàn cảnh Influencer Marketing Việt Nam miễn phí cho cộng đồng.',
+    level: 'Trung bình',
+    officialUrl: 'https://7sat.vn/',
+    tags: ['Influencer Marketing', 'KOL & KOC Vietnam', 'Creator Analytics', 'Campaign Management'],
+    whatIsIt: '7SAT là một trong những đơn vị tiên phong đặt nền móng cho mảng Influencer Marketing dựa trên dữ liệu (Data-driven Influencer Marketing) tại Việt Nam, sở hữu nền tảng công nghệ quy tụ hơn 20.000+ Creators, Hot Mom, Beauty Blogger, TikToker và chuyên gia đa ngành cùng chỉ số phân tích nhân khẩu học người theo dõi.',
+    bestFor: 'Sinh viên lập danh sách đề xuất KOL/KOC (Influencer Shortlist) và trích dẫn số liệu xu hướng Influencer Việt Nam trong bài tiểu luận/đồ án IMC.',
+    platforms: 'Web Platform',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Các ấn phẩm báo cáo ngành Influencer Marketing tại Việt Nam do 7SAT phát hành là nguồn tài liệu tham khảo uy tín để trích dẫn tỷ lệ Engagement Rate chuẩn theo từng phân khúc (Nano, Micro, Macro, Mega).',
+    useCases: [
+      'Phân tầng chiến lược kết hợp (Influencer Mix): Mega/Macro KOL tạo độ phủ nhận biết + Micro/Nano KOC đánh giá chân thực thúc đẩy chuyển đổi giỏ hàng.',
+      'Đánh giá chất lượng người theo dõi (tỷ lệ tương tác thật, độ tuổi, khu vực TP.HCM vs Hà Nội) trước khi chọn gương mặt đại diện.',
+      'Theo dõi nghiệm thu link bài đăng và hiệu quả tương tác thời gian thực của chiến dịch.'
+    ],
+    pros: [
+      'Cơ sở dữ liệu tập trung hoàn toàn vào KOL/KOC người Việt nên rất sát văn hóa và thị hiếu nội địa.',
+      'Quy trình quản lý chiến dịch số lượng lớn (100–500 Nano/Micro Influencers cùng lúc) rất bài bản.'
+    ],
+    limitations: 'Tài khoản tra cứu sâu toàn bộ chi phí cát-xê chi tiết hướng tới khách hàng doanh nghiệp/Agency.',
+    studentTip: 'Trong slide kế hoạch Influencer Marketing của nhóm, hãy luôn chia bảng thành 3 cột rõ ràng: Phân tầng (Mega / Micro / KOC), Vai trò trong phễu (Awareness / Trust / Conversion) và KPI đo lường tương ứng (Views / Engagement Rate / Clicks)!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 416,
+    slug: 'hiip-asia',
+    name: 'Hiip',
+    tagline: 'Nền tảng kết nối Influencer & Creator tự động bằng dữ liệu tại Việt Nam và Đông Nam Á',
+    excerpt: 'Chợ kết nối trực tiếp (Marketplace) giữa thương hiệu và hàng nghìn Micro-Influencer, KOC tại Việt Nam dựa trên thuật toán khớp tệp khán giả tự động.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Creator/Sinh viên có kênh cá nhân đăng ký tham gia miễn phí 100%; nhãn hàng tạo chiến dịch và trả phí theo từng gói hợp tác minh bạch.',
+    level: 'Cơ bản',
+    officialUrl: 'https://hiip.asia/',
+    tags: ['Influencer Marketplace', 'Micro-Influencer', 'Creator Economy', 'SEA & Vietnam'],
+    whatIsIt: 'Hiip là nền tảng công nghệ Influencer Marketing khởi nguồn từ Việt Nam và mở rộng ra Đông Nam Á (được đầu tư bởi 500 Startups, Vulpes...), hoạt động như một sàn giao dịch tự động giúp nhãn hàng đăng đề bài (Brief) và kết nối nhanh chóng với các nhà sáng tạo nội dung có tệp người xem phù hợp nhất.',
+    bestFor: 'Sinh viên vừa có thể nghiên cứu cách viết Influencer Brief chuyên nghiệp của nhãn hàng, vừa có thể tự đăng ký làm KOC/Creator nếu sở hữu kênh TikTok/Instagram/Facebook từ vài nghìn người theo dõi.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt & Tiếng Anh.',
+    studentPerk: 'Sinh viên xây kênh cá nhân (Xây kênh review sách, đời sống đại học, mỹ phẩm, ẩm thực...) đạt ngưỡng follower cơ bản có thể đăng ký tài khoản Creator miễn phí để nhận Job tài trợ thật từ nhãn hàng!',
+    useCases: [
+      'Nghiên cứu cấu trúc một bản Campaign Brief chuẩn mà các thương hiệu lớn gửi cho KOC.',
+      'Triển khai chiến dịch phủ sóng hàng chục Micro-Influencer địa phương cho sự kiện khai trương cửa hàng mới.',
+      'Kiếm thêm thu nhập và tích lũy Portfolio sáng tạo nội dung thực tế ngay từ ghế giảng đường.'
+    ],
+    pros: [
+      'Quy trình từ nhận Brief, duyệt nội dung nháp (Draft) đến thanh toán thù lao đều minh bạch trên nền tảng.',
+      'Rất mạnh ở phân khúc Micro-Influencer có độ tin cậy và tương tác tự nhiên cao.'
+    ],
+    limitations: 'Yêu cầu tài khoản mạng xã hội của Creator có lượng tương tác thật ổn định mới qua vòng duyệt hồ sơ.',
+    studentTip: 'Không cách học Influencer Marketing nào nhanh hơn việc tự mình xây thử một kênh TikTok/Reels ngách và đăng ký lên Hiip hoặc REVU để trực tiếp đọc các bản Brief thật từ nhãn hàng!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 417,
+    slug: 'quickom-vn',
+    name: 'Quickom',
+    tagline: 'Nền tảng Tổ chức Sự kiện, Webinar quy mô lớn & Check-in QR Code công nghệ Việt',
+    excerpt: 'Giải pháp sự kiện toàn diện (Hybrid Event, Hội thảo trực tuyến hàng nghìn người, Bán vé & Quét QR Check-in siêu tốc) phát triển bởi đội ngũ kỹ sư Việt - Quốc tế.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Có gói trải nghiệm miễn phí cho phòng họp/sự kiện nhỏ; các gói sự kiện quy mô lớn tính linh hoạt theo số lượng người tham dự.',
+    level: 'Cơ bản',
+    officialUrl: 'https://quickom.com/',
+    tags: ['Event Tech Vietnam', 'Webinar Platform', 'QR Check-in', 'Hybrid Events'],
+    whatIsIt: 'Quickom (phát triển bởi Beowulf Blockchain / công nghệ Việt Nam vươn tầm quốc tế, từng đạt nhiều giải thưởng công nghệ số) là nền tảng chuyên dụng cho tổ chức sự kiện trực tuyến, hội nghị kết hợp (Hybrid Event), trang đăng ký vé và giải pháp quét mã QR Check-in khách mời tốc độ cao mà người tham dự không cần cài đặt ứng dụng.',
+    bestFor: 'Ban tổ chức sự kiện CLB sinh viên, Hội thảo khoa học trường Đại học, Ngày hội việc làm (Job Fair) và đồ án môn Tổ chức Sự kiện (Event Marketing).',
+    platforms: 'Web Browser (1-Click Join trên mọi trình duyệt), iOS & Android',
+    vietnameseSupport: '100% Tiếng Việt & Đa ngôn ngữ.',
+    studentPerk: 'Khách mời và sinh viên tham dự Webinar chỉ cần bấm link mở ngay trên trình duyệt điện thoại/máy tính mà không phải tải phần mềm trước.',
+    useCases: [
+      'Tạo trang Landing Page đăng ký tham dự Talkshow/Workshop tự động gửi vé điện tử kèm mã QR cá nhân qua Email.',
+      'Quét QR Check-in đón hàng trăm sinh viên tại bàn lễ tân hội trường nhanh gọn, xuất danh sách điểm danh chính xác theo thời gian thực để cộng điểm rèn luyện.',
+      'Tổ chức Webinar chia sẻ nghề nghiệp quy mô hàng nghìn người tham dự tương tác hỏi đáp trực tiếp.'
+    ],
+    pros: [
+      'Trải nghiệm vào phòng hội thảo 1 chạm ngay trên trình duyệt web cực kỳ tiện lợi cho diễn giả khách mời doanh nghiệp.',
+      'Khép kín từ khâu đăng ký vé trước sự kiện (Pre-event), tương tác trong sự kiện đến xuất báo cáo sau sự kiện (Post-event).'
+    ],
+    limitations: 'Các gói hội nghị truyền hình độ phân giải siêu cao nhiều điểm cầu cần thuê theo sự kiện.',
+    studentTip: 'Khi CLB của bạn tổ chức Talkshow tại hội trường trường Đại học, khâu ùn tắc bàn điểm danh đầu giờ là điểm trừ lớn nhất — hãy áp dụng quy trình gửi vé QR tự động trước sự kiện để quét check-in 2 giây/người!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 418,
+    slug: 'brands-vietnam',
+    name: 'Brands Vietnam',
+    tagline: 'Cộng đồng & Cổng tri thức Thương hiệu, Chiến lược Marketing lớn nhất Việt Nam',
+    excerpt: 'Kho tàng dữ liệu ngành hàng, phân tích Case Study chiến dịch nội địa, tin tức thị trường và nền tảng học trực tuyến BrandCamp quen thuộc của mọi Marketer Việt.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Đọc tin tức thị trường, hàng nghìn bài phân tích chuyên môn & Case Study hoàn toàn miễn phí; một số báo cáo sâu/khóa học BrandCamp thu phí riêng.',
+    level: 'Cơ bản',
+    officialUrl: 'https://www.brandsvietnam.com/',
+    featured: true,
+    tags: ['Marketing Knowledge Hub', 'Vietnam Case Studies', 'Consumer Insights', 'Brand Strategy'],
+    whatIsIt: 'Brands Vietnam là cổng thông tin và mạng xã hội chuyên ngành Thương hiệu & Marketing lâu đời, uy tín bậc nhất tại Việt Nam. Đây là nơi quy tụ hàng chục nghìn bài viết chuyên môn từ các CMO/Giám đốc thương hiệu, bản tin thị trường hàng ngày, thư viện chiến dịch Tết/mùa vụ nội địa và kho dữ liệu thị trường Việt Nam.',
+    bestFor: 'MỌI sinh viên chuyên ngành Marketing, Truyền thông, Quản trị Thương hiệu và Kinh doanh quốc tế tại Việt Nam từ năm nhất đến khi đi làm.',
+    platforms: 'Web Browser',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Miễn phí truy cập kho tàng hàng chục nghìn bài phân tích chiến dịch thương hiệu tại Việt Nam (Biti’s Hunter, Vinamilk, Masan, Highlands, Momo...) để làm dẫn chứng tiểu luận cực đắt giá!',
+    useCases: [
+      'Tra cứu toàn bộ lịch sử truyền thông, tái định vị thương hiệu (Rebranding) và chiến dịch Tết của các thương hiệu lớn tại Việt Nam khi làm tiểu luận Quản trị Thương hiệu.',
+      'Đọc tóm tắt các báo cáo hành vi người tiêu dùng Việt Nam mới nhất từ Kantar, NielsenIQ, Decision Lab, YouNet được đăng tải hàng tuần.',
+      'Theo dõi bảng tin tuyển dụng Marketing Internship / Management Trainee chính thống.'
+    ],
+    pros: [
+      'Nguồn tư liệu thực chiến tại thị trường Việt Nam phong phú, chính xác và có chiều sâu chiến lược số 1 hiện nay.',
+      'Phân loại khoa học theo từng ngành hàng (F&B, FMCG, Bán lẻ, Tài chính, Công nghệ, Dược phẩm...).'
+    ],
+    limitations: 'Một số khu vực tra cứu số liệu thống kê chuyên sâu yêu cầu điểm thành viên hoặc gói trả phí.',
+    studentTip: 'Hãy tập thói quen dành 10 phút mỗi sáng lướt chuyên mục "Điểm tin" và "Chiến dịch" trên Brands Vietnam — chỉ sau 1 học kỳ, vốn từ vựng chuyên ngành và độ nhạy bén thị trường của bạn khi phát biểu trên lớp hay đi phỏng vấn sẽ vượt trội hoàn toàn!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 419,
+    slug: 'advertising-vietnam',
+    name: 'Advertising Vietnam',
+    tagline: 'Cổng thông tin chuyên ngành Sáng tạo (Creative), Quảng cáo, PR & Thế giới Agency tại VN',
+    excerpt: 'Thư viện cập nhật nhanh nhất các TVC, Key Visual, OOH độc đáo, xu hướng truyền thông sáng tạo tại Việt Nam & Thế giới cùng cẩm nang nghề Agency cho Gen Z.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Miễn phí 100%',
+    pricingDetail: 'Hoàn toàn miễn phí 100% toàn bộ chuyên mục phân tích chiến dịch sáng tạo, tin tức Agency, Podcast và cẩm nang nghề nghiệp.',
+    level: 'Cơ bản',
+    officialUrl: 'https://advertisingvietnam.com/',
+    tags: ['Creative & Advertising', 'Agency Life', 'OOH & TVC Showcase', 'Campaign Breakdown'],
+    whatIsIt: 'Advertising Vietnam là chuyên trang truyền thông hàng đầu dành cho cộng đồng Quảng cáo và Sáng tạo tại Việt Nam, nổi bật với các bài mổ xẻ Ý tưởng lớn (Big Idea), nghệ thuật Copywriting, thiết kế bao bì, biển bảng ngoài trời (Billboard/FOOH) và bức tranh toàn cảnh về các Creative/Media Agency tại TP.HCM & Hà Nội.',
+    bestFor: 'Sinh viên đam mê mảng Creative (Copywriter, Art Director, Content Creator, Planner, Account) muốn săn học bổng hoặc ứng tuyển thực tập tại các Agency lớn (Ogilvy, Dentsu, Leo Burnett, VML, Kiến Vương...).',
+    platforms: 'Web Browser, Facebook, YouTube, LinkedIn, TikTok',
+    vietnameseSupport: '100% Tiếng Việt.',
+    studentPerk: 'Miễn phí 100% kho tàng phân tích chiến dịch thắng giải Cannes Lions, Spikes Asia, MMA Smarties Vietnam cùng cổng tuyển dụng thực tập sinh chuyên biệt ngành Agency.',
+    useCases: [
+      'Sưu tầm Moodboard, tham khảo cách chuyển hóa Consumer Insight thành Big Idea và Key Message đột phá cho môn Quảng cáo & Truyền thông tích hợp.',
+      'Tìm hiểu rõ vai trò từng vị trí trong Agency (Account vs Strategic Planner vs Creative Copywriter vs Media Buyer) để định hướng nghề nghiệp đúng đắn.',
+      'Cập nhật nhanh các chiến dịch Real-time Marketing và OOH sáng tạo đang gây bão mạng xã hội Việt Nam.'
+    ],
+    pros: [
+      'Trình bày trực quan, giàu hình ảnh/video minh họa, văn phong trẻ trung truyền cảm hứng sáng tạo cực mạnh cho sinh viên.',
+      'Cập nhật sát sao đời sống, thuật ngữ và nhu cầu tuyển dụng thực tế của các Agency tại Việt Nam.'
+    ],
+    limitations: 'Thiên mạnh về góc nhìn Sáng tạo (Creative), Thương hiệu và Quảng cáo hơn là kỹ thuật tối ưu dữ liệu/code chuyên sâu.',
+    studentTip: 'Trước mỗi buổi Brainstorm tìm Big Idea cho bài tập nhóm hay cuộc thi Young Lions / Young Marketers, hãy lên Advertising Vietnam đọc 5 chiến dịch cùng ngành hàng để kích hoạt tư duy sáng tạo và tránh lặp lại lối mòn cũ!',
+    verifiedAt: '2026-11-24'
+  },
+  {
+    id: 420,
+    slug: 'topcv-vn',
+    name: 'TopCV',
+    tagline: 'Nền tảng Thiết kế CV chuẩn ATS & Săn việc làm / Thực tập sinh Marketing số 1 Việt Nam',
+    excerpt: 'Công nghệ HRTech "Make in Vietnam" hàng đầu giúp sinh viên tạo CV Marketing chuyên nghiệp, kiểm tra tính cách nghề nghiệp (MBTI/MI) và ứng tuyển hàng nghìn vị trí Intern/Fresher.',
+    category: 'Công cụ Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-martech',
+    pricing: 'Freemium',
+    pricingDetail: 'Tạo CV, tính lương Gross - Net, làm trắc nghiệm hướng nghiệp và ứng tuyển thực tập hoàn toàn miễn phí; có gói nâng cấp thêm mẫu CV cao cấp.',
+    level: 'Cơ bản',
+    officialUrl: 'https://www.topcv.vn/',
+    tags: ['Marketing Career', 'ATS Resume Builder', 'Internship Portal', 'HRTech Vietnam'],
+    whatIsIt: 'TopCV là nền tảng công nghệ tuyển dụng (HRTech) tiên phong ứng dụng dữ liệu lớn và AI tại Việt Nam, kết nối hàng triệu sinh viên và ứng viên trẻ với hơn 200.000+ doanh nghiệp nội địa và đa quốc gia, kèm bộ công cụ tạo CV chuẩn cấu trúc lọc tự động và cẩm nang phỏng vấn theo từng vị trí chuyên môn.',
+    bestFor: 'Sinh viên năm 2–4 viết chiếc CV Marketing đầu tiên đi xin thực tập (SEO Intern, Content Intern, Social Media Intern, Performance Ads, Brand Intern) và nghiên cứu nhu cầu kỹ năng của thị trường lao động.',
+    platforms: 'Web Browser, iOS & Android App',
+    vietnameseSupport: '100% Tiếng Việt, Tiếng Anh & Tiếng Nhật.',
+    studentPerk: 'Miễn phí hàng chục mẫu CV chuẩn ngành Marketing/Sáng tạo, công cụ quy đổi lương Gross sang Net chính xác theo luật thuế/bảo hiểm Việt Nam và Báo cáo Thị trường Tuyển dụng thường niên.',
+    useCases: [
+      'Đọc 20 bản Mô tả công việc (JD) vị trí Marketing Executive trên TopCV để tự đối chiếu xem bản thân đang thiếu kỹ năng công cụ nào (GA4, Canva, TikTok Ads, SEO, AI...) để học bù ngay từ năm 2–3.',
+      'Thiết kế CV một trang gọn gàng nhấn mạnh vào chỉ số kết quả dự án môn học/CLB (VD: "Tăng 150% lượng tiếp cận tự nhiên cho Fanpage CLB trong 2 tháng").',
+      'Sử dụng công cụ Tính lương Gross - Net và Lãi kép tích hợp sẵn trên TopCV trước khi đi phỏng vấn nhận Offer.'
+    ],
+    pros: [
+      'Số lượng tin tuyển dụng Thực tập sinh (Marketing Intern) và Fresher tại TP.HCM, Hà Nội, Đà Nẵng dồi dào và cập nhật mới từng giờ.',
+      'Gợi ý sẵn cách viết mục tiêu nghề nghiệp và mô tả kinh nghiệm chuẩn chuyên ngành Marketing cho người chưa có nhiều kinh nghiệm.'
+    ],
+    limitations: 'Cần chủ động kiểm tra kỹ thông tin công ty tuyển dụng để chọn lọc những môi trường thực tập có người hướng dẫn (Mentor) bài bản.',
+    studentTip: 'Bí quyết vàng cho sinh viên năm 2: Đừng đợi đến năm cuối mới mở TopCV! Hãy lên đọc JD của các công ty bạn mơ ước ngay hôm nay để biết thị trường đang đòi hỏi thành thạo những công cụ nào trong Sàn Công Cụ này rồi lên lộ trình rèn luyện sớm!',
+    verifiedAt: '2026-11-24'
   }
 ];

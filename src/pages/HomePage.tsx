@@ -378,8 +378,8 @@ export const HomePage: React.FC = () => {
             </Link>
           </div>
 
-          {/* 8 AI Categories Grid (2x4) */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-5">
+          {/* 9 AI Categories Grid (3x3) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-5">
             {aiToolCategories.map((ac) => (
               <Link
                 key={ac.id}

@@ -1,5 +1,6 @@
 import { MarketingTool, ToolCategoryInfo } from '../types';
 import { marketingTools } from './tools';
+import { vietnamAiTools } from './ai-tools/vietnamAiTools';
 import { llmChatbotsTools } from './ai-tools/llmChatbots';
 import { aiResearchAcademicTools } from './ai-tools/aiResearchAcademic';
 import { aiWritingContentTools } from './ai-tools/aiWritingContent';
@@ -10,6 +11,13 @@ import { aiSlidesProductivityTools } from './ai-tools/aiSlidesProductivity';
 import { aiCodingAgentsTools } from './ai-tools/aiCodingAgents';
 
 export const aiToolCategories: ToolCategoryInfo[] = [
+  {
+    id: 'vietnam-ai-tools',
+    slug: 'vietnam-ai-tools',
+    name: 'Công cụ AI Việt Nam (Make-in-VN)',
+    description: 'AI Hay, Vbee AIVoice, FPT.AI, Viettel AI, Botcake, ELSA Speak và các nền tảng Trí tuệ Nhân tạo tiêu biểu do người Việt phát triển.',
+    iconName: 'Flag'
+  },
   {
     id: 'llm-chatbots',
     slug: 'llm-chatbots',
@@ -69,6 +77,7 @@ export const aiToolCategories: ToolCategoryInfo[] = [
 ];
 
 export const aiTools: MarketingTool[] = [
+  ...vietnamAiTools,
   ...llmChatbotsTools,
   ...aiResearchAcademicTools,
   ...aiWritingContentTools,

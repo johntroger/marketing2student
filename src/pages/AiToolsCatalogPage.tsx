@@ -12,6 +12,7 @@ import {
   Sparkles,
   Bot,
   Wrench,
+  Flag,
 } from 'lucide-react';
 import { ToolCard } from '../components/ToolCard';
 import { aiTools, aiToolCategories } from '../data/aiTools';
@@ -366,7 +367,7 @@ export const AiToolsCatalogPage: React.FC = () => {
                   type="text"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  placeholder="Tìm ChatGPT, NotebookLM, SciSpace, Tạo Slide, Bóc băng, 3D..."
+                  placeholder="Tìm AI Hay, Vbee, FPT.AI, ChatGPT, NotebookLM, SciSpace, Tạo Slide..."
                   className="w-full pl-9 pr-8 py-2 text-xs border border-slate-200 rounded-lg text-ink-900 focus:outline-none focus:border-brand-600"
                 />
                 {searchTerm && (
@@ -410,6 +411,20 @@ export const AiToolsCatalogPage: React.FC = () => {
                 }`}
               >
                 Tên A–Z
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedCat(selectedCat === 'vietnam-ai-tools' ? '' : 'vietnam-ai-tools');
+                  setCurrentPage(1);
+                }}
+                className={`px-3.5 py-1.5 rounded font-bold transition-all flex items-center gap-1 ml-auto ${
+                  selectedCat === 'vietnam-ai-tools'
+                    ? 'bg-rose-600 text-white shadow-xs'
+                    : 'bg-white text-rose-700 border border-rose-200 hover:bg-rose-50'
+                }`}
+              >
+                <Flag className="w-3.5 h-3.5" />
+                <span>AI Việt Nam ({aiTools.filter((t) => t.categorySlug === 'vietnam-ai-tools').length})</span>
               </button>
             </div>
 

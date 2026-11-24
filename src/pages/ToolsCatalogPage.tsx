@@ -12,6 +12,7 @@ import {
   Sparkles,
   Wrench,
   Bot,
+  Flag,
 } from 'lucide-react';
 import { ToolCard } from '../components/ToolCard';
 import { marketingTools, toolCategories } from '../data/tools';
@@ -391,6 +392,20 @@ export const ToolsCatalogPage: React.FC = () => {
                 }`}
               >
                 Tên A–Z
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedCat(selectedCat === 'vietnam-martech' ? '' : 'vietnam-martech');
+                  setCurrentPage(1);
+                }}
+                className={`px-3.5 py-1.5 rounded font-bold transition-all flex items-center gap-1 ml-auto ${
+                  selectedCat === 'vietnam-martech'
+                    ? 'bg-rose-600 text-white shadow-xs'
+                    : 'bg-white text-rose-700 border border-rose-200 hover:bg-rose-50'
+                }`}
+              >
+                <Flag className="w-3.5 h-3.5" />
+                <span>Công cụ Việt Nam ({marketingTools.filter((t) => t.categorySlug === 'vietnam-martech').length})</span>
               </button>
             </div>
 
