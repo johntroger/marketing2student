@@ -58,8 +58,11 @@ export const ToolDetailPage: React.FC = () => {
       'seo-keyword-research': 'seo-content-marketing',
       'analytics-tracking': 'do-luong-marketing',
       'design-video-ai': 'social-video-marketing',
-      'social-ads-research': 'quang-cao-so',
+      'social-ads-research': 'quang-cao-b2b-tang-truong',
       'crm-email-automation': 'ai-marketing',
+      'ecommerce-landing-page': 'quang-cao-b2b-tang-truong',
+      'market-research-academic': 'thuong-hieu-hanh-vi-khach-hang',
+      'performance-ads-affiliate': 'quang-cao-b2b-tang-truong',
     };
 
     const targetArticleCat = toolCatToArticleCat[tool.categorySlug] || 'ai-marketing';
