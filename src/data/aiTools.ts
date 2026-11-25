@@ -15,7 +15,7 @@ export const aiToolCategories: ToolCategoryInfo[] = [
     id: 'vietnam-ai-tools',
     slug: 'vietnam-ai-tools',
     name: 'Công cụ AI Việt Nam (Make-in-VN)',
-    description: 'AI Hay, Vbee AIVoice, FPT.AI, Viettel AI, Botcake, ELSA Speak và các nền tảng Trí tuệ Nhân tạo tiêu biểu do người Việt phát triển.',
+    description: 'Hệ sinh thái 22+ công cụ AI do người Việt phát triển: AI Hay, Vbee, FPT.AI, Viettel AI, VNPT AI, Filum AI, PREP AI, AIKTP, ELSA Speak, Botcake.',
     iconName: 'Flag'
   },
   {

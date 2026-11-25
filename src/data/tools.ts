@@ -1,5 +1,7 @@
 import { MarketingTool, ToolCategoryInfo } from '../types';
 import { vietnamMartechTools } from './tools/vietnamMartech';
+import { vietnamMartechBatch2ATools } from './tools/vietnamMartechBatch2A';
+import { vietnamMartechBatch2BTools } from './tools/vietnamMartechBatch2B';
 import { analyticsTrackingTools } from './tools/analyticsTracking';
 import { seoResearchTools } from './tools/seoResearch';
 import { designVideoAiTools } from './tools/designVideoAi';
@@ -16,7 +18,7 @@ export const toolCategories: ToolCategoryInfo[] = [
     id: 'vietnam-martech',
     slug: 'vietnam-martech',
     name: 'Công cụ Việt Nam (Make-in-VN)',
-    description: 'Hệ sinh thái Martech, Landing Page, Omnichannel, Social Listening, Ads & Affiliate hàng đầu tại Việt Nam.',
+    description: 'Hệ sinh thái 88+ công cụ Make-in-Vietnam: Social Listening, CDP, CRM, DMS, POS đa kênh, Thiết kế, VietQR, Affiliate & Báo cáo ngành nội địa.',
     iconName: 'Flag'
   },
   {
@@ -93,6 +95,8 @@ export const toolCategories: ToolCategoryInfo[] = [
 
 export const marketingTools: MarketingTool[] = [
   ...vietnamMartechTools,
+  ...vietnamMartechBatch2ATools,
+  ...vietnamMartechBatch2BTools,
   ...analyticsTrackingTools,
   ...seoResearchTools,
   ...designVideoAiTools,
