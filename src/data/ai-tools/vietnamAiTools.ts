@@ -715,5 +715,126 @@ export const vietnamAiTools: MarketingTool[] = [
     limitations: 'Là nền tảng công nghệ hạ tầng B2B nên người dùng cuối thường trải nghiệm gián tiếp bên trong ứng dụng Ngân hàng/Bảo hiểm.',
     studentTip: 'Điểm cộng cực lớn khi thi Case Study cho các siêu ứng dụng Ví điện tử / Ngân hàng số: Đừng chỉ đề xuất chương trình *"Giới thiệu bạn bè tặng tiền mặt"* một cách ngây thơ — hãy kèm ngay 1 slide **Quản trị rủi ro trục lợi khuyến mãi (Fraud Control bằng Device Fingerprinting & eKYC)** để chứng minh tư duy kinh doanh chín chắn!',
     verifiedAt: '2026-11-25'
+  },
+  {
+    id: 566,
+    slug: 'greennode-ai',
+    name: 'GreenNode (VNG AI Cloud)',
+    tagline: 'Nền tảng Đám mây AI Hiệu năng cao & Hệ sinh thái Generative AI Doanh nghiệp của Tập đoàn VNG',
+    excerpt: 'Một trong những nhà cung cấp hạ tầng GPU Cloud & AI Platform đầu tiên tại Đông Nam Á (đối tác ưu tiên của NVIDIA) giúp doanh nghiệp Việt huấn luyện mô hình và triển khai AI Agent.',
+    category: 'Công cụ AI Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-ai-tools',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Cung cấp dịch vụ hạ tầng AI Cloud (Serverless AI / GPU Clusters) và giải pháp xử lý tài liệu thông minh IDP cho doanh nghiệp Việt Nam.',
+    level: 'Nâng cao',
+    officialUrl: 'https://greennode.ai/',
+    tags: ['AI Cloud Vietnam', 'NVIDIA Partner', 'Enterprise GenAI', 'VNG Tech'],
+    whatIsIt: 'GreenNode là công ty công nghệ AI Cloud trực thuộc Tập đoàn VNG vận hành cụm siêu máy tính GPU quy mô lớn đầu tiên của doanh nghiệp Việt Nam tại khu vực Đông Nam Á, cung cấp hạ tầng huấn luyện mô hình ngôn ngữ lớn (LLM), nền tảng AI Studio và giải pháp xử lý tài liệu thông minh (Intelligent Document Processing).',
+    bestFor: 'Sinh viên tìm hiểu tầng hạ tầng tính toán phía sau làn sóng AI Việt Nam (**Sovereign AI Infrastructure / GPU Cloud**) và bài toán tối ưu chi phí triển khai AI doanh nghiệp.',
+    platforms: 'Cloud AI Console, API',
+    vietnameseSupport: '100% Hỗ trợ doanh nghiệp Việt Nam & Tiếng Anh.',
+    studentPerk: 'Nhiều bài phân tích kỹ thuật và kiến trúc AI Cloud trên trang tin của GreenNode giúp sinh viên nắm bắt bức tranh tổng thể về hạ tầng AI quốc gia.',
+    useCases: [
+      'Nghiên cứu cách các ngân hàng và công ty công nghệ Việt triển khai mô hình AI tạo sinh riêng tư trên hạ tầng máy chủ khu vực đảm bảo tuân thủ dữ liệu.',
+      'Tìm hiểu dịch vụ Serverless Inference để chạy các mô hình AI mã nguồn mở (Llama, Qwen, DeepSeek) cho ứng dụng Web/App.'
+    ],
+    pros: [
+      'Hạ tầng GPU thế hệ mới hợp tác trực tiếp cùng NVIDIA với độ trễ kết nối tại Việt Nam rất thấp.',
+      'Tích hợp trọn bộ công cụ xử lý tài liệu và xây dựng trợ lý tri thức nội bộ.'
+    ],
+    limitations: 'Là nền tảng hạ tầng đám mây B2B và kỹ thuật chuyên sâu.',
+    studentTip: 'Hiểu chuỗi giá trị 3 tầng của ngành AI (**Hạ tầng GPU Cloud như GreenNode → Mô hình nền tảng LLM → Ứng dụng Marketing/CSKH**) giúp bạn có tầm nhìn chiến lược vượt trội khi làm báo cáo về xu hướng công nghệ!',
+    verifiedAt: '2026-11-25'
+  },
+  {
+    id: 567,
+    slug: 'ejoy-english',
+    name: 'eJOY English',
+    tagline: 'Tiện ích AI Học Tiếng Anh, Dịch Phụ đề Song ngữ Video & Đọc Tài liệu Chuyên ngành của Startup Việt',
+    excerpt: 'Công cụ học tiếng Anh cực kỳ nổi tiếng của startup công nghệ giáo dục Việt Nam giúp tra từ vựng theo ngữ cảnh ngay trên YouTube, Netflix, Coursera và file PDF bài báo khoa học!',
+    category: 'Công cụ AI Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-ai-tools',
+    pricing: 'Freemium',
+    pricingDetail: 'Tiện ích eJOY Extension trên Chrome miễn phí tra cứu từ vựng không giới hạn và lưu từ ôn tập bằng thuật toán lặp lại ngắt quãng; gói Pro giá sinh viên rất rẻ.',
+    level: 'Cơ bản',
+    officialUrl: 'https://ejoy-english.com/',
+    featured: true,
+    tags: ['Vietnamese EdTech Startup', 'Bilingual Subtitles', 'Contextual AI Dictionary', 'Student Essential'],
+    whatIsIt: 'eJOY English là sản phẩm công nghệ giáo dục tiêu biểu do đội ngũ sáng lập người Việt phát triển (từng đạt nhiều giải thưởng khởi nghiệp và có hàng triệu lượt cài đặt toàn cầu), biến mọi video YouTube, khóa học Coursera/edX và trang báo tiếng Anh thành môi trường học từ vựng chủ động với giải thích ngữ nghĩa theo ngữ cảnh bằng AI.',
+    bestFor: 'Sinh viên Marketing & Kinh tế vừa xem bài giảng/case study nước ngoài trên YouTube vừa tra thuật ngữ chuyên ngành và ôn luyện từ vựng tự nhiên.',
+    platforms: 'Chrome/Edge Extension, Web App, iOS & Android App',
+    vietnameseSupport: '100% Giải thích nghĩa Tiếng Việt chuẩn xác theo đúng ngữ cảnh câu.',
+    studentPerk: 'Cài miễn phí tiện ích eJOY Extension trên Chrome để bật phụ đề song ngữ Anh – Việt trên YouTube và tra nhanh thuật ngữ Marketing khi đọc báo Harvard Business Review, HubSpot Blog!',
+    useCases: [
+      'Bật song ngữ Anh – Việt khi xem các video chia sẻ chiến lược thương hiệu trên YouTube và bấm lưu ngay thuật ngữ khó (*Brand Equity, Attribution, Churn*) vào sổ tay ôn tập.',
+      'Ôn lại từ vựng đã lưu bằng trò chơi lặp lại ngắt quãng (Spaced Repetition).'
+    ],
+    pros: [
+      'Hoạt động cực mượt ngay trên trình duyệt web và video mà không phải copy-paste chuyển tab qua từ điển rời.',
+      'Chi phí gói nâng cấp cho người dùng Việt Nam rất hợp túi tiền sinh viên.'
+    ],
+    limitations: 'Một số tính năng dịch AI câu dài và xuất bộ thẻ hàng loạt giới hạn lượt mỗi ngày ở bản Free.',
+    studentTip: 'Thay vì học thuộc danh sách 50 từ vựng rời rạc dễ quên, hãy cài **eJOY Extension** và đọc mỗi ngày 1 bài trên *Think with Google* hoặc *Marketing Week* — chỉ sau 1 tháng vốn từ chuyên ngành của bạn sẽ tăng vọt!',
+    verifiedAt: '2026-11-25'
+  },
+  {
+    id: 568,
+    slug: 'got-it-ai',
+    name: 'Got It AI (TS. Trần Việt Hùng)',
+    tagline: 'Nền tảng AI Tạo sinh Tri thức Chính xác & Giải đáp Tự động do Trí tuệ Việt tại Silicon Valley sáng lập',
+    excerpt: 'Công ty AI danh tiếng do TS. Trần Việt Hùng (Got It!) sáng lập tập trung vào công nghệ Truthful Enterprise AI — giảm ảo giác AI cho chăm sóc khách hàng và giáo dục.',
+    category: 'Công cụ AI Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-ai-tools',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Giải pháp nền tảng công nghệ AI doanh nghiệp (Truthchecker / Autonomous Support Agent) có demo trực tuyến cho đội ngũ sản phẩm & vận hành.',
+    level: 'Nâng cao',
+    officialUrl: 'https://www.got-it.ai/',
+    tags: ['Hallucination-Free AI', 'Vietnamese Founder Silicon Valley', 'Enterprise Support AI', 'Truthchecker'],
+    whatIsIt: 'Got It AI (tiền thân nổi tiếng với ứng dụng giải bài tập trực tuyến Got It / PhotoStudy của TS. Trần Việt Hùng cùng đội ngũ kỹ sư Việt Nam – Thung lũng Silicon) chuyên sâu về các mô hình AI tạo sinh đảm bảo độ chính xác sự thật (*Truthful AI / Anti-hallucination*) phục vụ tổng đài hỗ trợ khách hàng và tra cứu tri thức doanh nghiệp.',
+    bestFor: 'Sinh viên tìm hiểu bài toán lớn nhất của AI trong Chăm sóc Khách hàng & Nghiên cứu: **Kiểm chứng độ trung thực của câu trả lời AI (Hallucination Detection)**.',
+    platforms: 'Cloud API & Web Platform',
+    vietnameseSupport: 'Đội ngũ sáng lập & kỹ sư cốt lõi người Việt, hỗ trợ kiến trúc đa ngôn ngữ.',
+    studentPerk: 'Các bài chia sẻ và nghiên cứu về **Truthful AI / Grounding** từ đội ngũ Got It giúp sinh viên hiểu rõ giới hạn của LLM và cách kiểm soát rủi ro thông tin sai lệch cho thương hiệu.',
+    useCases: [
+      'Nghiên cứu kiến trúc kiểm tra chéo sự thật (*Truthchecker*) ngăn Chatbot doanh nghiệp tự bịa chính sách hoàn tiền hoặc khuyến mãi không có thật.',
+      'Tìm hiểu câu chuyện khởi nghiệp công nghệ AI vươn ra toàn cầu của trí tuệ Việt.'
+    ],
+    pros: [
+      'Tập trung giải quyết đúng điểm nghẽn chí mạng nhất của Generative AI khi đưa vào vận hành thương mại là tính chính xác.',
+      'Năng lực R&D sâu về NLP và kiểm chứng tri thức.'
+    ],
+    limitations: 'Sản phẩm hiện tập trung phục vụ khách hàng doanh nghiệp toàn cầu hơn là công cụ miễn phí đại trà cho cá nhân.',
+    studentTip: 'Bài học quản trị rủi ro AI cho Marketer: Năm 2024 từng có hãng hàng không quốc tế phải bồi thường khách hàng vì Chatbot AI tự bịa chính sách giảm giá! Luôn dùng các giải pháp **Source-grounded AI** (có kiểm chứng tài liệu gốc) khi triển khai cho thương hiệu.',
+    verifiedAt: '2026-11-25'
+  },
+  {
+    id: 569,
+    slug: 'ichiba-oneplatform',
+    name: 'IChiba OnePlatform',
+    tagline: 'Nền tảng Thương mại Điện tử Xuyên biên giới tích hợp AI & Tự động hóa Giao vận Toàn cầu của VN',
+    excerpt: 'Hệ sinh thái công nghệ Make-in-Vietnam giúp doanh nghiệp và Seller bán hàng đa kênh xuyên biên giới (Mỹ, Nhật, EU, Đông Nam Á) với quản lý kho OMS, PIM và AI dịch/tối ưu gian hàng.',
+    category: 'Công cụ AI Việt Nam (Make-in-VN)',
+    categorySlug: 'vietnam-ai-tools',
+    pricing: 'Dùng thử / Trả phí',
+    pricingDetail: 'Cung cấp gói dùng thử trải nghiệm nền tảng xây dựng Storefront, đồng bộ đa sàn và tự động hóa đơn hàng xuyên biên giới.',
+    level: 'Trung bình',
+    officialUrl: 'https://ichiba.net/',
+    tags: ['Cross-border AI Commerce', 'Global OMS & PIM', 'Multilingual Storefront', 'Vietnam SaaS'],
+    whatIsIt: 'IChiba OnePlatform là nền tảng SaaS thương mại điện tử xuyên biên giới toàn diện do đội ngũ công nghệ Việt Nam phát triển, kết hợp công nghệ quản lý thông tin sản phẩm (PIM), quản trị đơn hàng đa kênh (OMS) và trợ lý AI tự động hóa việc bản địa hóa danh mục sản phẩm đa ngôn ngữ để đưa hàng hóa Việt Nam xuất khẩu trực tuyến.',
+    bestFor: 'Sinh viên ngành **Kinh doanh Quốc tế, Xuất nhập khẩu và Thương mại Điện tử** tìm hiểu quy trình đưa sản phẩm Việt Nam (*Made in Vietnam*) bán thẳng tới người tiêu dùng Nhật Bản, Mỹ, Đông Nam Á (*D2C Export*).',
+    platforms: 'Web Cloud Platform (Tích hợp Amazon, Rakuten, Shopee Global, TikTok Shop, Shopify)',
+    vietnameseSupport: '100% Tiếng Việt & Đa ngôn ngữ.',
+    studentPerk: 'Các tài liệu phân tích quy trình vận hành *Cross-border E-commerce* (thông quan, bản địa hóa ngôn ngữ, đa tiền tệ) trên cổng IChiba rất sát môn Kinh doanh Quốc tế.',
+    useCases: [
+      'Dùng AI tự động dịch và chuẩn hóa mô tả hàng nghìn mã sản phẩm tiếng Việt sang tiếng Nhật, tiếng Anh chuẩn ngữ cảnh mua sắm địa phương.',
+      'Quản lý tập trung đơn hàng từ nhiều kho hàng tại Việt Nam, Nhật Bản và Mỹ trên một bảng điều khiển.'
+    ],
+    pros: [
+      'Giải quyết trọn gói cả bài toán công nghệ bán hàng lẫn hậu cần vận chuyển xuyên biên giới cho thương hiệu Việt.',
+      'Tích hợp kết nối sẵn các sàn thương mại điện tử đặc thù châu Á như Rakuten, Yahoo Shopping Nhật Bản bên cạnh Amazon.'
+    ],
+    limitations: 'Phù hợp cho doanh nghiệp hoặc Seller chuyên nghiệp triển khai bán hàng đa quốc gia.',
+    studentTip: 'Xu hướng xuất khẩu mới cực kỳ tiềm năng cho các thương hiệu nội địa Việt Nam hiện nay là **B2C Cross-border E-commerce** (bán trực tiếp hàng thủ công mỹ nghệ, cà phê, thời trang Việt tới tay người dùng cuối ở nước ngoài thu biên lợi nhuận bán lẻ thay vì chỉ gia công B2B giá rẻ)!',
+    verifiedAt: '2026-11-25'
   }
 ];
