@@ -29,7 +29,7 @@ export const aiToolCategories: ToolCategoryInfo[] = [
     id: 'ai-research-academic',
     slug: 'ai-research-academic',
     name: 'AI Nghiên cứu Khoa học & Học tập',
-    description: 'Đọc hiểu hàng chục file PDF, tổng quan tài liệu Q1/Q2 không bịa nguồn (NotebookLM, Perplexity, Consensus, SciSpace).',
+    description: 'Trọn bộ 46+ công cụ AI cho NCKH chuẩn Q1/Q2: Tìm kiếm đệ quy, PRISMA SLR (Rayyan, ASReview), VOSviewer, Định tính (ATLAS.ti, MAXQDA), Thống kê R & Kiểm định APA 7.',
     iconName: 'GraduationCap'
   },
   {

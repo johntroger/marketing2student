@@ -13,6 +13,7 @@ import {
   Bot,
   Wrench,
   Flag,
+  GraduationCap,
 } from 'lucide-react';
 import { ToolCard } from '../components/ToolCard';
 import { aiTools, aiToolCategories } from '../data/aiTools';
@@ -367,7 +368,7 @@ export const AiToolsCatalogPage: React.FC = () => {
                   type="text"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  placeholder="Tìm AI Hay, Vbee, FPT.AI, ChatGPT, NotebookLM, SciSpace, Tạo Slide..."
+                  placeholder="Tìm NotebookLM, Rayyan, VOSviewer, ATLAS.ti, ReciteWorks, AI Hay, SciSpace..."
                   className="w-full pl-9 pr-8 py-2 text-xs border border-slate-200 rounded-lg text-ink-900 focus:outline-none focus:border-brand-600"
                 />
                 {searchTerm && (
@@ -412,20 +413,36 @@ export const AiToolsCatalogPage: React.FC = () => {
               >
                 Tên A–Z
               </button>
-              <button
-                onClick={() => {
-                  setSelectedCat(selectedCat === 'vietnam-ai-tools' ? '' : 'vietnam-ai-tools');
-                  setCurrentPage(1);
-                }}
-                className={`px-3.5 py-1.5 rounded font-bold transition-all flex items-center gap-1 ml-auto ${
-                  selectedCat === 'vietnam-ai-tools'
-                    ? 'bg-rose-600 text-white shadow-xs'
-                    : 'bg-white text-rose-700 border border-rose-200 hover:bg-rose-50'
-                }`}
-              >
-                <Flag className="w-3.5 h-3.5" />
-                <span>AI Việt Nam ({aiTools.filter((t) => t.categorySlug === 'vietnam-ai-tools').length})</span>
-              </button>
+              <div className="flex flex-wrap items-center gap-2 ml-auto">
+                <button
+                  onClick={() => {
+                    setSelectedCat(selectedCat === 'ai-research-academic' ? '' : 'ai-research-academic');
+                    setCurrentPage(1);
+                  }}
+                  className={`px-3 py-1.5 rounded font-bold transition-all flex items-center gap-1 ${
+                    selectedCat === 'ai-research-academic'
+                      ? 'bg-emerald-700 text-white shadow-xs'
+                      : 'bg-white text-emerald-800 border border-emerald-200 hover:bg-emerald-50'
+                  }`}
+                >
+                  <GraduationCap className="w-3.5 h-3.5" />
+                  <span>AI NCKH ({aiTools.filter((t) => t.categorySlug === 'ai-research-academic').length})</span>
+                </button>
+                <button
+                  onClick={() => {
+                    setSelectedCat(selectedCat === 'vietnam-ai-tools' ? '' : 'vietnam-ai-tools');
+                    setCurrentPage(1);
+                  }}
+                  className={`px-3 py-1.5 rounded font-bold transition-all flex items-center gap-1 ${
+                    selectedCat === 'vietnam-ai-tools'
+                      ? 'bg-rose-600 text-white shadow-xs'
+                      : 'bg-white text-rose-700 border border-rose-200 hover:bg-rose-50'
+                  }`}
+                >
+                  <Flag className="w-3.5 h-3.5" />
+                  <span>AI Việt Nam ({aiTools.filter((t) => t.categorySlug === 'vietnam-ai-tools').length})</span>
+                </button>
+              </div>
             </div>
 
             {/* AI Tools Grid */}
