@@ -1,0 +1,301 @@
+{
+  "batch": 7,
+  "date": "2026-11-26",
+  "baseCommit": "47bc8a2",
+  "scope": "Cấu trúc/metadata, chuẩn hóa ký hiệu mô tả và sửa tràn ngang cục bộ trong HTML bài; giữ nguyên văn bản, tiêu đề, slug, ảnh, ngày đăng, tác giả, chủ đề cũ và thẻ",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 70,
+  "remainingArticleCount": 50,
+  "changes": [
+    {
+      "id": 61,
+      "slug": "the-he-z-ai-va-suc-manh-cua-marketing-sang-tao",
+      "title": "Thế hệ Z, AI và sức mạnh của Marketing sáng tạo",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Khi AI định hình lại hoạt động tiếp thị, thế hệ người ra quyết định tiếp theo sẽ đặt nhiều [&hellip;]",
+        "modifiedAt": "2025-05-07"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Khi AI định hình lại hoạt động tiếp thị, thế hệ người ra quyết định tiếp theo sẽ đặt nhiều …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép bàn tay cầm điện thoại, hai người đàn ông và các biểu tượng tương tác mạng xã hội.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/creator-marketing"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 1,
+        "sourceLinkWrapCount": 0,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 62,
+      "slug": "duy-tri-tinh-nhan-sinh-khi-su-dung-cong-cu-ai-tao-sinh-cho-content-marketing",
+      "title": "Duy trì tính nhân sinh khi sử dụng công cụ AI tạo sinh cho content marketing",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Cách các công cụ AI tạo sinh đang định hình lại tiếp thị kỹ thuật số, sự cân bằng với [&hellip;]",
+        "modifiedAt": "2025-05-05"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Cách các công cụ AI tạo sinh đang định hình lại tiếp thị kỹ thuật số, sự cân bằng với …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Cánh tay robot vươn ra từ màn hình máy tính xách tay.",
+        "sourceUrl": "https://www.cmswire.com/content-marketing/staying-human-while-using-generative-ai-tools-for-content-marketing/"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 63,
+      "slug": "tai-sao-cac-nha-marketing-tiep-tuc-lam-moi-thuong-hieu-thay-vi-dat-cuoc-vao-quang-cao-pho-truong",
+      "title": "Tại sao các nhà Marketing tiếp tục làm mới thương hiệu thay vì đặt cược vào quảng cáo phô trương",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Nhu cầu xây dựng thương hiệu ngày càng tăng cao thể hiện rõ qua việc đổi mới thương hiệu ngày [&hellip;]",
+        "modifiedAt": "2025-05-05"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Nhu cầu xây dựng thương hiệu ngày càng tăng cao thể hiện rõ qua việc đổi mới thương hiệu ngày …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Các thiết kế quảng cáo Ocean Spray với quả nam việt quất và hình ảnh người dùng trên một bức tường ngoài phố.",
+        "sourceUrl": "https://www.marketingdive.com/news/companies-rebranding-in-2024/719804/"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 64,
+      "slug": "kraft-mang-den-mot-goc-nhin-moi-ve-thuc-pham-cung-voi-google",
+      "title": "Kraft mang đến một góc nhìn mới về thực phẩm cùng với Google",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Kraft hiểu rằng mọi người ngày càng chuyển sang internet để nghiên cứu các giao dịch mua sắm và lập [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Kraft hiểu rằng mọi người ngày càng chuyển sang internet để nghiên cứu các giao dịch mua sắm và lập …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Kraft màu xanh đậm trong khung đỏ trên nền xanh.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/future-of-marketing/digital-transformation/kraft-serves-up-fresh-take-with-google/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 65,
+      "slug": "wimbledon-diem-dot-pha-cho-digital-marketing",
+      "title": "Wimbledon: Điểm đột phá cho Digital Marketing",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Tháng 7 là tháng của Wimbledon, giải đấu quần vợt lớn nhất và lâu đời nhất trong số tất cả. [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Tháng 7 là tháng của Wimbledon, giải đấu quần vợt lớn nhất và lâu đời nhất trong số tất cả. …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Trận đấu quần vợt trên sân cỏ Wimbledon với khán đài đông khán giả.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/wimbledon-match-point-for-content-marketing"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 2,
+        "sourceLinkWrapCount": 1,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 66,
+      "slug": "hyatt-mang-trai-nghiem-thuong-hieu-cua-minh-vao-cuoc-song-voi-cac-giai-phap-cua-google",
+      "title": "Hyatt mang trải nghiệm thương hiệu của mình vào cuộc sống với các giải pháp của Google",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Hyatt Hotels Corporation, một công ty hàng đầu toàn cầu trong lĩnh vực dịch vụ khách sạn trong hơn 50 [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Hyatt Hotels Corporation, một công ty hàng đầu toàn cầu trong lĩnh vực dịch vụ khách sạn trong hơn 50 …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Hyatt màu xanh xám trên nền trắng.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/video/hyatt-brings-its-brand-experience-to-life-with-google-solutions-video/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 1,
+        "sourceLinkWrapCount": 1,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 67,
+      "slug": "su-doi-moi-ben-bi-va-phep-mau-cua-disney",
+      "title": "Sự đổi mới bền bỉ và phép màu của Disney",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "‘Once Upon a Time’, ‘Be Our Guest’ và ‘Pixie Dust’ đều gợi lên sự kỳ diệu trong cách kể chuyện [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "‘Once Upon a Time’, ‘Be Our Guest’ và ‘Pixie Dust’ đều gợi lên sự kỳ diệu trong cách kể chuyện …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Tượng Walt Disney nắm tay chuột Mickey trước lâu đài được chiếu sáng vào ban đêm.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/the-enduring-innovation-and-magic-of-disney"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 68,
+      "slug": "ehealth-tang-cuong-nhan-dien-thuong-hieu-voi-google-display-ads",
+      "title": "eHealth tăng cường nhận diện thương hiệu với Google Display Ads",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Từ năm 1997, eHealth đã giúp người Mỹ lựa chọn gói bảo hiểm y tế phù hợp nhất với nhu [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Từ năm 1997, eHealth đã giúp người Mỹ lựa chọn gói bảo hiểm y tế phù hợp nhất với nhu …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Logo eHealth màu xanh lá trên nền trắng.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/data-and-measurement/e-health-boosts-brand-awareness/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 69,
+      "slug": "video-marketing-huong-dan-toan-dien-cho-nam-2025",
+      "title": "Video Marketing: Hướng dẫn toàn diện cho năm 2025",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Tiếp thị video là gì? Tiếp thị video là khi bạn sử dụng nội dung video để quảng bá thương [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Tiếp thị video là gì? Tiếp thị video là khi bạn sử dụng nội dung video để quảng bá thương …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa bàn tay chạm nút phát video trên máy tính bảng, xung quanh là các biểu tượng tiếp thị và tiền.",
+        "sourceUrl": "https://www.semrush.com/blog/video-marketing/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 6,
+        "sourceLinkWrapCount": 0,
+        "note": "Chỉ thêm style max-width:100% cho iframe và overflow-wrap:anywhere cho liên kết nguồn gây tràn ngang; giữ nguyên văn bản, URL, src, width/height gốc."
+      }
+    },
+    {
+      "id": 70,
+      "slug": "gamification-noi-dung-bien-marketing-thanh-san-choi-cho-su-tuong-tac",
+      "title": "Gamification nội dung biến Marketing thành sân chơi cho sự tương tác",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Bạn biết cảm giác khi bạn mở một trò chơi trên điện thoại để giết thời gian năm phút và [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Bạn biết cảm giác khi bạn mở một trò chơi trên điện thoại để giết thời gian năm phút và …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa màn hình máy tính hiển thị các biểu tượng trò chơi, cúp và huy hiệu trên nền xanh.",
+        "sourceUrl": "https://contently.com/2024/10/31/content-gamification-and-marketing-engagement/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc phần mở đầu, các đề mục và phần kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn trong nội dung; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    }
+  ]
+}
