@@ -1,0 +1,324 @@
+{
+  "batch": 9,
+  "date": "2026-11-26",
+  "baseCommit": "28cbf3b",
+  "scope": "Cấu trúc/metadata, chuẩn hóa mô tả và sửa tràn ngang cục bộ trong HTML; giữ nguyên văn bản, tiêu đề, slug, ảnh, ngày đăng, tác giả, topic và tags",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 90,
+  "remainingArticleCount": 30,
+  "changes": [
+    {
+      "id": 81,
+      "slug": "guinness-tu-black-stuff-den-vang-ky-thuat-so",
+      "title": "Guinness: Từ Black Stuff đến Vàng kỹ thuật số",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Guinness không chỉ là một loại bia. Đây là một trong những câu chuyện thành công về thương hiệu vĩ [&hellip;]",
+        "modifiedAt": "2025-05-01"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Guinness không chỉ là một loại bia. Đây là một trong những câu chuyện thành công về thương hiệu vĩ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Ly bia Guinness có lớp bọt trắng đặt trước vòi rót bia trong quán.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/guinness-from-the-black-stuff-to-digital-gold"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 2,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 695,
+        "iframeSources": [
+          "https://www.youtube.com/embed/w9ogzVyTtcw",
+          "https://www.youtube.com/embed/p88U83F7reY"
+        ],
+        "linkTargets": [
+          "https://digitalmarketinginstitute.com/resources/case-studies/guinness-from-the-black-stuff-to-digital-gold"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 82,
+      "slug": "thanh-cong-cua-vice-tren-youtube-tang-luong-nguoi-xem-ben-vung-thong-qua-cac-video-dot-pha",
+      "title": "Thành công của VICE trên YouTube: Tăng lượng người xem bền vững thông qua các video đột phá",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "VICE được biết đến với những khám phá táo bạo về “sự thật khó chịu” và “đi đến những nơi [&hellip;]",
+        "modifiedAt": "2025-04-30"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "VICE được biết đến với những khám phá táo bạo về “sự thật khó chịu” và “đi đến những nơi …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Bức tường gạch phủ các mảng graffiti nhiều màu.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/video/vice-youtube-success-sustained-viewership/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 471,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.thinkwithgoogle.com/_qs/documents/417/vice-youtube-success-sustained-viewership_case-studies.pdf"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 83,
+      "slug": "land-rover-tim-thay-thanh-cong-voi-quang-cao-tuong-tac",
+      "title": "Land Rover tìm thấy thành công với quảng cáo tương tác",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Land Rover muốn nâng cao nhận thức về mẫu xe Range Rover hoàn toàn mới của mình. Sử dụng YouTube [&hellip;]",
+        "modifiedAt": "2025-04-30"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Land Rover muốn nâng cao nhận thức về mẫu xe Range Rover hoàn toàn mới của mình. Sử dụng YouTube …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Land Rover màu trắng bạc trong hình bầu dục xanh lá.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/video/case-study-land-rover/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 479,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.thinkwithgoogle.com/_qs/documents/495/case-study-land-rover_case-studies.pdf"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 84,
+      "slug": "neu-ban-khong-chon-xanh-toi-se-lam-thay-khi-nao-nguoi-tieu-dung-bu-dap-cho-hanh-vi-khong-ben-vung-cua-doi-tac",
+      "title": "Nếu Bạn Không Chọn Xanh, Tôi Sẽ Làm Thay! Khi Nào Người Tiêu Dùng Bù Đắp Cho Hành Vi Không Bền Vững Của Đối Tác?",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Giữa cuộc khủng hoảng biến đổi khí hậu, việc khuyến khích và bình thường hóa các hành động bền vững [&hellip;]",
+        "modifiedAt": "2025-04-30"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Giữa cuộc khủng hoảng biến đổi khí hậu, việc khuyến khích và bình thường hóa các hành động bền vững …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa hai người phân loại rác vào các thùng giấy, rác điện tử, thủy tinh và rác hữu cơ.",
+        "sourceUrl": "https://www.ama.org/2023/06/21/if-you-wont-be-green-then-i-will-when-do-consumers-compensate-for-their-partners-unsustainable-behavior/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 85,
+      "slug": "khi-quang-cao-hieu-qua-phan-tac-dung-rui-ro-cua-viec-theo-doi-quang-cao-tac-dong-den-nguoi-tieu-dung",
+      "title": "Khi quảng cáo hiệu quả phản tác dụng: Rủi ro của việc theo dõi quảng cáo [Tác động đến người tiêu dùng]",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Quảng cáo kỹ thuật số đang trong tình trạng thay đổi liên tục trong bối cảnh dữ liệu ngày nay. [&hellip;]",
+        "modifiedAt": "2025-04-30"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Quảng cáo kỹ thuật số đang trong tình trạng thay đổi liên tục trong bối cảnh dữ liệu ngày nay. …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Họa tiết nhiều máy tính xách tay trên nền xanh dương.",
+        "sourceUrl": "https://www.ama.org/2024/01/31/ad-nauseam-highly-effective-ads-can-backfire-for-consumers-who-opt-in-to-ad-tracking/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 86,
+      "slug": "huong-dan-marketing-giao-duc-cho-truong-dai-hoc",
+      "title": "Hướng dẫn Marketing giáo dục cho trường đại học",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Các cách thúc đẩy sự liên kết và giúp tổ chức của bạn sẵn sàng cho tương lai. Tiếp thị [&hellip;]",
+        "modifiedAt": "2025-04-29"
+      },
+      "after": {
+        "category": "Nền tảng & Chiến lược Marketing",
+        "categorySlug": "chien-luoc-marketing",
+        "excerpt": "Các cách thúc đẩy sự liên kết và giúp tổ chức của bạn sẵn sàng cho tương lai. Tiếp thị …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Giao diện Connected University hiển thị hồ sơ cựu sinh viên, các mốc học tập và quan hệ gia đình.",
+        "sourceUrl": "https://www.salesforce.com/education/marketing-software/higher-education-marketing-guide/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 401,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.salesforce.com/education/marketing-software/higher-education-marketing-guide/"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 87,
+      "slug": "5-cach-ma-cong-cu-phan-tich-ai-co-the-giup-ban-tro-thanh-mot-nha-marketing-gioi-hon",
+      "title": "5 cách mà công cụ phân tích AI có thể giúp bạn trở thành một nhà Marketing giỏi hơn",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Có vẻ như có nhiều công cụ tiếp thị AI như số sao trên trời. Bạn có thực sự cần [&hellip;]",
+        "modifiedAt": "2025-04-29"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Có vẻ như có nhiều công cụ tiếp thị AI như số sao trên trời. Bạn có thực sự cần …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa bàn tay gõ máy tính xách tay bên cạnh bảng biểu đồ phân tích dữ liệu.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/ai-marketing-analytics"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 1,
+        "sourceLinkWrapCount": 0,
+        "beforeMobileWidth": 741,
+        "iframeSources": [
+          "https://www.youtube.com/embed/INOTCdDRk8M"
+        ],
+        "linkTargets": [],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 88,
+      "slug": "14-loai-noi-dung-so-ma-ban-co-the-chua-su-dung-du-nhieu-so-voi-tiem-nang-cua-no",
+      "title": "14 loại nội dung số mà bạn có thể chưa sử dụng đủ nhiều so với tiềm năng của nó",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Bạn muốn sáng tạo với nội dung của mình? Rất có thể là bạn chưa sử dụng đủ 14 loại [&hellip;]",
+        "modifiedAt": "2025-04-29"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Bạn muốn sáng tạo với nội dung của mình? Rất có thể là bạn chưa sử dụng đủ 14 loại …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Người đàn ông đeo tai nghe nói trước micro và điện thoại đang quay video.",
+        "sourceUrl": "https://www.searchenginejournal.com/digital-content-types-not-using-enough/538132/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 89,
+      "slug": "genai-thanh-cong-va-that-bai-o-dau-trong-viec-tao-ra-cac-cau-chuyen-marketing-trai-nghiem",
+      "title": "GenAI thành công và thất bại ở đâu trong việc tạo ra các câu chuyện Marketing trải nghiệm",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Trí tuệ nhân tạo tạo ra đang cách mạng hóa tiếp thị bằng cách cung cấp những cách hiệu quả [&hellip;]",
+        "modifiedAt": "2025-04-29"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Trí tuệ nhân tạo tạo ra đang cách mạng hóa tiếp thị bằng cách cung cấp những cách hiệu quả …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa các đường kết nối và điểm sáng bên cạnh dòng chữ Generative AI trên nền xanh đậm.",
+        "sourceUrl": "https://www.ama.org/research-insights/research-insight-where-genai-succeeds-and-fails-in-creating-experiential-marketing-narratives/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 90,
+      "slug": "50-thuat-ngu-marketing-marketing-buzzwords-can-biet-va-mot-so-thuat-ngu-can-tranh",
+      "title": "50 thuật ngữ Marketing (Marketing Buzzwords) cần biết và một số thuật ngữ cần tránh",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Khi mới bắt đầu sự nghiệp tiếp thị, tôi đã gặp phải một loạt các từ viết tắt nghe giống [&hellip;]",
+        "modifiedAt": "2025-04-26"
+      },
+      "after": {
+        "category": "Nền tảng & Chiến lược Marketing",
+        "categorySlug": "chien-luoc-marketing",
+        "excerpt": "Khi mới bắt đầu sự nghiệp tiếp thị, tôi đã gặp phải một loạt các từ viết tắt nghe giống …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép người phụ nữ viết vào sổ bên cạnh máy tính xách tay và các hình khối màu.",
+        "sourceUrl": "https://blog.hubspot.com/blog/tabid/6307/bid/31068/31-fluffy-buzzwords-marketers-overuse-and-abuse.aspx"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Chọn Hướng dẫn thực hành thay cho Góc nhìn: trọng tâm là bộ thuật ngữ theo nhóm, giải nghĩa và ví dụ, kèm lời khuyên sử dụng; không phải bài lập luận quan điểm.",
+      "sourceStatus": "URL ghi nhận từ liên kết nguồn có sẵn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 452,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://blog.hubspot.com/blog/tabid/6307/bid/31068/31-fluffy-buzzwords-marketers-overuse-and-abuse.aspx"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    }
+  ]
+}
