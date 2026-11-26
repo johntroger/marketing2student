@@ -7,6 +7,7 @@ import { categories } from '../data/categories';
 import { marketingTools, toolCategories } from '../data/tools';
 import { aiTools, aiToolCategories } from '../data/aiTools';
 import { useSEO } from '../utils/useSEO';
+import { getPublishedArticles, sortArticles } from '../utils/blog';
 import { 
   ShieldCheck, 
   ChevronRight, 
@@ -17,7 +18,6 @@ import {
   Video,
   TrendingUp,
   Layers,
-  CheckCircle2,
   BookOpen,
   Youtube,
   ExternalLink,
@@ -42,13 +42,14 @@ import {
 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
+  const publishedArticles = sortArticles(getPublishedArticles(articles), 'latest');
   // Featured subsets
   const featuredTools = marketingTools.filter((t) => t.featured).slice(0, 8);
   const featuredAiTools = aiTools.filter((t) => t.featured).slice(0, 8);
-  const aiMarketingArticles = articles.filter((a) => a.categorySlug === 'ai-marketing').slice(0, 6);
-  const practicalLabArticles = articles.filter((a) => a.hasPracticalExercise).slice(0, 6);
+  const aiMarketingArticles = publishedArticles.filter((a) => a.categorySlug === 'ai-marketing').slice(0, 6);
+  const practicalLabArticles = publishedArticles.filter((a) => a.hasPracticalExercise).slice(0, 6);
   const [discoverLimit, setDiscoverLimit] = useState(18);
-  const discoverArticles = articles.slice(0, discoverLimit);
+  const discoverArticles = publishedArticles.slice(0, discoverLimit);
 
   // SEO & Schema for HomePage
   useSEO({
@@ -403,21 +404,21 @@ export const HomePage: React.FC = () => {
           </div>
         </section>
 
-        {/* 3. "CHUYÊN MỤC KIẾN THỨC" Category Grid (6 Categories) */}
+        {/* 3. "CHUYÊN MỤC KIẾN THỨC" Category Grid (10 Categories) */}
         <section className="bg-white rounded-xl shadow-soft border border-slate-200 p-5">
           <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
             <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-ink-900">
-              CHUYÊN MỤC KIẾN THỨC MARKETING
+              CHUYÊN MỤC KIẾN THỨC MARKETING ({categories.length})
             </h2>
             <Link to="/blog" className="text-xs text-brand-600 font-bold hover:underline flex items-center">
-              <span>Xem Toàn Bộ {articles.length} Bài Viết</span>
+              <span>Xem Toàn Bộ {publishedArticles.length} Bài Viết</span>
               <ChevronRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {categories.map((c) => {
-              const count = articles.filter((a) => a.categorySlug === c.slug).length;
+              const count = publishedArticles.filter((a) => a.categorySlug === c.slug).length;
               return (
                 <Link
                   key={c.id}
@@ -440,9 +441,9 @@ export const HomePage: React.FC = () => {
                       {c.description}
                     </p>
                   </div>
-                  <span className="text-[10px] text-emerald-700 mt-3 font-semibold flex items-center gap-1">
-                    <CheckCircle2 className="w-3 h-3 text-emerald-600" />
-                    <span>Chuẩn học thuật EEAT</span>
+                  <span className="text-[10px] text-brand-600 mt-3 font-semibold flex items-center gap-1">
+                    <span>Khám phá chuyên mục</span>
+                    <ChevronRight className="w-3 h-3" />
                   </span>
                 </Link>
               );

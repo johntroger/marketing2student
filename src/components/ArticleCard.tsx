@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, ShieldCheck, BookOpen, Sparkles, ArrowUpRight, Tag } from 'lucide-react';
+import { Clock, BookOpen, Sparkles, ArrowUpRight, Tag, CheckCircle2 } from 'lucide-react';
 import { Article } from '../types';
 import { getArticleCover } from '../utils/imageGenerator';
+import { getCategoryDisplayName } from '../data/categories';
 
 interface ArticleCardProps {
   article: Article;
@@ -10,10 +11,11 @@ interface ArticleCardProps {
 }
 
 export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onSelect }) => {
+  const categoryName = getCategoryDisplayName(article.categorySlug, article.category);
   const coverUrl = getArticleCover({
     title: article.title,
-    category: article.category,
-    topic: article.topic,
+    category: categoryName,
+    topic: article.articleFormat || article.topic,
     readTime: article.readTime,
     featuredImage: article.featuredImage,
   });
@@ -32,7 +34,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onSelect }) =
         <Link to={`/${article.slug}`} onClick={handleCardClick} className="block w-full h-full">
           <img
             src={coverUrl}
-            alt={article.title}
+            alt={article.coverAlt || article.title}
             loading="lazy"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
@@ -42,33 +44,36 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({ article, onSelect }) =
         <div className="absolute top-2 left-2 z-10">
           <span className="bg-ink-900/90 text-white text-[10px] font-semibold px-2.5 py-0.5 rounded-md shadow-xs backdrop-blur-xs flex items-center gap-1">
             <BookOpen className="w-2.5 h-2.5 text-brand-100" />
-            <span>{article.category.split('&')[0].trim()}</span>
+            <span>{categoryName.split('&')[0].trim()}</span>
           </span>
         </div>
 
-        {/* Bottom Badges: Practical Lab / Academic Citation */}
-        <div className="absolute bottom-2 left-2 flex items-center gap-1.5">
-          {article.hasPracticalExercise ? (
-            <span className="bg-brand-600/95 text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-xs uppercase tracking-wider flex items-center gap-1 backdrop-blur-xs">
-              <Sparkles className="w-2.5 h-2.5" />
-              <span>Có bài tập thực hành</span>
-            </span>
-          ) : (
-            <span className="bg-emerald-700/90 text-white text-[9px] font-bold px-1.5 py-0.5 rounded shadow-xs uppercase tracking-wider flex items-center gap-1 backdrop-blur-xs">
-              <ShieldCheck className="w-2.5 h-2.5" />
-              <span>EEAT VERIFIED</span>
-            </span>
-          )}
-        </div>
+        {/* Bottom Badges: Data-backed badges only */}
+        {(article.hasPracticalExercise || article.hasAcademicCitation) && (
+          <div className="absolute bottom-2 left-2 flex items-center gap-1.5">
+            {article.hasPracticalExercise && (
+              <span className="bg-brand-600/95 text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-xs uppercase tracking-wider flex items-center gap-1 backdrop-blur-xs">
+                <Sparkles className="w-2.5 h-2.5" />
+                <span>Có bài tập thực hành</span>
+              </span>
+            )}
+            {!article.hasPracticalExercise && article.hasAcademicCitation && (
+              <span className="bg-emerald-700/90 text-white text-[9px] font-bold px-2 py-0.5 rounded shadow-xs uppercase tracking-wider flex items-center gap-1 backdrop-blur-xs">
+                <CheckCircle2 className="w-2.5 h-2.5" />
+                <span>Có nguồn nghiên cứu</span>
+              </span>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Article Body */}
       <div className="p-3.5 flex-1 flex flex-col justify-between space-y-2.5">
         <div>
-          {/* Topic & Published Date */}
+          {/* Format / Legacy Topic & Published Date */}
           <div className="flex items-center justify-between text-[11px] text-ink-500 mb-1">
             <span className="font-semibold text-brand-600 truncate max-w-[155px]">
-              {article.topic}
+              {article.articleFormat || article.topic}
             </span>
             <span className="text-slate-400 text-[10px]">
               {article.publishedAt}

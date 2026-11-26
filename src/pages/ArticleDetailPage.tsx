@@ -3,7 +3,6 @@ import { useParams, Link } from 'react-router-dom';
 import { 
   Clock, 
   Calendar, 
-  ShieldCheck, 
   CheckCircle2, 
   HelpCircle, 
   ArrowLeft,
@@ -17,52 +16,63 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { articles } from '../data/articles';
-import { categories } from '../data/categories';
+import { getCategoryDisplayName, resolveCategoryBySlugOrName } from '../data/categories';
 import { getArticleCover } from '../utils/imageGenerator';
 import { ArticleCard } from '../components/ArticleCard';
 import { useSEO } from '../utils/useSEO';
 import { ReviewSection } from '../components/ReviewSection';
+import { getPublishedArticles, getRelatedArticles, sortArticles } from '../utils/blog';
 
 export const ArticleDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const [isBookmarked, setIsBookmarked] = useState(false);
 
+  const sortedPublishedArticles = useMemo(
+    () => sortArticles(getPublishedArticles(articles), 'latest'),
+    []
+  );
+
   const article = useMemo(() => {
     if (!slug) return undefined;
-    return articles.find((a) => a.slug === slug);
-  }, [slug]);
+    return sortedPublishedArticles.find((a) => a.slug === slug);
+  }, [slug, sortedPublishedArticles]);
 
   const categoryObj = useMemo(() => {
     if (!article) return null;
-    return categories.find((c) => c.slug === article.categorySlug);
+    return resolveCategoryBySlugOrName(article.categorySlug || article.category) || null;
   }, [article]);
 
-  // Related articles in same category
+  const categoryDisplayName = useMemo(() => {
+    if (!article) return '';
+    return getCategoryDisplayName(article.categorySlug, article.category);
+  }, [article]);
+
+  // Related articles: prioritize shared tags + format + category, then latest publishedAt
   const relatedArticles = useMemo(() => {
     if (!article) return [];
-    return articles
-      .filter((a) => a.categorySlug === article.categorySlug && a.id !== article.id)
-      .slice(0, 6);
-  }, [article]);
+    return getRelatedArticles(article, sortedPublishedArticles, 6);
+  }, [article, sortedPublishedArticles]);
 
-  // Recent articles for Sticky Right Sidebar (replaces broken [wpp] sidebar with clean Recent + Popular Academic posts)
+  // Recent articles for Sticky Right Sidebar sorted by publishedAt
   const latestSidebarArticles = useMemo(() => {
-    return articles.slice(0, 5);
-  }, []);
+    return sortedPublishedArticles.slice(0, 5);
+  }, [sortedPublishedArticles]);
 
   const popularSidebarArticles = useMemo(() => {
-    return articles.filter((a) => a.hasPracticalExercise || a.hasAcademicCitation).slice(0, 6);
-  }, []);
+    return sortedPublishedArticles
+      .filter((a) => a.hasPracticalExercise || a.hasAcademicCitation)
+      .slice(0, 6);
+  }, [sortedPublishedArticles]);
 
   // Previous / Next article navigation
   const { prevArticle, nextArticle } = useMemo(() => {
     if (!article) return { prevArticle: null, nextArticle: null };
-    const idx = articles.findIndex((a) => a.id === article.id);
+    const idx = sortedPublishedArticles.findIndex((a) => a.id === article.id);
     return {
-      prevArticle: idx > 0 ? articles[idx - 1] : null,
-      nextArticle: idx >= 0 && idx < articles.length - 1 ? articles[idx + 1] : null,
+      prevArticle: idx > 0 ? sortedPublishedArticles[idx - 1] : null,
+      nextArticle: idx >= 0 && idx < sortedPublishedArticles.length - 1 ? sortedPublishedArticles[idx + 1] : null,
     };
-  }, [article]);
+  }, [article, sortedPublishedArticles]);
 
   const coverUrl = article
     ? getArticleCover({
@@ -113,12 +123,19 @@ export const ArticleDetailPage: React.FC = () => {
             'image': coverUrl,
             'datePublished': article.publishedAt,
             'dateModified': article.modifiedAt,
-            'author': {
-              '@type': 'Person',
-              'name': article.author,
-              'jobTitle': article.authorRole,
-              'url': 'https://marketing2student.com/gioi-thieu',
-            },
+            'author':
+              article.author === 'Marketing2Student'
+                ? {
+                    '@type': 'Organization',
+                    'name': 'Marketing2Student',
+                    'url': 'https://marketing2student.com/gioi-thieu',
+                  }
+                : {
+                    '@type': 'Person',
+                    'name': article.author,
+                    'jobTitle': article.authorRole,
+                    'url': 'https://marketing2student.com/gioi-thieu',
+                  },
             'publisher': {
               '@type': 'Organization',
               'name': 'Marketing2Student',
@@ -219,17 +236,18 @@ export const ArticleDetailPage: React.FC = () => {
               <div className="relative aspect-video w-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 group">
                 <img
                   src={coverUrl}
-                  alt={article.title}
+                  alt={article.coverAlt || article.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5">
                   <span className="bg-brand-600 text-white text-[10px] font-bold px-2.5 py-0.5 rounded shadow-xs">
-                    {article.category.split('&')[0].trim()}
+                    {categoryDisplayName.split('&')[0].trim()}
                   </span>
-                  <span className="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-xs flex items-center gap-1">
-                    <ShieldCheck className="w-3 h-3" />
-                    <span>EEAT VERIFIED</span>
-                  </span>
+                  {article.articleFormat && (
+                    <span className="bg-ink-900/90 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                      {article.articleFormat}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -241,7 +259,7 @@ export const ArticleDetailPage: React.FC = () => {
                   to={`/category/${article.categorySlug}`}
                   className="px-2.5 py-1 rounded-md bg-brand-50 text-brand-700 border border-brand-200 font-bold hover:bg-brand-100 transition-colors"
                 >
-                  {article.category}
+                  {categoryDisplayName}
                 </Link>
                 {article.hasPracticalExercise && (
                   <span className="px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-200 font-bold flex items-center gap-1">
@@ -421,12 +439,14 @@ export const ArticleDetailPage: React.FC = () => {
 
               <div className="grid grid-cols-2 gap-4 text-xs text-ink-600 border-t sm:border-t-0 sm:border-l border-slate-200 pt-4 sm:pt-0 sm:pl-6 shrink-0">
                 <div>
-                  <span className="text-ink-400 block text-[11px]">Tiêu chuẩn</span>
-                  <span className="font-bold text-brand-600 text-sm">Chuẩn EEAT</span>
+                  <span className="text-ink-400 block text-[11px]">Dạng bài</span>
+                  <span className="font-bold text-brand-600 text-sm">
+                    {article.articleFormat || 'Bài phân tích'}
+                  </span>
                 </div>
                 <div>
                   <span className="text-ink-400 block text-[11px]">Kho học liệu</span>
-                  <span className="font-bold text-ink-900 text-sm">{articles.length}+ bài viết</span>
+                  <span className="font-bold text-ink-900 text-sm">{sortedPublishedArticles.length}+ bài viết</span>
                 </div>
               </div>
             </div>

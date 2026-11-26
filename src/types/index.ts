@@ -1,3 +1,19 @@
+export type ArticleFormat =
+  | 'Hướng dẫn thực hành'
+  | 'Phân tích nghiên cứu'
+  | 'Phân tích tình huống'
+  | 'Góc nhìn'
+  | 'Cập nhật';
+
+export type PublicationStatus = 'published' | 'draft' | 'archived';
+
+export interface ArticleFormatInfo {
+  id: string;
+  slug: string;
+  name: ArticleFormat;
+  description: string;
+}
+
 export interface Article {
   id: number;
   wpId: number;
@@ -17,6 +33,18 @@ export interface Article {
   hasPracticalExercise: boolean;
   hasAcademicCitation: boolean;
   content: string;
+  /** Dạng bài viết theo cách trình bày (thay thế bộ lọc chủ đề kỹ năng) */
+  articleFormat?: ArticleFormat;
+  /** Trạng thái xuất bản: mặc định 'published' nếu chưa khai báo */
+  publicationStatus?: PublicationStatus;
+  /** Alt text riêng cho ảnh bìa */
+  coverAlt?: string;
+  /** Người biên tập (tách biệt với tác giả gốc) */
+  editor?: string;
+  /** Nguồn bài viết gốc (nếu có) */
+  sourceUrl?: string;
+  /** Ngày kiểm tra/xác minh nguồn thực tế (chỉ điền khi đã kiểm tra) */
+  sourceVerifiedAt?: string;
 }
 
 export interface StudentProject {
@@ -45,6 +73,8 @@ export interface CategoryInfo {
   description: string;
   iconName: string;
   legacySlugs?: string[];
+  featuredInNav?: boolean;
+  featuredInFooter?: boolean;
 }
 
 export interface TopicInfo {

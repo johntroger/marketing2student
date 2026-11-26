@@ -19,9 +19,11 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { articles } from '../data/articles';
+import { categories } from '../data/categories';
 import { marketingTools } from '../data/tools';
 import { aiTools, allPlatformTools } from '../data/aiTools';
 import { searchArticles, searchTools } from '../utils/search';
+import { getPublishedArticles } from '../utils/blog';
 
 interface NavbarProps {
   onOpenSearch?: () => void;
@@ -78,7 +80,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
     navigate(`/${slug}`);
   };
 
-  const searchResults = searchQuery.trim() ? searchArticles(articles, searchQuery, 4) : [];
+  const publishedArticles = getPublishedArticles(articles);
+  const navCategories = categories.filter((c) => c.featuredInNav);
+  const searchResults = searchQuery.trim() ? searchArticles(publishedArticles, searchQuery, 4) : [];
   const toolResults = searchQuery.trim() ? searchTools(allPlatformTools, searchQuery, 4) : [];
 
   const trendingTags = [
@@ -526,11 +530,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
               <Bot className="w-3.5 h-3.5 text-brand-700" />
               <span>SÀN AI TOOLS ({aiTools.length}+)</span>
             </Link>
-            <Link to="/blog" className="font-bold text-ink-800 hover:text-brand-600 transition-colors">BÀI VIẾT ({articles.length})</Link>
-            <Link to="/category/ai-marketing" className="hover:text-brand-600 transition-colors font-medium">AI Marketing</Link>
-            <Link to="/category/do-luong-marketing" className="hover:text-brand-600 transition-colors font-medium">Đo lường & GA4</Link>
-            <Link to="/category/seo-content-marketing" className="hover:text-brand-600 transition-colors font-medium">SEO & Content</Link>
-            <Link to="/category/social-video-marketing" className="hover:text-brand-600 transition-colors font-medium hidden xl:inline">Social & Video</Link>
+            <Link to="/blog" className="font-bold text-ink-800 hover:text-brand-600 transition-colors">BÀI VIẾT ({publishedArticles.length})</Link>
+            {navCategories.map((cat) => (
+              <Link
+                key={cat.id}
+                to={`/category/${cat.slug}`}
+                className="hover:text-brand-600 transition-colors font-medium"
+              >
+                {cat.shortName}
+              </Link>
+            ))}
+            <Link to="/blog" className="hover:text-brand-600 transition-colors font-medium hidden xl:inline">
+              Tất cả ({categories.length})
+            </Link>
             <Link to="/gioi-thieu" className="hover:text-brand-600 transition-colors flex items-center gap-1 text-ink-700 font-medium">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               <span>Giới thiệu Giảng viên</span>
@@ -587,20 +599,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             <span>Sàn AI Tools ({aiTools.length}+)</span>
           </Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-900 font-bold">
-            Thư viện Bài viết ({articles.length})
+            Thư viện Bài viết ({publishedArticles.length})
           </Link>
-          <Link to="/category/ai-marketing" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-700">
-            • AI Marketing & Tự động hóa
-          </Link>
-          <Link to="/category/do-luong-marketing" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-700">
-            • Đo lường & Phân tích Dữ liệu
-          </Link>
-          <Link to="/category/seo-content-marketing" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-700">
-            • SEO & Content Marketing
-          </Link>
-          <Link to="/category/social-video-marketing" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-700">
-            • Social Media & Video Marketing
-          </Link>
+          <div className="pl-2 space-y-1 border-l-2 border-slate-100">
+            {categories.map((cat) => (
+              <Link
+                key={cat.id}
+                to={`/category/${cat.slug}`}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block py-1 text-ink-700 hover:text-brand-600"
+              >
+                • {cat.name}
+              </Link>
+            ))}
+          </div>
           <Link to="/gioi-thieu" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-700">
             Giới thiệu ThS. Trần Thanh Tùng
           </Link>

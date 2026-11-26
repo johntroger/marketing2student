@@ -14,103 +14,137 @@ import {
 } from 'lucide-react';
 import { ArticleCard } from '../components/ArticleCard';
 import { articles } from '../data/articles';
-import { categories, topics } from '../data/categories';
+import {
+  articleFormats,
+  categories,
+  resolveCategoryBySlugOrName,
+  resolveFormatBySlugOrName,
+} from '../data/categories';
 import { useSEO } from '../utils/useSEO';
 import { matchArticle } from '../utils/search';
+import {
+  ArticleSortOption,
+  getPublishedArticles,
+  matchesCategoryFilter,
+  matchesFormatFilter,
+  matchesLegacyTopicFilter,
+  sortArticles,
+} from '../utils/blog';
 
 export const BlogCatalogPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
-
-  const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 20;
 
-  const initialQuery = searchParams.get('q') || searchParams.get('s') || '';
-  const initialCategory = searchParams.get('category') || '';
-  const initialTopic = searchParams.get('topic') || '';
-  const initialTag = searchParams.get('tag') || '';
-  const initialOnlyExercise = searchParams.get('exercise') === '1';
+  const publishedArticles = useMemo(() => getPublishedArticles(articles), []);
 
-  const [searchTerm, setSearchTerm] = useState(initialQuery);
-  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
-  const [selectedTopic, setSelectedTopic] = useState(initialTopic);
-  const [selectedTag, setSelectedTag] = useState(initialTag);
-  const [onlyExercise, setOnlyExercise] = useState(initialOnlyExercise);
-  const [sortBy, setSortBy] = useState<'latest' | 'practical' | 'academic'>('latest');
+  const searchTerm = searchParams.get('q') || searchParams.get('s') || '';
+  const selectedCategory = searchParams.get('category') || '';
+  const selectedFormat = searchParams.get('format') || '';
+  const selectedTopic = searchParams.get('topic') || '';
+  const selectedTag = searchParams.get('tag') || '';
+  const onlyExercise = searchParams.get('exercise') === '1';
+  const sortParam = searchParams.get('sort');
+  const sortBy: ArticleSortOption =
+    sortParam === 'practical' || sortParam === 'academic' ? sortParam : 'latest';
+  const parsedPage = Number.parseInt(searchParams.get('page') || '1', 10);
+  const currentPage = Number.isFinite(parsedPage) && parsedPage > 0 ? parsedPage : 1;
+
+  const [searchInput, setSearchInput] = useState(searchTerm);
 
   useEffect(() => {
-    setSearchTerm(searchParams.get('q') || searchParams.get('s') || '');
-    setSelectedCategory(searchParams.get('category') || '');
-    setSelectedTopic(searchParams.get('topic') || '');
-    setSelectedTag(searchParams.get('tag') || '');
-    setOnlyExercise(searchParams.get('exercise') === '1');
-    setCurrentPage(1);
-  }, [searchParams]);
+    setSearchInput(searchTerm);
+  }, [searchTerm]);
+
+  const updateParams = (
+    updates: Record<string, string | null>,
+    options: { resetPage?: boolean; replace?: boolean } = {}
+  ) => {
+    const { resetPage = true, replace = false } = options;
+    const next = new URLSearchParams(searchParams);
+    for (const [key, value] of Object.entries(updates)) {
+      if (value === null || value === '') {
+        next.delete(key);
+      } else {
+        next.set(key, value);
+      }
+    }
+    if (resetPage) {
+      next.delete('page');
+    }
+    if (next.get('sort') === 'latest') {
+      next.delete('sort');
+    }
+    setSearchParams(next, { replace });
+  };
 
   useSEO({
     title: 'Thư Viện Bài Viết Marketing Thực Chiến — Marketing2Student',
-    description: `Tra cứu và học tập từ hơn ${articles.length} bài viết chuyên sâu về AI Marketing, SEO, Content, Đo lường GA4 và Chiến lược Thương hiệu trên Marketing2Student.`,
+    description: `Tra cứu và học tập từ hơn ${publishedArticles.length} bài viết chuyên sâu về AI Marketing, SEO, Content, Đo lường GA4 và Chiến lược Thương hiệu trên Marketing2Student.`,
     canonicalUrl: 'https://marketing2student.com/blog',
     keywords: ['blog marketing2student', 'thư viện marketing', 'AI marketing', 'SEO thực chiến', 'đo lường marketing'],
   });
 
   const filteredArticles = useMemo(() => {
-    return articles
-      .filter((item) => {
-        const matchesSearch = matchArticle(item, searchTerm);
-        const matchesCategory =
-          !selectedCategory ||
-          item.category.toLowerCase() === selectedCategory.toLowerCase() ||
-          item.categorySlug.toLowerCase() === selectedCategory.toLowerCase();
-        const matchesTopic =
-          !selectedTopic || item.topic.toLowerCase() === selectedTopic.toLowerCase();
-        const matchesTag =
-          !selectedTag ||
-          item.tags.some((t) => t.toLowerCase() === selectedTag.toLowerCase());
-        const matchesExercise = !onlyExercise || item.hasPracticalExercise;
+    const filtered = publishedArticles.filter((item) => {
+      const matchesSearch = matchArticle(item, searchTerm);
+      const matchesCategory = matchesCategoryFilter(item, selectedCategory);
+      const matchesFormat = matchesFormatFilter(item, selectedFormat);
+      const matchesTopic = matchesLegacyTopicFilter(item, selectedTopic);
+      const matchesTag =
+        !selectedTag ||
+        item.tags.some((t) => t.toLowerCase() === selectedTag.toLowerCase());
+      const matchesExercise = !onlyExercise || item.hasPracticalExercise;
 
-        return matchesSearch && matchesCategory && matchesTopic && matchesTag && matchesExercise;
-      })
-      .sort((a, b) => {
-        if (sortBy === 'practical') {
-          if (a.hasPracticalExercise !== b.hasPracticalExercise) {
-            return a.hasPracticalExercise ? -1 : 1;
-          }
-        }
-        if (sortBy === 'academic') {
-          if (a.hasAcademicCitation !== b.hasAcademicCitation) {
-            return a.hasAcademicCitation ? -1 : 1;
-          }
-        }
-        return b.wpId - a.wpId;
-      });
-  }, [searchTerm, selectedCategory, selectedTopic, selectedTag, onlyExercise, sortBy]);
+      return (
+        matchesSearch &&
+        matchesCategory &&
+        matchesFormat &&
+        matchesTopic &&
+        matchesTag &&
+        matchesExercise
+      );
+    });
+    return sortArticles(filtered, sortBy);
+  }, [
+    publishedArticles,
+    searchTerm,
+    selectedCategory,
+    selectedFormat,
+    selectedTopic,
+    selectedTag,
+    onlyExercise,
+    sortBy,
+  ]);
 
   const totalPages = Math.ceil(filteredArticles.length / itemsPerPage) || 1;
+  const safePage = Math.min(currentPage, totalPages);
   const paginatedArticles = useMemo(() => {
-    const start = (currentPage - 1) * itemsPerPage;
+    const start = (safePage - 1) * itemsPerPage;
     return filteredArticles.slice(start, start + itemsPerPage);
-  }, [filteredArticles, currentPage]);
+  }, [filteredArticles, safePage]);
 
   const handleClearFilters = () => {
-    setSearchTerm('');
-    setSelectedCategory('');
-    setSelectedTopic('');
-    setSelectedTag('');
-    setOnlyExercise(false);
+    setSearchInput('');
     setSearchParams({});
-    setCurrentPage(1);
   };
 
   const handleRemoveSearchTerm = () => {
-    setSearchTerm('');
-    const newParams = new URLSearchParams(searchParams);
-    newParams.delete('q');
-    newParams.delete('s');
-    setSearchParams(newParams);
+    setSearchInput('');
+    updateParams({ q: null, s: null });
   };
 
-  const hasActiveFilters = Boolean(searchTerm || selectedCategory || selectedTopic || selectedTag || onlyExercise);
+  const setPage = (pageNum: number) => {
+    const clamped = Math.max(1, Math.min(totalPages, pageNum));
+    updateParams({ page: clamped > 1 ? String(clamped) : null }, { resetPage: false });
+  };
+
+  const activeCategoryObj = resolveCategoryBySlugOrName(selectedCategory);
+  const activeFormatObj = resolveFormatBySlugOrName(selectedFormat);
+
+  const hasActiveFilters = Boolean(
+    searchTerm || selectedCategory || selectedFormat || selectedTopic || selectedTag || onlyExercise
+  );
 
   const FilterSidebar = (
     <div className="space-y-5 text-ink-800">
@@ -121,25 +155,23 @@ export const BlogCatalogPage: React.FC = () => {
 
       {/* 1. Theo Chuyên Mục */}
       <div>
-        <h4 className="text-xs font-bold uppercase mb-2 text-ink-900">Theo Chuyên Mục</h4>
+        <h4 className="text-xs font-bold uppercase mb-2 text-ink-900">Theo Chuyên Mục ({categories.length})</h4>
         <div className="space-y-1 text-xs">
           <button
-            onClick={() => { setSelectedCategory(''); setCurrentPage(1); }}
+            onClick={() => updateParams({ category: null })}
             className={`w-full flex items-center justify-between py-1.5 px-2 rounded text-left transition-colors ${
               !selectedCategory ? 'text-brand-600 font-bold bg-brand-50' : 'text-ink-600 hover:text-brand-600 hover:bg-slate-50'
             }`}
           >
-            <span>Tất Cả Chuyên Mục ({articles.length})</span>
+            <span>Tất Cả Chuyên Mục ({publishedArticles.length})</span>
             {!selectedCategory && <ChevronRight className="w-3.5 h-3.5 text-brand-600" />}
           </button>
           {categories.map((c) => {
-            const isSelected =
-              selectedCategory.toLowerCase() === c.name.toLowerCase() ||
-              selectedCategory.toLowerCase() === c.slug.toLowerCase();
+            const isSelected = activeCategoryObj?.slug === c.slug;
             return (
               <button
                 key={c.id}
-                onClick={() => { setSelectedCategory(c.name); setCurrentPage(1); }}
+                onClick={() => updateParams({ category: c.slug })}
                 className={`w-full flex items-center justify-between py-1.5 px-2 rounded text-left transition-colors ${
                   isSelected
                     ? 'text-brand-600 font-bold bg-brand-50'
@@ -159,7 +191,7 @@ export const BlogCatalogPage: React.FC = () => {
         <h4 className="text-xs font-bold uppercase mb-2 text-ink-900">Định Dạng Học Tập</h4>
         <div className="space-y-2 text-xs text-ink-700">
           <label
-            onClick={() => { setOnlyExercise(!onlyExercise); setCurrentPage(1); }}
+            onClick={() => updateParams({ exercise: onlyExercise ? null : '1' })}
             className="flex items-center gap-2 cursor-pointer hover:text-brand-600"
           >
             <span className={`w-3.5 h-3.5 border rounded flex items-center justify-center shrink-0 ${
@@ -172,26 +204,29 @@ export const BlogCatalogPage: React.FC = () => {
         </div>
       </div>
 
-      {/* 3. Chủ đề chuyên sâu */}
+      {/* 3. Dạng Bài Viết (thay thế Chủ Đề Kỹ Năng) */}
       <div className="pt-3 border-t border-slate-200">
-        <h4 className="text-xs font-bold uppercase mb-2 text-ink-900">Chủ Đề Kỹ Năng</h4>
+        <h4 className="text-xs font-bold uppercase mb-2 text-ink-900">Dạng Bài Viết</h4>
         <div className="space-y-1 text-xs max-h-56 overflow-y-auto pr-1">
-          {topics.map((t) => (
-            <label
-              key={t.id}
-              onClick={() => { setSelectedTopic(selectedTopic === t.name ? '' : t.name); setCurrentPage(1); }}
-              className={`flex items-center gap-2 py-1 px-1.5 rounded cursor-pointer transition-colors ${
-                selectedTopic === t.name ? 'text-brand-600 font-bold bg-brand-50' : 'text-ink-600 hover:text-brand-600 hover:bg-slate-50'
-              }`}
-            >
-              <span className={`w-3.5 h-3.5 border rounded flex items-center justify-center shrink-0 ${
-                selectedTopic === t.name ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300'
-              }`}>
-                {selectedTopic === t.name && <Check className="w-2.5 h-2.5 stroke-[3]" />}
-              </span>
-              <span className="truncate">{t.name}</span>
-            </label>
-          ))}
+          {articleFormats.map((f) => {
+            const isSelected = activeFormatObj?.slug === f.slug;
+            return (
+              <label
+                key={f.id}
+                onClick={() => updateParams({ format: isSelected ? null : f.slug })}
+                className={`flex items-center gap-2 py-1 px-1.5 rounded cursor-pointer transition-colors ${
+                  isSelected ? 'text-brand-600 font-bold bg-brand-50' : 'text-ink-600 hover:text-brand-600 hover:bg-slate-50'
+                }`}
+              >
+                <span className={`w-3.5 h-3.5 border rounded flex items-center justify-center shrink-0 ${
+                  isSelected ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300'
+                }`}>
+                  {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
+                </span>
+                <span className="truncate">{f.name}</span>
+              </label>
+            );
+          })}
         </div>
       </div>
 
@@ -220,7 +255,7 @@ export const BlogCatalogPage: React.FC = () => {
           {selectedCategory && (
             <>
               <ChevronRight className="w-3 h-3 text-ink-400" />
-              <span className="text-ink-900 font-bold">{selectedCategory}</span>
+              <span className="text-ink-900 font-bold">{activeCategoryObj?.name || selectedCategory}</span>
             </>
           )}
         </div>
@@ -278,23 +313,16 @@ export const BlogCatalogPage: React.FC = () => {
                 <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                 <input
                   type="text"
-                  value={searchTerm}
+                  value={searchInput}
                   onChange={(e) => {
                     const val = e.target.value;
-                    setSearchTerm(val);
-                    setCurrentPage(1);
-                    const newParams = new URLSearchParams(searchParams);
-                    if (val.trim()) {
-                      newParams.set('q', val.trim());
-                    } else {
-                      newParams.delete('q');
-                    }
-                    setSearchParams(newParams, { replace: true });
+                    setSearchInput(val);
+                    updateParams({ q: val.trim() || null, s: null }, { replace: true });
                   }}
                   placeholder="Tìm kiếm nhanh bài viết theo từ khóa (có dấu hoặc không dấu)..."
                   className="w-full pl-9 pr-8 py-2 text-xs border border-slate-200 rounded-lg text-ink-900 focus:outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600"
                 />
-                {searchTerm && (
+                {searchInput && (
                   <button
                     onClick={handleRemoveSearchTerm}
                     className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5"
@@ -316,7 +344,7 @@ export const BlogCatalogPage: React.FC = () => {
               <div className="flex flex-wrap items-center gap-2">
                 <span className="text-ink-600 font-medium mr-1">Sắp xếp theo:</span>
                 <button
-                  onClick={() => setSortBy('latest')}
+                  onClick={() => updateParams({ sort: null })}
                   className={`px-4 py-2 rounded font-semibold shadow-xs transition-all ${
                     sortBy === 'latest'
                       ? 'bg-brand-600 text-white'
@@ -326,7 +354,7 @@ export const BlogCatalogPage: React.FC = () => {
                   Mới nhất
                 </button>
                 <button
-                  onClick={() => setSortBy('practical')}
+                  onClick={() => updateParams({ sort: 'practical' })}
                   className={`px-4 py-2 rounded font-semibold shadow-xs transition-all flex items-center gap-1 ${
                     sortBy === 'practical'
                       ? 'bg-brand-600 text-white'
@@ -337,7 +365,7 @@ export const BlogCatalogPage: React.FC = () => {
                   <span>Ưu tiên Bài tập thực hành</span>
                 </button>
                 <button
-                  onClick={() => setSortBy('academic')}
+                  onClick={() => updateParams({ sort: 'academic' })}
                   className={`px-4 py-2 rounded font-semibold shadow-xs transition-all flex items-center gap-1 ${
                     sortBy === 'academic'
                       ? 'bg-brand-600 text-white'
@@ -351,20 +379,20 @@ export const BlogCatalogPage: React.FC = () => {
 
               {/* Mini Pagination */}
               <div className="flex items-center gap-2">
-                <span className="text-brand-600 font-bold">{currentPage}</span>
+                <span className="text-brand-600 font-bold">{safePage}</span>
                 <span className="text-ink-400">/{totalPages}</span>
                 <div className="flex items-center border border-slate-300 rounded overflow-hidden bg-white">
                   <button
-                    disabled={currentPage <= 1}
-                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                    disabled={safePage <= 1}
+                    onClick={() => setPage(safePage - 1)}
                     className="p-1.5 hover:bg-slate-100 disabled:opacity-40"
                   >
                     <ChevronLeft className="w-3.5 h-3.5" />
                   </button>
                   <div className="w-[1px] h-4 bg-slate-200"></div>
                   <button
-                    disabled={currentPage >= totalPages}
-                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                    disabled={safePage >= totalPages}
+                    onClick={() => setPage(safePage + 1)}
                     className="p-1.5 hover:bg-slate-100 disabled:opacity-40"
                   >
                     <ChevronRight className="w-3.5 h-3.5" />
@@ -379,26 +407,32 @@ export const BlogCatalogPage: React.FC = () => {
                 <span className="text-ink-500 font-medium">Đang lọc:</span>
                 {selectedCategory && (
                   <span className="inline-flex items-center gap-1 border border-brand-200 text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
-                    <span>{selectedCategory}</span>
-                    <X className="w-3 h-3 cursor-pointer" onClick={() => setSelectedCategory('')} />
+                    <span>{activeCategoryObj?.name || selectedCategory}</span>
+                    <X className="w-3 h-3 cursor-pointer" onClick={() => updateParams({ category: null })} />
+                  </span>
+                )}
+                {selectedFormat && (
+                  <span className="inline-flex items-center gap-1 border border-brand-200 text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
+                    <span>Dạng bài: {activeFormatObj?.name || selectedFormat}</span>
+                    <X className="w-3 h-3 cursor-pointer" onClick={() => updateParams({ format: null })} />
                   </span>
                 )}
                 {selectedTopic && (
                   <span className="inline-flex items-center gap-1 border border-brand-200 text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
-                    <span>{selectedTopic}</span>
-                    <X className="w-3 h-3 cursor-pointer" onClick={() => setSelectedTopic('')} />
+                    <span>Chủ đề: {selectedTopic}</span>
+                    <X className="w-3 h-3 cursor-pointer" onClick={() => updateParams({ topic: null })} />
                   </span>
                 )}
                 {selectedTag && (
                   <span className="inline-flex items-center gap-1 border border-brand-200 text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
                     <span>Thẻ: {selectedTag}</span>
-                    <X className="w-3 h-3 cursor-pointer" onClick={() => setSelectedTag('')} />
+                    <X className="w-3 h-3 cursor-pointer" onClick={() => updateParams({ tag: null })} />
                   </span>
                 )}
                 {onlyExercise && (
                   <span className="inline-flex items-center gap-1 border border-brand-200 text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
                     <span>Có bài tập thực hành</span>
-                    <X className="w-3 h-3 cursor-pointer" onClick={() => setOnlyExercise(false)} />
+                    <X className="w-3 h-3 cursor-pointer" onClick={() => updateParams({ exercise: null })} />
                   </span>
                 )}
                 {searchTerm && (
@@ -439,8 +473,8 @@ export const BlogCatalogPage: React.FC = () => {
             {totalPages > 1 && (
               <div className="py-8 flex items-center justify-center gap-2 flex-wrap">
                 <button
-                  disabled={currentPage <= 1}
-                  onClick={() => { setCurrentPage((p) => Math.max(1, p - 1)); window.scrollTo(0, 0); }}
+                  disabled={safePage <= 1}
+                  onClick={() => { setPage(safePage - 1); window.scrollTo(0, 0); }}
                   className="p-2 border border-slate-300 bg-white text-ink-600 rounded hover:bg-slate-50 disabled:opacity-40"
                 >
                   <ChevronLeft className="w-4 h-4" />
@@ -451,9 +485,9 @@ export const BlogCatalogPage: React.FC = () => {
                   return (
                     <button
                       key={pNum}
-                      onClick={() => { setCurrentPage(pNum); window.scrollTo(0, 0); }}
+                      onClick={() => { setPage(pNum); window.scrollTo(0, 0); }}
                       className={`w-9 h-9 text-xs font-bold rounded transition-all ${
-                        currentPage === pNum
+                        safePage === pNum
                           ? 'bg-brand-600 text-white shadow-xs'
                           : 'bg-white border border-slate-300 text-ink-700 hover:bg-slate-50'
                       }`}
@@ -464,8 +498,8 @@ export const BlogCatalogPage: React.FC = () => {
                 })}
 
                 <button
-                  disabled={currentPage >= totalPages}
-                  onClick={() => { setCurrentPage((p) => Math.min(totalPages, p + 1)); window.scrollTo(0, 0); }}
+                  disabled={safePage >= totalPages}
+                  onClick={() => { setPage(safePage + 1); window.scrollTo(0, 0); }}
                   className="p-2 border border-slate-300 bg-white text-ink-600 rounded hover:bg-slate-50 disabled:opacity-40"
                 >
                   <ChevronRight className="w-4 h-4" />

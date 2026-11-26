@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ShieldCheck, Heart, ExternalLink, Youtube, Linkedin, Facebook, Wrench, Bot } from 'lucide-react';
 import { marketingTools } from '../data/tools';
 import { aiTools } from '../data/aiTools';
+import { categories } from '../data/categories';
 
 export const Footer: React.FC = () => {
   return (
@@ -104,17 +105,19 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-ink-900 mb-4">Chuyên mục cốt lõi</h3>
             <ul className="space-y-2.5 text-sm">
+              {categories
+                .filter((c) => c.featuredInFooter)
+                .map((cat) => (
+                  <li key={cat.id}>
+                    <Link to={`/category/${cat.slug}`} className="text-ink-600 hover:text-brand-600 transition-colors">
+                      {cat.name}
+                    </Link>
+                  </li>
+                ))}
               <li>
-                <Link to="/category/ai-marketing" className="text-ink-600 hover:text-brand-600 transition-colors">AI Marketing & Tự động hóa</Link>
-              </li>
-              <li>
-                <Link to="/category/do-luong-marketing" className="text-ink-600 hover:text-brand-600 transition-colors">Đo lường & Phân tích Dữ liệu</Link>
-              </li>
-              <li>
-                <Link to="/category/seo-content-marketing" className="text-ink-600 hover:text-brand-600 transition-colors">SEO & Content Marketing</Link>
-              </li>
-              <li>
-                <Link to="/category/social-video-marketing" className="text-ink-600 hover:text-brand-600 transition-colors">Social Media & Video</Link>
+                <Link to="/blog" className="text-ink-700 font-semibold hover:text-brand-600 transition-colors">
+                  Xem tất cả {categories.length} chuyên mục →
+                </Link>
               </li>
               <li>
                 <Link to="/cong-cu" className="text-brand-600 font-semibold hover:underline flex items-center gap-1.5">
