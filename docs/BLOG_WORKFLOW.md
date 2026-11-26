@@ -1,10 +1,12 @@
 # Quy trình Blog: Codex và Antigravity
 
+Phân công cố định nằm trong `docs/RESPONSIBILITIES.md`. Codex chỉ phụ trách bài thuộc mục Blog tại `https://marketing2student.com/blog`, tự thực hiện đến khi commit/push và xác minh xuất bản. Bài viết/nội dung tại mọi mục ngoài Blog vẫn do Antigravity phụ trách, cùng với code nền tảng. Chỉ phối hợp thêm khi có yêu cầu kỹ thuật cụ thể. Không mặc định giao Antigravity đăng bài Blog hoặc yêu cầu chủ dự án chuyển tin sau mỗi lô.
+
 ## Phạm vi và nguồn dữ liệu
 
 - Website hiện tại là React/Vite. Không xuất bản qua WordPress.
-- Codex: nghiên cứu, viết bài, kiểm chứng nguồn, tạo ảnh, metadata, liên kết nội bộ, đưa bài vào dữ liệu và xuất bản theo yêu cầu.
-- Antigravity: giao diện, thành phần React, chức năng, hạ tầng triển khai. Thay đổi tích hợp nhỏ phục vụ bài đăng phải được thông báo khi bàn giao.
+- Codex: nghiên cứu, viết/biên tập, kiểm chứng nguồn trong phạm vi được giao, tạo ảnh, phân loại, metadata, liên kết nội bộ, tự tích hợp dữ liệu, kiểm tra, commit/push và xác minh website sau khi xuất bản.
+- Antigravity: viết và quản lý nội dung tại các mục ngoài Blog; phụ trách giao diện, thành phần React, chức năng, schema và hạ tầng triển khai. Codex chỉ nêu yêu cầu hỗ trợ khi có phụ thuộc kỹ thuật thực tế; phần bài Blog vẫn do Codex thực hiện.
 - Nội dung bài mới: một module TypeScript cho mỗi bài trong `src/data/blog/`, xuất đối tượng đúng kiểu `Article` từ `src/types/index.ts`.
 - Website và sitemap chỉ nhận bài đã đăng ký trong mảng `articles` và có trạng thái xuất bản hợp lệ. Khai báo `publicationStatus: 'draft'` hoặc `'archived'` để loại khỏi danh sách xuất bản; nếu bỏ trống thì mặc định là `'published'`.
 - Danh sách dùng cho website: import bài mới trong `src/data/articles.ts`, rồi thêm vào mảng `articles`. Giữ thứ tự bài mới trước để sidebar và điều hướng nhất quán.
@@ -32,7 +34,7 @@
 3. Nếu cùng một checkout có thay đổi chưa commit của công cụ khác, giữ nguyên và chỉ stage file/hunk của tác vụ mình. Không reset, stash hoặc ghi đè phần của bên kia.
 4. Nếu khác checkout/máy: lấy thay đổi mới bằng `git pull --ff-only` khi working tree sạch trước khi tích hợp; nếu nhánh đã tách, xử lý hợp nhất rõ ràng, không force-push `main`.
 5. Trong cùng checkout, tuần tự hóa bước build, sinh sitemap, commit và push. Dù viết ở file riêng, hai công cụ không cùng điều khiển Git index/HEAD.
-6. Bàn giao bằng commit SHA, danh sách file, URL bài, URL pipeline, kết quả kiểm tra và phần còn vướng. Công cụ còn lại đọc commit mới trước khi tiếp tục.
+6. Báo kết quả bằng commit SHA, danh sách file, URL bài, URL pipeline, kết quả kiểm tra và phần còn vướng. Chỉ bàn giao thêm khi công cụ còn lại cần xử lý một phần việc cụ thể. Đọc commit mới khi tiếp tục làm trên checkout khác; pull commit không phải nhận việc đăng bài.
 
 ## Kiểm tra và xuất bản
 

@@ -2,7 +2,9 @@
 
 ## Phối hợp Antigravity và Codex
 
-Đọc `docs/BLOG_WORKFLOW.md` và `AGENTS.md` trước khi chỉnh sửa Blog. Codex phụ trách nội dung Blog và ảnh; Antigravity phụ trách giao diện và chức năng. Tránh sửa đồng thời các file tích hợp dùng chung.
+Đọc `docs/RESPONSIBILITIES.md` và `AGENTS.md` ở đầu lượt; đọc thêm `docs/BLOG_WORKFLOW.md` khi làm Blog. `docs/RESPONSIBILITIES.md` là thông báo phân công chung do chủ dự án yêu cầu lưu để áp dụng lâu dài.
+
+Codex **chỉ** tự thực hiện trọn quy trình bài thuộc mục Blog (`https://marketing2student.com/blog`) và ảnh của các bài đó, gồm phân loại, metadata, tích hợp dữ liệu, kiểm tra, commit/push và xác minh xuất bản; không chuyển phần này cho Antigravity. Bài viết và nội dung tại **mọi mục ngoài Blog** vẫn do Antigravity viết, tích hợp và tự commit/push. Antigravity đồng thời phụ trách code nền tảng, giao diện, chức năng và hạ tầng; không cần đăng hay commit hộ bài Blog. Ranh giới theo khu vực xuất bản: bài hướng dẫn AI trong Blog thuộc Codex, còn trang công cụ AI tại sàn AI tools thuộc Antigravity. Chỉ phối hợp thêm khi có phụ thuộc kỹ thuật cụ thể hoặc chủ dự án thay đổi phân công. Việc pull commit chỉ là đồng bộ; tránh sửa đồng thời các file dùng chung và không yêu cầu chủ dự án nhắc lại phân công sau mỗi lô.
 
 Sau khi hoàn tất mọi thay đổi mã nguồn hoặc dữ liệu (bài viết, công cụ, cấu hình SEO/sitemap) trong dự án `Marketing2student`:
 
