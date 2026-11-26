@@ -42,11 +42,18 @@ Sitemap: ${BASE_URL}/sitemap.xml
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsContent, 'utf8');
   console.log('Created public/robots.txt');
 
-  const articlesContent = fs.readFileSync(path.resolve('src/data/articles.ts'), 'utf8');
+  const blogDir = path.resolve('src/data/blog');
+  const blogContent = fs.existsSync(blogDir)
+    ? fs.readdirSync(blogDir)
+        .filter((file) => file.endsWith('.ts'))
+        .map((file) => fs.readFileSync(path.join(blogDir, file), 'utf8'))
+        .join('\n')
+    : '';
+  const articlesContent = `${fs.readFileSync(path.resolve('src/data/articles.ts'), 'utf8')}\n${blogContent}`;
   const categoriesContent = fs.readFileSync(path.resolve('src/data/categories.ts'), 'utf8');
 
   const articleSlugs = [];
-  for (const match of articlesContent.matchAll(/"slug"\s*:\s*"([^"]+)"/g)) {
+  for (const match of articlesContent.matchAll(/(?:"slug"|\bslug)\s*:\s*['"]([^'"]+)['"]/g)) {
     if (!articleSlugs.includes(match[1])) {
       articleSlugs.push(match[1]);
     }

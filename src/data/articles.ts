@@ -1,6 +1,8 @@
 import { Article } from '../types';
+import { searchConsoleCtrArticle } from './blog/searchConsoleCtr';
 
 export const articles: Article[] = [
+  searchConsoleCtrArticle,
   {
     "id": 1,
     "wpId": 29699,

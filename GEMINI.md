@@ -1,5 +1,9 @@
 # Quy tắc Triển khai & Đồng bộ Tự động (Marketing2Student)
 
+## Phối hợp Antigravity và Codex
+
+Đọc `docs/BLOG_WORKFLOW.md` và `AGENTS.md` trước khi chỉnh sửa Blog. Codex phụ trách nội dung Blog và ảnh; Antigravity phụ trách giao diện và chức năng. Tránh sửa đồng thời các file tích hợp dùng chung.
+
 Sau khi hoàn tất mọi thay đổi mã nguồn hoặc dữ liệu (bài viết, công cụ, cấu hình SEO/sitemap) trong dự án `Marketing2student`:
 
 1. **Kiểm tra trước khi đẩy code**:
