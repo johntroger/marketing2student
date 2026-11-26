@@ -1,0 +1,241 @@
+{
+  "batch": 4,
+  "date": "2026-11-26",
+  "baseCommit": "2eb7818",
+  "scope": "Cấu trúc/metadata và chuẩn hóa mã HTML trong mô tả ngắn; giữ nguyên thân bài, tiêu đề, slug, ảnh, ngày đăng, tác giả, chủ đề cũ và thẻ",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 40,
+  "remainingArticleCount": 80,
+  "changes": [
+    {
+      "id": 31,
+      "slug": "bien-khach-hang-thanh-thanh-vien-cong-dong-cach-cong-dong-bien-doi-trai-nghiem-gymshark",
+      "title": "Biến khách hàng thành thành viên cộng đồng — cách cộng đồng biến đổi trải nghiệm Gymshark",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Sự chuyển đổi của tôi từ việc phục vụ khách hàng sang nuôi dưỡng cộng đồng không diễn ra trong [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Sự chuyển đổi của tôi từ việc phục vụ khách hàng sang nuôi dưỡng cộng đồng không diễn ra trong …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép hai bàn tay bắt nhau và một người đàn ông ngồi trên ghế.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/turn-customers-into-community"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 32,
+      "slug": "bao-cao-hieu-suat-sau-khi-dang-cac-thuong-hieu-tao-bao-trien-khai-roi-mang-xa-hoi",
+      "title": "Báo cáo hiệu suất sau khi đăng: Các thương hiệu táo bạo triển khai ROI mạng xã hội",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Chúng tôi trở lại với phần tiếp theo của Báo cáo hiệu suất bài đăng (PPR)—một loạt bài viết mà [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Chúng tôi trở lại với phần tiếp theo của Báo cáo hiệu suất bài đăng (PPR)—một loạt bài viết mà …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Ba mẫu nội dung mạng xã hội của Chili’s, Florida Lottery và Jameson cùng biểu tượng đánh giá, tăng trưởng và lượt thích.",
+        "sourceUrl": "https://sproutsocial.com/insights/post-performance-report-june-2025/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 33,
+      "slug": "chuyen-doi-cac-chien-dich-thanh-hanh-trinh-ky-nguyen-moi-cua-marketing",
+      "title": "Chuyển đổi các chiến dịch thành hành trình: Kỷ nguyên mới của Marketing",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Dane Matheson, Giám đốc Bán hàng Doanh nghiệp tại RainFocus , nền tảng quản lý và tiếp thị sự kiện [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Dane Matheson, Giám đốc Bán hàng Doanh nghiệp tại RainFocus , nền tảng quản lý và tiếp thị sự kiện …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Tên lửa bay phía trước một nhóm máy bay giấy màu vàng trên nền xanh đậm.",
+        "sourceUrl": "https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2025/06/13/transforming-campaigns-to-journeys-a-new-era-of-marketing/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 34,
+      "slug": "pinterest-bo-sung-them-anh-ghep-ho-tro-ai-cap-nhat-thong-tin-chi-tiet-ve-xu-huong",
+      "title": "Pinterest bổ sung thêm ảnh ghép hỗ trợ AI, cập nhật thông tin chi tiết về xu hướng",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Pinterest vừa công bố một số công cụ hiển thị và khám phá mới hỗ trợ AI, giúp các nhà [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Pinterest vừa công bố một số công cụ hiển thị và khám phá mới hỗ trợ AI, giúp các nhà …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Cập nhật",
+        "publicationStatus": "published",
+        "coverAlt": "Bốn thẻ sản phẩm thời trang được ghép thành một ảnh phối đồ hoàn chỉnh.",
+        "sourceUrl": "https://www.socialmediatoday.com/news/pinterest-adds-ai-powered-collages-updated-trend-insights/750490/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 35,
+      "slug": "khi-nao-nguoi-tieu-dung-thich-thuong-hieu-moi-hon-thuong-hieu-da-thanh-danh",
+      "title": "Khi nào người tiêu dùng thích thương hiệu mới hơn thương hiệu đã thành danh?",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Hãy xem xét một người tiêu dùng đang lựa chọn giữa hai thương hiệu sôcôla: Suchard (ra đời năm 1826) [&hellip;]",
+        "modifiedAt": "2025-06-11"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Hãy xem xét một người tiêu dùng đang lựa chọn giữa hai thương hiệu sôcôla: Suchard (ra đời năm 1826) …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Điện thoại thông minh đặt cạnh điện thoại bàn quay số màu đỏ trên hai nền màu.",
+        "sourceUrl": "https://doi.org/10.1177/00222437231178544"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 36,
+      "slug": "thoi-diem-tot-nhat-de-dang-bai-tren-mang-xa-hoi-vao-nam-2025",
+      "title": "Thời điểm tốt nhất để đăng bài trên mạng xã hội vào năm 2025",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Bản tóm tắt Thời gian đăng bài là yếu tố quan trọng quyết định thành công của mạng xã hội [&hellip;]",
+        "modifiedAt": "2025-06-11"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Bản tóm tắt Thời gian đăng bài là yếu tố quan trọng quyết định thành công của mạng xã hội …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa chọn giờ đăng bài, xung quanh là biểu tượng TikTok, Instagram, LinkedIn, X, Pinterest và Facebook.",
+        "sourceUrl": "https://sproutsocial.com/insights/best-times-to-post-on-social-media/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 37,
+      "slug": "khi-nao-nguoi-tieu-dung-quyet-dinh-doi-diem-thuong-vai-tro-cua-thiet-ke-chuong-trinh-khach-hang-than-thiet",
+      "title": "Khi nào người tiêu dùng quyết định đổi điểm thưởng? Vai trò của thiết kế chương trình khách hàng thân thiết",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Nhiều công ty cung cấp các chương trình khách hàng thân thiết trong đó các giao dịch mua của thành [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Nhiều công ty cung cấp các chương trình khách hàng thân thiết trong đó các giao dịch mua của thành …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Người mua đứng cạnh điện thoại hiển thị điểm thưởng, các đồng xu và túi mua sắm.",
+        "sourceUrl": "https://doi.org/10.1177/00222437241255650"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 38,
+      "slug": "cach-theo-doi-chung-minh-va-cai-thien-roi-tren-mang-xa-hoi-cua-ban",
+      "title": "Cách theo dõi, chứng minh và cải thiện ROI trên mạng xã hội của bạn",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Tìm hiểu cách tính ROI trên mạng xã hội — hay còn gọi là lợi tức đầu tư từ các [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Tìm hiểu cách tính ROI trên mạng xã hội — hay còn gọi là lợi tức đầu tư từ các …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Bàn tay gõ trên laptop cạnh biểu tượng mục tiêu.",
+        "sourceUrl": "https://blog.hootsuite.com/social-media-roi/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 39,
+      "slug": "thu-hut-khan-gia-cua-ban-bang-noi-dung-co-tinh-tuong-tac",
+      "title": "Thu hút khán giả của bạn bằng nội dung có tính tương tác",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Năm 2010 và bạn đang làm bài kiểm tra để tìm ra “Bạn thích hương vị bánh mì tròn nào?” [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Năm 2010 và bạn đang làm bài kiểm tra để tìm ra “Bạn thích hương vị bánh mì tròn nào?” …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Người dùng tương tác với câu hỏi và bàn phím số trên màn hình laptop.",
+        "sourceUrl": "https://www.forbes.com/sites/forbescontentmarketing/2024/06/20/engage-your-audience-with-interactive-content/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 40,
+      "slug": "chien-luoc-tan-dung-ai-trong-trai-nghiem-cua-khach-hang",
+      "title": "Chiến lược tận dụng AI trong trải nghiệm của khách hàng",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Các công ty ngày nay đang khai thác trí tuệ nhân tạo (AI) nhiều hơn bao giờ hết, sử dụng [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Các công ty ngày nay đang khai thác trí tuệ nhân tạo (AI) nhiều hơn bao giờ hết, sử dụng …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Robot chatbot màu trắng cùng bong bóng hội thoại trên nền tím.",
+        "sourceUrl": "https://www.ama.org/marketing-news/strategies-for-leveraging-ai-in-the-customer-experience/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    }
+  ]
+}
