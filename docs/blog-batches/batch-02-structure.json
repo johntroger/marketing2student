@@ -1,0 +1,211 @@
+{
+  "batch": 2,
+  "date": "2026-11-26",
+  "baseCommit": "5a2f489",
+  "scope": "Cấu trúc và metadata; giữ nguyên thân bài, tiêu đề, slug, ảnh, ngày đăng, tác giả, chủ đề cũ và thẻ",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 20,
+  "remainingArticleCount": 100,
+  "changes": [
+    {
+      "id": 11,
+      "slug": "goi-y-san-pham-theo-thiet-bi",
+      "title": "Gợi ý sản phẩm trên điện thoại và máy tính nên giống nhau không?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Người mua so sánh gợi ý sản phẩm trên điện thoại và laptop đặt cạnh nhau.",
+        "sourceUrl": "https://doi.org/10.1287/isre.2020.0922"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 12,
+      "slug": "ai-ho-tro-thiet-ke-san-pham",
+      "title": "AI có thể giúp chọn phương án thiết kế sản phẩm ra sao?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Sản phẩm, Giá & Phân phối",
+        "categorySlug": "san-pham-gia-phan-phoi",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhà thiết kế trẻ so sánh ba mẫu thử chai nước có hình dạng khác nhau tại bàn làm mẫu.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2022.1429"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 13,
+      "slug": "cong-bo-danh-tinh-chatbot",
+      "title": "Khách nên biết đang nói chuyện với chatbot từ lúc nào?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Người mua hàng cầm điện thoại xem màn hình có biểu tượng chatbot và nút chuyển hỗ trợ.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2019.1192"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 14,
+      "slug": "thu-nghiem-influencer-ao",
+      "title": "Khi nào nên thử nhân vật ảo trong chiến dịch influencer?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhóm sáng tạo xem một nhân vật ảo cách điệu trên màn hình và một ảnh chụp creator trên tấm thẻ tham chiếu.",
+        "sourceUrl": "https://doi.org/10.1016/j.jbusres.2023.114493"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 15,
+      "slug": "ai-va-giong-thuong-hieu",
+      "title": "Khi AI viết bài mạng xã hội, thương hiệu dễ mất chất ở đâu?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Chủ một nhãn hàng nhỏ sửa bản nháp bài mạng xã hội tại bàn có những sản phẩm thủ công.",
+        "sourceUrl": "https://doi.org/10.1016/j.jretconser.2024.103790"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 16,
+      "slug": "ai-doc-dinh-vi-thuong-hieu",
+      "title": "Khách hàng nhớ thương hiệu vì điều gì?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Chủ quán cà phê xếp thẻ phản hồi thành các nhóm về trải nghiệm khách hàng.",
+        "sourceUrl": "https://doi.org/10.1016/j.jretconser.2022.102989"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 17,
+      "slug": "ai-viet-tieu-de-email-ca-nhan-hoa",
+      "title": "AI viết tiêu đề email cá nhân hóa. Nên thử biến thể nào?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhân viên marketing chuẩn bị hai bản email trên một màn hình, một quyển sổ ghi phương án thử nghiệm.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2017.1066"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 18,
+      "slug": "ai-tao-chan-dung-khach-hang",
+      "title": "Tạo chân dung khách hàng bằng AI từ dữ liệu phỏng vấn",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Nghiên cứu thị trường & Insight",
+        "categorySlug": "nghien-cuu-thi-truong",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhóm nghiên cứu sinh viên đối chiếu ghi chú phỏng vấn với hồ sơ chân dung khách hàng.",
+        "sourceUrl": "https://doi.org/10.1016/j.ijhcs.2025.103690"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 19,
+      "slug": "ai-doc-binh-luan-mia-mai",
+      "title": "AI đọc được lời khen mỉa mai trong bình luận không?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Nghiên cứu thị trường & Insight",
+        "categorySlug": "nghien-cuu-thi-truong",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Hai sinh viên đối chiếu nhãn sắc thái của một cuộc trao đổi trên mạng xã hội.",
+        "sourceUrl": "https://doi.org/10.1007/s40547-024-00143-4"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 20,
+      "slug": "ai-viet-mo-ta-san-pham",
+      "title": "AI viết mô tả sản phẩm cho hai nhóm khách như thế nào?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Người phụ trách thương mại điện tử đối chiếu hai bản mô tả với thông số của một đèn bàn.",
+        "sourceUrl": "https://doi.org/10.1016/j.csi.2025.104012"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    }
+  ]
+}
