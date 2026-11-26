@@ -1,0 +1,292 @@
+{
+  "batch": 10,
+  "date": "2026-11-26",
+  "baseCommit": "bb3d714",
+  "scope": "Cấu trúc/metadata, chuẩn hóa mô tả và sửa tràn ngang cục bộ trong HTML; giữ nguyên văn bản, tiêu đề, slug, ảnh, ngày đăng, tác giả, topic và tags",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 100,
+  "remainingArticleCount": 20,
+  "changes": [
+    {
+      "id": 91,
+      "slug": "spin-content-sang-tao-noi-dung",
+      "title": "Spin Content & Sáng Tạo Nội Dung",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(Đi kèm là 8 bước hướng dẫn chi tiết bằng minh họa) Spin content là một kỹ thuật tạo ra [&hellip;]",
+        "modifiedAt": "2025-04-22"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(Đi kèm là 8 bước hướng dẫn chi tiết bằng minh họa) Spin content là một kỹ thuật tạo ra …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Dòng chữ SPIN CONTENT bên cạnh dấu ngoặc nhọn và các nhóm từ tiếng Anh có thể thay thế nhau."
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Trịnh Bảo; link nhóm Facebook không phải URL nguồn bài, để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 92,
+      "slug": "giua-luc-thue-quan-tang-cao-cac-nha-marketing-tim-den-cac-giai-phap-ai-de-tang-cuong-suc-sang-tao",
+      "title": "Giữa lúc thuế quan tăng cao, các nhà Marketing tìm đến các giải pháp AI để tăng cường sức sáng tạo",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Với ngân sách thương hiệu đang chịu áp lực, các nhà tiếp thị đang tìm mọi cách có thể để [&hellip;]",
+        "modifiedAt": "2025-04-22"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Với ngân sách thương hiệu đang chịu áp lực, các nhà tiếp thị đang tìm mọi cách có thể để …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Cập nhật",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa nhiều màn hình máy tính chồng lên nhau, một màn hình hiển thị cánh tay robot.",
+        "sourceUrl": "https://digiday.com/marketing/amid-tariff-upheaval-marketers-look-to-ai-solutions-to-eke-out-creative-gains/"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Chọn Cập nhật thay cho Góc nhìn: bài đưa tin xu hướng ứng dụng AI trong bối cảnh thuế quan năm 2025, qua phỏng vấn và diễn biến ngành; dạng bài không có nghĩa thông tin đã cập nhật đến năm 2026.",
+      "sourceStatus": "URL ghi nhận từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 93,
+      "slug": "insight-for-strategy",
+      "title": "Insight for strategy",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "[Bài chuyên môn dành cho CEO và những bạn làm về marketing quan tâm đề tài này] Thương trường thời [&hellip;]",
+        "modifiedAt": "2025-04-21"
+      },
+      "after": {
+        "category": "Nghiên cứu thị trường & Insight",
+        "categorySlug": "nghien-cuu-thi-truong",
+        "excerpt": "[Bài chuyên môn dành cho CEO và những bạn làm về marketing quan tâm đề tài này] Thương trường thời …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Đầu tượng cổ điển ghép với bầu trời sao và các hành tinh trên nền vàng."
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Đức Sơn, Interloka brand agency; không có URL nguồn, để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 94,
+      "slug": "tam-ly-hoc-cua-noi-dung-dang-ngan-tai-sao-chung-ta-thich-video-ngan-gon",
+      "title": "Tâm lý học của nội dung dạng ngắn: Tại sao chúng ta thích video ngắn gọn",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Để tôi kể cho bạn nghe phần khó khăn nhất trong công việc của tôi. Tôi thường xóa TikTok và [&hellip;]",
+        "modifiedAt": "2025-04-21"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Để tôi kể cho bạn nghe phần khó khăn nhất trong công việc của tôi. Tôi thường xóa TikTok và …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép bàn tay cầm điện thoại hiển thị một người phụ nữ, bên cạnh là đồng hồ báo thức màu hồng.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/short-form-video-psychology"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Chọn Góc nhìn thay cho Phân tích nghiên cứu: bài giải thích sức hút video ngắn qua lời kể cá nhân, dẫn số liệu và lời khuyên; không phân tích một công trình nghiên cứu cụ thể.",
+      "sourceStatus": "URL ghi nhận từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 3,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 741,
+        "iframeSources": [
+          "https://www.youtube.com/embed/p1Fbmgqt2i0",
+          "https://www.youtube.com/embed/af4dHvJ13oo",
+          "https://www.youtube.com/embed/xGU9SUKZD7E"
+        ],
+        "linkTargets": [
+          "https://www.instagram.com/reel/DEQONr7pt54/?utm_source=ig_embed&ig_rid=e3f23ee4-9984-4349-ae2a-796c5ebeb8a3"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 95,
+      "slug": "11-chien-luoc-tao-khach-hang-tiem-nang-de-co-duoc-khach-hang-tiem-nang-chat-luong-cao",
+      "title": "11 Chiến lược tạo khách hàng tiềm năng để có được khách hàng tiềm năng chất lượng cao",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Chiến lược tạo khách hàng tiềm năng là kế hoạch khiến khách hàng tiềm năng chia sẻ thông tin liên [&hellip;]",
+        "modifiedAt": "2025-06-13"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Chiến lược tạo khách hàng tiềm năng là kế hoạch khiến khách hàng tiềm năng chia sẻ thông tin liên …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Các tờ giấy ghi chú nhiều màu với dòng chữ Lead Generation, hình phễu và biểu đồ.",
+        "sourceUrl": "https://www.semrush.com/blog/lead-generation-strategies/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 96,
+      "slug": "huong-dan-toi-uu-de-tao-chien-luoc-content-marketing",
+      "title": "Hướng dẫn tối ưu để tạo kế hoạch Content Marketing",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Marketing nội dung là một loại hình Marketing liên quan đến việc tạo ra và chia sẻ nội dung có [&hellip;]",
+        "modifiedAt": "2025-06-12"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Marketing nội dung là một loại hình Marketing liên quan đến việc tạo ra và chia sẻ nội dung có …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Đồ họa Semrush về chiến lược Content Marketing được văn bản hóa, với hai biểu đồ vòng 80% và 52%.",
+        "sourceUrl": "https://www.semrush.com/blog/content-marketing-strategy-guide/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 97,
+      "slug": "nghien-cuu-sau-sac-schadenfreude-va-sympathy-cac-thuong-hieu-nen-tiep-can-hanh-vi-xau-cua-khach-hang-trung-thanh-tren-phuong-tien-truyen-thong-xa-hoi-nhu-the-nao",
+      "title": "Schadenfreude và Sympathy: Các thương hiệu nên tiếp cận hành vi xấu của khách hàng trung thành trên phương tiện truyền thông xã hội như thế nào",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Phương tiện truyền thông xã hội là một nền tảng có khả năng hiển thị cao, nơi các khiếu nại [&hellip;]",
+        "modifiedAt": "2025-06-11"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Phương tiện truyền thông xã hội là một nền tảng có khả năng hiển thị cao, nơi các khiếu nại …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa điện thoại với đánh giá một sao, bình luận và các biểu tượng phản ứng tiêu cực trên nền hồng.",
+        "sourceUrl": "https://www.ama.org/research-insights/research-insight-schadenfreude-and-sympathy-how-brands-should-approach-loyal-customers-bad-behavior-on-social-media/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 98,
+      "slug": "cach-chia-nho-chu-de-content-seo",
+      "title": "Cách Chia Nhỏ Chủ Đề Content Seo",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Nay thực ra lười viết, vì cuối tuần tính nghỉ ngơi nhưng sáng nay có cuộc gọi video với cậu [&hellip;]",
+        "modifiedAt": "2025-04-19"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Nay thực ra lười viết, vì cuối tuần tính nghỉ ngơi nhưng sáng nay có cuộc gọi video với cậu …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh chụp bảng truy vấn tìm kiếm về bà bầu với cột lượt nhấp và vị trí, có các vùng khoanh đỏ."
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Trịnh Bảo; link Facebook trong bài dẫn bài liên quan về gom nhóm từ khóa, không dùng làm sourceUrl của bài này.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 1002,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.facebook.com/tieuthienbao/posts/pfbid0E34f3bFbeANo5EYQC85yhnL6HSyrLKSKnsBEwZve7p8gAoozSdDK1e67kohZoKhMl"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 99,
+      "slug": "22-diem-tiep-xuc-khach-hang-se-toi-uu-hoa-hanh-trinh-khach-hang-cua-ban",
+      "title": "22 Điểm tiếp xúc khách hàng sẽ tối ưu hóa hành trình khách hàng của bạn",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Khách hàng có vô số tương tác với thương hiệu của bạn, từ đó hình thành nên ý kiến chung [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Khách hàng có vô số tương tác với thương hiệu của bạn, từ đó hình thành nên ý kiến chung …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép người phụ nữ dùng máy tính xách tay và điện thoại bên cạnh biểu tượng ngón tay cái cùng các ngôi sao.",
+        "sourceUrl": "https://blog.hubspot.com/service/customer-touchpoints"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL ghi nhận từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 1,
+        "sourceLinkWrapCount": 0,
+        "beforeMobileWidth": 741,
+        "iframeSources": [
+          "https://www.youtube.com/embed/QiLPLii0_r8"
+        ],
+        "linkTargets": [],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản, href/src và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 100,
+      "slug": "cach-tinh-thoi-gian-ra-mat-san-pham-cua-ban-de-dat-duoc-thanh-cong-toi-da",
+      "title": "Cách tính thời gian ra mắt sản phẩm của bạn để đạt được thành công tối đa",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Hơn 30.000 sản phẩm mới được ra mắt hàng năm, nhưng 95% trong số đó thất bại. Những ví dụ [&hellip;]",
+        "modifiedAt": "2025-05-12"
+      },
+      "after": {
+        "category": "Sản phẩm, Giá & Phân phối",
+        "categorySlug": "san-pham-gia-phan-phoi",
+        "excerpt": "Hơn 30.000 sản phẩm mới được ra mắt hàng năm, nhưng 95% trong số đó thất bại. Những ví dụ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Mô hình tên lửa và đồng hồ báo thức màu đỏ đặt cạnh nhau trên nền sáng.",
+        "sourceUrl": "https://doi.org/10.1177/00222429241280405"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "DOI nghiên cứu đã được dẫn trong nội dung; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    }
+  ]
+}
