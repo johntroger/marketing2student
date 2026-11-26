@@ -146,19 +146,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
       </div>
 
       {/* Main Search & Brand Bar - Full Width */}
-      <div className="w-full px-4 sm:px-6 lg:px-10 pt-2.5 pb-2">
-        <div className="flex items-center justify-between gap-4 lg:gap-6">
+      <div className="w-full px-3 sm:px-6 lg:px-10 pt-2.5 pb-2">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-6">
           {/* Brand Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0 group">
-            <div className="w-10 h-10 rounded-xl bg-white border-2 border-brand-200 flex items-center justify-center p-0.5 shadow-2xs group-hover:scale-105 group-hover:border-brand-600 transition-all overflow-hidden">
+          <Link to="/" className="flex items-center gap-2 sm:gap-2.5 min-w-0 shrink sm:shrink-0 group">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-white border-2 border-brand-200 flex items-center justify-center p-0.5 shadow-2xs group-hover:scale-105 group-hover:border-brand-600 transition-all overflow-hidden">
               <img src="/logo.jpg" alt="Marketing2Student - ThS. Trần Thanh Tùng" className="w-full h-full object-cover rounded-lg" />
             </div>
-            <div className="leading-none">
-              <div className="flex items-center gap-1.5">
-                <span className="text-lg sm:text-xl font-black tracking-tight text-ink-900 group-hover:text-brand-600 transition-colors whitespace-nowrap">
+            <div className="leading-none min-w-0">
+              <div className="flex items-center gap-1.5 min-w-0">
+                <span className="text-base sm:text-xl font-black tracking-tight text-ink-900 group-hover:text-brand-600 transition-colors truncate">
                   Marketing2Student
                 </span>
-                <span className="bg-brand-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded tracking-wide shrink-0">
+                <span className="hidden sm:inline-block bg-brand-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded tracking-wide shrink-0">
                   ACADEMY
                 </span>
               </div>
@@ -380,7 +380,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
           </div>
 
           {/* Right Actions: VNEconomics + Auth + Tools Pill + Mobile Toggle */}
-          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
             <a
               href="https://store.vneconomics.com/"
               target="_blank"
