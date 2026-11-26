@@ -1,0 +1,372 @@
+{
+  "batch": 8,
+  "date": "2026-11-26",
+  "baseCommit": "3671221",
+  "scope": "Cấu trúc/metadata, chuẩn hóa mô tả, sửa tràn ngang cục bộ và sửa href nguồn ID 76 cho khớp URL hiển thị; giữ nguyên văn bản, tiêu đề, slug, ảnh, ngày đăng, tác giả, topic và tags",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 80,
+  "remainingArticleCount": 40,
+  "changes": [
+    {
+      "id": 71,
+      "slug": "aviation-american-gin-su-dung-su-hai-huoc-de-nang-cao-tinh-than",
+      "title": "Aviation American Gin: Sử dụng sự hài hước để nâng cao tinh thần",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Chúng ta sống trong một nền văn hóa mà người nổi tiếng có thể là người có sức ảnh hưởng [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Chúng ta sống trong một nền văn hóa mà người nổi tiếng có thể là người có sức ảnh hưởng …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Aviation American Gin màu trắng trên nền đen.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/aviation-american-gin-using-humor-to-lift-spirits"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 7,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 695,
+        "iframeSources": [
+          "https://www.youtube.com/embed/OGr2zQ_ub5E",
+          "https://www.youtube.com/embed/CXFn-l5LBlE",
+          "https://www.youtube.com/embed/NjDCH6SiMgo",
+          "https://www.youtube.com/embed/H2t7lknrK28",
+          "https://www.youtube.com/embed/Yd47Z8HYf0Y",
+          "https://www.youtube.com/embed/YMSUoiT0efA",
+          "https://www.youtube.com/embed/aev9wEYQL2w"
+        ],
+        "linkTargets": [
+          "https://digitalmarketinginstitute.com/resources/case-studies/aviation-american-gin-using-humor-to-lift-spirits"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 72,
+      "slug": "chevrolet-thuc-day-nhan-thuc-ve-thuong-hieu-cho-mau-xe-traverse-moi-cua-minh",
+      "title": "Chevrolet thúc đẩy nhận thức về thương hiệu cho mẫu xe Traverse mới của mình",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Khi đến lúc quảng bá Traverse 2014, Chevrolet đã triển khai chiến lược toàn diện trên nhiều kênh, nhiều thiết [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Khi đến lúc quảng bá Traverse 2014, Chevrolet đã triển khai chiến lược toàn diện trên nhiều kênh, nhiều thiết …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Biểu tượng Chevrolet màu vàng viền bạc và tên thương hiệu trên nền trắng.",
+        "sourceUrl": "http://thinkwithgoogle.com/marketing-strategies/video/chevrolet-uses-lightbox-ads/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 511,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.thinkwithgoogle.com/_qs/documents/457/chevrolet-uses-lightbox-ads_case-studies.pdf"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 73,
+      "slug": "slack-lam-bung-no-linh-vuc-giao-tiep-trong-kinh-doanh",
+      "title": "Slack: Làm bùng nổ lĩnh vực giao tiếp trong kinh doanh",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Việc tìm kiếm thông tin chi tiết cụ thể trong các chuỗi email cũ là một nhiệm vụ tẻ nhạt [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Việc tìm kiếm thông tin chi tiết cụ thể trong các chuỗi email cũ là một nhiệm vụ tẻ nhạt …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Máy tính xách tay hiển thị logo Slack trên nền tím.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/slack-blowing-up-the-business-communications-realm"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 2,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 695,
+        "iframeSources": [
+          "https://www.youtube.com/embed/wJ80ip-buXc",
+          "https://www.youtube.com/embed/YiuB06wDf5I"
+        ],
+        "linkTargets": [
+          "https://digitalmarketinginstitute.com/resources/case-studies/slack-blowing-up-the-business-communications-realm"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 74,
+      "slug": "youtube-va-broadway-cau-chuyen-cinderella",
+      "title": "YouTube và Broadway: Câu chuyện Cinderella",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Được giới phê bình ca ngợi là một góc nhìn mới mẻ về một câu chuyện vượt thời gian, vở [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Được giới phê bình ca ngợi là một góc nhìn mới mẻ về một câu chuyện vượt thời gian, vở …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Hình quảng bá nhạc kịch Cinderella trên Broadway với chiếc giày cao gót lấp lánh trên nền tím.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/video/youtube-broadway-cinderella-story/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 503,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.thinkwithgoogle.com/_qs/documents/487/youtube-broadway-cinderella-story_case-studies.pdf"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 75,
+      "slug": "temu-ke-pha-vo-thuong-mai-dien-tu-giam-gia",
+      "title": "Temu: Kẻ phá vỡ thương mại điện tử giảm giá",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Ai mà biết rằng việc khuyến khích người tiêu dùng “chi tiêu như một tỷ phú” có thể hiệu quả? [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Sản phẩm, Giá & Phân phối",
+        "categorySlug": "san-pham-gia-phan-phoi",
+        "excerpt": "Ai mà biết rằng việc khuyến khích người tiêu dùng “chi tiêu như một tỷ phú” có thể hiệu quả? …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Bàn tay cầm điện thoại hiển thị logo Temu trên màn hình màu cam.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/temu-the-discount-ecommerce-disruptor"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 2,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 695,
+        "iframeSources": [
+          "https://www.youtube.com/embed/conhlxsnjVc",
+          "https://www.youtube.com/embed/MKTN2OiR2R8"
+        ],
+        "linkTargets": [
+          "https://digitalmarketinginstitute.com/resources/case-studies/temu-the-discount-ecommerce-disruptor"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 76,
+      "slug": "food-tube-cua-dau-bep-jamie-oliver-cong-thuc-thanh-cong-tren-youtube",
+      "title": "Food Tube của đầu bếp Jamie Oliver: Công thức thành công trên YouTube",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Với hơn 600.000 người đăng ký, Food Tube của đầu bếp Jamie Oliver là một trong những kênh ẩm thực [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Với hơn 600.000 người đăng ký, Food Tube của đầu bếp Jamie Oliver là một trong những kênh ẩm thực …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Jamie Oliver cầm khung hình tivi cổ trước mặt trong gian bếp.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/video/jamie-oliver-youtube-case-study/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL lấy từ văn bản liên kết Bài viết gốc; sửa href sai trỏ sang bài Land Rover cho khớp URL hiển thị, chưa kiểm chứng nguồn ngoài.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 483,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://www.thinkwithgoogle.com/_qs/documents/455/jamie-oliver-youtube-case-study_case-studies.pdf"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      },
+      "sourceLinkCorrection": {
+        "from": "/land-rover-tim-thay-thanh-cong-voi-quang-cao-tuong-tac",
+        "to": "https://www.thinkwithgoogle.com/marketing-strategies/video/jamie-oliver-youtube-case-study/",
+        "note": "Đồng bộ href với URL nguồn đã hiển thị trong cùng liên kết; không viết lại văn bản."
+      }
+    },
+    {
+      "id": 77,
+      "slug": "vi-du-ve-marketing-b2b-qua-email-yeu-thich-cua-toi-ma-ban-co-the-hoc-hoi-duoc",
+      "title": "Ví dụ về Marketing B2B qua Email yêu thích của tôi mà bạn có thể học hỏi được",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Một nghiên cứu của Microsoft phát hiện ra rằng mọi người dành 15% thời gian làm việc để kiểm tra [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Một nghiên cứu của Microsoft phát hiện ra rằng mọi người dành 15% thời gian làm việc để kiểm tra …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Người phụ nữ dùng máy tính xách tay, bên cạnh là biểu tượng tên lửa và trái tim.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/b2b-email-marketing-examples"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 1,
+        "sourceLinkWrapCount": 0,
+        "beforeMobileWidth": 741,
+        "iframeSources": [
+          "https://www.youtube.com/embed/cjzVgmY8yvw"
+        ],
+        "linkTargets": [],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 78,
+      "slug": "dove-mot-cach-tiep-can-hoan-hao-cho-digital-marketing",
+      "title": "Dove: Một cách tiếp cận hoàn hảo cho Digital Marketing",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Bạn nghĩ gì khi nghĩ về một thương hiệu xà phòng? Có lẽ không phải những từ như ‘tiên phong’, [&hellip;]",
+        "modifiedAt": "2025-05-02"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Bạn nghĩ gì khi nghĩ về một thương hiệu xà phòng? Có lẽ không phải những từ như ‘tiên phong’, …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Dove màu trắng và biểu tượng chim màu vàng trên nền xanh đậm.",
+        "sourceUrl": "https://digitalmarketinginstitute.com/resources/case-studies/dove-a-spotless-approach-to-digital-marketing"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 0,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 419,
+        "iframeSources": [],
+        "linkTargets": [
+          "https://digitalmarketinginstitute.com/resources/case-studies/dove-a-spotless-approach-to-digital-marketing"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 79,
+      "slug": "moi-tinh-pha-ky-luc-giua-evian-va-youtube",
+      "title": "Mối tình phá kỷ lục giữa evian® và YouTube",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Để tăng nhận diện thương hiệu trên toàn cầu, evian® đã ra mắt Baby&Me, một video YouTube dài 76 giây [&hellip;]",
+        "modifiedAt": "2025-05-02"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Để tăng nhận diện thương hiệu trên toàn cầu, evian® đã ra mắt Baby&Me, một video YouTube dài 76 giây …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Người đàn ông nhìn thấy hình ảnh em bé phản chiếu trong cửa kính.",
+        "sourceUrl": "https://www.thinkwithgoogle.com/marketing-strategies/video/evian-baby-and-me/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "iframeMaxWidthCount": 1,
+        "sourceLinkWrapCount": 1,
+        "beforeMobileWidth": 776,
+        "iframeSources": [
+          "https://www.youtube.com/embed/-LHpZH9uvt0"
+        ],
+        "linkTargets": [
+          "https://www.thinkwithgoogle.com/_qs/documents/533/evian-baby-and-me_case-studies.pdf"
+        ],
+        "note": "Chỉ thêm style giới hạn chiều rộng iframe và ngắt dòng liên kết gây tràn; giữ nguyên văn bản và kích thước HTML gốc."
+      }
+    },
+    {
+      "id": 80,
+      "slug": "tieng-noi-cua-khach-hang-voc-thu-thap-du-lieu-phan-tich-hop-ly-de-dua-ra-chien-luoc",
+      "title": "Tiếng nói của khách hàng (VoC): Thu thập dữ liệu + phân tích hợp lý để đưa ra chiến lược",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Bạn có thực sự lắng nghe khách hàng của mình không? Sử dụng chương trình Voice of the Customer để [&hellip;]",
+        "modifiedAt": "2025-05-02"
+      },
+      "after": {
+        "category": "Nghiên cứu thị trường & Insight",
+        "categorySlug": "nghien-cuu-thi-truong",
+        "excerpt": "Bạn có thực sự lắng nghe khách hàng của mình không? Sử dụng chương trình Voice of the Customer để …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Một bàn tay cầm micro hướng về hai bàn tay đang đưa ra trên nền xanh.",
+        "sourceUrl": "https://www.zendesk.com/blog/amplify-voice-of-customer/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ liên kết Bài viết gốc có sẵn; chưa kiểm chứng nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    }
+  ]
+}
