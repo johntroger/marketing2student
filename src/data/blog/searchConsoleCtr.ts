@@ -7,7 +7,7 @@ export const searchConsoleCtrArticle: Article = {
   slug: 'search-console-hien-thi-tang-luot-nhap-giam',
   title: 'Lượt hiển thị tăng nhưng lượt nhấp giảm: đọc Search Console thế nào?',
   excerpt: 'CTR giảm chưa đủ để kết luận bài viết kém hiệu quả. Thực hành đọc Search Console theo trang, truy vấn và thiết bị trước khi sửa nội dung.',
-  category: 'Đo lường & Phân tích Dữ liệu',
+  category: 'Đo lường & Phân tích dữ liệu',
   categorySlug: 'do-luong-marketing',
   topic: 'Đo lường GA4 & ROI',
   tags: ['Google Search Console', 'SEO', 'CTR', 'Phân tích dữ liệu'],
@@ -19,6 +19,10 @@ export const searchConsoleCtrArticle: Article = {
   authorRole: 'Nội dung thực hành Digital Marketing',
   hasPracticalExercise: true,
   hasAcademicCitation: false,
+  articleFormat: 'Hướng dẫn thực hành',
+  publicationStatus: 'published',
+  coverAlt: 'Minh họa sinh viên đọc dữ liệu Search Console trên máy tính, cạnh biểu đồ hiển thị tăng và lượt nhấp giảm.',
+  sourceUrl: 'https://support.google.com/webmasters/answer/7576553?hl=en',
   content: `
 <p>Nhóm của Linh làm một website giới thiệu workshop cho sinh viên. Cuối tháng, báo cáo Google Search Console cho thấy lượt hiển thị tăng mạnh, còn lượt nhấp giảm. Một bạn đề nghị viết lại toàn bộ tiêu đề; bạn khác cho rằng website đang mất thứ hạng.</p>
 <p><strong>Hãy kiểm tra lượt nhấp, lượt hiển thị và CTR trên cùng phạm vi dữ liệu, rồi tách theo trang, truy vấn và thiết bị trước khi quyết định sửa gì.</strong> Một tỷ lệ tổng hợp có thể che khuất những nhóm người tìm kiếm rất khác nhau.</p>

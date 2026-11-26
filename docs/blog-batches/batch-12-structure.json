@@ -1,0 +1,395 @@
+{
+  "batch": 12,
+  "date": "2026-11-26",
+  "baseCommit": "0bc5875",
+  "scope": "Cấu trúc/metadata ID 111–120 gồm 9 bài inline và 1 module local; giữ nguyên thân bài, tiêu đề, slug, ảnh, ngày đăng, tác giả, topic và tags",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 120,
+  "remainingArticleCount": 0,
+  "changes": [
+    {
+      "id": 111,
+      "slug": "source-context-anh-huong-nhu-the-nao-khi-trien-khai-semantic-seo",
+      "title": "Source Context ảnh hưởng như thế nào khi triển khai Semantic SEO",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Context ảnh hưởng rất nhiều tới Trust Authority (thẩm quyền chủ đề) cũng như Semantic SEO. Nó ảnh hưởng từ [&hellip;]",
+        "modifiedAt": "2025-04-18"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Context ảnh hưởng rất nhiều tới Trust Authority (thẩm quyền chủ đề) cũng như Semantic SEO. Nó ảnh hưởng từ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Sơ đồ Semantic SEO kết nối một chủ đề trung tâm với các trang nội dung trên nền xanh đậm."
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Leo Minh, không có URL; để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 112,
+      "slug": "hoc-seo-nen-bat-dau-tu-dau",
+      "title": "Học SEO nên bắt đầu từ đâu?",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(kinh nghiệm tự học seo từ năm 2010 tới giờ....) ———————- KHẲNG ĐỊNH: SEO là bộ môn cần học nhiều [&hellip;]",
+        "modifiedAt": "2025-04-18"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(kinh nghiệm tự học seo từ năm 2010 tới giờ....) ———————- KHẲNG ĐỊNH: SEO là bộ môn cần học nhiều …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Dòng chữ Lộ trình học SEO từ Cơ bản trên nền xám đậm."
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Leo Minh, không có URL; để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 113,
+      "slug": "check-source-la-gi-vi-sao-can-xac-thuc-thong-tin-cua-a-i",
+      "title": "Check Source Là Gì? Vì Sao Cần Xác Thực Thông Tin Của A.I?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Giữa mớ hỗn độn thông tin trên internet hiện nay, có một sự thật rằng: người có chuyên môn họ [&hellip;]",
+        "modifiedAt": "2025-04-25"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Giữa mớ hỗn độn thông tin trên internet hiện nay, có một sự thật rằng: người có chuyên môn họ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa hai người bên màn hình tìm kiếm, một người cầm kính lúp để xem nội dung."
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn/Cre: Trịnh Bảo, không có URL; để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 114,
+      "slug": "silo-topic-cluster-pillar-hub-page-topical-map-khac-nhau-cho-nao",
+      "title": "Silo – Topic Cluster – Pillar – Hub page – Topical map...khác nhau chỗ nào",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(Sự khác biệt giữa những khái niệm dù rằng mọi người thấy nó cùng mục đích) ————– Nay có một [&hellip;]",
+        "modifiedAt": "2025-04-24"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(Sự khác biệt giữa những khái niệm dù rằng mọi người thấy nó cùng mục đích) ————– Nay có một …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Dòng chữ về sự khác biệt giữa Topical Map, Silo, Pillar Page và Topic Cluster trên nền xám đậm."
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Leo Minh, không có URL; để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 115,
+      "slug": "cach-dat-tieu-de-seo-hieu-qua-voi-website-yeu",
+      "title": "Cách Đặt Tiêu Đề Seo Hiệu Quả Với Website Yếu",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Cách đây vài ba năm về trước khi nói về tiêu đề SEO thì anh em sẽ hay được nghe [&hellip;]",
+        "modifiedAt": "2025-04-18"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Cách đây vài ba năm về trước khi nói về tiêu đề SEO thì anh em sẽ hay được nghe …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh chụp bảng ý tưởng từ khóa, với một truy vấn dài về múi giờ được khoanh đỏ."
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn/Cre: Trịnh Bảo, không có URL; để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 116,
+      "slug": "ban-co-the-tin-tuong-du-lieu-quang-cao-cua-minh-khong-mot-nghien-cuu-moi-vach-tran-mot-lo-hong-an-trong-thu-nghiem-a-b-tren-nen-tang-quang-cao-ky-thuat-so",
+      "title": "Bạn có thể tin tưởng dữ liệu quảng cáo của mình không? Một nghiên cứu mới vạch trần một lỗ hổng ẩn trong thử nghiệm A/B trên nền tảng quảng cáo kỹ thuật số",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Hãy xem xét một công ty cảnh quan có thiết kế tập trung vào cây bản địa và bảo tồn [&hellip;]",
+        "modifiedAt": "2025-04-22"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Hãy xem xét một công ty cảnh quan có thiết kế tập trung vào cây bản địa và bảo tồn …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Sơ đồ quyết định về mục tiêu thử nghiệm quảng cáo, thuật toán nhắm mục tiêu và giới hạn suy luận nhân quả.",
+        "sourceUrl": "https://www.ama.org/2025/01/07/can-you-trust-your-ad-data-a-new-study-exposes-a-hidden-flaw-in-a-b-testing-on-digital-ad-platforms/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục nguồn có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 117,
+      "slug": "tai-sao-ban-nen-ket-hop-seo-va-tiep-thi-noi-dung",
+      "title": "Tại sao bạn nên kết hợp SEO và tiếp thị nội dung?",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "SEO và content marketing (tiếp thị nội dung) là những kênh tiếp thị khác nhau. Nhưng bạn không cần phải [&hellip;]",
+        "modifiedAt": "2025-04-21"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "SEO và content marketing (tiếp thị nội dung) là những kênh tiếp thị khác nhau. Nhưng bạn không cần phải …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Sơ đồ Venn thể hiện phần giao nhau giữa Content Marketing và SEO.",
+        "sourceUrl": "https://ahrefs.com/blog/seo-content-marketing/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục nguồn có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 118,
+      "slug": "huong-dan-lua-chon-mang-xa-hoi-hieu-qua-nhat-cho-thuong-hieu-cua-ban",
+      "title": "Hướng dẫn lựa chọn mạng xã hội hiệu quả nhất cho thương hiệu của bạn",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Thương hiệu của bạn nên tập trung vào mạng xã hội nào? Cách đây không lâu, câu trả lời có [&hellip;]",
+        "modifiedAt": "2025-04-20"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Thương hiệu của bạn nên tập trung vào mạng xã hội nào? Cách đây không lâu, câu trả lời có …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép các thẻ nội dung và biểu tượng mạng xã hội trên nền xanh lá.",
+        "sourceUrl": "https://sproutsocial.com/insights/social-media-networks/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục nguồn có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 119,
+      "slug": "cach-su-dung-tro-choi-de-xay-dung-moi-quan-he-voi-khach-hang-cua-ban",
+      "title": "Cách sử dụng trò chơi để xây dựng mối quan hệ với khách hàng của bạn",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Khi trò chơi ngày càng ăn sâu vào văn hóa chính thống, nó mang đến một cơ hội độc đáo [&hellip;]",
+        "modifiedAt": "2025-04-19"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Khi trò chơi ngày càng ăn sâu vào văn hóa chính thống, nó mang đến một cơ hội độc đáo …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa một người đeo kính thực tế ảo giữa điện thoại, hình khối và các dải màu.",
+        "sourceUrl": "https://hbr.org/2024/11/how-to-use-games-to-build-relationships-with-your-customers"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục nguồn có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 120,
+      "slug": "search-console-hien-thi-tang-luot-nhap-giam",
+      "title": "Lượt hiển thị tăng nhưng lượt nhấp giảm: đọc Search Console thế nào?",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "CTR giảm chưa đủ để kết luận bài viết kém hiệu quả. Thực hành đọc Search Console theo trang, truy vấn và thiết bị trước khi sửa nội dung.",
+        "modifiedAt": "2026-11-26"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "CTR giảm chưa đủ để kết luận bài viết kém hiệu quả. Thực hành đọc Search Console theo trang, truy vấn và thiết bị trước khi sửa nội dung.",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa sinh viên đọc dữ liệu Search Console trên máy tính, cạnh biểu đồ hiển thị tăng và lượt nhấp giảm.",
+        "sourceUrl": "https://support.google.com/webmasters/answer/7576553?hl=en"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Hướng dẫn thực hành cho bài local có quy trình đọc báo cáo, tình huống giả định và bài tập; module chưa có trong bảng đề xuất cũ.",
+      "sourceStatus": "Tài liệu Google đã dẫn trong bài; không xác minh lại nguồn trong lô cấu trúc.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    }
+  ],
+  "completionSummary": {
+    "totalArticles": 120,
+    "structuredArticles": 120,
+    "missingRequiredStructure": [],
+    "categoryCounts": [
+      {
+        "slug": "chien-luoc-marketing",
+        "name": "Nền tảng & Chiến lược Marketing",
+        "count": 6
+      },
+      {
+        "slug": "nghien-cuu-thi-truong",
+        "name": "Nghiên cứu thị trường & Insight",
+        "count": 5
+      },
+      {
+        "slug": "san-pham-gia-phan-phoi",
+        "name": "Sản phẩm, Giá & Phân phối",
+        "count": 5
+      },
+      {
+        "slug": "thuong-hieu-hanh-vi-khach-hang",
+        "name": "Thương hiệu & Hành vi khách hàng",
+        "count": 17
+      },
+      {
+        "slug": "seo-content-marketing",
+        "name": "SEO & Content Marketing",
+        "count": 20
+      },
+      {
+        "slug": "social-video-marketing",
+        "name": "Social Media & Video Marketing",
+        "count": 21
+      },
+      {
+        "slug": "quang-cao-b2b-tang-truong",
+        "name": "Quảng cáo & Tăng trưởng",
+        "count": 11
+      },
+      {
+        "slug": "crm-trai-nghiem-khach-hang",
+        "name": "CRM & Trải nghiệm khách hàng",
+        "count": 18
+      },
+      {
+        "slug": "do-luong-marketing",
+        "name": "Đo lường & Phân tích dữ liệu",
+        "count": 9
+      },
+      {
+        "slug": "ai-marketing",
+        "name": "AI Marketing & Tự động hóa",
+        "count": 8
+      }
+    ],
+    "formatCounts": [
+      {
+        "slug": "huong-dan-thuc-hanh",
+        "name": "Hướng dẫn thực hành",
+        "count": 43
+      },
+      {
+        "slug": "phan-tich-nghien-cuu",
+        "name": "Phân tích nghiên cứu",
+        "count": 40
+      },
+      {
+        "slug": "phan-tich-tinh-huong",
+        "name": "Phân tích tình huống",
+        "count": 19
+      },
+      {
+        "slug": "goc-nhin",
+        "name": "Góc nhìn",
+        "count": 15
+      },
+      {
+        "slug": "cap-nhat",
+        "name": "Cập nhật",
+        "count": 3
+      }
+    ],
+    "missingSourceUrl": [
+      {
+        "id": 56,
+        "slug": "google-update-vi-sao-ban-so",
+        "title": "Google Update: Vì Sao Bạn Sợ?"
+      },
+      {
+        "id": 91,
+        "slug": "spin-content-sang-tao-noi-dung",
+        "title": "Spin Content & Sáng Tạo Nội Dung"
+      },
+      {
+        "id": 93,
+        "slug": "insight-for-strategy",
+        "title": "Insight for strategy"
+      },
+      {
+        "id": 98,
+        "slug": "cach-chia-nho-chu-de-content-seo",
+        "title": "Cách Chia Nhỏ Chủ Đề Content Seo"
+      },
+      {
+        "id": 110,
+        "slug": "tu-duy-marketing-yeu-lam-seo-that-bai",
+        "title": "Tư Duy Marketing Yếu = Làm Seo Thất Bại"
+      },
+      {
+        "id": 111,
+        "slug": "source-context-anh-huong-nhu-the-nao-khi-trien-khai-semantic-seo",
+        "title": "Source Context ảnh hưởng như thế nào khi triển khai Semantic SEO"
+      },
+      {
+        "id": 112,
+        "slug": "hoc-seo-nen-bat-dau-tu-dau",
+        "title": "Học SEO nên bắt đầu từ đâu?"
+      },
+      {
+        "id": 113,
+        "slug": "check-source-la-gi-vi-sao-can-xac-thuc-thong-tin-cua-a-i",
+        "title": "Check Source Là Gì? Vì Sao Cần Xác Thực Thông Tin Của A.I?"
+      },
+      {
+        "id": 114,
+        "slug": "silo-topic-cluster-pillar-hub-page-topical-map-khac-nhau-cho-nao",
+        "title": "Silo – Topic Cluster – Pillar – Hub page – Topical map...khác nhau chỗ nào"
+      },
+      {
+        "id": 115,
+        "slug": "cach-dat-tieu-de-seo-hieu-qua-voi-website-yeu",
+        "title": "Cách Đặt Tiêu Đề Seo Hiệu Quả Với Website Yếu"
+      }
+    ],
+    "sourceUrlCount": 110,
+    "sourceVerifiedAtCount": 0,
+    "scopeNote": "Hoàn tất cấu trúc/metadata; chưa biên tập toàn văn hay kiểm chứng nguồn toàn bộ 120 bài."
+  }
+}
