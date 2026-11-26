@@ -6,10 +6,10 @@
 - Codex: nghiên cứu, viết bài, kiểm chứng nguồn, tạo ảnh, metadata, liên kết nội bộ, đưa bài vào dữ liệu và xuất bản theo yêu cầu.
 - Antigravity: giao diện, thành phần React, chức năng, hạ tầng triển khai. Thay đổi tích hợp nhỏ phục vụ bài đăng phải được thông báo khi bàn giao.
 - Nội dung bài mới: một module TypeScript cho mỗi bài trong `src/data/blog/`, xuất đối tượng đúng kiểu `Article` từ `src/types/index.ts`.
-- Thư mục `src/data/blog/` chỉ chứa bài sẵn sàng xuất bản; giữ bản nháp ngoài thư mục này vì bộ sinh sitemap quét tất cả module `.ts` tại đây.
+- Website và sitemap chỉ nhận bài đã đăng ký trong mảng `articles` và có trạng thái xuất bản hợp lệ. Khai báo `publicationStatus: 'draft'` hoặc `'archived'` để loại khỏi danh sách xuất bản; nếu bỏ trống thì mặc định là `'published'`.
 - Danh sách dùng cho website: import bài mới trong `src/data/articles.ts`, rồi thêm vào mảng `articles`. Giữ thứ tự bài mới trước để sidebar và điều hướng nhất quán.
 - Ảnh đã xuất bản: `public/images/blog/<slug>.webp`. Dùng URL HTTPS tuyệt đối của domain trong `featuredImage` để metadata chia sẻ cũng có URL đầy đủ.
-- `scripts/generate-sitemap.mjs` quét dữ liệu cũ và module trong `src/data/blog/`. Khai báo `slug` trực tiếp bằng chuỗi, không tính động.
+- `scripts/generate-sitemap.mjs` đọc bài inline và các module Blog được đăng ký trực tiếp trong `src/data/articles.ts`. Khai báo `slug` và `publicationStatus` bằng chuỗi trực tiếp, không tính động, để tương thích bộ trích xuất sitemap hiện tại.
 
 ## Quy ước nội dung
 
@@ -18,8 +18,11 @@
 - Đặt nguồn gần nhận định; ưu tiên tài liệu chính thức và nghiên cứu gốc. Có thể thêm bài tập và liên kết đến bài/công cụ liên quan.
 - Không tự ghi tác giả đã kiểm duyệt hoặc dùng trải nghiệm ngôi thứ nhất của chủ website. Mặc định bài thử dùng tác giả `Marketing2Student`; đổi tên tác giả khi chủ dự án yêu cầu.
 - `hasAcademicCitation` chỉ bật khi bài thực sự dẫn nghiên cứu học thuật; tài liệu hướng dẫn sản phẩm không được tính là nghiên cứu học thuật.
-- `id` phải duy nhất. Trường `wpId` hiện được giao diện dùng để sắp xếp bài, kể cả bài local không có WordPress ID; chọn số nguyên duy nhất lớn hơn giá trị hiện có, không gọi API WordPress.
-- Ngày đăng/sửa theo ngày xuất bản thực tế ở Việt Nam. Banner ưu tiên 16:9, WebP; đặt alt cụ thể trong nội dung nếu có ảnh trong thân bài. Giao diện đang dùng tiêu đề bài làm alt ảnh bìa.
+- `id` và `slug` phải duy nhất. Giữ `wpId` đã có như thông tin di sản; việc sắp xếp mới nhất dùng ngày đăng qua `src/utils/blog.ts`, không dùng `wpId` để thay ngày đăng. Không gọi API WordPress.
+- Ngày đăng/sửa theo thời điểm thực tế ở Việt Nam. Giữ ngày đăng cũ khi chuẩn hóa metadata; ghi `modifiedAt` theo ngày chỉnh sửa thực tế. Banner ưu tiên 16:9, WebP; đặt `coverAlt` mô tả ảnh bìa, alt riêng trong nội dung nếu có ảnh thân bài.
+- Mười chuyên mục và năm dạng bài lấy từ `src/data/categories.ts`. Khi chuyển bài, cập nhật đồng thời `categorySlug` và `category` theo đúng nguồn này, giữ nguyên slug bài. `articleFormat` là trường phân loại dạng bài; `topic` được giữ để tương thích dữ liệu/liên kết cũ.
+- `sourceUrl` là liên kết tới nguồn của bài. Chỉ điền `sourceVerifiedAt` khi thực sự kiểm tra nguồn; việc chép URL DOI từ nội dung cũ không được coi là xác minh. Chỉ ghi `editor` khi có thông tin người biên tập phù hợp.
+- Thực hiện từng lô 10 bài. Phân biệt lô chuẩn hóa cấu trúc/metadata với lô biên tập nội dung; báo rõ các phần đã và chưa kiểm tra, không tự mở rộng sang lô tiếp theo.
 - Lưu prompt và thông tin ảnh trong `docs/blog-assets/` để tái tạo; đây không phải nội dung hiển thị cho độc giả.
 
 ## Tránh xung đột khi cùng làm việc

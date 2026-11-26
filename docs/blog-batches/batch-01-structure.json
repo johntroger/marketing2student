@@ -1,0 +1,210 @@
+{
+  "batch": 1,
+  "date": "2026-11-26",
+  "baseCommit": "9688dad",
+  "scope": "Cấu trúc và metadata; giữ nguyên thân bài, tiêu đề, slug, ảnh, ngày đăng, tác giả và thẻ",
+  "articleCount": 10,
+  "remainingArticleCount": 110,
+  "changes": [
+    {
+      "id": 1,
+      "slug": "khoang-cach-hien-thi-quang-cao",
+      "title": "Nên cho khách thấy cùng một quảng cáo ba lần trong một ngày hay rải đều?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Hai lịch hiển thị với khoảng cách khác nhau.",
+        "sourceUrl": "https://doi.org/10.1007/s11129-015-9159-9"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 2,
+      "slug": "ai-huan-luyen-nhan-vien-ban-hang",
+      "title": "AI huấn luyện đội bán hàng. Một cuộc gọi nên góp ý mấy điểm?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Quản lý và nhân viên nghe lại cuộc gọi.",
+        "sourceUrl": "https://doi.org/10.1177/0022242920956676"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 3,
+      "slug": "ai-doc-tu-khoa-gia-thau",
+      "title": "AI đọc báo cáo quảng cáo tìm kiếm. Từ khóa nhiều nhấp có đáng tăng giá thầu?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Bảng truy vấn tìm kiếm và cột chi phí.",
+        "sourceUrl": "https://doi.org/10.1287/mnsc.1090.1054"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 4,
+      "slug": "ai-doc-anh-ke-hang",
+      "title": "AI đọc ảnh kệ hàng có giúp quyết định đổi vị trí sản phẩm?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Sản phẩm, Giá & Phân phối",
+        "categorySlug": "san-pham-gia-phan-phoi",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhân viên cửa hàng chụp ảnh kệ sản phẩm, nhìn rõ nhiều tầng kệ và khoảng trưng bày.",
+        "sourceUrl": "https://doi.org/10.1509/jmkg.73.6.1"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 5,
+      "slug": "ai-goi-y-cho-nhan-vien-ho-tro",
+      "title": "AI gợi ý câu trả lời cho nhân viên chăm sóc khách hàng. Nên đo gì?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhân viên chăm sóc khách hàng đeo tai nghe và xem một bản gợi ý phản hồi.",
+        "sourceUrl": "https://doi.org/10.1093/qje/qjae044"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 6,
+      "slug": "du-lieu-theo-doi-quang-cao",
+      "title": "Khi dữ liệu theo dõi giảm, AI tối ưu quảng cáo dựa vào đâu?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Chuyên viên quảng cáo kiểm tra báo cáo trong đó một số ô dữ liệu để trống.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2023.0274"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 7,
+      "slug": "ai-doc-don-hang-tang-them",
+      "title": "AI đọc báo cáo quảng cáo. Làm sao biết quảng cáo tạo thêm đơn hàng?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhân viên phân tích so sánh biểu đồ đơn hàng của hai nhóm tại bàn làm việc.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2018.1135"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 8,
+      "slug": "ai-va-muc-san-long-chi-tra",
+      "title": "Có thể hỏi AI xem khách sẵn lòng trả bao nhiêu không?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Sản phẩm, Giá & Phân phối",
+        "categorySlug": "san-pham-gia-phan-phoi",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Người làm nghiên cứu thị trường chuẩn bị khảo sát giá cho một gói cà phê mang đi.",
+        "sourceUrl": "https://doi.org/10.1057/s41270-026-00542-7"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 9,
+      "slug": "brief-tao-anh-quang-cao-ai",
+      "title": "Brief tạo ảnh quảng cáo nên mô tả ảnh đẹp hay mục tiêu chiến dịch?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Nhóm sáng tạo phác thảo brief quảng cáo cho bình giữ nhiệt trên bàn làm việc.",
+        "sourceUrl": "https://doi.org/10.1177/00222429251356993"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    },
+    {
+      "id": 10,
+      "slug": "tro-ly-ai-trong-livestream",
+      "title": "Trợ lý AI trong livestream nên trả lời câu hỏi nào?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Nhân viên điều phối livestream xem hộp câu hỏi bên cạnh người dẫn giới thiệu áo.",
+        "sourceUrl": "https://doi.org/10.1287/isre.2023.0103"
+      },
+      "sourceStatus": "URL chép từ tài liệu đã dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này"
+    }
+  ]
+}
