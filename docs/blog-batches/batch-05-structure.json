@@ -1,0 +1,261 @@
+{
+  "batch": 5,
+  "date": "2026-11-26",
+  "baseCommit": "7d48a38",
+  "scope": "Cấu trúc/metadata, chốt dạng bài theo nội dung hiện có và chuẩn hóa mã HTML trong mô tả ngắn; giữ nguyên thân bài, tiêu đề, slug, ảnh, ngày đăng, tác giả, chủ đề cũ và thẻ",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 50,
+  "remainingArticleCount": 70,
+  "changes": [
+    {
+      "id": 41,
+      "slug": "che-do-ai-cua-google-co-the-dinh-hinh-lai-tim-kiem-nhung-dieu-nguoi-lam-seo-can-biet",
+      "title": "Chế độ AI của Google có thể định hình lại tìm kiếm: Những điều người làm SEO cần biết",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Google đã ra mắt Chế độ AI mới cho người dùng Hoa Kỳ vào ngày 20 tháng 5, chế độ [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Google đã ra mắt Chế độ AI mới cho người dùng Hoa Kỳ vào ngày 20 tháng 5, chế độ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Cập nhật",
+        "publicationStatus": "published",
+        "coverAlt": "Giao diện Google AI Mode trên điện thoại và máy tính với một câu trả lời tìm kiếm.",
+        "sourceUrl": "https://www.semrush.com/blog/google-ai-mode-could-reshape-search/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Nội dung thuật lại việc ra mắt AI Mode, thay đổi tính năng và phản ứng SEO theo mốc tháng 5/2025; không trình bày một quy trình thực hành.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 42,
+      "slug": "nham-muc-tieu-101-huong-dan-phan-doan-email-cho-nguoi-moi-bat-dau",
+      "title": "Nhắm mục tiêu 101: Hướng dẫn phân đoạn email cho người mới bắt đầu",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "4 quan niệm sai lầm phổ biến về thẻ và phân khúc và cách bắt đầu sử dụng chúng để [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "4 quan niệm sai lầm phổ biến về thẻ và phân khúc và cách bắt đầu sử dụng chúng để …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa đen trắng một người tách các lát bánh mì.",
+        "sourceUrl": "https://mailchimp.com/resources/beginners-guide-to-segmentation/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 43,
+      "slug": "tao-ban-do-hanh-trinh-mua-hang-b2b-trong-8-buoc",
+      "title": "Tạo bản đồ hành trình mua hàng B2B trong 8 bước",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Khi tôi bắt đầu làm việc với các công ty B2B, tôi nhanh chóng nhận ra rằng hiểu được cách [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Khi tôi bắt đầu làm việc với các công ty B2B, tôi nhanh chóng nhận ra rằng hiểu được cách …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Một người cầm bút trên bảng đen, xung quanh là đường đi nét đứt và biểu tượng vị trí.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/b2b-buyer-journey-mapping"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 44,
+      "slug": "cac-chien-thuat-sang-tao-thuc-day-hieu-suat-quang-cao-b2b-tot-hon-tren-linkedin",
+      "title": "Các chiến thuật sáng tạo thúc đẩy hiệu suất quảng cáo B2B tốt hơn trên LinkedIn",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Trong nhiều năm, quảng cáo B2B chủ yếu tập trung vào chức năng và tính năng. Nhưng trên thị trường [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Trong nhiều năm, quảng cáo B2B chủ yếu tập trung vào chức năng và tính năng. Nhưng trên thị trường …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Bìa tài liệu về các chiến thuật sáng tạo giúp cải thiện hiệu suất quảng cáo B2B trên LinkedIn.",
+        "sourceUrl": "https://www.linkedin.com/business/marketing/blog/research-and-insights/new-research-the-creative-tactics-that-drive-better-b2b-ad-performance-on-linkedin"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 45,
+      "slug": "tai-sao-su-khac-biet-ve-noi-dung-lai-danh-bai-su-bat-chuoc-tren-mang-xa-hoi-x",
+      "title": "Tại sao sự khác biệt về nội dung lại đánh bại sự bắt chước trên mạng xã hội X?",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Các công ty từ lâu đã sử dụng các nền tảng truyền thông xã hội như Facebook, Instagram và X [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Các công ty từ lâu đã sử dụng các nền tảng truyền thông xã hội như Facebook, Instagram và X …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Điện thoại hiển thị logo X trên nền xanh và hồng.",
+        "sourceUrl": "https://doi.org/10.1177/00222429241298654"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Thân bài mô tả nghiên cứu về 199 thương hiệu trên X trong năm năm, kết quả và hàm ý; trọng tâm là phân tích nghiên cứu, không phải góc nhìn riêng.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 46,
+      "slug": "meme-trong-marketing-hay-hanh-dong-nhanh-chong-neu-khong-chung-se-phan-tac-dung",
+      "title": "Meme trong Marketing: Hãy hành động nhanh chóng nếu không chúng sẽ phản tác dụng",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Các meme trên Internet đang nhanh chóng trở thành một phần của bộ công cụ tiếp thị, nhưng chúng có [&hellip;]",
+        "modifiedAt": "2025-06-09"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Các meme trên Internet đang nhanh chóng trở thành một phần của bộ công cụ tiếp thị, nhưng chúng có …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Chữ MEMES màu vàng cùng các nhân vật và biểu cảm meme trên nền trắng.",
+        "sourceUrl": "https://doi.org/10.1177/10949968251320612"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Thân bài tóm tắt mô hình và phân tích thực nghiệm chu kỳ meme, có phần giới thiệu nghiên cứu và DOI; khuyến nghị xuất phát từ nghiên cứu.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 47,
+      "slug": "lam-the-nao-de-tao-ra-cac-chien-luoc-marketing-hieu-qua-cho-doanh-nghiep-cua-ban",
+      "title": "Làm thế nào để tạo ra các chiến lược Marketing hiệu quả cho doanh nghiệp của bạn",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Một chiến lược tiếp thị hiệu quả nhấn mạnh sự tăng trưởng của doanh nghiệp và thường là sự tồn [&hellip;]",
+        "modifiedAt": "2025-06-07"
+      },
+      "after": {
+        "category": "Nền tảng & Chiến lược Marketing",
+        "categorySlug": "chien-luoc-marketing",
+        "excerpt": "Một chiến lược tiếp thị hiệu quả nhấn mạnh sự tăng trưởng của doanh nghiệp và thường là sự tồn …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Bảng so sánh Marketing Strategy và Marketing Plan của Semrush.",
+        "sourceUrl": "https://www.semrush.com/blog/how-to-create-effective-marketing-strategies-for-your-business/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 48,
+      "slug": "cach-tan-dung-marketing-nguoi-anh-huong-b2b-de-phat-trien-thuong-hieu-cua-ban",
+      "title": "Cách tận dụng Marketing người ảnh hưởng B2B để phát triển thương hiệu của bạn",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Một trong những ví dụ tôi thích nhất về sự ảnh hưởng này là bộ phim Mean Girls năm 2004. Khi [&hellip;]",
+        "modifiedAt": "2025-06-07"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Một trong những ví dụ tôi thích nhất về sự ảnh hưởng này là bộ phim Mean Girls năm 2004. Khi …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Người sáng tạo ngồi trước máy quay, cầm bảng LIKE & SUBSCRIBE cạnh nhãn B2B.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/b2b-influencer-marketing"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 49,
+      "slug": "truyen-thong-mang-xa-hoi-cho-doanh-nghiep-huong-dan-thuc-hien",
+      "title": "Truyền thông mạng xã hội cho doanh nghiệp: Hướng dẫn thực hiện",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Phương tiện truyền thông xã hội dành cho doanh nghiệp không còn là tùy chọn nữa. Đây là cách thiết [&hellip;]",
+        "modifiedAt": "2025-06-05"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Phương tiện truyền thông xã hội dành cho doanh nghiệp không còn là tùy chọn nữa. Đây là cách thiết …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Một người đội mũ đỏ cầm điện thoại, cạnh biểu tượng mục tiêu.",
+        "sourceUrl": "https://blog.hootsuite.com/social-media-for-business/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    },
+    {
+      "id": 50,
+      "slug": "co-duoc-cong-thuc-dung-cach-ket-hop-noi-dung-khac-nhau-giup-thuc-day-su-tham-gia-cua-nguoi-dung-tren-mang-xa-hoi",
+      "title": "Có được công thức đúng: Cách kết hợp nội dung khác nhau giúp thúc đẩy sự tham gia của người dùng trên mạng xã hội",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Giống như sữa, trứng, bột mì và baking soda trong công thức nấu ăn, nội dung truyền thông xã hội [&hellip;]",
+        "modifiedAt": "2025-05-24"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Giống như sữa, trứng, bột mì và baking soda trong công thức nấu ăn, nội dung truyền thông xã hội …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Chiếc bát chứa biểu tượng lượt thích, trái tim và thông báo tương tác, phía trên là hai hình miệng.",
+        "sourceUrl": "https://doi.org/10.1177/10949968241251694"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Thân bài trình bày nghiên cứu 516 Instagram Stories, phương pháp và các cấu hình nội dung; chưa phải một hướng dẫn có bước thực hành.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế; AVIF được xem qua bản sao PNG nền trắng, giữ nguyên ảnh website"
+    }
+  ]
+}
