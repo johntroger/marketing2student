@@ -1,0 +1,271 @@
+{
+  "batch": 6,
+  "date": "2026-11-26",
+  "baseCommit": "c2e80f2",
+  "scope": "Cấu trúc/metadata, chuẩn hóa ký hiệu mô tả và giới hạn chiều rộng hai iframe LinkedIn trong ID 59; giữ nguyên văn bản, nguồn nhúng, chiều cao, tiêu đề, slug, ảnh, ngày đăng, tác giả, chủ đề cũ và thẻ",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 60,
+  "remainingArticleCount": 60,
+  "changes": [
+    {
+      "id": 51,
+      "slug": "qua-tang-san-pham-khuyen-mai-lieu-co-con-hieu-qua-khong",
+      "title": "Quà tặng/sản phẩm khuyến mại liệu có còn hiệu quả không?",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Có một lý do tại sao quà tặng khuyến mại được coi là một trong những kỹ thuật quảng cáo [&hellip;]",
+        "modifiedAt": "2025-05-21"
+      },
+      "after": {
+        "category": "Quảng cáo & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Có một lý do tại sao quà tặng khuyến mại được coi là một trong những kỹ thuật quảng cáo …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Các sản phẩm chăm sóc cá nhân, chai lọ, xà phòng và khăn đặt trên nền xanh.",
+        "sourceUrl": "https://www.ama.org/marketing-news/why-do-promotional-products-work/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 52,
+      "slug": "dieu-chinh-chatbots-doi-hoi-tam-ly-hoc-khong-phai-cong-nghe",
+      "title": "Điều chỉnh Chatbots đòi hỏi tâm lý học, không phải công nghệ",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Tóm tắt. Các chatbot hỗ trợ AI đang trở thành tiêu chuẩn mới để quản lý các yêu cầu về [&hellip;]",
+        "modifiedAt": "2025-05-21"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Tóm tắt. Các chatbot hỗ trợ AI đang trở thành tiêu chuẩn mới để quản lý các yêu cầu về …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Hai khuôn mặt đối diện với một đường thẳng và một đường rối bên trong, trên nền cam.",
+        "sourceUrl": "https://hbr.org/2025/05/fixing-chatbots-requires-psychology-not-technology"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 53,
+      "slug": "cach-khuech-dai-thuong-hieu-cua-ban-voi-bat-ky-ngan-sach-nao",
+      "title": "Cách khuếch đại thương hiệu của bạn với bất kỳ ngân sách nào",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Khi tôi làm việc trong bộ phận tiếp thị tại Adobe trong hơn một thập kỷ, CMO quyền lực của [&hellip;]",
+        "modifiedAt": "2025-05-16"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Khi tôi làm việc trong bộ phận tiếp thị tại Adobe trong hơn một thập kỷ, CMO quyền lực của …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Bóng đèn ở giữa các vòng tròn lan tỏa, xung quanh có biểu tượng người dùng, bút và hội thoại.",
+        "sourceUrl": "https://sproutsocial.com/insights/brand-amplification/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 54,
+      "slug": "tai-sao-ca-nhan-hoa-dua-tren-du-lieu-van-con-kho-khan-va-cach-lam-cho-no-de-dang-hon",
+      "title": "Tại sao Cá nhân hóa dựa trên dữ liệu vẫn còn khó khăn (và cách làm cho nó dễ dàng hơn)",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Bạn biết giá trị mà dữ liệu mang lại trong việc cá nhân hóa trải nghiệm của khách hàng. Nhưng [&hellip;]",
+        "modifiedAt": "2025-05-16"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Bạn biết giá trị mà dữ liệu mang lại trong việc cá nhân hóa trải nghiệm của khách hàng. Nhưng …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Chữ Data-Driven Personalization Advice cùng hai hình người và biểu tượng dữ liệu.",
+        "sourceUrl": "https://contentmarketinginstitute.com/content-marketing-strategy/why-data-driven-personalization-is-still-so-hard-and-how-to-make-it-easier"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 55,
+      "slug": "6-uu-tien-marketing-ma-cac-nha-lanh-dao-dac-biet-luu-y-vao-nam-2025",
+      "title": "6 ưu tiên Marketing mà các nhà lãnh đạo đặc biệt lưu ý vào năm 2025",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Rủi ro rất cao đối với các nhà lãnh đạo tiếp thị. Người tiêu dùng vẫn nhạy cảm với giá [&hellip;]",
+        "modifiedAt": "2025-05-16"
+      },
+      "after": {
+        "category": "Nền tảng & Chiến lược Marketing",
+        "categorySlug": "chien-luoc-marketing",
+        "excerpt": "Rủi ro rất cao đối với các nhà lãnh đạo tiếp thị. Người tiêu dùng vẫn nhạy cảm với giá …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Sáu biểu tượng: robot, bánh răng, túi mua hàng, loa, biểu đồ tăng trưởng và mục tiêu.",
+        "sourceUrl": "https://sproutsocial.com/insights/marketing-priorities/"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 56,
+      "slug": "google-update-vi-sao-ban-so",
+      "title": "Google Update: Vì Sao Bạn Sợ?",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(đọc xong bài này sẽ hết sợ, mấy tấm hình có viết mô tả minh họa cụ thể) Nói SỢ [&hellip;]",
+        "modifiedAt": "2025-05-14"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "(đọc xong bài này sẽ hết sợ, mấy tấm hình có viết mô tả minh họa cụ thể) Nói SỢ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Google, biểu tượng làm mới và dòng chữ CORE UPDATE."
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Thân bài giải thích quan điểm và lời khuyên về tâm lý trước Google update, có giọng kể cá nhân; không phải quy trình thực hành theo từng bước.",
+      "sourceStatus": "Chưa có URL nguồn trong bài. Để trống sourceUrl; cần rà nguồn ghi tên Trịnh Bảo và thông tin tác giả khi biên tập nội dung.",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 57,
+      "slug": "email-marketing-la-gi-huong-dan-chuyen-sau-cho-nguoi-moi-bat-dau",
+      "title": "Email Marketing là gì? [Hướng dẫn chuyên sâu cho người mới bắt đầu]",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Email là một trong những kênh truyền thông kỹ thuật số lâu đời và lớn nhất, với lượng người dùng [&hellip;]",
+        "modifiedAt": "2025-05-14"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Email là một trong những kênh truyền thông kỹ thuật số lâu đời và lớn nhất, với lượng người dùng …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Người dùng laptop với các biểu tượng phong bì kết nối phía trên bàn phím.",
+        "sourceUrl": "https://www.ama.org/marketing-news/what-is-email-marketing/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 58,
+      "slug": "thu-nghiem-a-b-trong-marketing-la-gi-cach-thuc-hien-vi-du",
+      "title": "Thử nghiệm A/B trong Marketing là gì? Cách thực hiện + Ví dụ",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Kiểm tra A/B trong tiếp thị là gì? Kiểm thử A/B trong tiếp thị là khi bạn hiển thị hai [&hellip;]",
+        "modifiedAt": "2025-05-11"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Kiểm tra A/B trong tiếp thị là gì? Kiểm thử A/B trong tiếp thị là khi bạn hiển thị hai …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Hai lựa chọn A và B trên bảng đen, ngăn bởi mũi tên hai chiều và dấu hỏi.",
+        "sourceUrl": "https://www.semrush.com/blog/ab-testing-in-marketing/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 59,
+      "slug": "cach-the-he-z-su-dung-ai-de-xay-dung-thuong-hieu-ca-nhan-dau-la-cach-ma-toi-xay-dung-su-hien-dien-tren-linkedin-va-da-tiep-can-hon-140-trieu-nguoi",
+      "title": "Cách thế hệ Z sử dụng AI để xây dựng thương hiệu cá nhân – đâu là cách mà tôi xây dựng sự hiện diện trên LinkedIn và đã tiếp cận hơn 140 triệu người",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Tôi bắt đầu sự nghiệp của mình bằng nghề người mẫu, mà như bất kỳ ai trong ngành đều biết, [&hellip;]",
+        "modifiedAt": "2025-05-08"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Tôi bắt đầu sự nghiệp của mình bằng nghề người mẫu, mà như bất kỳ ai trong ngành đều biết, …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép một người ngồi, bàn phím, chuột và loa phóng thanh.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/how-gen-z-is-using-ai-to-build-personal-brands"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế",
+      "layoutChange": {
+        "element": "Hai iframe LinkedIn",
+        "change": "Thêm style max-width:100% để khung nhúng co theo vùng nội dung trên mobile",
+        "unchanged": [
+          "Văn bản bài",
+          "src iframe",
+          "width/height gốc",
+          "Nội dung nhúng"
+        ],
+        "baseline": "Trước khi sửa, cả local và website đang chạy đều có document.scrollWidth 545 px trên viewport 390 px do iframe rộng 504 px."
+      }
+    },
+    {
+      "id": 60,
+      "slug": "vai-tro-chuyen-doi-cua-marketing-trong-viec-thuc-day-thay-doi-xa-hoi",
+      "title": "Vai trò chuyển đổi của Marketing trong việc thúc đẩy thay đổi xã hội",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Nghiên cứu liên tục cho thấy rằng cả người tiêu dùng và các bên liên quan khác đều tin rằng [&hellip;]",
+        "modifiedAt": "2025-05-07"
+      },
+      "after": {
+        "category": "Nền tảng & Chiến lược Marketing",
+        "categorySlug": "chien-luoc-marketing",
+        "excerpt": "Nghiên cứu liên tục cho thấy rằng cả người tiêu dùng và các bên liên quan khác đều tin rằng …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Các biểu tượng màu xanh gồm tua-bin gió, xe điện, lá cây, bóng đèn và đô thị.",
+        "sourceUrl": "https://www.ama.org/marketing-news/the-transformative-role-of-marketing-in-driving-social-change/"
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất theo trọng tâm nội dung.",
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    }
+  ]
+}
