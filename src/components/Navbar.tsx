@@ -85,6 +85,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
   const searchResults = searchQuery.trim() ? searchArticles(publishedArticles, searchQuery, 4) : [];
   const toolResults = searchQuery.trim() ? searchTools(allPlatformTools, searchQuery, 4) : [];
 
+  const pathname = location.pathname;
+  const isHomeActive = pathname === '/';
+  const isToolsActive = pathname === '/cong-cu' || pathname.startsWith('/cong-cu/') || pathname === '/tai-nguyen';
+  const isAiToolsActive = pathname === '/ai-tools' || pathname.startsWith('/ai-tools/');
+  const isCategoryRoute = pathname.startsWith('/category/') || pathname.startsWith('/danh-muc/');
+  const isAboutActive = pathname === '/gioi-thieu' || pathname === '/tieu-chi';
+  const isBlogActive =
+    pathname === '/blog' ||
+    pathname.startsWith('/bai-viet/') ||
+    isCategoryRoute ||
+    (!isHomeActive && !isToolsActive && !isAiToolsActive && !isAboutActive);
+
+  const activePillClass = 'font-extrabold text-brand-700 bg-brand-100/80 hover:bg-brand-200/80 px-2.5 py-0.5 rounded-md border border-brand-200 transition-colors';
+
   const trendingTags = [
     { label: 'Google Analytics 4', q: 'GA4' },
     { label: 'ChatGPT & Claude', q: 'ChatGPT' },
@@ -521,29 +535,75 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
       <div className="w-full bg-slate-50/80 border-t border-slate-200/80 text-xs hidden md:block">
         <div className="w-full px-4 sm:px-6 lg:px-10 py-2 flex items-center justify-between gap-4 overflow-x-auto whitespace-nowrap text-ink-700">
           <div className="flex items-center gap-5 lg:gap-6">
-            <Link to="/" className="font-bold text-ink-900 hover:text-brand-600 transition-colors">TRANG CHỦ</Link>
-            <Link to="/cong-cu" className="font-extrabold text-brand-600 hover:underline flex items-center gap-1">
+            <Link
+              to="/"
+              className={
+                isHomeActive
+                  ? activePillClass
+                  : 'font-bold text-ink-900 hover:text-brand-600 transition-colors'
+              }
+            >
+              TRANG CHỦ
+            </Link>
+            <Link
+              to="/cong-cu"
+              className={`flex items-center gap-1 ${
+                isToolsActive
+                  ? activePillClass
+                  : 'font-extrabold text-brand-600 hover:underline transition-colors'
+              }`}
+            >
               <Wrench className="w-3.5 h-3.5" />
               <span>SÀN CÔNG CỤ ({marketingTools.length}+)</span>
             </Link>
-            <Link to="/ai-tools" className="font-extrabold text-ink-900 bg-brand-100/80 hover:bg-brand-200/80 px-2.5 py-0.5 rounded-md border border-brand-200 flex items-center gap-1 transition-colors">
-              <Bot className="w-3.5 h-3.5 text-brand-700" />
+            <Link
+              to="/ai-tools"
+              className={`flex items-center gap-1 ${
+                isAiToolsActive
+                  ? activePillClass
+                  : 'font-extrabold text-ink-800 hover:text-brand-600 transition-colors'
+              }`}
+            >
+              <Bot className={`w-3.5 h-3.5 ${isAiToolsActive ? 'text-brand-700' : 'text-brand-600'}`} />
               <span>SÀN AI TOOLS ({aiTools.length}+)</span>
             </Link>
-            <Link to="/blog" className="font-bold text-ink-800 hover:text-brand-600 transition-colors">BÀI VIẾT ({publishedArticles.length})</Link>
-            {navCategories.map((cat) => (
-              <Link
-                key={cat.id}
-                to={`/category/${cat.slug}`}
-                className="hover:text-brand-600 transition-colors font-medium"
-              >
-                {cat.shortName}
-              </Link>
-            ))}
+            <Link
+              to="/blog"
+              className={
+                isBlogActive
+                  ? activePillClass
+                  : 'font-bold text-ink-800 hover:text-brand-600 transition-colors'
+              }
+            >
+              BÀI VIẾT ({publishedArticles.length})
+            </Link>
+            {navCategories.map((cat) => {
+              const isCatActive = pathname === `/category/${cat.slug}` || pathname === `/danh-muc/${cat.slug}`;
+              return (
+                <Link
+                  key={cat.id}
+                  to={`/category/${cat.slug}`}
+                  className={
+                    isCatActive
+                      ? 'text-brand-700 font-bold bg-brand-50 px-2 py-0.5 rounded-md border border-brand-200/70 transition-colors'
+                      : 'hover:text-brand-600 transition-colors font-medium'
+                  }
+                >
+                  {cat.shortName}
+                </Link>
+              );
+            })}
             <Link to="/blog" className="hover:text-brand-600 transition-colors font-medium hidden xl:inline">
               Tất cả ({categories.length})
             </Link>
-            <Link to="/gioi-thieu" className="hover:text-brand-600 transition-colors flex items-center gap-1 text-ink-700 font-medium">
+            <Link
+              to="/gioi-thieu"
+              className={`flex items-center gap-1 ${
+                isAboutActive
+                  ? activePillClass
+                  : 'hover:text-brand-600 transition-colors text-ink-700 font-medium'
+              }`}
+            >
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               <span>Giới thiệu Giảng viên</span>
             </Link>
@@ -588,17 +648,33 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch: _onOpenSearch }) =
             </div>
           )}
 
-          <Link to="/" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-900 font-bold">
+          <Link
+            to="/"
+            onClick={() => setMobileMenuOpen(false)}
+            className={`block py-1.5 font-bold ${isHomeActive ? 'bg-brand-50 text-brand-700 px-2.5 rounded-lg border border-brand-200' : 'text-ink-900'}`}
+          >
             Trang chủ
           </Link>
-          <Link to="/cong-cu" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-brand-600 font-extrabold">
+          <Link
+            to="/cong-cu"
+            onClick={() => setMobileMenuOpen(false)}
+            className={`block py-1.5 font-extrabold ${isToolsActive ? 'bg-brand-50 text-brand-700 px-2.5 rounded-lg border border-brand-200' : 'text-brand-600'}`}
+          >
             Sàn Công Cụ Marketing ({marketingTools.length}+)
           </Link>
-          <Link to="/ai-tools" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-1.5 py-1.5 text-ink-900 font-extrabold">
+          <Link
+            to="/ai-tools"
+            onClick={() => setMobileMenuOpen(false)}
+            className={`flex items-center gap-1.5 py-1.5 font-extrabold ${isAiToolsActive ? 'bg-brand-50 text-brand-700 px-2.5 rounded-lg border border-brand-200' : 'text-ink-900'}`}
+          >
             <Bot className="w-4 h-4 text-brand-600" />
             <span>Sàn AI Tools ({aiTools.length}+)</span>
           </Link>
-          <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-1.5 text-ink-900 font-bold">
+          <Link
+            to="/blog"
+            onClick={() => setMobileMenuOpen(false)}
+            className={`block py-1.5 font-bold ${isBlogActive ? 'bg-brand-50 text-brand-700 px-2.5 rounded-lg border border-brand-200' : 'text-ink-900'}`}
+          >
             Thư viện Bài viết ({publishedArticles.length})
           </Link>
           <div className="pl-2 space-y-1 border-l-2 border-slate-100">
