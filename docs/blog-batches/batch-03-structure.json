@@ -1,0 +1,241 @@
+{
+  "batch": 3,
+  "date": "2026-11-26",
+  "baseCommit": "89a227f",
+  "scope": "Cấu trúc/metadata và chuẩn hóa mã HTML trong mô tả ngắn; giữ nguyên thân bài, tiêu đề, slug, ảnh, ngày đăng, tác giả, chủ đề cũ và thẻ",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 30,
+  "remainingArticleCount": 90,
+  "changes": [
+    {
+      "id": 21,
+      "slug": "bien-tap-bai-blog-ai",
+      "title": "Bài blog do AI hỗ trợ cần được biên tập ở đâu?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Biên tập viên cần kiểm tra câu trả lời có đúng nhu cầu tìm kiếm, từng tuyên bố có căn cứ và người đọc có thể tự áp dụng hướng dẫn.",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Biên tập viên cần kiểm tra câu trả lời có đúng nhu cầu tìm kiếm, từng tuyên bố có căn cứ và người đọc có thể tự áp dụng hướng dẫn.",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Biên tập viên trẻ đối chiếu bản nháp blog với tài liệu sản phẩm và đánh dấu trên giấy.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2022.1354"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Giữ mô tả ảnh đã có trong thân bài"
+    },
+    {
+      "id": 22,
+      "slug": "ai-khai-thac-nhu-cau-tu-danh-gia",
+      "title": "Từ 200 đánh giá đến một nhu cầu sản phẩm",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Dùng AI để lọc và gom câu trùng, sau đó quay lại câu gốc để xác định khách đang cố làm gì và vướng ở đâu.",
+        "modifiedAt": "2026-11-13"
+      },
+      "after": {
+        "category": "Nghiên cứu thị trường & Insight",
+        "categorySlug": "nghien-cuu-thi-truong",
+        "excerpt": "Dùng AI để lọc và gom câu trùng, sau đó quay lại câu gốc để xác định khách đang cố làm gì và vướng ở đâu.",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Một nhóm sinh viên đọc các phiếu đánh giá một chiếc ba lô và sắp xếp ghi chú về nhu cầu khách hàng.",
+        "sourceUrl": "https://doi.org/10.1287/mksc.2018.1123"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Giữ mô tả ảnh đã có trong thân bài"
+    },
+    {
+      "id": 23,
+      "slug": "chatbot-ai-cham-soc-khach-hang",
+      "title": "Chatbot AI chăm sóc khách hàng nên trả lời thế nào để khách thấy được hỗ trợ?",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Từ khảo sát 965 người dùng chatbot, học cách thiết kế phản hồi đúng nhu cầu và thử kịch bản chatbot AI chăm sóc khách hàng.",
+        "modifiedAt": "2026-11-13"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Từ khảo sát 965 người dùng chatbot, học cách thiết kế phản hồi đúng nhu cầu và thử kịch bản chatbot AI chăm sóc khách hàng.",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Chủ cửa hàng online xem cuộc trò chuyện của chatbot trên laptop, bên cạnh một kiện hàng.",
+        "sourceUrl": "https://doi.org/10.1016/j.chb.2022.107329"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Giữ mô tả ảnh đã có trong thân bài"
+    },
+    {
+      "id": 24,
+      "slug": "thu-anh-quang-cao-ai",
+      "title": "Ảnh quảng cáo AI có kéo thêm lượt nhấp? Cách thử trước khi tăng ngân sách",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Từ một nghiên cứu về ảnh quảng cáo AI, học cách thử A/B và đọc tỷ lệ nhấp, chi phí đăng ký trước khi tăng ngân sách.",
+        "modifiedAt": "2026-11-12"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Từ một nghiên cứu về ảnh quảng cáo AI, học cách thử A/B và đọc tỷ lệ nhấp, chi phí đăng ký trước khi tăng ngân sách.",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Sinh viên Marketing đối chiếu hai mẫu quảng cáo trên laptop với bảng kết quả thử nghiệm.",
+        "sourceUrl": "https://doi.org/10.1016/j.ijresmar.2024.09.002"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Giữ mô tả ảnh đã có trong thân bài"
+    },
+    {
+      "id": 25,
+      "slug": "ai-kiem-tra-utm-ga4",
+      "title": "Cách dùng AI kiểm tra link UTM trong GA4",
+      "before": {
+        "category": "Đo lường & Phân tích Dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Hai link thuộc cùng một chiến dịch có thể hiện thành hai tên trong GA4. Học cách rà tham số UTM bằng AI qua một ví dụ và câu lệnh thực hành.",
+        "modifiedAt": "2026-11-11"
+      },
+      "after": {
+        "category": "Đo lường & Phân tích dữ liệu",
+        "categorySlug": "do-luong-marketing",
+        "excerpt": "Hai link thuộc cùng một chiến dịch có thể hiện thành hai tên trong GA4. Học cách rà tham số UTM bằng AI qua một ví dụ và câu lệnh thực hành.",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Hai sinh viên đối chiếu link chiến dịch trên điện thoại và bảng kiểm trên máy tính.",
+        "sourceUrl": "https://support.google.com/analytics/answer/10917952?hl=en"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Giữ mô tả ảnh đã có trong thân bài"
+    },
+    {
+      "id": 26,
+      "slug": "tham-chieu-den-mot-thuong-hieu-doi-thu-co-the-tang-su-tham-gia-cua-nguoi-tieu-dung",
+      "title": "Tham chiếu đến một thương hiệu đối thủ có thể tăng sự tham gia của người tiêu dùng",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Cho dù đó là T-Mobile chỉ trích mạng lưới phủ sóng kém của Verizon, Burger King chế giễu những chú [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Cho dù đó là T-Mobile chỉ trích mạng lưới phủ sóng kém của Verizon, Burger King chế giễu những chú …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Logo Coca-Cola và Pepsi đặt cạnh nhau trên màn hình điện thoại.",
+        "sourceUrl": "https://doi.org/10.1177/00222437241248414"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 27,
+      "slug": "tai-sao-tang-truong-ben-vung-doi-hoi-su-ket-hop-dung-dan-giua-quang-cao-tra-phi-va-truy-cap-tu-nhien",
+      "title": "Tại sao tăng trưởng bền vững đòi hỏi sự kết hợp đúng đắn giữa quảng cáo trả phí và truy cập tự nhiên",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Tiếp thị hiệu suất từng đơn giản hơn: chi tiêu nhiều hơn, tối ưu hóa nhanh chóng, theo dõi kết [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "Nền tảng & Chiến lược Marketing",
+        "categorySlug": "chien-luoc-marketing",
+        "excerpt": "Tiếp thị hiệu suất từng đơn giản hơn: chi tiêu nhiều hơn, tối ưu hóa nhanh chóng, theo dõi kết …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Biểu tượng nhấp vào đồng tiền đặt cạnh bàn tay nâng cây non.",
+        "sourceUrl": "https://www.semrush.com/blog/sustainable-growth-paid-organic-mix/"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 28,
+      "slug": "nhung-dau-hieu-canh-bao-ve-chien-luoc-noi-dung-nhung-dieu-nhom-marketing-b2b-mac-phai-va-cach-khac-phuc",
+      "title": "Những dấu hiệu cảnh báo về chiến lược nội dung: Những điều nhóm Marketing B2B mắc phải và cách khắc phục",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Tôi thấy rất nhiều nhóm tiếp thị bị mắc kẹt trong cùng một chu kỳ: Họ tin vào nội dung. [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Tôi thấy rất nhiều nhóm tiếp thị bị mắc kẹt trong cùng một chu kỳ: Họ tin vào nội dung. …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Ba gợi ý cho nhóm nội dung: xây dựng chiến lược, lập chương trình hoặc cẩm nang kênh và xác định chỉ số.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/content-strategy-red-flags"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 29,
+      "slug": "lam-chu-nghe-thuat-lan-truyen-tren-linkedin-voi-cong-thuc-bon-buoc-cua-hala-taha",
+      "title": "Làm chủ nghệ thuật lan truyền trên LinkedIn với công thức bốn bước của Hala Taha",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "LinkedIn có thể là kênh tăng trưởng bị đánh giá thấp nhất trong tiếp thị hiện nay. Tôi đã ám [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "LinkedIn có thể là kênh tăng trưởng bị đánh giá thấp nhất trong tiếp thị hiện nay. Tôi đã ám …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép bàn tay cầm điện thoại, bàn phím, chuột và biểu tượng con trỏ.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/going-viral-on-linkedin"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    },
+    {
+      "id": 30,
+      "slug": "truyen-mieng-truoc-khi-mua-anh-huong-den-truyen-mieng-sau-khi-mua-nhu-the-nao",
+      "title": "Truyền miệng trước khi mua ảnh hưởng đến truyền miệng sau khi mua như thế nào?",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Các nhà tiếp thị biết rằng truyền miệng—đánh giá và khuyến nghị từ bạn bè và người lạ—có thể khiến [&hellip;]",
+        "modifiedAt": "2025-07-02"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Các nhà tiếp thị biết rằng truyền miệng—đánh giá và khuyến nghị từ bạn bè và người lạ—có thể khiến …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Bốn người cầm loa phóng thanh, minh họa việc lan truyền thông tin.",
+        "sourceUrl": "https://doi.org/10.1177/10949968241227923"
+      },
+      "sourceStatus": "URL ghi nhận từ liên kết đang dẫn trong bài; chưa kiểm chứng nguồn trong lô cấu trúc này",
+      "coverAltStatus": "Mô tả sau khi xem ảnh bìa thực tế"
+    }
+  ]
+}
