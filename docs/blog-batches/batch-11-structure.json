@@ -1,0 +1,268 @@
+{
+  "batch": 11,
+  "date": "2026-11-26",
+  "baseCommit": "407d95f",
+  "scope": "Cấu trúc/metadata, chuẩn hóa mô tả và bọc bảng gây tràn ngang ID 101; giữ nguyên văn bản, bảng/số liệu, tiêu đề, slug, ảnh, ngày đăng, tác giả, topic và tags",
+  "articleCount": 10,
+  "totalStructuredArticleCount": 110,
+  "remainingArticleCount": 10,
+  "changes": [
+    {
+      "id": 101,
+      "slug": "thi-nghiem-lieu-tuong-tac-som-co-lam-tang-pham-vi-tiep-can-tren-instagram-khong",
+      "title": "Liệu tương tác sớm có làm tăng phạm vi tiếp cận trên Instagram không?",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Xem cách chúng tôi thử nghiệm mức độ tương tác sớm trên Instagram và tham khảo bảy chiến thuật đơn [&hellip;]",
+        "modifiedAt": "2025-05-10"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Xem cách chúng tôi thử nghiệm mức độ tương tác sớm trên Instagram và tham khảo bảy chiến thuật đơn …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích tình huống",
+        "publicationStatus": "published",
+        "coverAlt": "Nhóm người trao đổi bên máy tính xách tay, cùng biểu tượng Instagram và bình thí nghiệm trên nền hồng.",
+        "sourceUrl": "https://blog.hootsuite.com/experiment-instagram-early-engagement/"
+      },
+      "proposedFormat": "Phân tích tình huống",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế",
+      "layoutChange": {
+        "tableScrollWrapperCount": 1,
+        "tableIndexes": [
+          3
+        ],
+        "beforeMobileWidth": 396,
+        "note": "Bọc bảng thứ tư (5 cột) bằng div overflow-x:auto; giữ nguyên bảng, văn bản, số liệu và thuộc tính gốc."
+      }
+    },
+    {
+      "id": 102,
+      "slug": "cac-to-chuc-phi-loi-nhuan-to-chuc-cac-su-kien-sang-tao-de-thu-hut-cac-nha-tai-tro-tiem-nang-va-mo-ra-nhieu-co-hoi-cho-di-hon",
+      "title": "Các tổ chức phi lợi nhuận: Tổ chức các sự kiện sáng tạo để thu hút các nhà tài trợ tiềm năng và mở ra nhiều cơ hội cho đi hơn",
+      "before": {
+        "category": "Thương hiệu & Hành vi Khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Làm thế nào để tổ chức một sự kiện gây quỹ hoàn hảo? Các tổ chức từ thiện hiện đang [&hellip;]",
+        "modifiedAt": "2025-05-07"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Làm thế nào để tổ chức một sự kiện gây quỹ hoàn hảo? Các tổ chức từ thiện hiện đang …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa nhiều bàn tay giơ lên với trái tim đỏ trong lòng bàn tay.",
+        "sourceUrl": "https://www.ama.org/2021/09/29/nonprofits-hold-creative-events-to-engage-prospective-donors-and-unlock-more-giving/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "DOI có sẵn trong nội dung; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 103,
+      "slug": "cach-nghe-va-doc-tin-tuc-dinh-hinh-cach-nguoi-tieu-dung-hieu-va-cam-nhan-thong-tin",
+      "title": "Cách Nghe và Đọc Tin Tức Định Hình Cách Người Tiêu Dùng Hiểu và Cảm Nhận Thông Tin",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Một trong những thay đổi lớn trong việc sử dụng phương tiện truyền thông trong những năm gần đây là [&hellip;]",
+        "modifiedAt": "2025-05-06"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Một trong những thay đổi lớn trong việc sử dụng phương tiện truyền thông trong những năm gần đây là …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Điện thoại hiển thị trang báo đặt cạnh tai nghe trên mặt bàn gỗ.",
+        "sourceUrl": "https://journals.sagepub.com/doi/10.1177/00222437241280068"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL bài nghiên cứu trên SAGE từ mục Nguồn tham khảo; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 104,
+      "slug": "meme-marketing-tan-dung-suc-manh-van-hoa-internet-trong-thoi-dai-so",
+      "title": "Meme Marketing: Tận Dụng Sức Mạnh Văn Hóa Internet Trong Thời Đại Số",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Các meme trên Internet đang nhanh chóng trở thành một phần của bộ công cụ Marketing, nhưng chúng có thể [&hellip;]",
+        "modifiedAt": "2025-05-04"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Các meme trên Internet đang nhanh chóng trở thành một phần của bộ công cụ Marketing, nhưng chúng có thể …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh meme cô bé ngoái nhìn trước một ngôi nhà đang cháy, kèm lời bình về meme lỗi thời.",
+        "sourceUrl": "https://www.ama.org/research-insights/research-insight-memes-in-marketing-act-fast-or-theyll-backfire/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL Research Insight từ mục Tải nghiên cứu gốc tại; đây là trang giới thiệu nghiên cứu, chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 105,
+      "slug": "meo-va-du-lieu-ve-video-theo-cac-nha-tiep-thi-qua-video",
+      "title": "Mẹo và dữ liệu về video theo các nhà Marketing qua video",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Nếu bạn đang tìm kiếm hướng dẫn Marketing video, bạn không đơn độc. Trong số tất cả các doanh nghiệp, [&hellip;]",
+        "modifiedAt": "2025-05-03"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Nếu bạn đang tìm kiếm hướng dẫn Marketing video, bạn không đơn độc. Trong số tất cả các doanh nghiệp, …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép người phụ nữ quay video bằng điện thoại bên máy tính xách tay và biểu tượng bóng đèn.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/video-marketing"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 106,
+      "slug": "hieu-ung-dai-su-cac-cong-ty-co-the-tang-cuong-hanh-vi-ben-vung-bang-cach-thuc-day-nguoi-tieu-dung-tro-thanh-dai-su-vi-xa-hoi",
+      "title": "Hiệu ứng Đại sứ: Các công ty có thể tăng cường hành vi bền vững bằng cách thúc đẩy người tiêu dùng trở thành Đại sứ vì xã hội",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Năm nay, công ty may mặc Tentree đã giới thiệu một chương trình đại sứ để tìm kiếm những khách [&hellip;]",
+        "modifiedAt": "2025-05-02"
+      },
+      "after": {
+        "category": "Thương hiệu & Hành vi khách hàng",
+        "categorySlug": "thuong-hieu-hanh-vi-khach-hang",
+        "excerpt": "Năm nay, công ty may mặc Tentree đã giới thiệu một chương trình đại sứ để tìm kiếm những khách …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Phân tích nghiên cứu",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa bàn tay cầm loa phát thanh cùng các biểu tượng tái chế, điện gió, điện mặt trời và Trái Đất.",
+        "sourceUrl": "https://www.ama.org/2024/10/01/the-ambassador-effect-companies-can-increase-sustainable-behavior-by-urging-consumers-to-become-prosocial-ambassadors/"
+      },
+      "proposedFormat": "Phân tích nghiên cứu",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "DOI có sẵn trong nội dung; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 107,
+      "slug": "nhung-nguoi-co-suc-anh-huong-dang-dinh-hinh-lai-cac-hoat-dong-va-su-kien-thuong-hieu-truc-tiep",
+      "title": "Những người có sức ảnh hưởng đang định hình lại các hoạt động và sự kiện thương hiệu trực tiếp",
+      "before": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Những người có sức ảnh hưởng và người sáng tạo không còn giới hạn trong phạm vi nguồn cấp dữ [&hellip;]",
+        "modifiedAt": "2025-05-01"
+      },
+      "after": {
+        "category": "Social Media & Video Marketing",
+        "categorySlug": "social-video-marketing",
+        "excerpt": "Những người có sức ảnh hưởng và người sáng tạo không còn giới hạn trong phạm vi nguồn cấp dữ …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa điện thoại phát trực tiếp với hai chân dung, biểu tượng tương tác và hàng rào sự kiện trên nền hồng đậm.",
+        "sourceUrl": "https://sproutsocial.com/insights/live-brand-activations/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 108,
+      "slug": "lam-the-nao-de-tao-ra-mot-chien-luoc-tu-dong-hoa-tiep-thi",
+      "title": "Làm thế nào để tạo ra một chiến lược tự động hóa tiếp thị",
+      "before": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Các nhà Marketing phải đối mặt với một thách thức liên tục: thúc đẩy chuyển đổi trong khi vẫn đảm [&hellip;]",
+        "modifiedAt": "2025-04-30"
+      },
+      "after": {
+        "category": "AI Marketing & Tự động hóa",
+        "categorySlug": "ai-marketing",
+        "excerpt": "Các nhà Marketing phải đối mặt với một thách thức liên tục: thúc đẩy chuyển đổi trong khi vẫn đảm …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Đồ họa Semrush về chiến lược tự động hóa Marketing theo bốn giai đoạn nhận biết, cân nhắc, chuyển đổi và trung thành.",
+        "sourceUrl": "https://www.semrush.com/blog/marketing-automation-strategy/"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 109,
+      "slug": "4-loai-email-co-muc-do-tuong-tac-cao-nhat-theo-cac-nha-tiep-thi-4-email-khong-thanh-cong",
+      "title": "4 loại email có mức độ tương tác cao nhất theo các nhà tiếp thị [+4 email không thành công]",
+      "before": {
+        "category": "Quảng cáo số, B2B & Tăng trưởng",
+        "categorySlug": "quang-cao-b2b-tang-truong",
+        "excerpt": "Là người gửi Email Marketing của HubSpot, tôi hiểu tầm quan trọng của việc tạo chuỗi email nuôi dưỡng mối [&hellip;]",
+        "modifiedAt": "2025-04-29"
+      },
+      "after": {
+        "category": "CRM & Trải nghiệm khách hàng",
+        "categorySlug": "crm-trai-nghiem-khach-hang",
+        "excerpt": "Là người gửi Email Marketing của HubSpot, tôi hiểu tầm quan trọng của việc tạo chuỗi email nuôi dưỡng mối …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Hướng dẫn thực hành",
+        "publicationStatus": "published",
+        "coverAlt": "Ảnh ghép máy tính xách tay, phong bì thư và hai bàn tay giơ ngón cái trên nền cam.",
+        "sourceUrl": "https://blog.hubspot.com/marketing/types-of-emails"
+      },
+      "proposedFormat": "Hướng dẫn thực hành",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "URL từ mục Bài viết gốc có sẵn; chưa kiểm chứng nguồn.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    },
+    {
+      "id": 110,
+      "slug": "tu-duy-marketing-yeu-lam-seo-that-bai",
+      "title": "Tư Duy Marketing Yếu = Làm Seo Thất Bại",
+      "before": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Lý do thất bại của một dự án / chiến lược SEO không phải chỉ nằm ở chỗ: xếp hạng [&hellip;]",
+        "modifiedAt": "2025-04-28"
+      },
+      "after": {
+        "category": "SEO & Content Marketing",
+        "categorySlug": "seo-content-marketing",
+        "excerpt": "Lý do thất bại của một dự án / chiến lược SEO không phải chỉ nằm ở chỗ: xếp hạng …",
+        "modifiedAt": "2026-11-26",
+        "articleFormat": "Góc nhìn",
+        "publicationStatus": "published",
+        "coverAlt": "Minh họa hai người bắt tay trước màn hình máy tính, hai bên ghi SEO và Content Marketing."
+      },
+      "proposedFormat": "Góc nhìn",
+      "formatDecisionNote": "Giữ dạng bài đề xuất sau khi đọc mở đầu, các đề mục và kết luận.",
+      "sourceStatus": "Chỉ ghi Nguồn: Trịnh Bảo, không có URL; để trống sourceUrl.",
+      "coverAltStatus": "Mô tả sau khi xem trực tiếp ảnh bìa thực tế"
+    }
+  ]
+}
